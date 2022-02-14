@@ -1,4 +1,12 @@
 /*Normalize.css*/
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
 * html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym,
@@ -23,7 +31,6 @@ time, mark, audio, video {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -45,22 +52,23 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-body {
-    background-color: rgb(217,217,217);
-    font-family: Montserrat, sans-serif;
-}
 
 /*VISIBLE PART*/
 html, body {
     background: black;/*Хочу черный бекграунд под страницей*/
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;/*Языки для отображения*/
+    color: black;/*Цвет всего текста на странице*/
 }
 
 .container{
-    box-sizing: border-box;/*Хочу чтоб контейнервмещал все и ужимал до 1250px нутри него*/
-    max-width: 1250px;/*Хочу максимальную ширину страницы 1250px*/
+    width: 80%;
+    max-width: 1600px;/*Хочу максимальную ширину страницы 1600px*/
     margin: 0 auto;/*Выравниваю див по центру*/
     background: ivory;/*Задаю всей станице цвет*/
+    box-sizing: border-box;/*Хочу чтоб контейнер вмещал все и ужимал нутри него*/
 }
 
 /*DROPDOWN MENU*/
@@ -71,59 +79,54 @@ h1 {
     letter-spacing: 0.1em;/*Расстояние между буквами*/
 }
 
-.top-menu {
+nav ul {
     display: flex;/*Применяю флекс ко всему меню - хочу адаптивность при изменении экрана*/
+    flex-direction: row;/*Задаю форму контейнеру - строка*/
     justify-content: space-evenly;/*Хочу равномерных расстояний как между эл-ми так и от начала и конца*/
-    height: 3em;/*Фиксированная высота моя*/
-    text-align: center;/*Центровка текста по середине*/
+    background-color: #1e728e;/*Задаю цвет меню*/
+    height: 40px;/*Задаю высоту меню*/
 }
+
 @media screen and (max-width:600px){
-    .top-menu li {
-        width:100%;
+    nav ul {
+        flex-wrap: wrap;/*При изменении экрана меняю форму флекса для переноса*/
+        flex-direction: column;/*Задаю форму - колонки*/
+        height: 120px;/*Для каждого подменю по 40px*/
+    }
+
+    nav ul li {
+        width:100%;/*Для того чтоб один пункт был в одной строке*/
     }
 }
 
-li {
-    width: 100%;
+nav li {
+    flex: 1;/*Хочу чтоб элементы заняли все доуступное пространство*/
+    display: flex;/*Флекс пименяю*/
+    white-space: nowrap;/*Не разрешаю им перетекать на другую строку*/
 }
 
-.menu-top-menu-list:hover {
-    background: red;/*Цвет пункта ссылки при наведении*/
+nav a {
+    display: flex;/*Флекс контейнер*/
+    justify-content: space-evenly;/*Хочу равномерных расстояний как между эл-ми так и от начала и конца*/
+    align-items: center;/*Центрую текст*/
+    width: 100%;/*Задаю ширину элемента*/
+    text-transform: uppercase;/*Текст большими буквами*/
+    color: ivory;/*Цвет текста*/
+    font-size: 14px;/*Размер букв*/
+    padding: 0 10px;/*Расстояние внутри кнопки - воздух*/
+    border: 1px solid ivory;/*Хочу чтоб выглядело как кирпичики на подложке*/
 }
 
-li:hover {
-    background: #585260;/*Цвет пункта ссылки при наведении*/
-}
-
-.top-menu li {
-    position: relative;/*Поднимаю текст над страницей*/
-}
-
-a {
-    display: block;/*Хочу чтоб ссылка пукнт менбю ввела себя как блочный элемент*/
-    padding: 15px 15px;/*Задаю внутренние отступы для воздуха*/
-}
-
-.fa {
-    padding-left: 15px;/*Задаю расстояние от слова до значка*//**/
-}
-
-.menu ul {
-    background: #723505;/*Задаю цвет Меню*/
-}
-.menu li a {
-    color: ivory;/*Задаю цвет текста ссылке в пункте*/
-}
-.menu .sub-menu {
-    background: #1e728e;/*Задаю цвет меню выпадающим пунктам*/
-}
-
-.sub-menu a {
-    border-bottom: 1px solid rgba(255,255,255,.3);/*Задаю цвет разделителя внизу пункта меню*/
+nav a:hover {
+    background-color: red;/*Красное при наведении*/
+    border: 1px solid black;/*Сохраняю границы но меняю цвет */
+    transition: 1s ease-in-out;/*Делаю анимацию на 1 секунду для эффекта*/
 }
 
 /*BODY OF THE PAGE*/
 main {
+    width: 90%;
+    margin: 0 auto;/*Выравниваю див по центру*/
     padding-right: 2em;/*Расстояния справа*/
     padding-left: 2em;/*Расстояния слева*/
 }
@@ -145,11 +148,12 @@ p {
     display: inline;/*Возвращаю ссылке нормальное поведение*/
 }
 
-.square {
+.square li  {
     list-style-type: disc;/*Задаю значки перед списком которые убрались вверху скидкой стилей раузеров*/
-    padding-left: 15px;/*Центрую с вышестоящими???? как сделать без этого?*/
+    margin-left: 15px;/*Центрую с вышестоящими???? как сделать без этого?*/
     background: ivory;/*Убираю стили которые наследуются от выпадающего меню- как сделать по-другому?*/
     padding-bottom: 1.5em;/*Добавляю воздуха после списков*/
+    line-height: 0.1em;/*Расстояние между строками*/
 }
 .square li:hover {
     background: ivory;/*Убираю стили которые наследуются от выпадающего меню- как сделать по-другому?*/
@@ -219,10 +223,12 @@ footer {
 
 .block {
     padding: 2em;/*Воздух вокруг ссылок в футере*/
+    text-align: center;/*Центрую текст по середине*/
+    line-height: 2em;/*Расстояние между строками*/
+
 }
 
 .mark {
-    text-align: center;/*Центрую текст по середине*/
     background: #1e728e;/*Удаляю наследование выше = можно по-другому???*/
     line-height: 0.5em;/*Расстояние между ссылками - воздух*/
 }
