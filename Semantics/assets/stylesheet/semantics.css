@@ -19,8 +19,11 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -46,145 +49,198 @@ body {
     background-color: rgb(217,217,217);
     font-family: Montserrat, sans-serif;
 }
-/*VISIBLE PART - teg*/
-html, body {
-    background: black;
-    font-family: Montserrat, sans-serif;
-    max-width: 100%;
-}
-.container{
-    box-sizing: border-box;
-    max-width: 1250px;
-    margin: 0 auto;
-    background: ivory;
-}
-header {
 
+/*VISIBLE PART*/
+html, body {
+    background: black;/*Хочу черный бекграунд под страницей*/
+    font-family: Arial, Helvetica, sans-serif;/*Языки для отображения*/
 }
-nav {
-    /*display: flex; /* Включаем режим Flexbox. */
-    /*flex-direction: column; /* Держим элементы в строке */
-    /*justify-content: space-between; /* Распределяем элементы внутри шапки */
-    /*flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+
+.container{
+    box-sizing: border-box;/*Хочу чтоб контейнервмещал все и ужимал до 1250px нутри него*/
+    max-width: 1250px;/*Хочу максимальную ширину страницы 1250px*/
+    margin: 0 auto;/*Выравниваю див по центру*/
+    background: ivory;/*Задаю всей станице цвет*/
 }
-.nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    line-height: 30px;
-}
-ul {
-   /*display: block;*/
-    margin: 10px;
-    line-height: 25px;
-}
-article {
-}
-section {
-    padding: 60px;
-}
+
+/*DROPDOWN MENU*/
 h1 {
-    text-align: center;
-    font-size: 45px;
-    margin: 1em;
-    letter-spacing: 0.2em;
-    color: black;
+    text-align: center;/*Центрую заголовок*/
+    font-size: 3em;/*Размер текста*/
+    padding: 1em; /*Внутренние отступы для воздуха*/
+    letter-spacing: 0.1em;/*Расстояние между буквами*/
 }
-h2 {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    color: #1e728e;
+
+.top-menu {
+    display: flex;/*Применяю флекс ко всему меню - хочу адаптивность при изменении экрана*/
+    justify-content: space-evenly;/*Хочу равномерных расстояний как между эл-ми так и от начала и конца*/
+    height: 3em;/*Фиксированная высота моя*/
+    text-align: center;/*Центровка текста по середине*/
 }
-h3 {
-    margin-bottom: 0px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    background: #dbdad6;
-    font-weight: inherit;
+@media screen and (max-width:600px){
+    .top-menu li {
+        width:100%;
+    }
 }
-h4 {
-    color: black;
-    text-align: center;
-    font-size: 25px;
-}
-p {
-    line-height: 20px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-}
-figure {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 55px;
-    margin-top: 55px;
-    align-items: center;
-}
-iframe {
-    margin-bottom: 50px;
-}
-footer{
-    box-sizing: border-box;
+
+li {
     width: 100%;
-    padding: 30px;
-    height: 100%;
-    background: #1e728e;
 }
-/*VISIBLE PART - classes*/
+
+.menu-top-menu-list:hover {
+    background: red;/*Цвет пункта ссылки при наведении*/
+}
+
+li:hover {
+    background: #585260;/*Цвет пункта ссылки при наведении*/
+}
+
+.top-menu li {
+    position: relative;/*Поднимаю текст над страницей*/
+}
+
+a {
+    display: block;/*Хочу чтоб ссылка пукнт менбю ввела себя как блочный элемент*/
+    padding: 15px 15px;/*Задаю внутренние отступы для воздуха*/
+}
+
+.fa {
+    padding-left: 15px;/*Задаю расстояние от слова до значка*//**/
+}
+
+.menu ul {
+    background: #723505;/*Задаю цвет Меню*/
+}
+.menu li a {
+    color: ivory;/*Задаю цвет текста ссылке в пункте*/
+}
+.menu .sub-menu {
+    background: #1e728e;/*Задаю цвет меню выпадающим пунктам*/
+}
+
+.sub-menu a {
+    border-bottom: 1px solid rgba(255,255,255,.3);/*Задаю цвет разделителя внизу пункта меню*/
+}
+
+/*BODY OF THE PAGE*/
+main {
+    padding-right: 2em;/*Расстояния справа*/
+    padding-left: 2em;/*Расстояния слева*/
+}
+
+h2 {
+    text-align: center;/*Центрую подзаголовки по центру док-та*/
+    font-size: 2em;/*Размер текста*/
+    margin-top: 2em;/*Расстояние граница сверху*/
+    margin-bottom: 2em;/*Расстояние граница снизу*/
+    color: #1e728e;/*Цвет подзаголовка*/
+}
+
+p {
+    line-height: 1.5em;/*Расстояние между строками*/
+    padding-bottom: 1.5em;/*Внутренний отступ снизу*/
+}
+
+.ordinary {
+    display: inline;/*Возвращаю ссылке нормальное поведение*/
+}
+
+.square {
+    list-style-type: disc;/*Задаю значки перед списком которые убрались вверху скидкой стилей раузеров*/
+    padding-left: 15px;/*Центрую с вышестоящими???? как сделать без этого?*/
+    background: ivory;/*Убираю стили которые наследуются от выпадающего меню- как сделать по-другому?*/
+    padding-bottom: 1.5em;/*Добавляю воздуха после списков*/
+}
+.square li:hover {
+    background: ivory;/*Убираю стили которые наследуются от выпадающего меню- как сделать по-другому?*/
+}
+
+figure {
+    display: flex;/*Применяю флекс к блоку фото - хочу адаптивность при изменении экрана*/
+    justify-content: space-evenly;/*Хочу равномерных расстояний как между эл-ми так и от начала и конца*/
+    margin-bottom: 4em;/*Расстояние граница снизу*/
+    margin-top: 4em;/*Расстояние граница сверху*/
+}
 
 .logo {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 40px;
-    height: 40px;
+    display: inline-flex;/*Хочу чтоб он вел себя как строчный согласно флекса выше*/
+    width: 40px;/*Размеры - ширина*/
+    height: 40px;/*Размеры - высота*/
 }
+
+h3 {
+    padding-left: 10px;/*Внутренний воздух слева*/
+    padding-bottom: 5px;/*Внутренний воздух снизу*/
+    padding-top: 5px;/*Внутренний воздух сверху*/
+    background: #dbdad6;/*Цвет бекграунда*/
+    font-weight: lighter;/*Тоньше шрифт по отношению к родителю*/
+}
+
+h4 {
+    text-align: center;/*Центрую заголовок*/
+    font-size: 1.5em;/*Устанавливаю размер шрифта*/
+}
+
+iframe {
+    margin-bottom: 5em;/*Воздух под блоками с iframe*/
+}
+
 .wrap {
-    margin-top:0;
-    padding-top:0;
-    border-bottom: 7px solid #dbdad6;
-    border-left: 12px solid #dbdad6;
+    border-bottom: 7px solid #dbdad6;/*Цвет полосы как рамки снизу над элем*/
+    border-left: 12px solid #dbdad6;/*Цвет полосы как рамки слева перед эле*/
 }
+
 .kod {
-    border-left: 5px solid green;
-    margin-top:0;
-    margin-bottom:0;
+    display: block;/*Блоком элемент строчный делаю*/
+    overflow-x: auto;/*Добавляю прокрутку для большего размера*/
+    background-color: white;/*Задаю цвет бекграунда*/
+    color: #585260;/*Задаю цвет тексту - не хочу тупо черный*/
+    padding: 0.5em;/*Размеры воздуха внутри рамки*/
+    border-left: 5px solid green;/*Цвет и полоса как на примере с гугла*/
 }
-.mark {
-    display: block;
-    text-align: center;
-    line-height: 30px;
-}
-.mark:link {
-    color: black;
-}
-.mark:visited {
-    color: #723505;
-}
-.mark:hover {
-    color: ivory;
-}
-.kod {
-    display: block;
-    overflow-x: auto;
-    background-color: rgb(239, 236, 244);
-    color: rgb(88, 82, 96);
-    padding: 0.5em;
-}
+
 .kod-attribute {
-    color: rgb(190, 70, 120);
+    color: rgb(190, 70, 120);/*Выделяю теги другим цветом*/
 }
+
 .kod-tag {
-    color: rgb(190, 70, 120);
+    color: rgb(190, 70, 120);/*Выделяю теги другим цветом*/
 }
+
 .kod-name {
-    color: rgb(190, 70, 120);
+    color: rgb(190, 70, 120);/*Выделяю теги другим цветом*/
 }
+
+/*FOOTER*/
+footer {
+    padding: 3em;/*Воздух по краям внтури*/
+    background: #1e728e;/*Цвет бекграунда*/
+}
+
+.block {
+    padding: 2em;/*Воздух вокруг ссылок в футере*/
+}
+
+.mark {
+    text-align: center;/*Центрую текст по середине*/
+    background: #1e728e;/*Удаляю наследование выше = можно по-другому???*/
+    line-height: 0.5em;/*Расстояние между ссылками - воздух*/
+}
+
+.mark:link {
+    color: black;/*Изменяю цвет ссылок на черный*/
+}
+
+.mark:visited {
+    color: #723505;/*Изменяю посещенные ссылки на коричневый цвет*/
+}
+
+.mark:hover {
+    color: ivory;/*Изменяю наведенные ссылки на цвет айвори*/
+}
+
 .copyright {
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
+    text-align: center;/*Центрую текст*/
+    font-style: italic;/*Делаю текст наклонным*/
+    font-weight: bold;/*делаю декст более жирным*/
 }

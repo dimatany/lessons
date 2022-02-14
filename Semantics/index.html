@@ -18,16 +18,28 @@
 </head>
 <body>
 <div class="container">
-<header>
-    <nav>
-        <ul>
-            <li><a class="nav" href="#part-1">Статті</a></li>
-            <li><a class="nav" href="#part-8">Мое Резюме</a></li>
-            <li><a class="nav" href="#part-9">Beetroot Academy</a></li>
-        </ul>
+    <!--DROPDOWN MENU-->
+    <header>
         <h1>Семантика HTML</h1>
-    </nav>
-</header>
+        <nav class="menu">
+            <ul class="top-menu">
+                <li class="menu-top-menu-list"><a href="#part-8">Мое Резюме</a></li>
+                <li class="menu-top-menu-list"><a href="#part-9">Beetroot Academy</a></li>
+                <li class="menu-top-menu-list"><a href="#part-1">Статті<i class="fa fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#part-1">HTML5 елементи</a></li>
+                        <li><a href="#part-2">Підтримка браузерів</a></li>
+                        <li><a href="#part-3">Нові елементи</a></li>
+                        <li><a href="#part-4">HTML5 &lt;section&gt;</a></li>
+                        <li><a href="#part-5">HTML5 &lt;article&gt;</a></li>
+                        <li><a href="#part-6">HTML5 &lt;header&gt;</a></li>
+                        <li><a href="#part-7">HTML5 &lt;footer&gt;</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--BODY OF THE PAGE-->
 <main>
     <article>
         <section>
@@ -47,12 +59,12 @@
             </figure>
             <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
             <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".</p>
-            <p>Прочитайте про це в <a href="https://www.blogger.com/dashboard/reading" target="_blank" rel="nofollow noopener">підтримці браузера HTML5</a>.</p>
+            <p>Прочитайте про це в <a class="ordinary" href="https://www.blogger.com/dashboard/reading" target="_blank" rel="nofollow noopener">підтримці браузера HTML5</a>.</p>
         </section>
         <section>
             <h2 id="part-3">Нові семантичні елементи в HTML5</h2>
             <p>HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:</p>
-            <ul>
+            <ul class="square">
                 <li>&lt;section&gt;</li>
                 <li>&lt;article&gt;</li>
                 <li>&lt;header&gt;</li>
@@ -75,7 +87,7 @@
             <p>Елемент &lt;article&gt; визначає незалежний, автономний вміст.</p>
             <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини веб-сайту.</p>
             <p>Приклади того, де можна використовувати елемент &lt;article&gt;:</p>
-            <ul>
+            <ul class="square">
                 <li>Повідомлення на форумі</li>
                 <li>блозі</li>
                 <li>Газетна стаття</li>
@@ -117,24 +129,19 @@
         </section>
         <section>
             <h2 id="part-8">Моя попередня робота - резюме (2й урок)</h2>
-            <iframe src="assets/iframe/index-en.html" width="100%" height="300"></iframe>
+            <iframe src="assets/iframe/index-en.html" width="100%" height="400"></iframe>
         </section>
         <section>
             <h2 id="part-9">День відкритих дверей в Beetroot Academy</h2>
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/FII4DRuiLLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/FII4DRuiLLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     </article>
 </main>
+    <!--FOOTER-->
     <footer>
         <h4>Краткий перечень разделов</h4>
-        <ul>
-            <li><a class="mark" href="#part-1">HTML5 Семантичні елементи</a></li>
-            <li><a class="mark" href="#part-2">Підтримка браузерів</a></li>
-            <li><a class="mark" href="#part-3">Нові семантичні елементи в HTML5</a></li>
-            <li><a class="mark" href="#part-4">HTML5 &lt;section&gt; елемент</a></li>
-            <li><a class="mark" href="#part-5">HTML5 &lt;article&gt; елемент</a></li>
-            <li><a class="mark" href="#part-6">HTML5 &lt;header&gt; елемент</a></li>
-            <li><a class="mark" href="#part-7">HTML5 &lt;footer&gt; елемент</a></li>
+        <ul class="block">
+            <li><a class="mark" href="#part-1">Статті</a></li>
             <li><a class="mark" href="#part-8">Моя попередня робота - резюме (2й урок)</a></li>
             <li><a class="mark" href="#part-9">День відкритих дверей в Beetroot Academy</a></li>
         </ul>
