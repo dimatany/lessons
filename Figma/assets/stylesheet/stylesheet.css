@@ -1,1 +1,182 @@
-/*Normalize.css*/
+/*my dumping rules css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+/*Visible part*/
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #070707;
+}
+
+#header {
+    height: 75px;
+
+}
+#header .container {
+    border-bottom: 1px solid #828282;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.container {
+    max-width: 940px;
+}
+
+#main-menu ul {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#main-menu ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#main-menu ul li a {
+    font-size: 18px;
+    line-height: 25px;
+    color: #828282;
+    text-decoration: none;
+}
+
+#main-menu ul li a.active,
+#main-menu ul li a:hover {
+    color: #070707;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.gray {
+    background-color: #f6f6f6;
+}
+
+.first-screen {
+    padding: 33px 0 100px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 47px;
+    line-height: 64px;
+    margin-bottom: 38px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 28px;
+}
+p {
+    text-align: center;
+}
+
+.container-sub {
+    padding-top: 50px;
+}
+
+.container-sub-subtitle {
+    padding-bottom: 25px;
+}
+
+.container-sub-paragraph {
+    padding-bottom: 40px;
+}
+
+.container-sub-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.programs {
+    width: 160px;
+    height: 220px;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+    display: block;
+}
+
+.container-header {
+    margin-top: 118px;
+    margin-bottom: 68px;
+}
+
+.container-block-img {
+    margin-bottom: 30px;
+}
+
+.container-block-link {
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 70px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-header {
+    margin-top: 60px;
+}
+
+.footer-block {
+    padding-bottom: 10px;
+}
+
+ button {
+     margin: 70px auto 30px auto;
+     width: 180px;
+     height: 42px;
+     border-radius: 30px;
+     background-color: #070707;
+     color: #fff;
+     border: none;
+ }
+
+.footer-logo {
+    margin: 0 auto;
+}
+
+.footer-logo a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-logo ~a {
+    margin-left: 100px;
+}
+
+.footer-author {
+    margin: 70px auto;
+    width: 243px;
+    height: 63px;
+    text-align: center;
+}
