@@ -167,7 +167,7 @@ h2 {
     margin-bottom: 105px;
 }
 #size4 figure:last-child {
-    margin-bottom: 50px;
+    margin-bottom: -10px;
 }
 
 figcaption {
@@ -203,8 +203,10 @@ footer {
     flex-direction: column;
 }
 
-#size5 p {
+#size5 >p {
+    margin-top: -50px;
 }
+
 
 .btn {
     width: 180px;
