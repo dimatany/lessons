@@ -62,7 +62,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;/*Языки для отображения*/
     color: black;/*Цвет всего текста на странице*/
 }
-
+ * {
+     transition: all 1s ease-in-out;/*Делаю анимацию на 1 секунду для эффекта*/
+ }
 .container{
     width: 80%;
     max-width: 1600px;/*Хочу максимальную ширину страницы 1600px*/
@@ -120,7 +122,7 @@ nav a {
 nav a:hover {
     background-color: red;/*Красное при наведении*/
     border: 1px solid black;/*Сохраняю границы но меняю цвет */
-    transition: 1s ease-in-out;/*Делаю анимацию на 1 секунду для эффекта*/
+
 }
 
 /*BODY OF THE PAGE*/
