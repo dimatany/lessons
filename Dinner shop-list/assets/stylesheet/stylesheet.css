@@ -125,7 +125,6 @@ ul>li:nth-child(2n):hover {
      display: block;
  }
 
-
 small {
     font-size: 11px;
     display: inline-block;
@@ -162,6 +161,7 @@ label:after {
  .list li {
     background: rgba(136, 131, 158, 1);
  }
+
 
 footer {
     width: 534px;
