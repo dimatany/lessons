@@ -76,6 +76,9 @@ header {
     margin-bottom: 43px;
 }
 
+main {
+    box-sizing: border-box;
+}
 #header .container {
     border-bottom: 1px solid #828282;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
