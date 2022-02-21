@@ -113,12 +113,20 @@ ul>li:hover {
     background: #625E77;
 }
 
+ul>li:active {
+    background-color: #FF8984;
+}
+
 ul>li:nth-child(2n) {
     background: rgba(122, 117, 147, 1);
 }
 
 ul>li:nth-child(2n):hover {
     background: #625E77;
+}
+
+ul>li:nth-child(2n):active {
+    background: #FF8984;
 }
 
  input[type="checkbox"]:checked + label:after {
