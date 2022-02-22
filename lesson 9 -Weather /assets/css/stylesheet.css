@@ -50,129 +50,97 @@ table {
     border-spacing: 0;
 }
 /*VISIBLE PART*/
-.block {
-    width: 700px;
-    padding: 108px 148px;
+body {
+    width: 1400px;
+}
+
+main {
+    margin: 100px auto;
+    width: 834px;
+    height: 547px;
+    background-color: rgba(43, 129, 172, 1);
+    padding: 14px 17px 13px 16px;
+}
+
+section {
     box-sizing: border-box;
+    display: block;
+    background-color: rgba(51, 153, 204, 1);
+    border: 1px solid rgb(71,163,209, 1);
+    padding-top: 94px;
+    padding-left: 130px;
+    width: 802px;
+    height: 520px;
+}
+
+ul {
+    box-sizing: border-box;
+    border: 1px solid white;
+   width: 540px;
+
+
 }
 li {
-    text-align: center;
     display: inline-block;
+    border: 2px solid white;
+    text-align: center;
     padding: 10px;
-    border: 1px solid black;
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: black; /*rgba(255, 255, 255, 1);*/
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 1);
 }
 
-
-.first-screen {
-    display: block;
-    white-space: nowrap;
+/*Classes in size*/
+.small {
+    width: 134px;
+    height: 82px;
+}
+.average {
+    width: 270px;
+    height: 82px;
+}
+.big {
+    width: 538px;
+    height: 82px;
 }
 
-.first-screen ul>li:nth-last-of-type(3) {
+/*Color classes*/
+.strong-blue {
     background-color: rgba(51, 153, 204, 1);
-    width: 265px;
-    padding: 30px 20px;
 }
-
-.first-screen ul>li:nth-child(2n) {
+.strong-cyan {
     background-color: rgba(51, 204, 204, 1);
-    width: 131px;
-    padding: 30px 20px;
 }
-
-.first-screen ul>li:last-child {
+.dark-magenta {
     background-color: rgba(153, 102, 153, 1);
-    width: 131px;
-    padding: 30px 20px;
 }
-
-
-
-
-.second-screen {
-    display: block;
-    white-space: nowrap;
-}
-
-.second-screen ul>li {
-    padding: 30px 20px;
-}
-
-.second-screen ul>li {/*Все вместе*/
-    background-color: rgba(226, 103, 74, 1);
-    width: 132px;
-}
-
-.second-screen ul li:first-child {/*Венеция*/
+.moderate-red {
     background-color: rgba(194, 71, 71, 1);
-    width: 132px;
-
 }
-
-.second-screen li:nth-child(3) {/*Киев*/
+.soft-red {
+    background-color: rgba(226, 103, 74, 1);
+}
+.light-orange {
     background-color: rgba(255, 204, 102, 1);
-    width: 132px;
 }
-
-.second-screen ul>li:last-child {
+.lime-green {
     background-color: rgba(153, 204, 153, 1);
-    width: 132px;
 }
-
-
-
-.third-screen {
-    display: block;
-    white-space: nowrap;
-}
-
-.third-screen ul>li:nth-last-of-type(3) {
+.dark-cyan {
     background-color: rgba(102, 153, 153, 1);
-    width: 131px;
-    padding: 30px 20px;
 }
-
-.third-screen ul>li:nth-child(2n) {
+.moderate-pink {
     background-color: rgba(204, 102, 153, 1);
-    width: 265px;
-    padding: 30px 20px;
 }
-
-.third-screen ul>li:last-child {
+.cyan-green {
     background-color: rgba(51, 153, 102, 1);
-    width: 131px;
-    padding: 30px 20px;
 }
-
-.fourth-screen {
-    display: block;
-
-}
-
-.fourth-screen ul>li {
+.dark-blue {
     background-color: rgba(102, 102, 153, 1);
-    width: 533px;
-    padding: 30px 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
