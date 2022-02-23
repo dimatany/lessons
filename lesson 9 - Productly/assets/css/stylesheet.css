@@ -56,23 +56,28 @@ table {
     --orange-colore: #FF9900;
 }
 
-html, body {
+html {
     width: 100%;
     height: 100%;
+    color: #585260;
 }
 
 body {
     font-family: Poppins, sans-serif;
     color: var(--text-color);
     font-size: 1rem;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 
-.container {
-    max-width: 1110px;
+.max-width {
+    box-sizing: border-box;
     margin: 0 auto;
-    width: 90%;
+    max-width: 1110px;
 }
-
+/*Header and nav*/
 .clearfix::after {
     content: "";
     display: block;
@@ -85,6 +90,7 @@ header {
 
 #logo {
     float: left;
+    margin-top: 8px;
 }
 
 .btn_wrap {
@@ -95,33 +101,134 @@ header {
 
 .main_menu {
     float: right;
+    margin-top: 11px;
+    margin-right: 43px;
 }
 
 .main_menu ul {
     text-align: right;
+    font-size: 0;
 }
 
 .main_menu ul li {
     display: inline-block;
+    font-size: 13px;
+    padding-left: -1px;
 }
 
 .main_menu  ul li a {
     color: #2F281E;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 28px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 0 12px;
 }
 
+.main_menu ul li:hover,
+.main_menu ul li:active {/*другой цвет для приличия*/
+    color: var(--orange-colore);
+}
 
+.btn_wrap .btn:first-child {
+    margin-right: 6px;
+}
 
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 41px;
+    height: 53px;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: all .2s ease;
+}
 
+header .btn {
+    padding: 0 24px;
+    height: 46px;
+    font-weight: 600;
+}
 
+.btn.white {
+    background-color: #fff;
+    color: #173A56;
+    border: 1px solid #BCD0E5;
+}
 
+.btn.white:hover {
+    background-color: #173A56;
+    border-color: #173A56;
+    color: #fff;
+}
 
+.btn.orange {
+    background-color: var(--orange-colore);
+    color: #fff;
+    border: 1px solid var(--orange-colore);
+}
 
+.btn.orange:hover {
+    background-color: #fff;
+    color: var(--orange-colore);
+}
 
+/*First block*/
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+}
 
+.description-block1 figure {
+    width: 604px;
+    height: 495px;
+}
+
+.first-block {
+    display: inline-flex;
+    margin-top: 96px;
+}
+.first-block a:before {
+    content: ' \2023';
+    font-size: 30px;
+    color: var(--orange-colore);
+}
+
+/*Second block*/
+.second-block {
+    display: inline-flex;
+    margin-top: 96px;
+}
+
+/*Third block*/
+.third-block figure {
+    width: 520px;
+    height: 574px;
+}
+
+/*Fourth block*/
+.fourth-block figure {
+    width: 535px;
+    height: 527px;
+}
+
+/*Fifth block*/
+.fifth-block figure {
+    width: 542px;
+    height: 609px;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+
+}
+.about.policy.connect {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 
 
