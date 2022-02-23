@@ -52,6 +52,7 @@ table {
 /*VISIBLE PART*/
 body {
     width: 1400px;
+    font-family: Roboto, sans-serif;
 }
 
 main {
@@ -74,23 +75,40 @@ section {
 }
 
 ul {
-    box-sizing: border-box;
     border: 1px solid white;
-   width: 540px;
-
-
+    width: 538px;
+    font-size: 0;
 }
+
 li {
     display: inline-block;
-    border: 2px solid white;
+    border: 1px solid white;
     text-align: center;
-    padding: 10px;
-    font-family: Roboto, sans-serif;
+    padding-top: 21px;
+    padding-left: 3px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 11px;
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 1);
+    transition: all .2s ease-in;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.block:hover {
+    opacity: .8;
+}
+
+.block:hover li:not(:hover) {
+    opacity: .4;
+}
+
+.wi {
+    font-size: 18px;
 }
 
 /*Classes in size*/
@@ -99,11 +117,11 @@ li {
     height: 82px;
 }
 .average {
-    width: 270px;
+    width: 268px;
     height: 82px;
 }
 .big {
-    width: 538px;
+    width: 536px;
     height: 82px;
 }
 
@@ -141,7 +159,4 @@ li {
 .dark-blue {
     background-color: rgba(102, 102, 153, 1);
 }
-
-
-
 
