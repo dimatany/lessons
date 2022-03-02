@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 html, body {
     height: 100%;
@@ -51,79 +52,69 @@ table {
 }
 /*VISIBLE PART*/
 body {
-    width: 1400px;
-    font-family: Roboto, sans-serif;
-}
-
-main {
+    width: 100%;
+    max-width: 1600px;
     margin: 100px auto;
-    width: 834px;
-    height: 547px;
-    background-color: rgba(43, 129, 172, 1);
-    padding: 14px 17px 13px 16px;
+}
+main {
+    border: 15px solid rgba(43, 129, 172, 1);
+    background-color: #3399CC;
+    width: 100%;
+    max-width: 831px;
 }
 
-section {
-    box-sizing: border-box;
-    display: block;
-    background-color: rgba(51, 153, 204, 1);
-    border: 1px solid rgb(71,163,209, 1);
-    padding-top: 94px;
-    padding-left: 130px;
-    width: 802px;
-    height: 520px;
+.container {
+    width: 90%;
+    max-width: 540px;
+    margin: 97px 120px 95px 131px;
 }
 
-ul {
-    border: 1px solid white;
-    width: 538px;
+.weather {
+    background-color: #fff;
     font-size: 0;
+    padding: 3px 3px 0 0;
 }
 
-li {
+.weather li {
     display: inline-block;
-    border: 1px solid white;
+    width: 25%;
+    padding: 0 0 3px 3px;
     text-align: center;
-    padding-top: 21px;
-    padding-left: 3px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 11px;
-    letter-spacing: 1px;
-    color: rgba(255, 255, 255, 1);
     transition: all .2s ease-in;
 }
 
-p {
+.city {
+    padding-top: 19px;
+    padding-bottom: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto, sans-serif;
+}
+
+.temperature {
+    padding-bottom: 14px;
     font-weight: 400;
     font-size: 18px;
 }
 
-.block:hover {
-    opacity: .8;
+li.w50 {
+     width: 50%;
+ }
+
+li.w100 {
+     width: 100%;
+ }
+
+.weather li div {
+    height: 100%;
+    color: white;
 }
 
-.block:hover li:not(:hover) {
-    opacity: .4;
-}
-
-.wi {
-    font-size: 18px;
-}
-
-/*Classes in size*/
-.small {
-    width: 134px;
-    height: 82px;
-}
-.average {
-    width: 268px;
-    height: 82px;
-}
-.big {
-    width: 536px;
-    height: 82px;
-}
+.weather:hover li:not(:hover) {
+     opacity: 0.7;
+ }
 
 /*Color classes*/
 .strong-blue {
@@ -159,3 +150,16 @@ p {
 .dark-blue {
     background-color: rgba(102, 102, 153, 1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
