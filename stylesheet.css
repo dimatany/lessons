@@ -87,7 +87,7 @@ li {
 }
 
 li:hover {
-    transition: all 1s ease;
+    transition: all 1s ease-out;
     transform: scale(1.1);
     box-shadow: 0 0 5px black;
 }
@@ -102,6 +102,6 @@ a:hover {
 
 .wrap:hover li:not(:hover) {
     filter: blur(10px);
-    opacity: .8;
+    opacity: .9;
 }
 

@@ -52,10 +52,12 @@ table {
 }
 /*VISIBLE PART*/
 body {
+    height: 100%;
     width: 100%;
     max-width: 1600px;
-    margin: 100px auto;
+    margin:0 auto;
 }
+
 main {
     border: 15px solid rgba(43, 129, 172, 1);
     background-color: #3399CC;
@@ -63,22 +65,33 @@ main {
     max-width: 831px;
 }
 
+@media screen and (max-width: 830px) {
+    .weather {
+        flex-direction: column;
+        margin: 10px auto 10px auto;
+    }
+    .weather li, li.w50, li.w100 {
+        flex-basis: 100%;
+    }
+}
+
 .container {
     width: 90%;
     max-width: 540px;
-    margin: 97px 120px 95px 131px;
+    margin: 93px 121px 96px 132px;
 }
 
 .weather {
     background-color: #fff;
     font-size: 0;
     padding: 3px 3px 0 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .weather li {
-    display: inline-block;
-    width: 25%;
-    padding: 0 0 3px 3px;
+    flex-basis: 25%;
+    padding: 0 0 2px 4px;
     text-align: center;
     transition: all .2s ease-in;
 }
@@ -100,15 +113,14 @@ main {
 }
 
 li.w50 {
-     width: 50%;
+    flex-basis: 50%;
  }
 
 li.w100 {
-     width: 100%;
+    flex-basis: 100%;
  }
 
 .weather li div {
-    height: 100%;
     color: white;
 }
 
@@ -151,9 +163,6 @@ li.w100 {
     background-color: rgba(102, 102, 153, 1);
 }
 
-.temperature {
-
-}
 
 
 
