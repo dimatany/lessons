@@ -65,16 +65,6 @@ main {
     max-width: 831px;
 }
 
-@media screen and (max-width: 830px) {
-    .weather {
-        flex-direction: column;
-        margin: 10px auto 10px auto;
-    }
-    .weather li, li.w50, li.w100 {
-        flex-basis: 100%;
-    }
-}
-
 .container {
     width: 90%;
     max-width: 540px;
@@ -87,6 +77,16 @@ main {
     padding: 3px 3px 0 0;
     display: flex;
     flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 830px) {
+    .weather {
+        flex-direction: column;
+    }
+    .container{
+        margin: 10% auto;
+    }
 }
 
 .weather li {
