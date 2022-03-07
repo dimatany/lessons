@@ -1,0 +1,167 @@
+/*Normalize.css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+* html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*VISIBLE PART*/
+body {
+    width: 100%;
+    max-width: 1600px;
+    margin: 100px auto;
+}
+main {
+    border: 15px solid rgba(43, 129, 172, 1);
+    background-color: #3399CC;
+    width: 100%;
+    max-width: 831px;
+}
+
+.container {
+    width: 90%;
+    max-width: 540px;
+    margin: 97px 120px 95px 131px;
+}
+
+.weather {
+    background-color: #fff;
+    font-size: 0;
+    padding: 3px 3px 0 0;
+}
+
+.weather li {
+    display: inline-block;
+    width: 25%;
+    padding: 0 0 3px 3px;
+    text-align: center;
+    transition: all .2s ease-in;
+}
+
+.city {
+    padding-top: 19px;
+    padding-bottom: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto, sans-serif;
+}
+
+.temperature {
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+li.w50 {
+     width: 50%;
+ }
+
+li.w100 {
+     width: 100%;
+ }
+
+.weather li div {
+    height: 100%;
+    color: white;
+}
+
+.weather:hover li:not(:hover) {
+     opacity: 0.7;
+ }
+
+/*Color classes*/
+.strong-blue {
+    background-color: rgba(51, 153, 204, 1);
+}
+.strong-cyan {
+    background-color: rgba(51, 204, 204, 1);
+}
+.dark-magenta {
+    background-color: rgba(153, 102, 153, 1);
+}
+.moderate-red {
+    background-color: rgba(194, 71, 71, 1);
+}
+.soft-red {
+    background-color: rgba(226, 103, 74, 1);
+}
+.light-orange {
+    background-color: rgba(255, 204, 102, 1);
+}
+.lime-green {
+    background-color: rgba(153, 204, 153, 1);
+}
+.dark-cyan {
+    background-color: rgba(102, 153, 153, 1);
+}
+.moderate-pink {
+    background-color: rgba(204, 102, 153, 1);
+}
+.cyan-green {
+    background-color: rgba(51, 153, 102, 1);
+}
+.dark-blue {
+    background-color: rgba(102, 102, 153, 1);
+}
+
+.temperature {
+
+}
+
+
+
+
+
+
+
+
+
+
+
