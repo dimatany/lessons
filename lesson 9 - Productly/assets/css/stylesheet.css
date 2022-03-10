@@ -50,6 +50,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /*VISIBLE PART*/
 :root {
     --text-color: #544837;
@@ -66,59 +67,44 @@ body {
     font-family: Poppins, sans-serif;
     color: var(--text-color);
     font-size: 1rem;
-
-    box-sizing: border-box;
+    max-width: 1400px;
     width: 100%;
-    height: 100%;
 }
 
-.max-width {
+.wrapper {
+    max-width: 1125px;
+    width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1110px;
-}
-/*Header and nav*/
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
+/*HEADER AND NAV*/
 header {
-    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
 }
 
 #logo {
-    float: left;
     margin-top: 8px;
 }
 
-.btn_wrap {
-    float: right;
-    margin-left: 30px;
-    text-align: right;
-}
-
 .main_menu {
-    float: right;
-    margin-top: 11px;
-    margin-right: 43px;
-}
-
-.main_menu ul {
-    text-align: right;
-    font-size: 0;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 295px;
+    letter-spacing: 1px;
 }
 
 .main_menu ul li {
     display: inline-block;
     font-size: 13px;
-    padding-left: -1px;
 }
 
 .main_menu  ul li a {
     color: #2F281E;
-    font-size: 13px;
     line-height: 28px;
     margin: 0 12px;
 }
@@ -128,8 +114,14 @@ header {
     color: var(--orange-colore);
 }
 
+.btn_wrap {
+    margin-left: 30px;
+    text-align: right;
+}
+
 .btn_wrap .btn:first-child {
     margin-right: 6px;
+    margin-left: -2px;
 }
 
 .btn {
@@ -173,57 +165,283 @@ header .btn {
     color: var(--orange-colore);
 }
 
-/*First block*/
+/*FIRST BLOCK*/
+.first-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 131px;
+    margin-left: 2px;
+}
+
+.description-block1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 495px;
+}
+
+.description-block1 p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 58px;
+}
+
 h1 {
     font-weight: 700;
     font-size: 44px;
     line-height: 54px;
+    margin-bottom: 29px;
 }
 
-.description-block1 figure {
-    width: 604px;
-    height: 495px;
+.size {
+    width: 175px;
 }
 
-.first-block {
-    display: inline-flex;
-    margin-top: 96px;
+.more-info {
+    display: inline-block;
 }
+
+.more-info a {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--orange-colore);
+    padding-left: 32px;
+    text-align: center;
+}
+
 .first-block a:before {
     content: ' \2023';
     font-size: 30px;
     color: var(--orange-colore);
 }
 
-/*Second block*/
+.first-block figure {
+    margin-top: -82px;
+}
+
+/*SECOND BLOCK*/
+.subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 28px;
+    margin-left: 6px;
+}
+
 .second-block {
     display: inline-flex;
-    margin-top: 96px;
+    margin-top: 53px;
+    margin-left: 16px;
 }
 
-/*Third block*/
-.third-block figure {
-    width: 520px;
-    height: 574px;
-}
-
-/*Fourth block*/
-.fourth-block figure {
-    width: 535px;
-    height: 527px;
-}
-
-/*Fifth block*/
-.fifth-block figure {
-    width: 542px;
-    height: 609px;
-}
-
-/*Footer*/
-footer {
+.second-block-subgroup {
     display: flex;
-
+    flex-direction: column;
 }
+
+.second-block-subgroup img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 32px;
+}
+
+.second-block-subgroup h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.middle {
+    margin-top: 63px;
+    margin-left: 478px;
+}
+
+/*THIRD BLOCK*/
+.third-block {
+    margin-top: 239px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.third-block-subgroup-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+
+.third-block-subgroup-2 {
+    width: 50%;
+}
+
+.fifth-block-subgroup-2 {
+    width: 50%;
+}
+.third-block-subgroup-1 h2{
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 23px;
+    padding-left: 2px;
+}
+
+.accessory {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 36px;
+    padding-bottom: 13px;
+}
+
+.alterations {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 29px;
+    padding-bottom: 13px;
+}
+
+.custom {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.third-block-subgroup-1 p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.third-block figure {
+    margin-top: -29px;
+    margin-left: 29px;
+}
+
+/*FOURTH BLOCK*/
+.fourth-block {
+    margin-top: 144px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fourth-block p {
+    margin-bottom: 2px;
+}
+
+.fourth-block-subgroup-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 71px;
+}
+
+.fourth-block-subgroup-1 h2{
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 23px;
+    padding-left: 2px;
+}
+
+.fourth-block-subgroup-1 ul {
+    margin-top: 25px;
+}
+
+.list4a li {
+    position: relative;
+    padding:12px 20px 20px 35px;
+    margin-left: 33px;
+}
+
+.list4a li:before {
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left:-30px;
+    width: 35px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.list4a li:after {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 40%;
+    content: '\2714';
+    color: white;
+    text-align: center;
+    background-color: orange;
+}
+
+.fourth-block figure {
+    margin-top: -50px;
+}
+
+/*FIFTH BLOCK*/
+.fifth-block {
+    margin-top: 140px;
+    padding-left: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fifth-block-subgroup-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+
+.fifth-block h2 {
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 23px;
+    padding-left: 2px;
+}
+
+.accessory {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 36px;
+    padding-bottom: 13px;
+}
+
+.alterations {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 29px;
+    padding-bottom: 13px;
+}
+
+.custom {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.fifth-block figure {
+    margin-top: -44px;
+    margin-left: 8px;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 244px;
+    padding-left: 15px;
+    display: flex;
+}
+
 .about.policy.connect {
     display: flex;
     flex-direction: column;
