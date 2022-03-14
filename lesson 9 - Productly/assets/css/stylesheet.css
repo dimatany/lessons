@@ -51,6 +51,10 @@ table {
     border-spacing: 0;
 }
 
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
 /*VISIBLE PART*/
 :root {
     --text-color: #544837;
@@ -437,9 +441,19 @@ h1 {
 
 /*FOOTER*/
 footer {
-    margin-top: 244px;
+    margin-top: 141px;
+    padding-top: 102px;
     padding-left: 15px;
     display: flex;
+    border-top: 1px solid rgba(188, 208, 229, 0.4969);
+}
+.about {
+    padding-left: 140px;
+    padding-top: 70px;
+}
+
+.about li a {
+    color: rgba(84, 72, 55, 1);
 }
 
 .about.policy.connect {
@@ -448,6 +462,54 @@ footer {
     height: 100%;
 }
 
+.policy, .about li {
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.policy, .about li a {
+    display: block;
+    white-space: nowrap;
+    line-height: 30px;
+}
+
+.policy {
+    padding-left: 181px;
+    padding-top: 73px;
+}
+
+.policy li a {
+    color: rgba(84, 72, 55, 1);
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 91px;
+    padding-left: 76px;
+}
+
+.connect label input{
+    height: 48px;
+    width: 325px;
+}
+
+.btn-footer {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 41px;
+    margin-top: 22px;
+    height: 39px;
+    width: 131px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: all .2s ease;
+    background-color: var(--orange-colore);
+    color: #fff;
+    border: 1px solid var(--orange-colore);
+}
 
 
 
