@@ -54,7 +54,7 @@ table {
 body {
     background-color: #100e17;
     font-family: 'Open Sans', sans-serif;
-    color: #fbfbfd;
+
 }
 
 .wrap {
@@ -89,13 +89,14 @@ li:hover {
     transition: all 1s ease-out;
 }
 
-a:visited {
+a {
     color: purple;
 }
 
-a {
+a:visited {
     color: #fbfbfd;
 }
+
 
 a:hover {
     color: #bbb845;
