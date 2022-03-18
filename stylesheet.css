@@ -52,9 +52,9 @@ table {
 }
 /*VISIBLE PART*/
 body {
-    background-color: #fbfbfd;
+    background-color: #100e17;
     font-family: 'Open Sans', sans-serif;
-    color: #070707;
+    color: #fbfbfd;
 }
 
 .wrap {
@@ -83,25 +83,22 @@ li {
     width: 90%;
     border: 1px solid #66205c;
     border-radius: 10px;
-    background: #1e728e;
 }
 
 li:hover {
     transition: all 1s ease-out;
-    transform: scale(1.1);
-    box-shadow: 0 0 5px black;
+}
+
+li:visited {
+    color: purple;
 }
 
 a {
-    color: black;
+    color: #fbfbfd;
 }
 
 a:hover {
     color: #bbb845;
 }
 
-.wrap:hover li:not(:hover) {
-    filter: blur(10px);
-    opacity: .9;
-}
 
