@@ -52,24 +52,122 @@ table {
 }
 
 /*VISIBLE PART*/
-.container {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    width: 900px;
-    margin: 0 auto;
+/*Header*/
+body {
+    max-width: 1920px;/**/
+    width: 100%;/**/
+}
 
+.container {
+    font-family: 'Roboto', sans-serif;/**/
+    font-size: 17px;/**/
+    width: 1840px;/**/
+    margin: 0 auto;/**/
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    padding: 55px 0px;
+    display: flex;/**/
+    flex-direction: row;/**/
+    padding: 34px 41px;/**/
+    max-width: 1840px;/**/
+}
+
+header img {
+    height: 26px;/**/
+    max-width: 47px;/**/
+    width: 33%;/**/
+    margin-right: 40px;/**/
+}
+
+header p {
+    font-size: 20px;/**/
+    font-weight: 400;/**/
+    max-width: 270px;/**/
+    width: 33%;/**/
+}
+
+.retirement {
+    padding-left: 14px;/**/
+}
+
+.logo-text{
+    display: flex;/**/
+    flex-wrap: nowrap;/**/
+    font-family: 'PT Sans', sans-serif;/**/
+    font-size: 19px;/**/
+    font-weight: 700;/**/
+    letter-spacing: 1px;/**/
+    text-transform: uppercase;/**/
+}
+
+#triangle-left {
+    width: 0;/**/
+    height: 0;/**/
+    border-top: 7px solid transparent;/**/
+    border-right: 7px solid black;/**/
+    border-bottom: 7px solid transparent;/**/
+}
+
+/*Flip-card*/
+.heading {
+    display: flex;/*флекс контейнер*/
+    align-items: center;/*выровнимание по центру*/
+    margin-top: 50px;/*внешние отступы сверху*/
+    margin-left: 41px;/*внешние отступы слева*/
+    margin-bottom: 10px;/*внешние отступы снизу*/
 }
 
 h2 {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 34px;/*размер шрифта*/
+    font-weight: 400;/*толщина шрифта*/
+    letter-spacing: 1px;/*расстояние между буквами*/
+}
+
+hr {
+    height: 13px;/*толщина (высота) линии*/
+    width: 83px;/*длина линии*/
+    background-color: black;/*цвет линии*/
+    margin-right: 19px;/*отступ внешний справа*/
+}
+.wrap1, .wrap2 {
+    display: flex;/*Делаем флекс контейнеры в две полосы*/
+    flex-direction: row;/*Направляем элементы в строку*/
+    flex-wrap: nowrap;/*Не переносим элементы в строке*/
+    justify-content: space-between;
+    border-top: 1px solid black;/*делаем полоску как на макете*/
+    padding-top: 13px;/*отсутпаем как на макете*/
+    border-bottom: 1px solid black;/*делаем полоску как на макете*/
+    width: 1865px;/**/
+
+}
+
+.box {
+    margin-left: 35px;/**/
+    margin-top: 8px;
+    width: 458px;/*ширина карточки*/
+    height: 300px;/*высота карточки*/
+    perspective: 1000px;/*?*/
+}
+
+.box-inner {
+    position: relative;
+    width: 100%;/*ширина элемента*/
+    height: 100%;/*высота элемента*/
+    transition: transform 0.5s;/*время анимации*/
+    transform-style: preserve-3d;/*отображается в 3d пространстве*/
+}
+
+.box:hover .box-inner {
+    transform: rotateX(180deg);/**/
+}
+
+.box-front, .box-back {
+    position: absolute;/**/
+    width: 100%;/**/
+    height: 100%;/**/
+    backface-visibility: hidden;/**/
+}
+
+.box-back {
+    transform: rotateX(180deg);/**/
 }
