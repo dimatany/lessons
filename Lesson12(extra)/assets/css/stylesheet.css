@@ -1,0 +1,132 @@
+/*Normalize.css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+* html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*VISIBLE PART*/
+/*Header*/
+body {
+    max-width: 1920px;/*ширина как по макету*/
+    width: 100%;/*высота*/
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;/*семейство языка*/
+    width: 1840px;/*размер тела контента*/
+    margin: 0 auto;/*центровка посреднине*/
+}
+
+/*Flip-card*/
+header {
+    display: flex;/*флекс контейнер*/
+    align-items: center;/*выровнимание по центру*/
+    margin-top: 145px;/*внешние отступы сверху*/
+    margin-left: 41px;/*внешние отступы слева*/
+    margin-bottom: 10px;/*внешние отступы снизу*/
+}
+
+h2 {
+    font-size: 34px;/*размер шрифта*/
+    font-weight: 400;/*толщина шрифта*/
+    letter-spacing: 1px;/*расстояние между буквами*/
+}
+
+hr {
+    height: 13px;/*толщина (высота) линии*/
+    width: 83px;/*длина линии*/
+    background-color: black;/*цвет линии*/
+    margin-right: 19px;/*отступ внешний справа*/
+}
+
+.wrap1, .wrap2 {
+    display: flex;/*Делаем флекс контейнеры в две полосы*/
+    flex-direction: row;/*Направляем элементы в строку*/
+    flex-wrap: nowrap;/*Не переносим элементы в строке*/
+    justify-content: space-between;/*Одинаковое расстояние между картами*/
+    width: 1872px;/*ширина контейнера*/
+    border-top: 1px solid silver;/*делаем полоску как на макете*/
+    padding-top: 13px;/*отсутпаем как на макете*/
+    border-bottom: 1px solid silver;/*делаем полоску как на макете*/
+}
+
+.box {
+    margin-left: 38px;/**/
+    margin-top: 5px;/**/
+    width: 458px;/*ширина карточки*/
+    height: 300px;/*высота карточки*/
+}
+
+.box-inner {
+    position: relative;/*закрепляем относительно свего места*/
+    width: 100%;/*ширина элемента 100%*/
+    height: 100%;/*высота элемента 100%*/
+    transition: transform 0.5s;/*время анимации*/
+    transform-style: preserve-3d;/*отображается в 3d пространстве*/
+}
+
+.box:hover .box-inner {
+    transform: rotateX(180deg);/*перемещается по шкале X на 180 градусов*/
+}
+
+.box-front, .box-back {
+    position: absolute;/*закрепляем для того чтоб крутилось на месте не поднималось вверх*/
+    width: 100%;/*ширина элемента 100%*/
+    height: 100%;/*высота элемента 100%*/
+    backface-visibility: hidden;/*скрыла заднюю сторону элемента*/
+}
+
+.box-back {
+    transform: rotateX(180deg);/*перемещается по шкале X на 180 градусов*/
+}
+
+footer {
+    height: 100px;/*отступ внизу карточек как на макете*/
+}
