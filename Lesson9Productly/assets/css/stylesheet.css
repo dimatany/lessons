@@ -57,117 +57,125 @@ a {
 
 /*VISIBLE PART*/
 :root {
-    --text-color: #544837;
-    --orange-colore: #FF9900;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-    color: #585260;
+    --text-color: #544837;/*цвет текста*/
+    --orange-colore: #FF9900;/*оранжевый цвет в проекте*/
+    --color-links: #2F281E;/*цвет ссылок*/
 }
 
 body {
-    font-family: Poppins, sans-serif;
-    color: var(--text-color);
-    font-size: 1rem;
-    max-width: 1400px;
-    width: 100%;
+    font-family: Poppins, sans-serif;/*семейство шрифта*/
+    color: var(--text-color);/*цвет текста*/
+    font-size: 1rem;/*размер шрифта в rem*/
+    max-width: 1400px;/*максимальная ширина*/
+    width: 100%;/*для адаптивности - 100% ширины*/
 }
 
 .wrapper {
-    max-width: 1125px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
+    max-width: 1125px;/*максимальная ширина контентной части*/
+    width: 100%;/*для адаптивности - 100% ширины*/
+    margin: 0 auto;/*центровка контента посредине*/
 }
 
 /*HEADER AND NAV*/
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 30px;
+    display: flex;/*флекс контейнер*/
+    flex-direction: row;/*направление - строка*/
+    flex-wrap: wrap;/*перенос при изменении размера*/
+    padding-top: 34px;/*внутренний отступ от верха страницы*/
+    padding-left: 6px;/*боковой внутренний отступ*/
 }
 
 #logo {
-    margin-top: 8px;
+    margin-top: 8px;/*отступ для лого - ровняем под макет*/
 }
 
 .main_menu {
-    font-weight: 400;
-    font-size: 14px;
-    padding-top: 10px;
-    padding-left: 295px;
-    letter-spacing: 1px;
+    display: flex;/*флекс контейнер*/
+    flex-direction: row;/*направление - строка*/
+    flex-wrap: wrap;/*перенос при изменении размера*/
+    font-weight: 400;/*размер шрифта*/
+    letter-spacing: 0.0625rem;/*подбор расстояния между буквами*/
+    margin-top: 11px;/*оступ сверху*/
+    margin-left: 295px;/*отступ слева*/
 }
 
 .main_menu ul li {
-    display: inline-block;
-    font-size: 13px;
+    display: inline-block;/*превращение пунктов меню в блочные*/
+    font-size: 0.8125rem;/*размер текста rem 13px*/
 }
 
 .main_menu  ul li a {
-    color: #2F281E;
-    line-height: 28px;
-    margin: 0 12px;
+    color: var(--color-links);/*цвет ссылок*/
+    margin: 0 12px;/*расстояние между ссылками*/
 }
 
 .main_menu ul li:hover,
-.main_menu ul li:active {/*другой цвет для приличия*/
-    color: var(--orange-colore);
+.main_menu ul li:active {
+    color: var(--orange-colore);/*другой цвет при наведении*/
 }
 
 .btn_wrap {
-    margin-left: 30px;
-    text-align: right;
+    margin-left: 45px;/*отступ слева контейнера с кнопками*/
 }
 
 .btn_wrap .btn:first-child {
-    margin-right: 6px;
-    margin-left: -2px;
+    margin-right: 9px;/*расстояние внутреннее между кнопками справа*/
+    margin-left: -2px;/*расстояние внутреннее между кнопками слева*/
 }
 
 .btn {
-    display: inline-block;
-    cursor: pointer;
-    padding: 0 41px;
-    height: 53px;
-    line-height: 48px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 4px;
-    transition: all .2s ease;
+    display: inline-block;/*делаем кнопку блочным элементом*/
+    cursor: pointer;/*вариант курсора*/
+    padding: 0 41px;/*внутренние отступы*/
+    height: 53px;/*высота кнопки*/
+    font-size: 1rem;/*размер шрифта*/
+    font-weight: 700;/*толщина текста*/
+    border-radius: 4px;/*скругление кнопки*/
+    transition: all .2s ease;/*время изменения при эффектах*/
 }
 
 header .btn {
-    padding: 0 24px;
-    height: 46px;
-    font-weight: 600;
+    padding: 0 24px;/*переопределяем отступы для кнопок заголовка*/
+    height: 47px;/*переопределяем высоту для кнопок заголовка*/
 }
 
 .btn.white {
-    background-color: #fff;
-    color: #173A56;
-    border: 1px solid #BCD0E5;
+    background-color: #fff;/*цвет внутри кнопки*/
+    border: 1px solid #BCD0E5;/*цвет границы*/
 }
 
 .btn.white:hover {
-    background-color: #173A56;
-    border-color: #173A56;
-    color: #fff;
+    background-color: #173A56;/*цвет при наведении*/
+    border-color: #173A56;/*цвет границы*/
+    color: #fff;/*цвет текста*/
 }
 
 .btn.orange {
-    background-color: var(--orange-colore);
-    color: #fff;
-    border: 1px solid var(--orange-colore);
+    background-color: var(--orange-colore);/*фон кнопки*/
+    color: #fff;/*цвет текста*/
+    border: 1px solid var(--orange-colore);/*цвет границы*/
 }
 
 .btn.orange:hover {
-    background-color: #fff;
-    color: var(--orange-colore);
+    background-color: #fff;/*фон при наведении*/
+    color: var(--orange-colore);/*цвет текста при наведении*/
 }
+
+@media all and (max-width: 800px) {/* Средние экраны */
+    header {
+
+    }
+}
+
+@media all and (max-width: 500px) {/* Маленькие экраны */
+    header {
+    }
+    nav {
+    }
+    nav ul li {
+    }
+}
+
 
 /*FIRST BLOCK*/
 .first-block {
@@ -221,7 +229,7 @@ h1 {
     color: var(--orange-colore);
 }
 
-.first-block figure {
+.first-block figure img{
     margin-top: -82px;
 }
 
