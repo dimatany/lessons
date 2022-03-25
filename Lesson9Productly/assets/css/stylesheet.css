@@ -176,347 +176,358 @@ header .btn {
     }
 }
 
-
 /*FIRST BLOCK*/
 .first-block {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 131px;
-    margin-left: 2px;
+    width: 1126px;/*ширина контейнера*/
+    display: flex;/*флекс контейнер*/
+    flex-wrap: wrap;/*перенос при изменении размера*/
+    flex-direction: row;/*направление - строка*/
+    margin-top: 130px;/*отступ от верхнего блока по макету*/
+    margin-left: 7px;/*отступ от левого края по макету*/
 }
 
 .description-block1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 495px;
+    display: flex;/*флекс контейнер*/
+    flex-wrap: wrap;/*перенос при изменении размера*/
+    flex-direction: column;/*направление - колонка*/
+    height: 495px;/*высота блока*/
 }
 
 .description-block1 p {
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 58px;
+    font-weight: 400;/*толщина текста*/
+    font-size: 1.125rem;/*размер шрифта*/
+    margin-bottom: 58px;/*отступ снизу до кнопок и ссылки*/
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 54px;
-    margin-bottom: 29px;
+    font-weight: 700;/*толщина текста*/
+    font-size: 2.75rem;/*размер текста*/
+    line-height: 54px;/*расстояние между строками текста*/
+    margin-bottom: 29px;/*отступ снизу до блока с текстом*/
 }
 
 .size {
-    width: 175px;
+    width: 175px;/* доп класс для кнопки - расшириена по сравнению с другими*/
+    letter-spacing: 0.0313rem;/*расстояние между буквами как по макету*/
 }
 
 .more-info {
-    display: inline-block;
+    margin-top: -33px;/*подняла элемент по уровню в макете*/
 }
 
 .more-info a {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--orange-colore);
-    padding-left: 32px;
-    text-align: center;
+    font-size: 1rem;/*размер ссылки*/
+    font-weight: 700;/*толщина текста*/
+    color: var(--orange-colore);/*цвет ссылки*/
+    padding-left: 12px;/*отступ от кнопки*/
 }
 
 .first-block a:before {
-    content: ' \2023';
-    font-size: 30px;
-    color: var(--orange-colore);
+    position: relative;/*задаем возможность сдвинуть значок относительно его положение*/
+    top: 15px;/*сдвигаем объект вниз по макету*/
+    content: ' \2023';/*вставляем значок перед текстом*/
+    font-size: 3.75rem;/*задаем размер значку*/
+    color: var(--orange-colore);/*задаем цвет значку*/
 }
 
 .first-block figure img{
-    margin-top: -82px;
+    margin-top: -82px;/*ровняем рисунок отступом от верхней границы*/
+    margin-left: 65px;/*отступаем слева по макету*/
 }
 
 /*SECOND BLOCK*/
 .subtitle {
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    padding-top: 28px;
-    margin-left: 6px;
+    font-weight: 700;/*жирность текста*/
+    font-size: 2.25rem;/*размер текста*/
+    text-align: center;/*позиционирование текста - центр*/
+    margin-top: 29px;/*отступ сверху по макету*/
+    margin-left: 17px;/*отступ слева по макету*/
 }
 
 .second-block {
-    display: inline-flex;
-    margin-top: 53px;
-    margin-left: 16px;
+    display: flex;/*делаем флекс контейнер*/
+    margin-top: 53px;/*отступаем от заголовка вниз*/
+    margin-left: 24px;/*оступаем слева по макету*/
+    width: 100%;
+    max-width: 1125px;
 }
 
 .second-block-subgroup {
-    display: flex;
-    flex-direction: column;
+    display: flex;/*делаем флекс контейнер*/
+    flex-direction: column;/*направляем контент в колонки*/
+    width: 25%;
 }
 
 .second-block-subgroup img {
-    height: 50px;
-    width: 50px;
-    margin-bottom: 32px;
+    height: 50px;/*высота иконки*/
+    width: 50px;/*ширина иконки*/
+    margin-bottom: 32px;/*отступ снизу до подзаголовка*/
 }
 
 .second-block-subgroup h3 {
-    font-size: 20px;
-    margin-bottom: 16px;
+    font-size: 1.375rem;/*размер текста подзаголовков*/
+    margin-bottom: 15px;/*остутп вниз до текста*/
 }
 
 .middle {
-    margin-top: 63px;
-    margin-left: 478px;
+    margin-top: 61px;/*отступ кнопки сверху*/
+    margin-left: 484px;/*отступ кнопки слева*/
+}
+
+.line {
+    margin-left: 17px;/*смещаем значки под макет в фигме*/
+}
+
+.hard {
+    margin-left: 16px;/*смещаем значки под макет в фигме*/
+}
+
+.weight {
+    margin-left: 15px;/*смещаем значки под макет в фигме*/
 }
 
 /*THIRD BLOCK*/
 .third-block {
-    margin-top: 239px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;/*делаю флекс контейнер*/
+    flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
+    flex-direction: row;/*даю направление - строка*/
+    margin-top: 236px;/*отступаю от верхнего блока*/
+    margin-left: 6px;/*оступаю слева по макету*/
 }
 
 .third-block-subgroup-1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
+    display: flex;/*делаю флекс контейнер*/
+    flex-direction: column;/*направление - колонка*/
+    width: 50%;/*ширина от родителя половина дисплея*/
 }
 
 .third-block-subgroup-2 {
-    width: 50%;
+    width: 50%;/*ширина второй части флекс контейнера половина*/
 }
 
-.fifth-block-subgroup-2 {
-    width: 50%;
-}
 .third-block-subgroup-1 h2{
-    font-weight: 700;
-    font-size: 36px;
-    padding-bottom: 23px;
-    padding-left: 2px;
-}
-
-.accessory {
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 36px;
-    padding-bottom: 13px;
-}
-
-.alterations {
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 29px;
-    padding-bottom: 13px;
-}
-
-.custom {
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    font-weight: 700;/*жирность текста*/
+    font-size: 2.25rem;/*размер текста*/
+    margin-top: 3px;/*отступ сверху по макету*/
+    margin-bottom: 23px;/*отступ снизу по макету*/
+    margin-left: 2px;/*отступ слева по макету*/
 }
 
 .third-block-subgroup-1 p {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 400;/*жирность текста*/
+    font-size: 1rem;/*размер текста*/
+    padding-left: 2px;/*отступ слева по макету*/
+}
+
+.accessory {
+    padding-top: 36px;/*отступ сверху по макету*/
+    padding-bottom: 13px;/*отступ снизу по макету*/
+}
+
+.alterations {
+    padding-top: 30px;/*отступ сверху по макету*/
+    padding-bottom: 13px;/*отступ снизу по макету*/
+}
+
+.custom {
+    padding-top: 30px;/*отступ сверху по макету*/
+    padding-bottom: 15px;/*отступ снизу по макету*/
 }
 
 .third-block figure {
-    margin-top: -29px;
-    margin-left: 29px;
+    margin-top: -27px;/*отступ сверху по макету*/
+    margin-left: 32px;/*отступ слева по макету*/
 }
 
 /*FOURTH BLOCK*/
 .fourth-block {
-    margin-top: 144px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.fourth-block p {
-    margin-bottom: 2px;
-}
-
-.fourth-block-subgroup-1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 71px;
-}
-
-.fourth-block-subgroup-1 h2{
-    font-weight: 700;
-    font-size: 36px;
-    padding-bottom: 23px;
-    padding-left: 2px;
-}
-
-.fourth-block-subgroup-1 ul {
-    margin-top: 25px;
-}
-
-.list4a li {
-    position: relative;
-    padding:12px 20px 20px 35px;
-    margin-left: 33px;
-}
-
-.list4a li:before {
-    line-height: 30px;
-    position: absolute;
-    top: 0;
-    left:-30px;
-    width: 35px;
-    text-align: center;
-    font-size: 13px;
-    font-weight: bold;
-    box-sizing: border-box;
-}
-
-.list4a li:after {
-    position: absolute;
-    top: 0;
-    left: -30px;
-    width: 35px;
-    height: 35px;
-    border-radius: 40%;
-    content: '\2714';
-    color: white;
-    text-align: center;
-    background-color: orange;
+    display: flex;/*делаю флекс контейнер*/
+    flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
+    flex-direction: row;/*даю направление - строка*/
+    margin-top: 145px;/*отступаю сверху по макету*/
+    width: 1130px;
 }
 
 .fourth-block figure {
-    margin-top: -50px;
+    margin-top: -50px;/*отступаю сверху по макету*/
+    margin-left: 6px;/*отступаю слева по макету*/
 }
+
+.fourth-block-subgroup-1 {
+    display: flex;/*делаю флекс контейнер*/
+    flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
+    flex-direction: column;/*даю направление - колонка*/
+    width: 50%;/*ширина элемента*/
+    padding-left: 98px;/*отступ по макету*/
+}
+
+.fourth-block p {
+    margin-bottom: 2px;/*отступ вниз по макету*/
+}
+
+.fourth-block-subgroup-1 h2{
+    font-weight: 700;/*жирность текста*/
+    font-size: 2.25rem;/*размер шрифта*/
+    padding-bottom: 23px;/*отступ снизу по макету*/
+    padding-left: 2px;/*отступ справа по макету*/
+}
+
+.fourth-block-subgroup-1 ul {
+    margin-top: 25px;/**/
+}
+
+.list4a li {
+    position: relative;/**/
+    padding:12px 20px 20px 35px;/**/
+    margin-left: 33px;/**/
+}
+
+.list4a li:before {
+    line-height: 30px;/**/
+    position: absolute;/**/
+    top: 0;/**/
+    left:-30px;/**/
+    width: 35px;/**/
+    text-align: center;/**/
+    font-size: 13px;/**/
+    font-weight: bold;/**/
+    box-sizing: border-box;/**/
+}
+
+.list4a li:after {
+    position: absolute;/**/
+    top: 0;/**/
+    left: -30px;/**/
+    width: 35px;/**/
+    height: 35px;/**/
+    border-radius: 40%;/**/
+    content: '\2714';/**/
+    color: white;/**/
+    text-align: center;/**/
+    background-color: orange;/**/
+}
+
 
 /*FIFTH BLOCK*/
 .fifth-block {
-    margin-top: 140px;
-    padding-left: 2px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 140px;/**/
+    padding-left: 2px;/**/
+    display: flex;/**/
+    flex-wrap: wrap;/**/
+    flex-direction: row;/**/
+    justify-content: space-between;/**/
 }
 
 .fifth-block-subgroup-1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
+    display: flex;/**/
+    flex-wrap: wrap;/**/
+    flex-direction: column;/**/
+    width: 50%;/**/
 }
 
 .fifth-block h2 {
-    font-weight: 700;
-    font-size: 36px;
-    padding-bottom: 23px;
-    padding-left: 2px;
+    font-weight: 700;/**/
+    font-size: 36px;/**/
+    padding-bottom: 23px;/**/
+    padding-left: 2px;/**/
 }
 
 .accessory {
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 36px;
-    padding-bottom: 13px;
+    font-weight: 700;/**/
+    font-size: 16px;/**/
+    padding-top: 36px;/**/
+    padding-bottom: 13px;/**/
 }
 
 .alterations {
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 29px;
-    padding-bottom: 13px;
+    font-weight: 700;/**/
+    font-size: 16px;/**/
+    padding-top: 29px;/**/
+    padding-bottom: 13px;/**/
 }
 
 .custom {
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    font-weight: 700;/**/
+    font-size: 16px;/**/
+    padding-top: 30px;/**/
+    padding-bottom: 15px;/**/
 }
 
 .fifth-block figure {
-    margin-top: -44px;
-    margin-left: 8px;
+    margin-top: -44px;/**/
+    margin-left: 8px;/**/
 }
 
 /*FOOTER*/
 footer {
-    margin-top: 141px;
-    padding-top: 102px;
-    padding-left: 15px;
-    display: flex;
-    border-top: 1px solid rgba(188, 208, 229, 0.4969);
+    margin-top: 141px;/**/
+    padding-top: 102px;/**/
+    padding-left: 15px;/**/
+    display: flex;/**/
+    border-top: 1px solid rgba(188, 208, 229, 0.4969);/**/
 }
 .about {
-    padding-left: 140px;
-    padding-top: 70px;
+    padding-left: 140px;/**/
+    padding-top: 70px;/**/
 }
 
 .about li a {
-    color: rgba(84, 72, 55, 1);
+    color: rgba(84, 72, 55, 1);/**/
 }
 
 .about.policy.connect {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    display: flex;/**/
+    flex-direction: column;/**/
+    height: 100%;/**/
 }
 
 .policy, .about li {
-    display: inline-block;
-    padding-bottom: 4px;
+    display: inline-block;/**/
+    padding-bottom: 4px;/**/
 }
 
 .policy, .about li a {
-    display: block;
-    white-space: nowrap;
-    line-height: 30px;
+    display: block;/**/
+    white-space: nowrap;/**/
+    line-height: 30px;/**/
 }
 
 .policy {
-    padding-left: 181px;
-    padding-top: 73px;
+    padding-left: 181px;/**/
+    padding-top: 73px;/**/
 }
 
 .policy li a {
-    color: rgba(84, 72, 55, 1);
+    color: rgba(84, 72, 55, 1);/**/
 }
 
 .connect {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-top: 91px;
-    padding-left: 76px;
+    display: flex;/**/
+    flex-direction: column;/**/
+    height: 100%;/**/
+    padding-top: 91px;/**/
+    padding-left: 76px;/**/
 }
 
 .connect label input{
-    height: 48px;
-    width: 325px;
+    height: 48px;/**/
+    width: 325px;/**/
 }
 
 .btn-footer {
-    display: inline-block;
-    cursor: pointer;
-    padding: 0 41px;
-    margin-top: 22px;
-    height: 39px;
-    width: 131px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 4px;
-    transition: all .2s ease;
-    background-color: var(--orange-colore);
-    color: #fff;
-    border: 1px solid var(--orange-colore);
+    display: inline-block;/**/
+    cursor: pointer;/**/
+    padding: 0 41px;/**/
+    margin-top: 22px;/**/
+    height: 39px;/**/
+    width: 131px;/**/
+    font-size: 16px;/**/
+    font-weight: 700;/**/
+    border-radius: 4px;/**/
+    transition: all .2s ease;/**/
+    background-color: var(--orange-colore);/**/
+    color: #fff;/**/
+    border: 1px solid var(--orange-colore);/**/
 }
 
 
