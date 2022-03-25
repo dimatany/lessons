@@ -345,7 +345,6 @@ h1 {
     flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
     flex-direction: row;/*даю направление - строка*/
     margin-top: 145px;/*отступаю сверху по макету*/
-    width: 1130px;
 }
 
 .fourth-block figure {
@@ -373,97 +372,80 @@ h1 {
 }
 
 .fourth-block-subgroup-1 ul {
-    margin-top: 25px;/**/
+    margin-top: 25px;/*отступ сверху под макет*/
 }
 
 .list4a li {
-    position: relative;/**/
-    padding:12px 20px 20px 35px;/**/
-    margin-left: 33px;/**/
-}
-
-.list4a li:before {
-    line-height: 30px;/**/
-    position: absolute;/**/
-    top: 0;/**/
-    left:-30px;/**/
-    width: 35px;/**/
-    text-align: center;/**/
-    font-size: 13px;/**/
-    font-weight: bold;/**/
-    box-sizing: border-box;/**/
+    position: relative;/*сдвиг относительно своей позиции*/
+    padding:12px 20px 20px 35px;/*сдвиги внутренние по макету*/
+    margin-left: 33px;/*отступ внешний слева по макету*/
 }
 
 .list4a li:after {
-    position: absolute;/**/
-    top: 0;/**/
-    left: -30px;/**/
-    width: 35px;/**/
-    height: 35px;/**/
-    border-radius: 40%;/**/
-    content: '\2714';/**/
-    color: white;/**/
-    text-align: center;/**/
-    background-color: orange;/**/
+    position: absolute;/*выдергиваем из потока относительно предка с позицией релатив*/
+    top: 18px;/*сдвиги внутренние по макету*/
+    left: -30px;/*сдвиги внутренние по макету*/
+    width: 35px;/*ширина элемента*/
+    height: 35px;/*высота элемента*/
+    border-radius: 40%;/*округление элемента*/
+    content: '\2714';/*галочка в элементе*/
+    color: white;/*цвет галочки*/
+    text-align: center;/*позиция галочки в центре элемента*/
+    background-color: orange;/*цвет самого элемента*/
 }
 
 
 /*FIFTH BLOCK*/
 .fifth-block {
-    margin-top: 140px;/**/
-    padding-left: 2px;/**/
-    display: flex;/**/
-    flex-wrap: wrap;/**/
-    flex-direction: row;/**/
-    justify-content: space-between;/**/
+    display: flex;/*делаю флекс контейнер*/
+    flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
+    flex-direction: row;/*даю направление - строка*/
+    margin-top: 137px;/*отступаю сверху по макету*/
+
 }
 
 .fifth-block-subgroup-1 {
-    display: flex;/**/
-    flex-wrap: wrap;/**/
-    flex-direction: column;/**/
-    width: 50%;/**/
+    display: flex;/*делаю флекс контейнер*/
+    flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
+    flex-direction: column;/*направление - колонка*/
+    width: 50%;/*ширина подобъекта - половина*/
+    padding-left: 8px;/*отступ слева по макету*/
 }
 
 .fifth-block h2 {
-    font-weight: 700;/**/
-    font-size: 36px;/**/
-    padding-bottom: 23px;/**/
-    padding-left: 2px;/**/
+    font-weight: 700;/*жирность шрифта*/
+    font-size: 2.25rem;/*размер шрифта*/
+    margin-top: 3px;/*отступы сверху по макету*/
+    margin-bottom: 23px;/*отступы снизу по макету*/
+    margin-left: 2px;/*отступы слева по макету*/
 }
 
 .accessory {
-    font-weight: 700;/**/
-    font-size: 16px;/**/
-    padding-top: 36px;/**/
-    padding-bottom: 13px;/**/
+    padding-top: 36px;/*отступы сверху по макету*/
+    padding-bottom: 13px;/*отступы снизу по макету*/
 }
 
 .alterations {
-    font-weight: 700;/**/
-    font-size: 16px;/**/
-    padding-top: 29px;/**/
-    padding-bottom: 13px;/**/
+    padding-top: 29px;/*отступы сверху по макету*/
+    padding-bottom: 13px;/*отступы снизу по макету*/
 }
 
 .custom {
-    font-weight: 700;/**/
-    font-size: 16px;/**/
-    padding-top: 30px;/**/
-    padding-bottom: 15px;/**/
+    padding-top: 30px;/*отступы сверху по макету*/
+    padding-bottom: 15px;/*отступы снизу по макету*/
 }
 
 .fifth-block figure {
-    margin-top: -44px;/**/
-    margin-left: 8px;/**/
+    margin-top: -39px;/*отступы сверху по макету*/
+    margin-left: 15px;/*отступы слева по макету*/
 }
 
 /*FOOTER*/
 footer {
-    margin-top: 141px;/**/
-    padding-top: 102px;/**/
-    padding-left: 15px;/**/
     display: flex;/**/
+    margin-top: 139px;/**/
+    padding-top: 102px;/**/
+    padding-left: 20px;/**/
     border-top: 1px solid rgba(188, 208, 229, 0.4969);/**/
 }
 .about {
