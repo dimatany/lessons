@@ -442,74 +442,69 @@ h1 {
 
 /*FOOTER*/
 footer {
-    display: flex;/**/
-    margin-top: 139px;/**/
-    padding-top: 102px;/**/
-    padding-left: 20px;/**/
-    border-top: 1px solid rgba(188, 208, 229, 0.4969);/**/
+    display: flex;/*делаю флекс контейнер*/
+    margin-top: 139px;/*отступаю сверху по макету*/
+    padding-top: 102px;/*отступаю внутри по макету*/
+    padding-left: 20px;/*оступаю слева по макету*/
+    border-top: 1px solid rgba(188, 208, 229, 0.4969);/*делаю полоску по макету - бордер контейнера*/
 }
 .about {
-    padding-left: 140px;/**/
-    padding-top: 70px;/**/
+    padding-left: 140px;/*оступаю слева по макету*/
+    padding-top: 70px;/*отступаю внутри по макету*/
 }
 
 .about li a {
-    color: rgba(84, 72, 55, 1);/**/
+    color: var(--color-links);/*цвет ссылок*/
 }
 
 .about.policy.connect {
-    display: flex;/**/
-    flex-direction: column;/**/
-    height: 100%;/**/
+    display: flex;/*флекс контейнер*/
+    flex-direction: column;/*направление колонка*/
 }
 
 .policy, .about li {
-    display: inline-block;/**/
-    padding-bottom: 4px;/**/
+    display: inline-block;/*делаю элементы блочными*/
+    padding-bottom: 4px;/*отступаю после каждой ссылки*/
 }
 
 .policy, .about li a {
-    display: block;/**/
-    white-space: nowrap;/**/
-    line-height: 30px;/**/
+    white-space: nowrap;/*переношу сылки на новую строку после верхнего инлайна*/
+    line-height: 30px;/*отступаю после каждой ссылки*/
 }
 
 .policy {
-    padding-left: 181px;/**/
-    padding-top: 73px;/**/
+    padding-left: 176px;/*отступаю как по макету*/
+    padding-top: 66px;/*оступаю как по макету*/
+    line-height: 35px;/*делаю расстояние как по макету для policy*/
 }
 
 .policy li a {
-    color: rgba(84, 72, 55, 1);/**/
+    color: var(--color-links);/*цвет ссылок*/
 }
 
 .connect {
-    display: flex;/**/
-    flex-direction: column;/**/
-    height: 100%;/**/
-    padding-top: 91px;/**/
-    padding-left: 76px;/**/
+    display: flex;/*контейнер флекс*/
+    flex-direction: column;/*направление - колонка*/
+    padding-top: 91px;/*отступаю по макету сверху*/
+    padding-left: 81px;/*отступаю по макету слева*/
 }
 
 .connect label input{
-    height: 48px;/**/
-    width: 325px;/**/
+    height: 48px;/*высота поля ввода*/
+    width: 325px;/*ширина поля ввода*/
 }
 
 .btn-footer {
-    display: inline-block;/**/
-    cursor: pointer;/**/
-    padding: 0 41px;/**/
-    margin-top: 22px;/**/
-    height: 39px;/**/
-    width: 131px;/**/
-    font-size: 16px;/**/
-    font-weight: 700;/**/
-    border-radius: 4px;/**/
-    transition: all .2s ease;/**/
-    background-color: var(--orange-colore);/**/
-    color: #fff;/**/
-    border: 1px solid var(--orange-colore);/**/
+    cursor: pointer;/*тип курсора*/
+    padding: 0 41px;/*оступы внутренние*/
+    margin-top: 22px;/*отступ внешний по макету*/
+    height: 39px;/*высота книпки*/
+    width: 131px;/*ширина кнопки*/
+    font-size: 1rem;/*размер шрифта*/
+    font-weight: 700;/*жирность текста*/
+    border-radius: 4px;/*скругление кнопки*/
+    background-color: var(--orange-colore);/*цвет кнопки*/
+    color: #fff;/*цвет текста*/
 }
 
 
