@@ -40,7 +40,7 @@ table {
 }
 
 .container {
-    width: 90%;
+    width: calc(100 - 30px);
     max-width: 1600px;
     margin: 0 auto;
 }
