@@ -1,2 +1,0 @@
-# lessons
-learning lessons
