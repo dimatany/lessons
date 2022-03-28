@@ -356,28 +356,28 @@ h1 {
     flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
     flex-direction: column;/*даю направление - колонка*/
     width: 50%;/*ширина элемента*/
-    padding-left: 98px;/*отступ по макету*/
+    padding-left: 102px;/*отступ по макету*/
 }
 
 .fourth-block p {
     margin-bottom: 2px;/*отступ вниз по макету*/
+    line-height: 25px;
 }
 
 .fourth-block-subgroup-1 h2{
     font-weight: 700;/*жирность текста*/
     font-size: 2.25rem;/*размер шрифта*/
     padding-bottom: 23px;/*отступ снизу по макету*/
-    padding-left: 2px;/*отступ справа по макету*/
 }
 
 .fourth-block-subgroup-1 ul {
-    margin-top: 25px;/*отступ сверху под макет*/
+    margin-top: 20px;/*отступ сверху под макет*/
 }
 
 .list4a li {
     position: relative;/*сдвиг относительно своей позиции*/
-    padding:12px 20px 20px 35px;/*сдвиги внутренние по макету*/
-    margin-left: 33px;/*отступ внешний слева по макету*/
+    padding: 12px 20px 20px 35px;/*сдвиги внутренние по макету*/
+    margin-left: 29px;/*отступ внешний слева по макету*/
 }
 
 .list4a li:after {
