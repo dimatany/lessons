@@ -88,12 +88,11 @@ h1 {
 header p {
     font-size: 20px;
     font-weight: 400;
-
 }
 
-.retirement {
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
+header img {
+    width: 243px;
+    height: 55px;
 }
 
 .header-text {
