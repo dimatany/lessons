@@ -115,6 +115,7 @@ hr {
     height: 100%;/*высота элемента 100%*/
     transition: transform 0.5s;/*время анимации*/
     transform-style: preserve-3d;/*отображается в 3d пространстве*/
+    perspective: 1000px;/*глубина разворота*/
 }
 
 .box:hover .box-inner {
