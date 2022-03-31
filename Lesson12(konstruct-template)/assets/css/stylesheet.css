@@ -38,7 +38,6 @@ table {
     border-spacing: 0;
 }
 
-
 .page_wrapper {
     display: flex;
     flex-direction: column;
@@ -72,12 +71,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     padding: 40px 0;
     position: fixed;
     z-index: 100;
-
+    align-items: flex-start;
 }
 
 h1 {

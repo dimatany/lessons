@@ -48,19 +48,19 @@ table {
 body {
     width: 100%;
     max-width: 1600px;
-    margin: 100px auto;
+    margin: 0px auto;
 }
 main {
     border: 15px solid rgba(43, 129, 172, 1);
     background-color: #3399CC;
     width: 100%;
-    max-width: 831px;
+    max-width: 832px;
 }
 
 .container {
-    width: 90%;
     max-width: 540px;
-    margin: 97px 120px 95px 131px;
+    padding-bottom: 97px;
+    padding-top: 90px;
 }
 
 .weather {
