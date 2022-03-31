@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-size: 1rem;
+    line-height: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,7 +40,7 @@ table {
 }
 
 .container {
-    width: calc(100 - 30px);
+    width: calc(100% - 30px);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -54,7 +55,7 @@ main {
     flex-grow: 1;
 }
 
-/*VISIBLE PART*/
+/*VISIBLE PART*//*VISIBLE PART*/
 :root {
     --text-color: #544837;/*цвет текста*/
     --orange-colore: #FF9900;/*оранжевый цвет в проекте*/
@@ -65,12 +66,11 @@ body {
     font-family: Poppins, sans-serif;/*семейство шрифта*/
     color: var(--text-color);/*цвет текста*/
     font-size: 1rem;/*размер шрифта в rem*/
-    max-width: 1400px;/*максимальная ширина*/
     width: 100%;/*для адаптивности - 100% ширины*/
 }
 
 .wrapper {
-    max-width: 1125px;/*максимальная ширина контентной части*/
+    max-width: 1140px;/*максимальная ширина контентной части*/
     width: 100%;/*для адаптивности - 100% ширины*/
     margin: 0 auto;/*центровка контента посредине*/
 }
@@ -85,7 +85,8 @@ header {
 }
 
 #logo {
-    margin-top: 8px;/*отступ для лого - ровняем под макет*/
+    margin-top: 9px;/*отступ для лого - ровняем под макет*/
+    margin-left: -13px;
 }
 
 .main_menu {
@@ -160,24 +161,8 @@ header .btn {
     color: var(--orange-colore);/*цвет текста при наведении*/
 }
 
-@media all and (max-width: 800px) {/* Средние экраны */
-    header {
-
-    }
-}
-
-@media all and (max-width: 500px) {/* Маленькие экраны */
-    header {
-    }
-    nav {
-    }
-    nav ul li {
-    }
-}
-
 /*FIRST BLOCK*/
 .first-block {
-    width: 1126px;/*ширина контейнера*/
     display: flex;/*флекс контейнер*/
     flex-wrap: wrap;/*перенос при изменении размера*/
     flex-direction: row;/*направление - строка*/
@@ -196,6 +181,9 @@ header .btn {
     font-weight: 400;/*толщина текста*/
     font-size: 1.125rem;/*размер шрифта*/
     margin-bottom: 58px;/*отступ снизу до кнопок и ссылки*/
+    margin-top: 2px;
+    margin-left: -12px;
+    line-height: 27px;
 }
 
 h1 {
@@ -203,6 +191,7 @@ h1 {
     font-size: 2.75rem;/*размер текста*/
     line-height: 54px;/*расстояние между строками текста*/
     margin-bottom: 29px;/*отступ снизу до блока с текстом*/
+    margin-left: -12px;
 }
 
 .size {
@@ -211,7 +200,7 @@ h1 {
 }
 
 .more-info {
-    margin-top: -33px;/*подняла элемент по уровню в макете*/
+    margin-left: -13px;
 }
 
 .more-info a {
@@ -240,15 +229,16 @@ h1 {
     font-size: 2.25rem;/*размер текста*/
     text-align: center;/*позиционирование текста - центр*/
     margin-top: 29px;/*отступ сверху по макету*/
-    margin-left: 17px;/*отступ слева по макету*/
+    margin-left: -23px;/*отступ слева по макету*/
+    line-height: 54px;
 }
 
 .second-block {
     display: flex;/*делаем флекс контейнер*/
-    margin-top: 53px;/*отступаем от заголовка вниз*/
-    margin-left: 24px;/*оступаем слева по макету*/
+    margin-top: 52px;/*отступаем от заголовка вниз*/
+    margin-left: 11px;/*оступаем слева по макету*/
     width: 100%;
-    max-width: 1125px;
+
 }
 
 .second-block-subgroup {
@@ -265,24 +255,26 @@ h1 {
 
 .second-block-subgroup h3 {
     font-size: 1.375rem;/*размер текста подзаголовков*/
-    margin-bottom: 15px;/*остутп вниз до текста*/
+    margin-top: 3px;
+    margin-bottom: 18px;/*остутп вниз до текста*/
+    line-height: 26px;
 }
 
 .middle {
     margin-top: 61px;/*отступ кнопки сверху*/
-    margin-left: 484px;/*отступ кнопки слева*/
+    margin-left: 471px;/*отступ кнопки слева*/
 }
 
 .line {
-    margin-left: 17px;/*смещаем значки под макет в фигме*/
+    margin-left: -1px;/*смещаем значки под макет в фигме*/
 }
 
 .hard {
-    margin-left: 16px;/*смещаем значки под макет в фигме*/
+    margin-left: -1px;/*смещаем значки под макет в фигме*/
 }
 
 .weight {
-    margin-left: 15px;/*смещаем значки под макет в фигме*/
+    margin-left: -1px;/*смещаем значки под макет в фигме*/
 }
 
 /*THIRD BLOCK*/
@@ -290,8 +282,8 @@ h1 {
     display: flex;/*делаю флекс контейнер*/
     flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
     flex-direction: row;/*даю направление - строка*/
-    margin-top: 236px;/*отступаю от верхнего блока*/
-    margin-left: 6px;/*оступаю слева по макету*/
+    margin-top: 237px;/*отступаю от верхнего блока*/
+    margin-left: -6px;/*оступаю слева по макету*/
 }
 
 .third-block-subgroup-1 {
@@ -307,9 +299,10 @@ h1 {
 .third-block-subgroup-1 h2{
     font-weight: 700;/*жирность текста*/
     font-size: 2.25rem;/*размер текста*/
-    margin-top: 3px;/*отступ сверху по макету*/
-    margin-bottom: 23px;/*отступ снизу по макету*/
+    margin-top: 20px;/*отступ сверху по макету*/
+    margin-bottom: 40px;/*отступ снизу по макету*/
     margin-left: 2px;/*отступ слева по макету*/
+    line-height: 20px;
 }
 
 .third-block-subgroup-1 p {
@@ -334,8 +327,8 @@ h1 {
 }
 
 .third-block figure {
-    margin-top: -27px;/*отступ сверху по макету*/
-    margin-left: 32px;/*отступ слева по макету*/
+    margin-top: -26px;/*отступ сверху по макету*/
+    margin-left: 19px;/*отступ слева по макету*/
 }
 
 /*FOURTH BLOCK*/
@@ -343,12 +336,12 @@ h1 {
     display: flex;/*делаю флекс контейнер*/
     flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
     flex-direction: row;/*даю направление - строка*/
-    margin-top: 145px;/*отступаю сверху по макету*/
+    margin-top: 143px;/*отступаю сверху по макету*/
 }
 
 .fourth-block figure {
-    margin-top: -50px;/*отступаю сверху по макету*/
-    margin-left: 6px;/*отступаю слева по макету*/
+    margin-top: -48px;/*отступаю сверху по макету*/
+    margin-left: -7px;/*отступаю слева по макету*/
 }
 
 .fourth-block-subgroup-1 {
@@ -360,18 +353,18 @@ h1 {
 }
 
 .fourth-block p {
-    margin-bottom: 2px;/*отступ вниз по макету*/
+    margin-bottom: 17px;/*отступ вниз по макету*/
     line-height: 25px;
 }
 
 .fourth-block-subgroup-1 h2{
     font-weight: 700;/*жирность текста*/
     font-size: 2.25rem;/*размер шрифта*/
-    padding-bottom: 23px;/*отступ снизу по макету*/
+    padding-bottom: 38px;/*отступ снизу по макету*/
 }
 
 .fourth-block-subgroup-1 ul {
-    margin-top: 20px;/*отступ сверху под макет*/
+    margin-top: 5px;/*отступ сверху под макет*/
 }
 
 .list4a li {
@@ -400,7 +393,6 @@ h1 {
     flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
     flex-direction: row;/*даю направление - строка*/
     margin-top: 137px;/*отступаю сверху по макету*/
-
 }
 
 .fifth-block-subgroup-1 {
@@ -408,35 +400,37 @@ h1 {
     flex-wrap: wrap;/*разрешаю переносить при ресайзе дисплея*/
     flex-direction: column;/*направление - колонка*/
     width: 50%;/*ширина подобъекта - половина*/
-    padding-left: 8px;/*отступ слева по макету*/
 }
 
 .fifth-block h2 {
     font-weight: 700;/*жирность шрифта*/
     font-size: 2.25rem;/*размер шрифта*/
-    margin-top: 3px;/*отступы сверху по макету*/
-    margin-bottom: 23px;/*отступы снизу по макету*/
-    margin-left: 2px;/*отступы слева по макету*/
+    margin-top: 17px;/*отступы сверху по макету*/
+    margin-bottom: 38px;/*отступы снизу по макету*/
+    margin-left: -2px;/*отступы слева по макету*/
 }
 
 .accessory {
+    margin-left: -3px;
     padding-top: 36px;/*отступы сверху по макету*/
     padding-bottom: 13px;/*отступы снизу по макету*/
 }
 
 .alterations {
+    margin-left: -3px;
     padding-top: 29px;/*отступы сверху по макету*/
     padding-bottom: 13px;/*отступы снизу по макету*/
 }
 
 .custom {
+    margin-left: -3px;
     padding-top: 30px;/*отступы сверху по макету*/
     padding-bottom: 15px;/*отступы снизу по макету*/
 }
 
 .fifth-block figure {
-    margin-top: -39px;/*отступы сверху по макету*/
-    margin-left: 15px;/*отступы слева по макету*/
+    margin-top: -41px;/*отступы сверху по макету*/
+    margin-left: -4px;/*отступы слева по макету*/
 }
 
 /*FOOTER*/
@@ -444,9 +438,11 @@ footer {
     display: flex;/*делаю флекс контейнер*/
     margin-top: 139px;/*отступаю сверху по макету*/
     padding-top: 102px;/*отступаю внутри по макету*/
-    padding-left: 20px;/*оступаю слева по макету*/
+    padding-left: 7px;/*оступаю слева по макету*/
     border-top: 1px solid rgba(188, 208, 229, 0.4969);/*делаю полоску по макету - бордер контейнера*/
 }
+
+
 .about {
     padding-left: 140px;/*оступаю слева по макету*/
     padding-top: 70px;/*отступаю внутри по макету*/
@@ -485,7 +481,7 @@ footer {
     display: flex;/*контейнер флекс*/
     flex-direction: column;/*направление - колонка*/
     padding-top: 91px;/*отступаю по макету сверху*/
-    padding-left: 81px;/*отступаю по макету слева*/
+    padding-left: 103px;/*отступаю по макету слева*/
 }
 
 .connect label input{
