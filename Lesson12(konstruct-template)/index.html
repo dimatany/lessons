@@ -26,94 +26,96 @@
 <div class="page_wrapper">
     <div class="container">
         <div class="navbar-fixed">
-        <header>
-            <div class="header-text">
-                <h1>Eng</h1>
-                <p>Documentation / Who's using</p>
-            </div>
-            <div class="logo">
-                <img src="assets/images/company-logo-black.png" alt="logo">
-            </div>
-        </header>
+            <header>
+                <div class="header-text">
+                    <h1>Eng</h1>
+                    <p>Documentation / Who's using</p>
+                </div>
+                <div class="logo">
+                    <img src="assets/images/company-logo-black.png" alt="logo">
+                </div>
+            </header>
         </div>
-        <aside class="sidenav">
-            <div class="sub_sidenav">
-                <sup>1</sup>
-                <a href="#">Introduction</a>
-            </div>
-            <hr>
-            <div class="sub_sidenav">
-                <sup>2</sup>
-                <a href="#">Core Components</a>
-            </div>
-            <hr>
-            <div class="sub_sidenav">
-                <sup>3</sup>
-                <a href="#">React Fundamentals</a>
-            </div>
-            <hr>
-            <div class="sub_sidenav">
-                <sup>4</sup>
-                <a href="#">Handling Text Input</a>
-            </div>
-            <hr>
-        </aside>
         <main>
-            <div class="headings-block">
+            <aside class="sidenav">
+                <div class="sub_sidenav">
+                    <sup>1</sup>
+                    <a href="#">Introduction</a>
+                </div>
+                <hr>
+                <div class="sub_sidenav">
+                    <sup>2</sup>
+                    <a href="#">Core Components</a>
+                </div>
+                <hr>
+                <div class="sub_sidenav">
+                    <sup>3</sup>
+                    <a href="#">React Fundamentals</a>
+                </div>
+                <hr>
+                <div class="sub_sidenav">
+                    <sup>4</sup>
+                    <a href="#">Handling Text Input</a>
+                </div>
+                <hr>
+            </aside>
+            <div class="content">
+                <div class="headings-block">
                 <div class="line"></div>
                 <h2>Introduction</h2>
             </div>
-            <p class="block">Welcome to the very start of your React Native journey! If you're looking
+                <p class="block">Welcome to the very start of your React Native journey! If you're looking
                 for environment setup instructions, they've moved to <span class="underline">their own section</span>.
                 Continue reading for an introduction to the documentation, Native
                 Components, React, and more!</p>
-            <div class="headings-block">
+                <div class="headings-block">
                 <div class="line"></div>
                 <h2>Core Components</h2>
             </div>
-            <p class="block">React Native is an open source framework for building Android and iOS
+                <p class="block">React Native is an open source framework for building Android and iOS
                 applications using React and the app platform’s native capabiles.
                 With React Native, you use JavaScript to access your platform’s APIs
                 as well as to describe the appearance and behavior of your UI using
                 React components: bundles of reusable, nestable code. You can learn
                 more about React in the next section. But first, let’s cover how
                 components work in React Native.</p>
-            <div class="headings-block">
+                <div class="headings-block">
                 <div class="line"></div>
                 <h2>React Fundamentals</h2>
             </div>
-            <p class="block">React Native runs on <span class="underline">React</span>, a popular open source library for
+                <p class="block">React Native runs on <span class="underline">React</span>, a popular open source library for
                 building user interfaces with JavaScript. To make the most of
                 React Native, it helps to understand React itself. This section
                 can get you started or can serve as a refresher course.</p>
-            <p class="block2">We’re going to cover the core concepts behind React:</p>
-            <p class="block2"><span class="bolder">+ components.</span> The rest of this introduction to React uses
+                <p class="block2">We’re going to cover the core concepts behind React:</p>
+                <p class="block2"><span class="bolder">+ components.</span> The rest of this introduction to React uses
                 cats in its examples: friendly, approachable creatures
                 that need names and a cafe to work in.</p>
-            <p class="block2"><span class="bolder">+ JSX.</span> React and React Native use JSX, a syntax that lets
+                <p class="block2"><span class="bolder">+ JSX.</span> React and React Native use JSX, a syntax that lets
                 you write elements inside JavaScript like so:<span class="emphasis">
         &lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;.</span> The React docs have
                 <span class="underline">a comprehensive guide to JSX</span> you can refer to learn even more.
                 Because JSX is JavaScript, you can use variables inside it.
                 Here you are declaring a name for the cat, name, and embedding
                 it with curly braces inside <span class="emphasis">&lt;Text&gt;.</span></p>
-            <p class="block2"><span class="bolder">+ props.</span> Props is short for “properties”.</p>
-            <p class="block2"><span class="bolder">+ state.</span> While you can think of props as arguments you use to configure
+                <p class="block2"><span class="bolder">+ props.</span> Props is short for “properties”.</p>
+                <p class="block2"><span class="bolder">+ state.</span> While you can think of props as arguments you use to configure
                 how components render, state is like a component’s personal data storage.
                 State is useful for handling data that changes over time or that comes
                 from user interaction. State gives your components memory!</p>
-            <div class="headings-block">
+                <div class="headings-block">
                 <div class="line"></div>
                 <h2>Handling Text Input</h2>
             </div>
-            <p class="block">TextInput is a Core Component that allows the user to enter text.
+                <p class="block">TextInput is a Core Component that allows the user to enter text.
                 It has an onChangeText prop that takes a function to be called
                 every time the text changed, and an onSubmitEditing prop that
                 takes a function to be called when the text is submitted.</p>
-            <p class="block2">For example, let's say that as the user types, you're translating
+                <p class="block2">For example, let's say that as the user types, you're translating
                 their words into a different language. In this new language, every
                 single word is written the same way: 🍕. So the sentence "Hello there Bob"
                 would be translated as "🍕 🍕".</p>
+            </div>
         </main>
     </div>
     <footer></footer>

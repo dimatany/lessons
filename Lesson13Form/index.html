@@ -13,9 +13,83 @@
     <meta name="Address" content="Grigoria Vashchenko, 5">
     <title>Lesson 13 - Form</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Create an Account</h1>
-
+<div class="container">
+    <div class="first_form">
+        <form method="post" name="create_account" action="#" target="_blank">
+            <h1>Create an Account</h1>
+            <div class="name">
+                <div class="block_first_name">
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" type="text" name="first_name" value="">
+                </div>
+                <div class="block_last_name">
+                    <label for="last_name">Last Name</label>
+                    <input id="last_name" type="text" name="last_name" value="">
+                </div>
+            </div>
+            <div class="email">
+                <label for="email_input">E-mail</label>
+                <input id="email_input" type="text" name="email"/>
+                <p>We'll never share your email with anyone else.</p>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="gender" value="Male" checked>Male</label>
+                <label><input type="radio" name="gender" value="Female">Female</label>
+            </div>
+            <label for="select">Country</label>
+            <select id="select" name="country[]" required="required">
+                <option value="usa">USA</option>
+                <option value="canada">CANADA</option>
+                <option value="england">England</option>
+            </select>
+            <label for="city">City</label>
+            <input id="city" type="text" name="city" value="">
+            <br>
+            <div class="btn">
+                <button type="submit">Sing Up</button>
+            </div>
+            <p>By clicking the "Sing Up" button, you confirm that you accept our
+                Terms of Use and Privacy Policy</p>
+            <br>
+            <footer>
+                <p>Have an account?Log In</p>
+            </footer>
+        </form>
+    </div>
+    <div class="second_form">
+        <form method="post" enctype="multipart/form-data" name="profile" action="#">
+            <h1>Profile</h1>
+            <img src="assets/images/avatar.png" alt="avatar">
+            <input type="file" name="avatar">
+            <input type="submit" value="Отправить">
+            <br>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" value="" required autocomplete="name">
+            <label for="email">E-mail</label>
+            <input id="email" type="text" name="email" required autocomplete="email">
+            <br>
+            <label for="select2">Country</label>
+            <select id="select2" name="country[]" required="required">
+                <option value="usa">USA</option>
+                <option value="canada">CANADA</option>
+                <option value="england">England</option>
+            </select>
+            <label for="city2">City</label>
+            <input id="city2" type="text" name="city" value="">
+            <br>
+            <label for="ZipCode">Phone Number</label>
+            <input type="number" name="ZipCode" id="ZipCode" autocomplete="off">
+            <label for="PhoneNum">Phone Number</label>
+            <input type="tel" name="phone" id="PhoneNum" required autocomplete="tel">
+            <br>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>

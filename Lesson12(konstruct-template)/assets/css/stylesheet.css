@@ -45,8 +45,7 @@ table {
 }
 
 .container {
-    width: calc(100 - 30px);
-    max-width: 1200px;
+    width: calc(100% - 30px);
     margin: 0 auto;
 }
 
@@ -58,13 +57,10 @@ main {
 /*HEADER*/
 body {
     width: 100%;
-    padding-left: 24px;
-    padding-right: 44px;
 }
 
 .container {
     font-family: Roboto, sans-serif;
-
 }
 
 header {
@@ -72,10 +68,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 40px;
     position: fixed;
-    z-index: 100;
-    align-items: flex-start;
 }
 
 h1 {
@@ -106,8 +100,13 @@ header img {
     padding-left: 15px;
 }
 
+main {
+    margin-left: 480px;
+    font-size: 28px;
+    padding: 0 10px;
+}
+
 .sidenav {
-    height: 100%;
     width: 460px;
     position: fixed;
     z-index: 1;
@@ -115,12 +114,6 @@ header img {
     left: 10px;
     overflow-x: hidden;
     padding-top: 20px;
-}
-
-main {
-    margin-left: 480px;
-    font-size: 28px;
-    padding: 0 10px;
 }
 
 .sub_sidenav {
@@ -140,9 +133,7 @@ main {
 .sub_sidenav sup {
     padding-top: 10px;
     padding-right: 20px;
-
 }
-
 
 /*MAIN*/
 .underline {
