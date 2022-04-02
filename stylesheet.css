@@ -54,3 +54,22 @@ main {
     flex-grow: 1;
 }
 
+/*visible part*/
+
+body {
+    background-color: #2F281E;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+li {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
