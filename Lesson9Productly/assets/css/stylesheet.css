@@ -116,6 +116,7 @@ header {
     font-weight: 700;/*толщина текста*/
     border-radius: 4px;/*скругление кнопки*/
     transition: all .2s ease;/*время изменения при эффектах*/
+
 }
 
 header .btn {
@@ -138,6 +139,7 @@ header .btn {
     background-color: var(--orange-colore);/*фон кнопки*/
     color: #fff;/*цвет текста*/
     border: 1px solid var(--orange-colore);/*цвет границы*/
+
 }
 
 .btn.orange:hover {
@@ -181,6 +183,7 @@ h1 {
 .size {
     width: 175px;/* доп класс для кнопки - расшириена по сравнению с другими*/
     letter-spacing: 0.0313rem;/*расстояние между буквами как по макету*/
+
 }
 
 .more-info {
