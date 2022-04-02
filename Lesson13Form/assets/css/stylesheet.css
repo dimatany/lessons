@@ -68,6 +68,7 @@ body {
     height: 100%;
     background-color: #f7f7f7;
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .first_form {
@@ -88,6 +89,7 @@ body {
     padding-top: 14px;
     padding-left: 9px;
     margin-bottom: 22px;
+    color: black;
 }
 
 .name {
@@ -97,39 +99,35 @@ body {
     max-width: 502px;
     width: 100%;
 }
-.block_first_name {
+
+.name_block {
     display: flex;
     flex-direction: column;
     margin-right: 12px;
+    height: 67px;
+    justify-content: space-between;
 }
 
-.block_first_name input {
+.name_block input {
     width: 245px;
     height: 38px;
     border-radius: 5px;
     border: 1px solid rgba(228, 228, 228, 1);
 }
 
-.block_first_name input:hover {
+.name_block input:hover {
     border: 1px solid #007BFF;
 }
 
-.block_last_name {
+.email {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 98px;
+    margin-top: 19px;
+    padding-left: 10px;
+    margin-bottom: 15px;
 }
-
-.block_last_name input {
-    width: 245px;
-    height: 38px;
-    border-radius: 5px;
-    border: 1px solid rgba(228, 228, 228, 1);
-}
-
-.block_last_name input:hover {
-    border: 1px solid #007BFF;
-}
-
 
 .email input {
     width: 500px;
@@ -141,6 +139,23 @@ body {
 .email input:hover {
     border: 1px solid #007BFF;
 }
+
+.email p {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn {
     width: 500px;
