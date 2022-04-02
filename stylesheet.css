@@ -73,3 +73,7 @@ li {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
+li:visited {
+    color: #7a43b6;
+}

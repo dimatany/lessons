@@ -156,24 +156,14 @@ body {
 
 
 
-
-.btn {
+button {
     width: 500px;
     height: 38px;
     border-radius: 5px;
     background-color: #007BFF;
     text-align: center;
-}
-
-.btn button {
     color: #fffefe;
-    background-color: #007BFF;
-    text-align: center;
 }
-
-
-
-
 
 .second_form {
     max-width: 540px;

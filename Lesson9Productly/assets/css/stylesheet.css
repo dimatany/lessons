@@ -39,22 +39,6 @@ table {
     border-spacing: 0;
 }
 
-.container {
-    width: calc(100% - 30px);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.page_wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-main {
-    flex-grow: 1;
-}
-
 /*VISIBLE PART*//*VISIBLE PART*/
 :root {
     --text-color: #544837;/*цвет текста*/
