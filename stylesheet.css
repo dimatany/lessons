@@ -39,20 +39,6 @@ table {
     border-spacing: 0;
 }
 
-.container {
-    width: calc(100% - 30px);
-    margin: 0 auto;
-}
-
-.page_wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-main {
-    flex-grow: 1;
-}
 
 /*visible part*/
 
