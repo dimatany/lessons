@@ -1,0 +1,73 @@
+/*style drop css*/
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s ease;
+}
+
+a, button, input[type="button"],
+input[type=reset], input[type=submit], input[type=text] {
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*visible part*/
+
+body {
+    background-color: #2F281E;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+li {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+li:visited {
+    color: #7a43b6;
+}

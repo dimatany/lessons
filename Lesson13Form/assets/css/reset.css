@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: all 2s ease;
 }
 
 html, body {
@@ -23,6 +22,11 @@ a {
     color: inherit;
 }
 
+a, button, input[type="button"],
+input[type=reset], input[type=submit] {
+    transition: all 0.5s ease;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -35,3 +39,4 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
