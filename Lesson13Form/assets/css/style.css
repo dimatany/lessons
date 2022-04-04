@@ -33,14 +33,15 @@
   color: hsl(0deg, 0%, 0%);
 }
 
-.name {
+.block_fields {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   max-width: 502px;
   width: 100%;
 }
-.name .name_block {
+
+.field_input {
   display: flex;
   flex-direction: column;
   margin-right: 12px;
@@ -48,15 +49,22 @@
   justify-content: space-between;
 }
 
-.name_block input {
+.field_input input {
   width: 245px;
   height: 38px;
   border-radius: 5px;
   border: 1px solid hsl(0deg, 0%, 89.4%);
 }
 
-.name_block input:hover {
+.field_input input:hover {
   border: 1px solid hsl(211.1deg, 100%, 50%);
+}
+
+.field_select {
+  width: 245px;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid hsl(0deg, 0%, 89.4%);
 }
 
 .email {
@@ -65,8 +73,8 @@
   justify-content: space-between;
   height: 98px;
   margin-top: 19px;
-  padding-left: 10px;
-  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-bottom: 13px;
 }
 
 .email input {
@@ -80,8 +88,16 @@
   border: 1px solid hsl(211.1deg, 100%, 50%);
 }
 
-.email p {
+.additions {
   font-size: 13px;
+}
+
+.radio {
+  margin-bottom: 20px;
+}
+
+.retreat {
+  margin-bottom: 20px;
 }
 
 button {
@@ -92,6 +108,30 @@ button {
   text-align: center;
   font-size: 16px;
   color: hsl(0deg, 100%, 99.8%);
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.additions_block {
+  text-align: center;
+  margin: 0 60px;
+  line-height: 21px;
+}
+
+.additions_block a {
+  color: hsl(211.1deg, 100%, 50%);
+}
+
+footer {
+  border-top: 1px solid hsl(0deg, 0%, 89.4%);
+  margin-top: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(211.1deg, 100%, 50%);
 }
 
 .second_form {

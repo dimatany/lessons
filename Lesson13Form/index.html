@@ -25,12 +25,12 @@
     <div class="first_form">
         <form method="post" name="create_account" action="#" target="_blank">
             <h1>Create an Account</h1>
-            <div class="name">
-                <div class="name_block">
+            <div class="block_fields">
+                <div class="field_input">
                     <label for="first_name">First Name</label>
                     <input id="first_name" type="text" name="first_name" value="">
                 </div>
-                <div class="name_block">
+                <div class="field_input">
                     <label for="last_name">Last Name</label>
                     <input id="last_name" type="text" name="last_name" value="">
                 </div>
@@ -38,28 +38,34 @@
             <div class="email">
                 <label for="email_input">E-mail</label>
                 <input id="email_input" type="text" name="email"/>
-                <p>We'll never share your email with anyone else.</p>
+                <p class="additions">We'll never share your email with anyone else.</p>
             </div>
             <div class="radio">
                 <label><input type="radio" name="gender" value="Male" checked>Male</label>
                 <label><input type="radio" name="gender" value="Female">Female</label>
             </div>
-            <label for="select">Country</label>
-            <select id="select" name="country" required="required">
-                <option disabled selected>Select</option>
-                <option value="usa">USA</option>
-                <option value="canada">CANADA</option>
-                <option value="england">England</option>
-            </select>
-            <label for="city">City</label>
-            <input id="city" type="text" name="city" value="">
-            <br>
+            <div class="block_fields retreat">
+                <div class="field_input">
+                    <label for="select">Country</label>
+                    <select class="field_select" id="select" name="country" required="required">
+                        <option disabled selected>Select</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">CANADA</option>
+                        <option value="england">England</option>
+                    </select>
+                </div>
+                <div class="field_input">
+                    <label for="city">City</label>
+                    <input id="city" type="text" name="city" value="">
+                </div>
+            </div>
             <button class="btn" type="submit">Sign Up</button>
-            <p>By clicking the "Sing Up" button, you confirm that you accept our
-                Terms of Use and Privacy Policy</p>
-            <br>
+            <div class="additions_block">
+                <p class="additions">By clicking the "Sing Up" button, you confirm that you accept our
+                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+            </div>
             <footer>
-                <p>Have an account?Log In</p>
+                <p>Have an account?<a href="#">Log In</a></p>
             </footer>
         </form>
     </div>
@@ -77,6 +83,7 @@
             <br>
             <label for="select2">Country</label>
             <select id="select2" name="country" required="required">
+                <option disabled selected>Select</option>
                 <option value="usa">USA</option>
                 <option value="canada">CANADA</option>
                 <option value="england">England</option>
