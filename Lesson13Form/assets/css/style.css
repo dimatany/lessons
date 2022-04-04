@@ -88,12 +88,21 @@
   border: 1px solid hsl(211.1deg, 100%, 50%);
 }
 
+.email p {
+  color: hsl(0deg, 0%, 58.8%);
+}
+
 .additions {
   font-size: 13px;
 }
 
 .radio {
   margin-bottom: 20px;
+  margin-left: 12px;
+}
+
+.jq-radio:last-child {
+  padding-left: 10px;
 }
 
 .retreat {
@@ -116,6 +125,10 @@ button {
   text-align: center;
   margin: 0 60px;
   line-height: 21px;
+}
+
+.additions_block {
+  color: hsl(0deg, 0%, 58.8%);
 }
 
 .additions_block a {
