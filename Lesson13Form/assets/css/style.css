@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*формула автопервода из px в rem*/
 .container {
   display: flex;
   flex-direction: row;
@@ -5,7 +7,7 @@
   justify-content: space-around;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: hsl(0deg, 0%, 96.9%);
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -13,12 +15,12 @@
 .first_form {
   max-width: 540px;
   width: 100%;
-  background-color: #fffefe;
+  background-color: hsl(0deg, 100%, 99.8%);
   padding: 10px;
   border-radius: 5px;
   margin: 30px;
   font-size: 15px;
-  color: rgb(84, 84, 84);
+  color: hsl(0deg, 0%, 32.9%);
 }
 
 .first_form h1 {
@@ -28,7 +30,7 @@
   padding-top: 14px;
   padding-left: 9px;
   margin-bottom: 22px;
-  color: black;
+  color: hsl(0deg, 0%, 0%);
 }
 
 .name {
@@ -38,8 +40,7 @@
   max-width: 502px;
   width: 100%;
 }
-
-.name_block {
+.name .name_block {
   display: flex;
   flex-direction: column;
   margin-right: 12px;
@@ -51,11 +52,11 @@
   width: 245px;
   height: 38px;
   border-radius: 5px;
-  border: 1px solid rgb(228, 228, 228);
+  border: 1px solid hsl(0deg, 0%, 89.4%);
 }
 
 .name_block input:hover {
-  border: 1px solid #007BFF;
+  border: 1px solid hsl(211.1deg, 100%, 50%);
 }
 
 .email {
@@ -72,11 +73,11 @@
   width: 500px;
   height: 38px;
   border-radius: 5px;
-  border: 1px solid rgb(228, 228, 228);
+  border: 1px solid hsl(0deg, 0%, 89.4%);
 }
 
 .email input:hover {
-  border: 1px solid #007BFF;
+  border: 1px solid hsl(211.1deg, 100%, 50%);
 }
 
 .email p {
@@ -87,15 +88,16 @@ button {
   width: 500px;
   height: 38px;
   border-radius: 5px;
-  background-color: #007BFF;
+  background-color: hsl(211.1deg, 100%, 50%);
   text-align: center;
-  color: #fffefe;
+  font-size: 16px;
+  color: hsl(0deg, 100%, 99.8%);
 }
 
 .second_form {
   max-width: 540px;
   width: 100%;
-  background-color: #fffefe;
+  background-color: hsl(0deg, 100%, 99.8%);
 }
 
 /*# sourceMappingURL=style.css.map */

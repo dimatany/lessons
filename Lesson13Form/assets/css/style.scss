@@ -1,5 +1,15 @@
-$button-color: #007BFF;
+$button-color: hsl(211.1,100%,50%);
+$background-container: hsl(0,0%,96.9%);
+$background-first_form: hsl(0,100%,99.8%);
+$text-color: hsl(0,0%,32.9%);
+$title-color: hsl(0,0%,0%);
+$border-color: hsl(0,0%,89.4%);
+$font-stack: 'Inter', sans-serif;
 
+$base_fz: 16;/*формула автопервода из px в rem*/
+@mixin fz($size_in_px){
+  font-size:($size_in_px/$base_fz)+rem;
+}
 
 .container {
   display: flex;
@@ -8,20 +18,20 @@ $button-color: #007BFF;
   justify-content: space-around;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
-  font-family: 'Inter', sans-serif;
+  background-color: $background-container;
+  font-family: $font-stack;
   font-weight: 400;
 }
 
 .first_form {
   max-width: 540px;
   width: 100%;
-  background-color: #fffefe;
+  background-color: $background-first_form;
   padding: 10px;
   border-radius: 5px;
   margin: 30px;
   font-size: 15px;
-  color: rgba(84, 84, 84, 1);
+  color: $text-color;
 }
 
 .first_form h1 {
@@ -31,7 +41,7 @@ $button-color: #007BFF;
   padding-top: 14px;
   padding-left: 9px;
   margin-bottom: 22px;
-  color: black;
+  color: $title-color;
 }
 
 .name {
@@ -40,25 +50,24 @@ $button-color: #007BFF;
   margin: 0 auto;
   max-width: 502px;
   width: 100%;
-}
-
-.name_block {
-  display: flex;
-  flex-direction: column;
-  margin-right: 12px;
-  height: 67px;
-  justify-content: space-between;
+  .name_block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    height: 67px;
+    justify-content: space-between;
+  }
 }
 
 .name_block input {
   width: 245px;
   height: 38px;
   border-radius: 5px;
-  border: 1px solid rgba(228, 228, 228, 1);
+  border: 1px solid $border-color;
 }
 
 .name_block input:hover {
-  border: 1px solid #007BFF;
+  border: 1px solid $button-color;
 }
 
 .email {
@@ -75,11 +84,11 @@ $button-color: #007BFF;
   width: 500px;
   height: 38px;
   border-radius: 5px;
-  border: 1px solid rgba(228, 228, 228, 1);
+  border: 1px solid $border-color;
 }
 
 .email input:hover {
-  border: 1px solid #007BFF;
+  border: 1px solid $button-color;
 }
 
 .email p {
@@ -90,13 +99,14 @@ button {
   width: 500px;
   height: 38px;
   border-radius: 5px;
-  background-color: #007BFF;
+  background-color: $button-color;
   text-align: center;
-  color: #fffefe;
+  font-size: 16px;
+  color: $background-first_form;
 }
 
 .second_form {
   max-width: 540px;
   width: 100%;
-  background-color: #fffefe;
+  background-color: $background-first_form;
 }
