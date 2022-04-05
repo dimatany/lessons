@@ -1,3 +1,76 @@
+@charset "UTF-8";
+/*формула автопервода из px в rem*/
+.lower_left, .lower_right, .upper_right, .upper_left {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
 
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: hsl(180deg, 2.6%, 54.9%);
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  margin-top: 76px;
+  margin-bottom: 20px;
+  word-spacing: 2px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: hsl(48deg, 100%, 50%);
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.angles_squares {
+  position: relative;
+}
+
+.upper_left {
+  border-top: 1px solid hsl(48deg, 100%, 50%);
+  border-left: 1px solid hsl(48deg, 100%, 50%);
+}
+
+.upper_right {
+  border-top: 1px solid hsl(48deg, 100%, 50%);
+  border-right: 1px solid hsl(48deg, 100%, 50%);
+}
+
+.lower_right {
+  border-right: 1px solid hsl(48deg, 100%, 50%);
+  border-bottom: 1px solid hsl(48deg, 100%, 50%);
+}
+
+.lower_left {
+  position: absolute;
+  border-left: 1px solid hsl(48deg, 100%, 50%);
+  border-bottom: 1px solid hsl(48deg, 100%, 50%);
+}
+
+main img {
+  width: 400px;
+  height: 400px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,89 @@
+$background-container-color: hsl(0,0%,89.8%);
+$sub-text-color: hsl(180,2.6%,54.9%);
+$edit-style-color: hsl(48,100%,50%);
+$base_fz: 16;/*формула автопервода из px в rem*/
+
+@mixin fz($size_in_px) {
+  font-size:($size_in_px/$base_fz)+rem;
+}
+
+%frame_size {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: $sub-text-color;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  margin-top: 76px;
+  margin-bottom: 20px;
+  word-spacing: 2px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: $edit-style-color;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+header img {
+
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.angles_squares {
+  position: relative;
+}
+
+.upper_left {
+  @extend %frame_size;
+  border-top: 1px solid $edit-style-color;
+  border-left: 1px solid $edit-style-color;
+}
+
+.upper_right {
+  @extend %frame_size;
+  border-top: 1px solid $edit-style-color;
+  border-right: 1px solid $edit-style-color;
+}
+
+.lower_right {
+  @extend %frame_size;
+  border-right: 1px solid $edit-style-color;
+  border-bottom: 1px solid $edit-style-color;
+}
+
+.lower_left {
+  @extend %frame_size;
+  position: absolute;
+  border-left: 1px solid $edit-style-color;
+  border-bottom: 1px solid $edit-style-color;
+}
+
+main img {
+  width: 400px;
+  height: 400px;
+}
