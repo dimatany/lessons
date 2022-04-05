@@ -24,7 +24,7 @@ $base_fz: 16;/*формула автопервода из px в rem*/
   font-weight: 400;
 }
 
-.first_form {
+.first_form, .second_form{
   max-width: 540px;
   width: 100%;
   background-color: $background-first_form;
@@ -79,7 +79,6 @@ $base_fz: 16;/*формула автопервода из px в rem*/
   border: 1px solid $border-color;
 }
 
-
 .email {
   display: flex;
   flex-direction: column;
@@ -105,19 +104,11 @@ $base_fz: 16;/*формула автопервода из px в rem*/
   color: $paragraph-color;
 }
 
-.additions {
-  font-size: 13px;
-}
-
 .radio {
   margin-bottom: 20px;
   margin-left: 12px;
 }
 
-.jq-radio:last-child {
-  padding-left: 10px;
-
-}
 .retreat {
   margin-bottom: 20px;
 }
@@ -144,6 +135,10 @@ button {
   color: $paragraph-color;
 }
 
+.additions {
+  font-size: 13px;
+}
+
 .additions_block a {
   color: $button-color;
 }
@@ -159,8 +154,35 @@ footer {
 footer a {
   color: $button-color;
 }
-.second_form {
-  max-width: 540px;
+
+/*second_form*/
+.wrap {
   width: 100%;
-  background-color: $background-first_form;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.second_form h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: $title-color;
+  margin-top: 16px;
+  margin-bottom: 23px;
+}
+
+.block_change_photo {
+  margin-bottom: 12px;
+}
+
+
+.btn_second_form {
+  width: 150px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: $button-color;
+  text-align: center;
+  font-size: 16px;
+  color: $background-first_form;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }

@@ -71,32 +71,49 @@
     </div>
     <div class="second_form">
         <form method="post" enctype="multipart/form-data" name="profile" action="#">
-            <h1>Profile</h1>
-            <img src="assets/images/avatar.png" alt="avatar">
-            <input type="file" name="avatar">
-            <input type="submit" value="Отправить">
-            <br>
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" value="" required autocomplete="name">
-            <label for="email">E-mail</label>
-            <input id="email" type="text" name="email" required autocomplete="email">
-            <br>
-            <label for="select2">Country</label>
-            <select id="select2" name="country" required="required">
-                <option disabled selected>Select</option>
-                <option value="usa">USA</option>
-                <option value="canada">CANADA</option>
-                <option value="england">England</option>
-            </select>
-            <label for="city2">City</label>
-            <input id="city2" type="text" name="city" value="">
-            <br>
-            <label for="ZipCode">Phone Number</label>
-            <input type="number" name="ZipCode" id="ZipCode" autocomplete="off">
-            <label for="PhoneNum">Phone Number</label>
-            <input type="tel" name="phone" id="PhoneNum" required autocomplete="tel">
-            <br>
-            <button type="submit">Update</button>
+            <div class="wrap">
+                <h1>Profile</h1>
+                <div class="block_change_photo">
+                    <img src="assets/images/avatar.png" alt="avatar">
+                    <input type="file" name="avatar">
+                    <input type="submit" value="Отправить">
+                </div>
+                <div class="block_fields">
+                    <div class="field_input">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" value="" required autocomplete="name">
+                    </div>
+                    <div class="field_input">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text" name="email" required autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="field_input">
+                    <label for="select2">Country</label>
+                    <select id="select2" name="country" required="required">
+                        <option disabled selected>Select</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">CANADA</option>
+                        <option value="england">England</option>
+                    </select>
+                    <div class="field_input">
+                        <label for="city2">City</label>
+                        <input id="city2" type="text" name="city" value="">
+                    </div>
+                </div>
+                <div class="block_fields">
+                    <div class="field_input">
+                        <label for="ZipCode">Phone Number</label>
+                        <input type="number" name="ZipCode" id="ZipCode" autocomplete="off">
+                    </div>
+                    <div class="field_input">
+                        <label for="PhoneNum">Phone Number</label>
+                        <input type="tel" name="phone" id="PhoneNum" required autocomplete="tel">
+                    </div>
+                </div>
+            </div>
+            <button class="btn_second_form" type="submit">Update</button>
         </form>
     </div>
 </div>

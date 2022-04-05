@@ -12,7 +12,7 @@
   font-weight: 400;
 }
 
-.first_form {
+.first_form, .second_form {
   max-width: 540px;
   width: 100%;
   background-color: hsl(0deg, 100%, 99.8%);
@@ -92,17 +92,9 @@
   color: hsl(0deg, 0%, 58.8%);
 }
 
-.additions {
-  font-size: 13px;
-}
-
 .radio {
   margin-bottom: 20px;
   margin-left: 12px;
-}
-
-.jq-radio:last-child {
-  padding-left: 10px;
 }
 
 .retreat {
@@ -131,6 +123,10 @@ button {
   color: hsl(0deg, 0%, 58.8%);
 }
 
+.additions {
+  font-size: 13px;
+}
+
 .additions_block a {
   color: hsl(211.1deg, 100%, 50%);
 }
@@ -147,10 +143,35 @@ footer a {
   color: hsl(211.1deg, 100%, 50%);
 }
 
-.second_form {
-  max-width: 540px;
+/*second_form*/
+.wrap {
   width: 100%;
-  background-color: hsl(0deg, 100%, 99.8%);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.second_form h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 0%);
+  margin-top: 16px;
+  margin-bottom: 23px;
+}
+
+.block_change_photo {
+  margin-bottom: 12px;
+}
+
+.btn_second_form {
+  width: 150px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: hsl(211.1deg, 100%, 50%);
+  text-align: center;
+  font-size: 16px;
+  color: hsl(0deg, 100%, 99.8%);
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
