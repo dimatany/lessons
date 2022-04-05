@@ -8,7 +8,7 @@ $border-color: hsl(0,0%,89.4%);
 $font-stack: 'Inter', sans-serif;
 $base_fz: 16;/*формула автопервода из px в rem*/
 
-@mixin fz($size_in_px){
+@mixin fz($size_in_px) {
   font-size:($size_in_px/$base_fz)+rem;
 }
 
@@ -27,6 +27,8 @@ $base_fz: 16;/*формула автопервода из px в rem*/
 .first_form, .second_form{
   max-width: 540px;
   width: 100%;
+  max-height: 590px;
+  height: 100%;
   background-color: $background-first_form;
   padding: 10px;
   border-radius: 5px;
@@ -104,6 +106,10 @@ $base_fz: 16;/*формула автопервода из px в rem*/
   color: $paragraph-color;
 }
 
+.disabled_selected {/*как отступить текстом от начала поля?*/
+  color: $paragraph-color;
+}
+
 .radio {
   margin-bottom: 20px;
   margin-left: 12px;
@@ -113,6 +119,10 @@ $base_fz: 16;/*формула автопервода из px в rem*/
   margin-bottom: 20px;
 }
 
+.second_retreat {
+  padding-bottom: 20px;
+
+}
 button {
   width: 500px;
   height: 38px;
@@ -123,6 +133,7 @@ button {
   color: $background-first_form;
   margin-left: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .additions_block {
@@ -174,6 +185,13 @@ footer a {
   margin-bottom: 12px;
 }
 
+.block_fields {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 502px;
+  width: 100%;
+}
 
 .btn_second_form {
   width: 150px;
@@ -185,4 +203,5 @@ footer a {
   color: $background-first_form;
   margin-left: 10px;
   margin-bottom: 20px;
+  margin-top: 22px;
 }

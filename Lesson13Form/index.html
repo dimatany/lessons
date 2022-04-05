@@ -48,7 +48,7 @@
                 <div class="field_input">
                     <label for="select">Country</label>
                     <select class="field_select" id="select" name="country" required="required">
-                        <option disabled selected>Select</option>
+                        <option class="disabled_selected" disabled selected>Select</option>
                         <option value="usa">USA</option>
                         <option value="canada">CANADA</option>
                         <option value="england">England</option>
@@ -78,7 +78,7 @@
                     <input type="file" name="avatar">
                     <input type="submit" value="Отправить">
                 </div>
-                <div class="block_fields">
+                <div class="block_fields second_retreat">
                     <div class="field_input">
                         <label for="name">Name</label>
                         <input id="name" type="text" name="name" value="" required autocomplete="name">
@@ -88,29 +88,30 @@
                         <input id="email" type="text" name="email" required autocomplete="email">
                     </div>
                 </div>
-
-                <div class="field_input">
-                    <label for="select2">Country</label>
-                    <select id="select2" name="country" required="required">
-                        <option disabled selected>Select</option>
-                        <option value="usa">USA</option>
-                        <option value="canada">CANADA</option>
-                        <option value="england">England</option>
-                    </select>
+                <div class="block_fields second_retreat">
+                    <div class="field_input">
+                        <label for="select2">Country</label>
+                        <select id="select2" name="country" required="required">
+                            <option class="disabled_selected" disabled selected>Select</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">CANADA</option>
+                            <option value="england">England</option>
+                        </select>
+                    </div>
                     <div class="field_input">
                         <label for="city2">City</label>
                         <input id="city2" type="text" name="city" value="">
                     </div>
                 </div>
-                <div class="block_fields">
-                    <div class="field_input">
-                        <label for="ZipCode">Phone Number</label>
-                        <input type="number" name="ZipCode" id="ZipCode" autocomplete="off">
-                    </div>
-                    <div class="field_input">
-                        <label for="PhoneNum">Phone Number</label>
-                        <input type="tel" name="phone" id="PhoneNum" required autocomplete="tel">
-                    </div>
+            </div>
+            <div class="block_fields">
+                <div class="field_input">
+                    <label for="ZipCode">Zip Code</label>
+                    <input type="number" name="ZipCode" id="ZipCode" autocomplete="off">
+                </div>
+                <div class="field_input">
+                    <label for="PhoneNum">Phone Number</label>
+                    <input type="tel" name="phone" id="PhoneNum" required autocomplete="tel">
                 </div>
             </div>
             <button class="btn_second_form" type="submit">Update</button>
