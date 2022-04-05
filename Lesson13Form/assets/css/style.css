@@ -112,7 +112,7 @@
   padding-bottom: 20px;
 }
 
-button {
+.btn {
   width: 500px;
   height: 38px;
   border-radius: 5px;
@@ -123,6 +123,12 @@ button {
   margin-left: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.btn:hover {
+  color: hsl(0deg, 0%, 32.9%);
+  background-color: hsl(0deg, 100%, 99.8%);
+  border: 1px solid hsl(211.1deg, 100%, 50%);
 }
 
 .additions_block {
@@ -171,7 +177,36 @@ footer a {
 }
 
 .block_change_photo {
-  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 19px;
+}
+
+.reset {
+  background: url("../images/iconBasket.png") no-repeat top right;
+  width: 40px;
+  height: 40px;
+  margin-top: 11px;
+}
+
+.upload_photo {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon_download {
+  background: url("../images/iconCamera.svg") no-repeat top right;
+  width: 40px;
+  height: 40px;
+}
+
+.upload_photo input {
+  margin-left: 20px;
+  margin-top: 11px;
+  width: 139px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid hsl(0deg, 0%, 89.4%);
 }
 
 .block_fields {
@@ -184,15 +219,20 @@ footer a {
 
 .btn_second_form {
   width: 150px;
-  height: 38px;
+  height: 36px;
   border-radius: 5px;
   background-color: hsl(211.1deg, 100%, 50%);
   text-align: center;
   font-size: 16px;
   color: hsl(0deg, 100%, 99.8%);
-  margin-left: 10px;
   margin-bottom: 20px;
   margin-top: 22px;
+}
+
+.btn_second_form:hover {
+  color: hsl(0deg, 0%, 32.9%);
+  background-color: hsl(0deg, 100%, 99.8%);
+  border: 1px solid hsl(211.1deg, 100%, 50%);
 }
 
 /*# sourceMappingURL=style.css.map */

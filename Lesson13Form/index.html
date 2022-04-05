@@ -75,8 +75,10 @@
                 <h1>Profile</h1>
                 <div class="block_change_photo">
                     <img src="assets/images/avatar.png" alt="avatar">
-                    <input type="file" name="avatar">
-                    <input type="submit" value="Отправить">
+                    <div class="upload_photo">
+                        <input  class="icon_download" type="file" name="avatar">
+                        <button class="reset"></button>
+                    </div>
                 </div>
                 <div class="block_fields second_retreat">
                     <div class="field_input">
@@ -103,18 +105,18 @@
                         <input id="city2" type="text" name="city" value="">
                     </div>
                 </div>
-            </div>
-            <div class="block_fields">
-                <div class="field_input">
-                    <label for="ZipCode">Zip Code</label>
-                    <input type="number" name="ZipCode" id="ZipCode" autocomplete="off">
-                </div>
-                <div class="field_input">
+                <div class="block_fields">
+                    <div class="field_input">
+                        <label for="ZipCode">Zip Code</label>
+                        <input type="number" name="ZipCode" id="ZipCode" autocomplete="off">
+                    </div>
+                    <div class="field_input">
                     <label for="PhoneNum">Phone Number</label>
                     <input type="tel" name="phone" id="PhoneNum" required autocomplete="tel">
                 </div>
+                </div>
+                <button class="btn_second_form" type="submit">Update</button>
             </div>
-            <button class="btn_second_form" type="submit">Update</button>
         </form>
     </div>
 </div>
