@@ -15,6 +15,9 @@
 header {
   width: 500px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h3 {
@@ -36,16 +39,36 @@ h1 {
   margin-bottom: 30px;
 }
 
+.separating_element_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 602px;
+}
+.separating_element_block img {
+  width: 16px;
+  height: 16px;
+}
+
+hr {
+  align-items: center;
+  width: 147px;
+  border: 1px solid hsl(48deg, 100%, 50%);
+}
+
 main {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 28px;
   margin-bottom: 20px;
+  width: 846px;
 }
 
 .separation_block {
   border-right: 1px solid hsl(48deg, 100%, 50%);
-  padding-left: 68px;
+  padding-left: 149px;
+  height: 400px;
 }
 
 .angles_squares {
@@ -73,7 +96,7 @@ main {
   border-bottom: 1px solid hsl(48deg, 100%, 50%);
 }
 
-main img {
+img {
   width: 280px;
   height: 280px;
 }
@@ -85,21 +108,63 @@ main img {
   text-align: center;
   margin: 0 auto;
   line-height: 17px;
+  padding-top: 55px;
 }
 
 h2 {
   font-family: Roboto, sans-serif;
   color: hsl(180deg, 2.6%, 54.9%);
   font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.separating_element {
+  border-top: 1px solid hsl(48deg, 100%, 50%);
+  width: 69px;
+  margin-left: 114px;
+  margin-bottom: 25px;
 }
 
 h4 {
   font-weight: 100;
   font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.social_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95px;
+  margin: 0 auto;
+  padding-bottom: 37px;
+}
+.social_icon img {
+  height: 20px;
+  width: 20px;
 }
 
 .introduce_block p {
   font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.decor_element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35px;
+  margin: 0 auto;
+}
+
+.decor_element_min {
+  width: 7px;
+  border: 1px solid hsl(48deg, 100%, 50%);
+}
+
+.decor_element_max {
+  width: 14px;
+  border: 1px solid hsl(48deg, 100%, 50%);
 }
 
 .introduce_block button {
@@ -110,6 +175,8 @@ h4 {
   border: 1px solid hsl(48deg, 100%, 50%);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+  margin-top: 17px;
+  margin-left: 106px;
 }
 
 /*# sourceMappingURL=style.css.map */
