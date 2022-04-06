@@ -64,7 +64,7 @@ h1 {
 hr {
   align-items: center;
   width: 147px;
-  border: 1px solid $edit-style-color;
+  border-top: 1px solid $edit-style-color;
 }
 
 main {
@@ -181,7 +181,7 @@ h4 {
   border: 1px solid $edit-style-color;
 }
 
-.introduce_block button{
+.introduce_block button {
   width: 83px;
   height: 18px;
   font-size: 10px;
@@ -191,4 +191,9 @@ h4 {
   font-weight: 700;
   margin-top: 17px;
   margin-left: 106px;
+}
+.introduce_block button:hover {
+  color: $background-container-color;
+  border: 1px solid black;
+  background: $edit-style-color;
 }

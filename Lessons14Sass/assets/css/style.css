@@ -54,7 +54,7 @@ h1 {
 hr {
   align-items: center;
   width: 147px;
-  border: 1px solid hsl(48deg, 100%, 50%);
+  border-top: 1px solid hsl(48deg, 100%, 50%);
 }
 
 main {
@@ -177,6 +177,12 @@ h4 {
   font-weight: 700;
   margin-top: 17px;
   margin-left: 106px;
+}
+
+.introduce_block button:hover {
+  color: hsl(0deg, 0%, 89.8%);
+  border: 1px solid black;
+  background: hsl(48deg, 100%, 50%);
 }
 
 /*# sourceMappingURL=style.css.map */
