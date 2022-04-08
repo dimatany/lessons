@@ -1,9 +1,0 @@
-@charset "UTF-8";
-/*формула автопервода из px в rem*/
-.container {
-  width: 90%;
-  max-width: 1445px;
-  margin: auto;
-}
-
-/*# sourceMappingURL=style.css.map */
