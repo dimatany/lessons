@@ -20,8 +20,6 @@ a, button {
     transition: all .2s ease-in;
 }
 
-
-
 a:hover {
     text-decoration: underline;
 }
@@ -46,6 +44,14 @@ body {
     width: 90%;
     background-color: #fff;
     margin: 0 auto;
+}
+
+.gray {
+    background-color: #f6f6f6;
+}
+
+.white {
+    background-color: #fff;
 }
 
 header {
@@ -96,8 +102,8 @@ a:hover {
 }
 
 h1 {
-    font-size: 47px;/**/
-    margin-top: 10px;/**/
+    font-size: 47px;
+    margin-top: 10px;
 }
 
 .rotate {
@@ -109,7 +115,7 @@ h1 {
     height: auto;
 }
 
-.block_about_me {
+.block_about_me {/*как сделать серый фон на весь дисплей?*/
     margin-top: 109px;
     padding-bottom: 65px;
     padding-top: 113px;
@@ -142,8 +148,9 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1023px;
+    width: 100%;
     flex-wrap: wrap;
-    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -176,10 +183,6 @@ figure {
     margin-bottom: 100px;
 }
 
-.gray {
-    background-color: #f6f6f6;
-}
-
 figcaption {
     margin-top: 42px;
     text-align: center;
@@ -203,15 +206,15 @@ footer {
     line-height: 38px;
     background-color: #333;
     color: #fff;
-    text-decoration: none;/**/
-    border-radius: 21px;/**/
-    cursor: pointer;/**/
-    border: 2px solid #333;/**/
+    text-decoration: none;
+    border-radius: 21px;
+    cursor: pointer;
+    border: 2px solid #333;
 }
 
 .btn:hover {
-    background-color: #fff;/**/
-    color: #333;/**/
+    background-color: #fff;
+    color: #333;
 }
 
 .footer-logo a {
