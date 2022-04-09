@@ -77,6 +77,10 @@ h1 {
   font-size: 40px;
 }
 
+.icon-inst {
+  font-size: 20px;
+}
+
 .content_block h3 {
   font-size: 24px;
   margin-left: 41px;
@@ -96,9 +100,10 @@ h1 {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background: hsl(244.3deg, 52.5%, 15.7%);
   margin: 0 auto;
-  width: 100%;
 }
 
 footer img {
@@ -108,6 +113,7 @@ footer img {
 }
 
 .social_block_link {
+  display: flex;
   margin-left: 5px;
   margin-bottom: 30px;
 }
