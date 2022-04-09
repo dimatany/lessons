@@ -108,14 +108,34 @@ footer {
 
 footer img {
   margin-left: 145px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  width: 196px;
+  margin-top: 37px;
+  margin-bottom: 49px;
 }
 
 .social_block_link {
   display: flex;
-  margin-left: 5px;
-  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 224px;
+  margin-left: 146px;
+  margin-bottom: 49px;
+}
+
+.social_block_link span {
+  font-size: 22px;
+  border: 1px solid hsl(244.3deg, 52.5%, 15.7%);
+  padding: 8px;
+  background: hsl(0deg, 0%, 89.8%);
+  border-radius: 7px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social_block_link span:hover {
+  color: hsl(135.8deg, 33.9%, 53.7%);
 }
 
 /*# sourceMappingURL=style.css.map */
