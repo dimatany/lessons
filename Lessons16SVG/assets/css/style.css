@@ -130,10 +130,6 @@ footer img {
   border-radius: 7px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .social_block_link span:hover {
   color: hsl(135.8deg, 33.9%, 53.7%);
 }
