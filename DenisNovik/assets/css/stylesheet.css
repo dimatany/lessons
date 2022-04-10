@@ -249,3 +249,14 @@ footer p {
     color: #828282;
     font-size: 14px;
 }
+
+
+
+
+.footer-logo a span {
+    font-size: 22px;
+    border: 1px solid red;
+    padding: 8px;
+    background: red;
+    border-radius: 7px;
+}

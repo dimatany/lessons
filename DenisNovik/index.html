@@ -17,19 +17,17 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body>
+
 <div class="white">
     <header id="header">
         <div class="container">
-            <nav class="topnav" id="main-menu">
+            <nav id="main-menu">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contacts">Contacts</a></li>
-                    <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a></li>
                 </ul>
             </nav>
         </div>
@@ -88,6 +86,9 @@
             <p>Want to know more or just chat?<br> You are welcome!</p>
             <button class="btn">Send message</button>
             <div class="footer-logo">
+                <a href="#" target="_blank" rel="nofollow noopener">
+                    <span class="icon icon-behance"></span>
+                </a>
                 <a href="#" target="_blank" rel="nofollow noopener"><img class="footer-logo" src="assets/images/linkedIn.png" alt="linkedIn"></a>
                 <a href="#" target="_blank" rel="nofollow noopener"><img class="footer-logo" src="assets/images/instagram.png" alt="instagram"></a>
                 <a href="#" target="_blank" rel="nofollow noopener"><img class="footer-logo" src="assets/images/behance.png" alt="behance"></a>
@@ -97,15 +98,5 @@
         </footer>
     </div>
 </div>
-<script>
-    function myFunction() {
-        let x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
 </body>
 </html>
