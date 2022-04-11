@@ -21,33 +21,19 @@
 <div class="white">
     <header id="header">
         <div class="container">
-            <div class="topnav" id="myTopnav">
-                <nav class="topnav_menu">
-                    <a href="#" class="active">Home</a>
-                    <a href="#about-me">About me</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contacts">Contacts</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i></a>
-                </nav>
-            </div>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 </div>
-
-<script>
-    function myFunction() {
-        let x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
-
-    <div class="container">
+<div class="container">
         <div class="submission">
             <h1>Denis <br>Novik</h1>
             <p>UX | UI designer <br>24 years old, Minsk</p>
