@@ -250,13 +250,10 @@ footer p {
     font-size: 14px;
 }
 
-
-
-
-.footer-logo a span {
-    font-size: 22px;
-    border: 1px solid red;
-    padding: 8px;
-    background: red;
-    border-radius: 7px;
+.icon .icon-sphere span {
+    display: block;
+    color: black;
+    font-size: 40px;
+    width: 10px;
+    height: 10px;
 }
