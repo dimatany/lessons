@@ -89,12 +89,9 @@ a {
 }
 
 a:hover {
-    color: #828282;
+    color: #070707;
 }
-
-
-
-
+/*часть с js*/
 .topnav {
     overflow: hidden;
 }
@@ -109,7 +106,7 @@ a:hover {
 }
 
 .topnav a.active {
-    color: black;
+    color: #070707;
 }
 
 .topnav .icon {
@@ -117,7 +114,7 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav ul li a:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
@@ -138,24 +135,6 @@ a:hover {
         text-align: left;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
