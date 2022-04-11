@@ -54,99 +54,108 @@ body {
     background-color: #fff;
 }
 
+/*MENU BURGER- сама себе объясняю*/
 header {
-    border-bottom: 1px solid #828282;
-    font-size: 16px;
-    max-width: 940px;
-    margin: 0 auto;
+    border-bottom: 1px solid #828282;/*бордер под меню, как в макете*/
+    max-width: 940px;/*максимальная ширина хедера*/
+    margin: 0 auto;/*центрирование в контейнере*/
 }
 
-#main-menu ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    padding: 19px 0;
-    margin-bottom: 16px;
+a {
+    text-decoration: none;/*обнуление подчеркивания для списка*/
 }
 
-#main-menu ul li a {
-    font-size: 18px;
-    line-height: 25px;
-    color: #828282;
-    text-decoration: none;
+.navbar {
+    display: flex;/*флекс контейнер*/
+    justify-content: space-between;/*пункты меню по контейнеру*/
+    align-items: center;/*центрую текст посредине*/
+    padding: 1rem 1.5rem;/*???*/
 }
 
-#main-menu ul li a.active,
-#main-menu ul li a:hover {
-    color: #070707;
+.hamburger {
+    display: none;/*скрываем гамбургер элемент*/
+}
+
+.nav-logo {
+    display: none;/*скрываем лого элемент*/
+}
+
+.bar {
+    display: block;/*превращаем span в блочный элемент*/
+    width: 25px;/*длина полосочки в элементе*/
+    height: 3px;/*выоста полосочки элементе*/
+    margin: 5px auto;/**/
+    transition: all 0.3s ease-in-out;/*время смены бургера на крестик*/
+    background-color: #070707;/*цвет элементов (крестик/бургер)*/
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;/*прозрачность второго элемента - при клике пропадает средняя полосочка*/
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);/*изм. по шкале Y 1го элем. - часть крестика*/
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);/*изм. по шкале X 1го элем. - часть крестика*/
+}
+
+.nav-menu {
+    max-width: 940px;/*???*/
+    margin: 0 auto;/*??? почему не раскидывает?*/
+    display: flex;/*флекс контейнер*/
+    justify-content: space-between;/*на всю длину контейнера*/
+    align-items: center;/*расставлем по центру элемент*/
+    padding-top: 16px;/*отсутп сверху по макету*/
+    padding-bottom: 21px;/*отступ снизу по макету*/
+}
+
+.nav-item {
+    /*margin-left: 5rem;*/
+}
+
+.nav-item {
+    margin: 14px 0;/**/
 }
 
 
-
-
-
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
+.nav-link{
+    font-weight: 700;/*толщина шрифта пунктов*/
+    color: rgba(130, 130, 130, 1);/*цвет шрифта пунктов*/
 }
 
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.nav-link:hover{
+    color: #070707;/*цвет пункта при наведении*/
+    text-decoration: none;/*убираем подчеркивание при наведении на ссылку*/
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+.nav-logo {
+    color: #070707;/*цвет текста*/
+    font-size: 48px;/*размер букв*/
+    letter-spacing: -1px;/*расстояние между буквами*/
+    line-height: 58px;/*расстояние между строками*/
 }
 
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
+@media only screen and (max-width: 768px) {
+    .nav-menu {/*список при ресайзе - правила*/
+        position: fixed;/*фиксируем позицию*/
+        left: -100%;/*меню при клике уезжает влево за зону видимости*/
+        top: 4rem;/*отступ сверху*/
+        flex-direction: column;/*направление флекс контейнера - колонки*/
+        background-color: #fff;/*задний фон белый как у контейнера white*/
+        width: 100%;/*ширина на весь дисплей*/
+        text-align: center;/*центорка текста по центру*/
+        transition: 0.6s;/*время за которое выезжает и заезжает меню*/
+        z-index: 12;/*всплывает над всей страницей*/
+    }
 
-.topnav .icon {
-    display: none;
-}
+    .nav-menu.active {
+        left: 0;/**/
+    }
 
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-        float: right;
-        display: block;
+    .hamburger {
+        display: block;/*делаем бургер блочным элементом*/
+        cursor: pointer;/*тип курсора*/
     }
 }
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -184,7 +193,7 @@ h1 {
     height: auto;
 }
 
-.block_about_me {/*как сделать серый фон на весь дисплей?*/
+.block_about_me {
     margin-top: 109px;
     padding-bottom: 70px;
     padding-top: 113px;
@@ -317,31 +326,6 @@ footer p {
     width: 10px;
     height: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

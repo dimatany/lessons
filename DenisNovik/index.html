@@ -19,7 +19,46 @@
 </head>
 <body>
 <div class="white">
-    <header id="header">
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><h1>Denis <br>Novik</h1></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    }
+</script>
+
+    <!--<header id="header">
         <div class="container">
             <nav id="main-menu">
                 <ul>
@@ -32,15 +71,14 @@
             </nav>
         </div>
     </header>
-</div>
+</div> -->
 <div class="container">
-        <div class="submission">
-            <h1>Denis <br>Novik</h1>
-            <p>UX | UI designer <br>24 years old, Minsk</p>
-            <p class="rotate">RU | ENG</p>
-        </div>
-        <img class="responsive_img" src="assets/images/avatar.jpg" alt="Denis Novik">
+    <div class="submission">
+        <h1>Denis <br>Novik</h1>
+        <p>UX | UI designer <br>24 years old, Minsk</p>
+        <p class="rotate">RU | ENG</p>
     </div>
+    <img class="responsive_img" src="assets/images/avatar.jpg" alt="Denis Novik">
 </div>
 <div class="gray">
     <div class="container">
@@ -94,8 +132,8 @@
             </div>
             <p class="footer-author">Like me on<br> LinkedIn, Instagram, Behance,<br> Dribble</p>
         </footer>
-
     </div>
+</div>
 </div>
 </body>
 </html>
