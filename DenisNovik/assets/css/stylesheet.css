@@ -359,7 +359,7 @@ footer p {
     margin: 0 28px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 445px) {
     .footer-logo a {
         width: 20px;
     }
