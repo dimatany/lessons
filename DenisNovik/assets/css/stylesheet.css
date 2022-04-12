@@ -61,6 +61,11 @@ header {
     margin: 0 auto;/*центрирование в контейнере*/
 }
 
+figure a {
+    color: rgba(7, 7, 7, 1);
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;/*обнуление подчеркивания для списка*/
 }
@@ -80,9 +85,13 @@ a {
     display: none;/*скрываем лого элемент*/
 }
 
+.active {
+    color: #070707;/*ПОЧЕМУ НЕ СРАБАТЫВАЕТ????*/
+}
+
 .bar {
     display: block;/*превращаем span в блочный элемент*/
-    width: 25px;/*длина полосочки в элементе*/
+    width: 33px;/*длина полосочки в элементе*/
     height: 3px;/*выоста полосочки элементе*/
     margin: 5px auto;/**/
     transition: all 0.3s ease-in-out;/*время смены бургера на крестик*/
@@ -100,7 +109,7 @@ a {
 
 .nav-menu {
     max-width: 940px;/*???*/
-    margin: 0 auto;/*??? почему не раскидывает?*/
+    margin: 0 auto;/*??? ПОЧЕМУ НЕ РАСКИДЫВАЕТ?*/
     display: flex;/*флекс контейнер*/
     justify-content: space-between;/*на всю длину контейнера*/
     align-items: center;/*расставлем по центру элемент*/
@@ -109,13 +118,8 @@ a {
 }
 
 .nav-item {
-    /*margin-left: 5rem;*/
-}
-
-.nav-item {
     margin: 14px 0;/**/
 }
-
 
 .nav-link{
     font-weight: 700;/*толщина шрифта пунктов*/
@@ -132,33 +136,37 @@ a {
     font-size: 48px;/*размер букв*/
     letter-spacing: -1px;/*расстояние между буквами*/
     line-height: 58px;/*расстояние между строками*/
+
 }
 
 @media only screen and (max-width: 768px) {
     .nav-menu {/*список при ресайзе - правила*/
         position: fixed;/*фиксируем позицию*/
         left: -100%;/*меню при клике уезжает влево за зону видимости*/
-        top: 4rem;/*отступ сверху*/
+        top: 45px;/*отступ сверху*/
         flex-direction: column;/*направление флекс контейнера - колонки*/
         background-color: #fff;/*задний фон белый как у контейнера white*/
         width: 100%;/*ширина на весь дисплей*/
-        text-align: center;/*центорка текста по центру*/
+        text-align: start;/*центорка текста по центру*/
         transition: 0.6s;/*время за которое выезжает и заезжает меню*/
-        z-index: 12;/*всплывает над всей страницей*/
     }
-
     .nav-menu.active {
-        left: 0;/**/
+        left: 0;/*ЧТО ДЕЛАЕТ?????*/
+        top: 40px;
     }
-
     .hamburger {
         display: block;/*делаем бургер блочным элементом*/
         cursor: pointer;/*тип курсора*/
+        margin-top: -67px;
+    }
+    .nav-logo {
+        display: block;/*скрываем лого элемент*/
+        text-decoration: none;
+    }
+    .nav-item {
+        font-size: 34px;/*размер шрифта при работе бургера*/
     }
 }
-
-
-
 
 .submission {
     max-width: 940px;
@@ -179,6 +187,24 @@ h1 {
     margin-top: 9px;
     letter-spacing: -1px;
     line-height: 58px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .submission h1 {
+        display: none;
+    }
+    .submission:nth-child(1) {
+        padding-top: 5px;
+    }
+    header {
+        border-bottom: none;
+        padding-top: 32px;
+    }
+    .hamburger {
+        padding-top: 3px;
+        margin-left: 10px;
+    }
 }
 
 .rotate {

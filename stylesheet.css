@@ -56,6 +56,10 @@ table {
     margin: 0 auto;
 }
 
+img {
+    vertical-align: top;
+}
+
 
 /*visible part*/
 
