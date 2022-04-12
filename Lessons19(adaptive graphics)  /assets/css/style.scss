@@ -1,0 +1,19 @@
+$border-color: hsl(0,0%,89.8%);
+$background-footer-color: hsl(244.3,52.5%,15.7%);
+$hover-color: hsl(135.8,33.9%,53.7%);
+$titles-color: hsl(208.8,22.3%,56.1%);
+$content-text: Roboto, sans-serif;
+$title-text: "Nunito Sans", sans-serif;
+$base_fz: 16;/*формула автопервода из px в rem*/
+
+@mixin fz($size_in_px) {
+  font-size:($size_in_px/$base_fz)+rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  font-family: $content-text;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*формула автопервода из px в rem*/
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  font-family: Roboto, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
