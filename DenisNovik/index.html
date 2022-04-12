@@ -61,8 +61,11 @@
         <p>UX | UI designer <br>24 years old, Minsk</p>
         <p class="rotate">RU | ENG</p>
     </div>
-    <img class="responsive_img avatar" src="assets/images/avatar_max.png" alt="Denis Novik">
-    <img class="responsive_img_768px" src="assets/images/avatar_min.png" alt="Denis Novik">
+    
+    <picture>
+        <source srcset="assets/images/avatar_min.png" media="(max-width:400px)">
+        <img class="responsive_img" src="assets/images/avatar_max.png" alt="Denis Novik">
+    </picture>
 </div>
 <div class="gray">
     <div class="container">

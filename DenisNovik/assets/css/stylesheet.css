@@ -201,10 +201,6 @@ h1 {
     height: auto;
 }
 
-.responsive_img_768px {
-    display: none;
-}
-
 @media only screen and (max-width: 768px) {
     .submission h1 {
         display: none;
@@ -221,17 +217,6 @@ h1 {
         margin-left: 10px;
     }
 }
-
-@media only screen and (max-width: 400px) {
-    .avatar {
-        display: none;
-    }
-    .responsive_img_768px {
-        display: block;
-    }
-}
-
-
 
 .block_about_me {
     margin-top: 109px;
@@ -262,7 +247,6 @@ h2 {
         margin: 0 auto; /*ПОЧЕМУ НЕ ЦЕНТРУЕТ????*/
     }
 }
-
 
 .block_skills h2 {
     margin-bottom: 31px;
@@ -364,7 +348,6 @@ footer p {
         width: 20px;
     }
 }
-
 
 .footer-author {
     margin: 38px auto 10px auto;
