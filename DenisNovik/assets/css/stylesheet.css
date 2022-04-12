@@ -189,6 +189,21 @@ h1 {
     line-height: 58px;
 }
 
+.rotate {
+    transform: rotate(-90deg);
+    position: relative;
+    right: -28px;
+    top: -37px;
+}
+
+.responsive_img {
+    width: 100%;
+    height: auto;
+}
+
+.responsive_img_768px {
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
     .submission h1 {
@@ -207,17 +222,16 @@ h1 {
     }
 }
 
-.rotate {
-    transform: rotate(-90deg);
-    position: relative;
-    right: -28px;
-    top: -37px;
+@media only screen and (max-width: 400px) {
+    .avatar {
+        display: none;
+    }
+    .responsive_img_768px {
+        display: block;
+    }
 }
 
-.responsive_img {
-    width: 100%;
-    height: auto;
-}
+
 
 .block_about_me {
     margin-top: 109px;
@@ -241,7 +255,7 @@ h2 {
     padding-bottom: 110px;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .block_skills {
         display: block;
         flex-direction: column;
@@ -344,6 +358,13 @@ footer p {
     height: 40px;
     margin: 0 28px;
 }
+
+@media only screen and (max-width: 400px) {
+    .footer-logo a {
+        width: 20px;
+    }
+}
+
 
 .footer-author {
     margin: 38px auto 10px auto;
