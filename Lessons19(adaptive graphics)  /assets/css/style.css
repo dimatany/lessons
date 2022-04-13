@@ -86,7 +86,7 @@ footer {
 
 @media only screen and (max-width: 505px) {
   .container {
-    padding-top: 110px;
+    padding-top: 111px;
     word-spacing: 4px;
   }
 
@@ -99,12 +99,34 @@ footer {
     font-size: 29px;
     letter-spacing: 4px;
     word-spacing: -3px;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     width: 170px;
   }
 
+  h3 {
+    margin-bottom: 22px;
+    line-height: 20px;
+  }
+
   .first_photo {
-    height: 500px;
+    margin-bottom: 50px;
+  }
+
+  .content_first_block {
+    margin-bottom: 70px;
+  }
+
+  .adaptive {
+    line-height: 37px;
+    margin-bottom: 32px;
+  }
+
+  .second_photo {
+    margin-bottom: 37px;
+  }
+
+  .content_second_block {
+    margin-bottom: 52px;
   }
 }
 
