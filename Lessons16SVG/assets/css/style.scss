@@ -10,18 +10,19 @@ $base_fz: 16;/*формула автопервода из px в rem*/
   font-size:($size_in_px/$base_fz)+rem;
 }
 
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+body {
   background: #FFFFFF;
   font-family: $content-text;
 }
 
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 header {
   width: 100%;
-  max-width: 1155px;
-  margin: 0 auto;
   border-bottom: 1px solid $border-color;
   padding-bottom: 37px;
 }
@@ -31,9 +32,6 @@ header img {
 }
 
 main {
-  width: 100%;
-  max-width: 1155px;
-  margin: 0 auto;
   padding-top: 54px;
 }
 
@@ -54,21 +52,24 @@ h1 {
 .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 1158px;
   justify-content: space-between;
   margin-bottom: 68px;
 }
 
 .content_block {
-  width: 360px;
   border: 1px solid $border-color;
-  border-radius: 5px;
-  transition: all .7s ease;
+  border-radius: 10px;
+  transition: all .3s ease;
+  padding: 22px 22px 46px 37px;
 }
 
 .content_block:hover {
   border: 1px solid $hover-color;
+}
+
+.signature a:hover {
+  color: $hover-color;
+  text-decoration: none;
 }
 
 .form {
@@ -78,9 +79,8 @@ h1 {
   border: 1px solid $border-color;
   border-radius: 15px;
   padding: 13px;
-  margin-top: 41px;
-  margin-left: 39px;
-  margin-bottom: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .icon {
@@ -93,34 +93,26 @@ h1 {
 
 .content_block h3 {
   font-size: 24px;
-  margin-left: 41px;
   margin-bottom: 14px;
 }
 
 .content_block .text {
-  width: 277px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 277px;
   line-height: 27px;
   padding-bottom: 27px;
-}
-
-.content_block p {
-  margin-left: 40px;
-  margin-bottom: 44px;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   background: $background-footer-color;
-  margin: 0 auto;
 }
 
 footer img {
-  margin-left: 145px;
   width: 196px;
   margin-top: 37px;
-  margin-bottom: 49px;
+  margin-bottom: 42px;
 }
 
 .social_block_link {
@@ -128,7 +120,6 @@ footer img {
   flex-direction: row;
   justify-content: space-between;
   width: 224px;
-  margin-left: 146px;
   margin-bottom: 49px;
 }
 
@@ -140,6 +131,18 @@ footer img {
   border-radius: 7px;
 }
 
-.social_block_link span:hover {
+.social_block_link a:hover {
   color: $hover-color;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1160px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .content .content_block {
+    margin: 20px;
+  }
 }
