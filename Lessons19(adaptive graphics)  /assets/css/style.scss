@@ -97,7 +97,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 505px) {
   .container {
     padding-top: 110px;
     word-spacing: 4px;
@@ -111,6 +111,11 @@ footer {
     letter-spacing: 4px;
     word-spacing: -3px;
     margin-bottom: 50px;
+    width: 170px;
   }
+  .first_photo {
+    height: 500px;
+  }
+
 
 }
