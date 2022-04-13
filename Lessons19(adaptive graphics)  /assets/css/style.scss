@@ -39,7 +39,6 @@ h1 {
 }
 
 
-
 h2 {
   font-family: $content-text;
   text-transform: uppercase;
@@ -95,4 +94,23 @@ p {
 
 footer {
   height: 170px;
+}
+
+
+@media only screen and (max-width: 320px) {
+  .container {
+    padding-top: 110px;
+    word-spacing: 4px;
+  }
+  h2 {
+    margin-bottom: 35px;
+  }
+  h1 {
+    line-height: 53px;
+    font-size: 29px;
+    letter-spacing: 4px;
+    word-spacing: -3px;
+    margin-bottom: 50px;
+  }
+
 }
