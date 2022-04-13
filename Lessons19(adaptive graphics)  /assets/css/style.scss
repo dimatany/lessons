@@ -1,19 +1,98 @@
-$border-color: hsl(0,0%,89.8%);
-$background-footer-color: hsl(244.3,52.5%,15.7%);
-$hover-color: hsl(135.8,33.9%,53.7%);
-$titles-color: hsl(208.8,22.3%,56.1%);
-$content-text: Roboto, sans-serif;
-$title-text: "Nunito Sans", sans-serif;
+$background-color: hsl(0,0%,89.8%);
+$title-text-color: hsl(0,0%,0%);
+$content-color: hsl(0,0%,33.7%);
+$content-text: 'Lato', sans-serif;
+$title-text: 'Red Hat Display', sans-serif;
 $base_fz: 16;/*формула автопервода из px в rem*/
 
 @mixin fz($size_in_px) {
   font-size:($size_in_px/$base_fz)+rem;
 }
 
-.container {
-  width: 100%;
+body {
+  font-family: $content-text;
+  color: hsl(0,0%,33.7%);
   max-width: 1440px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1122px;
   margin: 0 auto;
   background: #FFFFFF;
   font-family: $content-text;
+  padding-top: 74px;
+}
+
+%title_styles {
+  color: $title-text-color;
+  font-family: $title-text;
+  font-weight: 400;
+}
+
+h1 {
+  @extend %title_styles;
+  font-size: 48px;
+  letter-spacing: 3px;
+  word-spacing: -5px;
+  margin-bottom: 83px;
+}
+
+
+
+h2 {
+  font-family: $content-text;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 8px;
+  margin-bottom: 67px;
+}
+
+h3 {
+  @extend %title_styles;
+  font-size: 23px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  margin-bottom: 48px;
+}
+
+p {
+  font-family: $content-text;
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+.responsive_img {
+  width: 100%;
+  height: auto;
+}
+
+.first_photo {
+  margin-bottom: 131px;
+}
+
+.content_first_block {
+  max-width: 550px;
+  margin-bottom: 220px;
+  p:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.second_photo {
+  margin-bottom: 42px;
+}
+
+.content_second_block {
+  margin-bottom: 137px;
+  max-width: 1080px;
+  p:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+footer {
+  height: 170px;
 }
