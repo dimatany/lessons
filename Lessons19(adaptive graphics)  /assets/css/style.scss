@@ -1,6 +1,6 @@
-$background-color: hsl(0,0%,89.8%);
-$title-text-color: hsl(0,0%,0%);
-$content-color: hsl(0,0%,33.7%);
+$background-color: #e5e5e5;
+$title-text-color: #000000;
+$content-color: #565656;
 $content-text: 'Lato', sans-serif;
 $title-text: 'Red Hat Display', sans-serif;
 $base_fz: 16;/*формула автопервода из px в rem*/
@@ -11,16 +11,18 @@ $base_fz: 16;/*формула автопервода из px в rem*/
 
 body {
   font-family: $content-text;
-  color: hsl(0,0%,33.7%);
-  max-width: 1440px;
-  background: #FFFFFF;
+  color: $content-color;
+  max-width: 1442px;
 }
 
 .wrap {
+  padding-top: 74px;
+}
+
+.container {
   width: 90%;
   max-width: 1122px;
   margin: 0 auto;
-  padding-top: 74px;
 }
 
 %title_styles {
@@ -36,7 +38,6 @@ h1 {
   word-spacing: -5px;
   margin-bottom: 83px;
 }
-
 
 h2 {
   font-family: $content-text;
@@ -62,13 +63,17 @@ p {
   line-height: 32px;
 }
 
-.responsive_img {
-  width: 100%;
-  height: auto;
-}
-
 .first_photo {
   margin-bottom: 131px;
+}
+
+.first_photo .second_photo .third_photo .fourth_photo picture img {
+  width: 100%;
+  max-height: 470px;
+}
+
+.third_photo, .fourth_photo {
+  margin-bottom: 44px;
 }
 
 .content_first_block {
@@ -95,10 +100,19 @@ footer {
   height: 170px;
 }
 
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 320px) {
   .wrap {
     padding-top: 111px;
     word-spacing: 4px;
+  }
+  .container {
+    width: 90%;
+    max-width: 796px;
+    margin: 0 auto;
+  }
+  .first_photo .second_photo .third_photo .fourth_photo picture img {
+    width: 100%;
+    max-height: 288px;
   }
   h2 {
     margin-bottom: 35px;
@@ -128,9 +142,6 @@ footer {
   .second_photo {
     margin-bottom: 41px;
   }
-  .mob_adapt {
-    padding-top: 23px;
-  }
   .content_second_block {
     margin-bottom: 52px;
   }
@@ -141,6 +152,10 @@ footer {
   .wrap {
     padding-top: 111px;
     word-spacing: 4px;
+  }
+  .first_photo .second_photo .third_photo .fourth_photo picture img {
+    width: 100%;
+    max-height: 400px;
   }
   h2 {
     margin-bottom: 35px;

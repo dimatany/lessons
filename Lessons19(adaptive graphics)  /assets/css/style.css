@@ -2,20 +2,22 @@
 /*формула автопервода из px в rem*/
 body {
   font-family: "Lato", sans-serif;
-  color: hsl(0deg, 0%, 33.7%);
-  max-width: 1440px;
-  background: #FFFFFF;
+  color: #565656;
+  max-width: 1442px;
 }
 
 .wrap {
-  width: 90%;
-  max-width: 1122px;
-  margin: 0 auto;
   padding-top: 74px;
 }
 
+.container {
+  width: 90%;
+  max-width: 1122px;
+  margin: 0 auto;
+}
+
 h3, h1 {
-  color: hsl(0deg, 0%, 0%);
+  color: #000000;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
 }
@@ -50,13 +52,17 @@ p {
   line-height: 32px;
 }
 
-.responsive_img {
-  width: 100%;
-  height: auto;
-}
-
 .first_photo {
   margin-bottom: 131px;
+}
+
+.first_photo .second_photo .third_photo .fourth_photo picture img {
+  width: 100%;
+  max-height: 470px;
+}
+
+.third_photo, .fourth_photo {
+  margin-bottom: 44px;
 }
 
 .content_first_block {
@@ -83,10 +89,21 @@ footer {
   height: 170px;
 }
 
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 320px) {
   .wrap {
     padding-top: 111px;
     word-spacing: 4px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 796px;
+    margin: 0 auto;
+  }
+
+  .first_photo .second_photo .third_photo .fourth_photo picture img {
+    width: 100%;
+    max-height: 288px;
   }
 
   h2 {
@@ -124,10 +141,6 @@ footer {
     margin-bottom: 41px;
   }
 
-  .mob_adapt {
-    padding-top: 23px;
-  }
-
   .content_second_block {
     margin-bottom: 52px;
   }
@@ -136,6 +149,11 @@ footer {
   .wrap {
     padding-top: 111px;
     word-spacing: 4px;
+  }
+
+  .first_photo .second_photo .third_photo .fourth_photo picture img {
+    width: 100%;
+    max-height: 400px;
   }
 
   h2 {
