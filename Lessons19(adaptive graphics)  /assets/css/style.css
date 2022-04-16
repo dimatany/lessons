@@ -96,8 +96,7 @@ footer {
   }
 
   .container {
-    width: 90%;
-    max-width: 796px;
+    max-width: 320px;
     margin: 0 auto;
   }
 
@@ -149,6 +148,11 @@ footer {
   .wrap {
     padding-top: 111px;
     word-spacing: 4px;
+  }
+
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .first_photo .second_photo .third_photo .fourth_photo picture img {
