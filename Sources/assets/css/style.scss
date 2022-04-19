@@ -14,19 +14,18 @@ $base_fz: 16;/*формула автопервода из px в rem*/
 
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Hind', sans-serif;
   background: $bg;
   color: $gray;
   display: flex;
   min-height: 100vh;
+  padding: 4rem;
 }
 
 .container {
   margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
+  width: 100%;
+  max-width: 1600px;
 }
 
 .accordion {
@@ -41,7 +40,7 @@ body {
     display: block;
     text-align: left;
     width: 100%;
-    padding: 1em 0;
+    padding: 1em 1em;
     color: $text;
     font-size: 1.15rem;
     font-weight: 400;
