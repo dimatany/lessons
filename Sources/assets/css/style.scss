@@ -102,6 +102,7 @@ body {
       max-height: 100em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
+      padding: 6px;
     }
   }
   .accordion-content {
@@ -117,6 +118,11 @@ body {
     }
     .refer {
       color: $refer;
+    }
+    h3 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: underline;
     }
   }
 }

@@ -87,6 +87,7 @@ body {
   max-height: 100em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
+  padding: 6px;
 }
 .accordion .accordion-content {
   opacity: 0;
@@ -102,6 +103,11 @@ body {
 }
 .accordion .accordion-content .refer {
   color: #6889ce;
+}
+.accordion .accordion-content h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: underline;
 }
 
 .footer {
