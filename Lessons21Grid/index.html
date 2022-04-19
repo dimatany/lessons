@@ -20,13 +20,13 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="header">
+    <header id="header">
         <div class="container">
             <div class="header_content">
-                <div class="header_logo">
+                <div id="logo">
                     <img src="assets/images/Logo.png" alt="logo">
                 </div>
-                <nav>
+                <nav id="main_menu">
                     <ul class="header_links">
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Contact</a></li>
@@ -141,14 +141,35 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="media">
-                    <a href="#" target="_blank" rel="nofollow noopener"><span class="icon icon-dribbble1"></span></a>
-                    <a href="#" target="_blank" rel="nofollow noopener"><span class="icon icon-instagram"></span></a>
-                    <a href="#" target="_blank" rel="nofollow noopener"><span class="icon icon-twitter"></span></a>
-                </div>
+                <ul class="social_block_link">
+                    <li>
+                        <a href="#" target="_blank" rel="nofollow noopener">
+                            <span class="icon icon-dribbble1"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="nofollow noopener">
+                            <span class="icon icon-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="nofollow noopener">
+                            <span class="icon icon-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
 </div>
+<script>
+    window.addEventListener('scroll', function(){
+        if(window.scrollY > 80) {
+            document.getElementById('header').classList.add('scroll')
+    }else{
+        document.getElementById('header').classList.remove('scroll')
+    }
+    })
+</script>
 </body>
 </html>
