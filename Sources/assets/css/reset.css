@@ -53,36 +53,3 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-.container {
-    max-width: 1600px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-
-
-
-/*visible part*/
-body {
-    background-color: #2F281E;
-    color: white;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: red;
-}
-li {
-    padding: 10px;
-    border: 1px solid white;
-    text-align: center;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-li:visited {
-    color: #7a43b6;
-}
-
