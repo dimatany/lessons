@@ -3,6 +3,13 @@ $text: #7288a2;
 $gray: #4d5974;
 $lightgray: #e5e5e5;
 $blue: #03b5d2;
+$refer: #6889ce;
+$content-text: 'Mulish', sans-serif;
+$base_fz: 16;/*формула автопервода из px в rem*/
+
+@mixin fz($size_in_px) {
+  font-size:($size_in_px/$base_fz)+rem;
+}
 
 
 
@@ -93,7 +100,7 @@ body {
     }
     + .accordion-content {
       opacity: 1;
-      max-height: 9em;
+      max-height: 100em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
     }
@@ -109,5 +116,12 @@ body {
       font-weight: 300;
       margin: 2em 0;
     }
+    .refer {
+      color: $refer;
+    }
   }
+}
+
+.footer {
+  height: 200px;
 }
