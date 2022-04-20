@@ -3,7 +3,6 @@
 body {
   font-family: "Lato", sans-serif;
   color: #565656;
-  max-width: 1442px;
 }
 
 .wrap {
@@ -56,7 +55,7 @@ p {
   margin-bottom: 131px;
 }
 
-.first_photo .second_photo .third_photo .fourth_photo picture img {
+.first_photo, .second_photo, .third_photo, .fourth_photo, picture img {
   width: 100%;
   max-height: 470px;
 }

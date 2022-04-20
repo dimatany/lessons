@@ -12,7 +12,6 @@ $base_fz: 16;/*формула автопервода из px в rem*/
 body {
   font-family: $content-text;
   color: $content-color;
-  max-width: 1442px;
 }
 
 .wrap {
@@ -67,7 +66,7 @@ p {
   margin-bottom: 131px;
 }
 
-.first_photo .second_photo .third_photo .fourth_photo picture img {
+.first_photo, .second_photo, .third_photo, .fourth_photo, picture img {
   width: 100%;
   max-height: 470px;
 }
