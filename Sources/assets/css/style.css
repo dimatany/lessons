@@ -108,6 +108,9 @@ h2 {
 .accordion .accordion-content .refer {
   color: #6889ce;
 }
+.accordion .accordion-content a {
+  color: #6889ce;
+}
 .accordion .accordion-content h3 {
   padding-top: 10px;
   padding-bottom: 10px;

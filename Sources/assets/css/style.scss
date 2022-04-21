@@ -11,8 +11,6 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
   font-size:($size_in_px/$base_fz)+rem;
 }
 
-
-
 body {
   font-family: 'Helvetica', sans-serif;
   background: $bg;
@@ -121,6 +119,9 @@ h2 {
       margin: 2em 0;
     }
     .refer {
+      color: $refer;
+    }
+    a {
       color: $refer;
     }
     h3 {
