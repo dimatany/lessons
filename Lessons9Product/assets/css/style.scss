@@ -1,0 +1,9 @@
+$content-allocation: #4A4FF2;
+$content-color: #111111;
+$background-color: #FFFFFF;
+$content-text: 'Mulish', sans-serif;;
+$base_fz: 16;/*формула автоперехода из px в rem*/
+
+@mixin fz($size_in_px) {
+  font-size:($size_in_px/$base_fz)+rem;
+}
