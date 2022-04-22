@@ -1,0 +1,158 @@
+$color-elements: #FF9900;
+$color-title: #173A56;
+$color-headings: #2F281E;
+$color-content: #544837;
+$color-btn: rgba(255, 255, 255, 1);
+$border-color: #173A56;
+$border-hover-btn: #BCD0E5;
+$content-text: 'Poppins', sans-serif;
+$base_fz: 16;/*формула автоперехода из px в rem*/
+
+@mixin fz($size_in_px) {
+  font-size:($size_in_px/$base_fz)+rem;
+}
+
+
+%frame_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  font-family: $content-text;
+}
+
+.wrapper {
+  overflow: hidden;
+  /*display: flex;
+  flex-direction: column;*//*вариант на флекс, ниже на grid - прибиваем футер к низу*/
+  display: grid;
+  grid-template-rows: auto 1fr auto ;
+  min-height: 100vh;
+  max-width: 1152px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 83px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 20px;
+  .header_menu ul li {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0 12px;
+    color: $color-content;
+    padding-top: 5px;
+  }
+}
+
+
+.btn_wrap {
+  margin-left: 45px;
+  margin-top: -7px;
+}
+
+.btn_wrap .btn:first-child {
+  margin-right: 9px;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 41px;
+  height: 53px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: all .2s ease;
+}
+
+.btn.white {
+  background-color: $color-btn;
+  border: 1px solid $border-hover-btn;
+  &:hover {
+    background-color: $border-color;
+    border-color: $border-color;
+    color: $color-btn;
+  }
+}
+
+.btn.orange {
+  background-color: $color-elements;
+  color: $color-btn;
+  border: 1px solid $color-elements;
+  &:hover {
+    background-color: $color-btn;
+    color: $color-elements;
+  }
+}
+
+.main {
+  padding-top: 20px;
+}
+
+.first_block,
+.feature,
+.third_block,
+.fourth_block,
+.fifth_block {
+  @extend %frame_block;
+}
+
+.description {
+  padding-top: 83px;
+  h1 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 3.375rem;
+    padding-bottom: 31px;
+  }
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+}
+
+.more_info {
+  margin-top: 48px;
+  a {
+    color: $color-elements;
+    padding-left: 34px; /*как сделать андерлайн?*/
+  }
+}
+
+.more_info a:before {
+  position: relative;
+  top: 23px;
+  left: -7px;
+  content: ' \2023';
+  font-size: 4.75rem;
+  color: $color-elements;
+}
+
+.second_block {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3.375rem;
+    margin: 0 auto;
+    max-width: 539px;
+    text-align: center;
+
+  }
+}
+
+.footer {
+  margin-top: auto;
+}
