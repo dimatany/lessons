@@ -136,6 +136,22 @@ body {
   text-align: center;
 }
 
+.icon-checkmark:before {
+  content: "\e900";
+}
+
+.icon-stumbleupon:before {
+  content: "\eace";
+}
+
+.icon-heart:before {
+  content: "\e9da";
+}
+
+.icon-hour-glass:before {
+  content: "\e979";
+}
+
 .footer {
   margin-top: auto;
 }
