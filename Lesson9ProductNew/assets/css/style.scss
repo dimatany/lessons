@@ -173,19 +173,6 @@ body {
   margin-bottom: 10px;
 }
 
-.icon-checkmark:before {
-  content: "\e900";
-}
-.icon-stumbleupon:before {
-  content: "\eace";
-}
-.icon-heart:before {
-  content: "\e9da";
-}
-.icon-hour-glass:before {
-  content: "\e979";
-}
-
 .feature_block {
   display: flex;
   flex-direction: column;
@@ -309,3 +296,35 @@ body {
     }
   }
 }
+
+@media only screen and (max-width: 1190px) {
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
