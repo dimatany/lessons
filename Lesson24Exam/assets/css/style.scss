@@ -38,6 +38,35 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
   }
 }
 
+%title_style {
+  font-family: $title-text;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color-headings;
+}
+
+%title_headings {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 400;
+  color: $color-headings;
+  font-family: $title-text;
+}
+
+%content-text_feature {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+%signature {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 800;
+  color: $color-headings;
+}
+
 body {
   font-family: $content-text;
   color: $color-content;
@@ -45,8 +74,15 @@ body {
 
 .container {
   max-width: 1250px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  z-index: 3;
+  background: $color-background;
+  top: 0;
 }
 
 .header {
@@ -54,8 +90,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding-top: 50px;
-  max-width: 1122px;
+  padding: 50px 65px 20px 65px;
   margin: 0 auto;
   .header_left_block{
     display: flex;
@@ -124,7 +159,7 @@ body {
 .presentation {
   display: flex;
   margin-bottom: 200px;
-  margin-top: 130px;
+  margin-top: 110px;
   position: relative;
   .presentation_text {
     display: flex;
@@ -156,24 +191,277 @@ body {
 }
 
 .evidence {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   margin: 0 auto;
-  align-items: center;
+  padding-bottom: 16px;
   background: $background-one;
   border-radius: 50px;
   max-width: 1117px;
+  .evidence_image {
+    padding-top: 32px;
+  }
+  .evidence_text {
+    padding-top: 121px;
+    h2 {
+      @extend %title_style;
+    }
+    p {
+      font-size: 18px;
+      line-height: 29px;
+      padding-top: 39px;
+      max-width: 474px;
+    }
+  }
+}
+
+.features {
+  padding-top: 149px;
+  margin: 3px;
+  h2 {
+    @extend %title_style;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    line-height: 29px;
+    padding-top: 50px;
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.features_block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: end;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+  .search_data_block {
+    background-image: url(../images/background1.svg);
+    background-repeat: no-repeat;
+    .search_data_content {
+    }
+    h3 {
+      @extend %title_headings;
+    }
+    p {
+      @extend %content-text_feature;
+    }
+    span {
+      @extend %signature;
+    }
+    img {
+      position: absolute;
+      top: 100px;
+      left: 45px;
+    }
+  }
+  .hours_access_block {
+    background-image: url(../images/background2.svg);
+    background-repeat: no-repeat;
+    h3 {
+      @extend %title_headings;
+    }
+    p {
+      @extend %content-text_feature;
+    }
+    span {
+      @extend %signature;
+    }
+    img {
+      position: absolute;
+      top: 100px;
+      left: 670px;
+    }
+  }
+  .print_out_block {
+    background-image: url(../images/background3.svg);
+    background-repeat: no-repeat;
+    h3 {
+      @extend %title_headings;
+    }
+    p {
+      @extend %content-text_feature;
+    }
+    span {
+      @extend %signature;
+    }
+  }
+  .security_code_block {
+    background-image: url(../images/background4.svg);
+    background-repeat: no-repeat;
+    h3 {
+      @extend %title_headings;
+    }
+    p {
+      @extend %content-text_feature;
+    }
+    span {
+      @extend %signature;
+    }
+  }
+
+
+.testimonials_block {
+  background: $color-parts;
+  border-radius: 52px;
+  max-width: 1118px;
+  margin: 0 auto;
+  padding-bottom: 131px;
+  h2 {
+    @extend %title_style;
+    color: $color-background;
+    padding: 106px 0 85px 95px;
+  }
+  .testimonials_card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 28px;
+    padding: 58px 20px;
+    background: $color-background;
+    border-radius: 20px;
+    max-width: 606px;
+    margin: 0 auto;
+    .testimonials_card_content {
+      h4 {
+        padding-top: 22px;
+        color: $color-headings;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 29px;
+      }
+      a {
+        color: $color-parts;
+      }
+      p {
+        padding-bottom: 12px;
+        max-width: 382px;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
 }
 
 
+.footer {
+  margin-top: 151px;
+  border-top: 1px solid rgba(156, 105, 226, .2);
+  padding-top: 100px;
+}
 
 
+.footer_try_free {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 67px;
+  margin-bottom: 150px;
+  .try_free_text {
+    h2 {
+      @extend %title_style;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 29px;
+    }
+  }
+  .try_free_btn {
+    padding-top: 20px;
+    .small_rouse {
+      @extend %small_size_btn;
+      background: $color-elements;
+      margin-right: 23px;
+    }
+  }
+}
 
 
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding: 0 67px;
+  margin-bottom: 95px;
+  .info_content {
+    display: flex;
+    flex-direction: column;
+    p {
+      padding-bottom: 4px;
+    }
+    .logo_footer {
+      display: flex;
+      padding-bottom: 67px;
+      .title_footer {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 32px;
+        color: $color-headings;
+        padding-left: 20px;
+        padding-top: 5px;
+      }
+    }
+    .logo_text {
+      margin-bottom: 20px;
+    }
+  }
+  .info_link {
+    display: flex;
+    padding-top: 13px;
+    padding-left: 100px;
+    .info_link_about {
+      padding-right: 147px;
+      h5 {
+        @extend %signature;
+        margin-bottom: 41px;
+      }
+      li {
+        padding-bottom: 16px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+    .info_link_help {
+      h5 {
+        @extend %signature;
+        margin-bottom: 41px;
+      }
+      li {
+        padding-bottom: 16px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  .info_media {
+    padding-top: 11px;
+    padding-left: 161px;
+    h5 {
+      @extend %signature;
+    }
+  }
+}
 
-
-
-
-
+.registration {
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    margin-left: 66px;
+  }
+}
 
 
 
