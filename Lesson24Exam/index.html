@@ -71,7 +71,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<div class="container">
+<div class="wrap">
     <header class="header">
         <div class="header_left_block">
             <div class="header_logo">
@@ -79,7 +79,7 @@
             </div>
             <nav class="header_menu">
                 <ul class="header_list">
-                    <li class="header_link"><a href="#">About</a>
+                    <li class="header_link active"><a href="#">About</a>
                     <li class="header_link"><a href="#">Help</a>
                     <li class="header_link"><a href="#">Features</a>
                     <li class="header_link"><a href="#">Signup</a>
@@ -94,6 +94,7 @@
         </div>
     </header>
     <main class="main">
+        <div class="container">
         <section class="presentation">
             <div class="presentation_text">
                 <h1>Save your data storage here.</h1>
@@ -173,8 +174,9 @@
                 </div>
             </div>
         </section>
+        </div>
     </main>
-</div>
+
 <footer class="footer">
     <div class="container">
         <section class="footer_try_free">
@@ -223,9 +225,23 @@
             </div>
             <div class="info_media">
                 <h5>Social Media</h5>
-                <div><img src="assets/images/fb.svg" alt=""></div>
-                <div><img src="assets/images/twitter.svg" alt=""></div>
-                <div><img src="assets/images/inst.svg" alt=""></div>
+                <ul class="info_media_block">
+                    <li class="nfo_media_item">
+                        <a href="#" title="Facebook" target="_blank" rel="nofollow noopener">
+                            <i class="icon icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nfo_media_item">
+                        <a href="#" title="Twitter" target="_blank" rel="nofollow noopener">
+                            <i class="icon icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nfo_media_item">
+                        <a href="#" title="Instagram" target="_blank" rel="nofollow noopener">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="registration">
@@ -233,5 +249,6 @@
         </section>
     </div>
 </footer>
+</div>
 </body>
 </html>
