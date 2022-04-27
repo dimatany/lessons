@@ -80,6 +80,18 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
   color: $color-headings;
 }
 
+
+body {
+  font-family: $content-text;
+  color: $color-content;
+}
+
+.container {
+  max-width: 1250px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .btn {
   border: none;
 }
@@ -112,13 +124,12 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
 .btn:active {
   top: 2px;
 }
-
 .icon-arrow {
   color: $color-parts;
   font-size: 20px;
 }
 
-/*.burger_menu {
+.burger_menu {
   width: 100%;
   height: 100vh;
   display: grid;
@@ -152,11 +163,10 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
       text-decoration: none;
     }
   }
-}
-
-.open_menu:after {
-  content: '\00D7';
-  background: $color-elements;
+  .open_menu:after {
+    content: '\00D7';
+    background: $color-elements;
+  }
 }
 
 .nav-item {
@@ -178,6 +188,7 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
   animation: hue 10s linear infinite;
   &:hover {
     background: $color-elements;
+    color: $color-headings;
   }
 }
 
@@ -204,18 +215,6 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
 .open_menu .nav-item:nth-child(4) {
   top: 0;
   left: -127px;
-}*/
-
-
-body {
-  font-family: $content-text;
-  color: $color-content;
-}
-
-.container {
-  max-width: 1250px;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .header {
@@ -261,6 +260,28 @@ body {
 .large {
   @extend %large_size_btn;
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .header_left_block, .header_right_block {
+    display: none;
+  }
+  .burger_menu {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
 
 .presentation {
   display: flex;
