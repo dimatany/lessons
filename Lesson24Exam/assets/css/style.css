@@ -9,15 +9,13 @@
   font-weight: 800;
   font-size: 16px;
   line-height: 25px;
-}
-.large:hover {
-  background: #F063B8;
-  color: #FFFFFF;
-}
-
-.icon-arrow {
-  color: #9C69E2;
-  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
 .footer_try_free .try_free_btn .small_rouse, .presentation .presentation_text .small {
@@ -26,13 +24,18 @@
   border-radius: 50px;
   color: #FFFFFF;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 25px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 .footer_try_free .try_free_btn .small_rouse:hover, .presentation .presentation_text .small:hover {
-  background: #FFFFFF;
   color: #212353;
-  border: 1px solid #212353;
 }
 
 .footer_try_free .try_free_text h2, .testimonials_block h2, .features h2, .evidence .evidence_text h2 {
@@ -62,6 +65,44 @@
   line-height: 25px;
   font-weight: 800;
   color: #212353;
+}
+
+.btn {
+  border: none;
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background: #F063B8;
+  color: #FFFFFF;
+}
+
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn:active {
+  top: 2px;
+}
+
+.icon-arrow {
+  color: #9C69E2;
+  font-size: 20px;
 }
 
 body {
@@ -294,6 +335,7 @@ body {
   border-radius: 20px;
   max-width: 606px;
   margin: 0 auto;
+  box-shadow: 0 12px 3px -3px #8955da;
 }
 .testimonials_block .testimonials_card .testimonials_card_content h4 {
   padding-top: 22px;
@@ -429,12 +471,19 @@ body {
 .info .info_media .info_media_block li {
   padding-right: 12px;
 }
+.info .info_media .info_media_block li a:hover {
+  text-decoration: none;
+}
 .info .info_media .info_media_block li .icon {
   color: #FFFFFF;
   border: 1px solid #e9e9ee;
   background: #e9e9ee;
   border-radius: 50%;
   padding: 17px;
+  transition: all 0.3s ease;
+}
+.info .info_media .info_media_block li .icon:hover {
+  background: #9C69E2;
 }
 
 .registration p {

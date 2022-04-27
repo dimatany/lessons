@@ -8,6 +8,7 @@ $content-text: 'Avenir', sans-serif;
 $title-text: 'Helvetica', sans-serif;
 $base_fz: 16;/*формула автоперехода из px в rem*/
 
+
 %large_size_btn {
   height: 60px;
   width: 210px;
@@ -17,17 +18,16 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
   font-weight: 800;
   font-size: 16px;
   line-height: 25px;
-  &:hover {
-    background: $color-elements;
-    color: $color-background;
-  }
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5),
+  7px 7px 20px 0 rgba(0,0,0,.1),
+  4px 4px 5px 0 rgba(0,0,0,.1);
+  outline: none;
 }
-
-.icon-arrow {
-  color: $color-parts;
-  font-size: 20px;
-}
-
 
 %small_size_btn {
   height: 60px;
@@ -35,12 +35,19 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
   border-radius: 50px;
   color: $color-background;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 25px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5),
+  7px 7px 20px 0 rgba(0,0,0,.1),
+  4px 4px 5px 0 rgba(0,0,0,.1);
+  outline: none;
   &:hover {
-    background: $color-background;
     color: $color-headings;
-    border: 1px solid $color-headings;
   }
 }
 
@@ -73,7 +80,43 @@ $base_fz: 16;/*формула автоперехода из px в rem*/
   color: $color-headings;
 }
 
+.btn {
+  border: none;
+}
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+          -7px -7px 20px 0px #fff9,
+          -4px -4px 5px 0px #fff9,
+          7px 7px 20px 0px #0002,
+          4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+.btn:hover {
+  background: $color-elements;
+  color: $color-background;
+}
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn:active {
+  top: 2px;
+}
 
+.icon-arrow {
+  color: $color-parts;
+  font-size: 20px;
+}
 
 body {
   font-family: $content-text;
@@ -354,6 +397,7 @@ body {
     border-radius: 20px;
     max-width: 606px;
     margin: 0 auto;
+    box-shadow: 0 12px 3px -3px #8955da;
     .testimonials_card_content {
       h4 {
         padding-top: 22px;
@@ -502,12 +546,19 @@ body {
       padding-top: 50px;
       li {
         padding-right: 12px;
+        a:hover {
+          text-decoration: none;
+        }
         .icon {
           color: $color-background;
           border: 1px solid #e9e9ee;
           background: #e9e9ee;
           border-radius: 50%;
           padding: 17px;
+          transition: all 0.3s ease;
+          &:hover {
+            background: $color-parts;
+          }
         }
       }
     }
