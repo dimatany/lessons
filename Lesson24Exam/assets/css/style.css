@@ -219,7 +219,7 @@ body {
     width: 100%;
     margin: 0 auto;
   }
-  .presentation_text h1, .presentation_text p, .presentation_text .small {
+  .presentation_text h1, .presentation_text p, .presentation_text button {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -279,6 +279,10 @@ body {
 .search_data_block {
   background-image: url(../images/background1.svg);
   background-repeat: no-repeat;
+}
+.search_data_block .search_data_content {
+  display: flex;
+  flex-direction: column;
 }
 .search_data_block img {
   position: absolute;

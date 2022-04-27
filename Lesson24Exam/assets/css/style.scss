@@ -235,17 +235,13 @@ body {
   .presentation_text {
     width: 100%;
     margin: 0 auto;
-    h1, p,  .small {
+    h1, p, button {
       width: 100%;
       margin: 0 auto;
       text-align: center;
-
     }
   }
 }
-
-
-
 
 .evidence {
   display: grid;
@@ -305,6 +301,8 @@ body {
     background-image: url(../images/background1.svg);
     background-repeat: no-repeat;
     .search_data_content {
+      display: flex;
+      flex-direction: column;
     }
     h3 {
       @extend %title_headings;
