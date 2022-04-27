@@ -247,6 +247,15 @@ body {
   flex-direction: row;
 }
 
+@media only screen and (min-width: 768px) {
+  .header_left_block, .header_right_block {
+    display: block;
+  }
+
+  .burger_menu {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .header_left_block, .header_right_block {
     display: none;
