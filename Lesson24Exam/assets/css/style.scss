@@ -204,6 +204,7 @@ body {
   &:hover {
     background: $color-elements;
     color: $color-headings;
+    cursor: pointer;
   }
 }
 
@@ -246,22 +247,26 @@ body {
       .header_link {
         margin-right: 50px;
         color: $color-content;
-        &:hover {
+        a:hover {
+          text-shadow:2px 2px 2px $color-parts;
           color: $color-parts;
+          font-weight: 400;
+          cursor: pointer;
         }
       }
-      .active {
-        color: $color-headings;
-      }
+    }
+    .active {
+      color: $color-headings;
     }
   }
 }
 
-
-
 .header_right_block {
   display: flex;
   flex-direction: row;
+  .icon-arrow {
+    color: $color-background;
+  }
 }
 
 
@@ -565,6 +570,12 @@ body {
       background: $color-elements;
       margin-right: 23px;
     }
+    .large:hover {
+      background: $color-parts;
+      .icon-arrow {
+        color: $color-background;
+      }
+    }
   }
 }
 
@@ -628,8 +639,11 @@ body {
         &:last-child {
           padding-bottom: 0;
         }
-        &:hover {
+        a:hover {
+          text-shadow:2px 2px 2px $color-parts;
           color: $color-parts;
+          font-weight: 400;
+          cursor: pointer;
         }
       }
     }
@@ -643,8 +657,11 @@ body {
         &:last-child {
           padding-bottom: 0;
         }
-        &:hover {
+        a:hover {
+          text-shadow:2px 2px 2px $color-parts;
           color: $color-parts;
+          font-weight: 400;
+          cursor: pointer;
         }
       }
     }
@@ -670,9 +687,10 @@ body {
           background: #e9e9ee;
           border-radius: 50%;
           padding: 17px;
-          transition: all 0.3s ease;
+          transition: all 0.4s ease;
           &:hover {
             background: $color-parts;
+            cursor: pointer;
           }
         }
       }
