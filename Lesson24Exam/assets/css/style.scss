@@ -653,6 +653,10 @@ body {
     top: 20px;
     margin-right: 24px;
   }
+  .positioning_one {
+    margin-top: -20px;
+    margin-left: -20px;
+  }
   .media_content {
     align-items: start;
     .heading {
@@ -670,6 +674,7 @@ body {
       line-height: 1.6;
       color: #212353;
       text-decoration: none;
+      padding-bottom: 100px;
       .link_text {
       }
       .link_arrow {
