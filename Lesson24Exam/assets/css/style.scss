@@ -453,18 +453,33 @@ body {
 }
 
 @media only screen and (max-width: 660px) {
-  .evidence_image {
-    display: none;
-  }
-  .evidence_text {
+  .evidence {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
     margin: 0 auto;
-    padding-top: 20px;
-    h2 {
-      font-size: 25px;
+    padding-bottom: 16px;
+    background: $background-one;
+    border-radius: 50px;
+    max-width: 1117px;
+    .evidence_image {
+      display: none;
     }
-    p {
-      margin: 0 auto;
-      text-align: center;
+    .evidence_text {
+      padding-top: 20px;
+      h2 {
+        @extend %title_style;
+        font-size: 25px;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        line-height: 29px;
+        padding-top: 39px;
+        max-width: 474px;
+        margin: 0 auto;
+        text-align: center;
+      }
     }
   }
 }
