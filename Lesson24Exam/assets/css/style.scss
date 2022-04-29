@@ -637,7 +637,7 @@ body {
       right: 0;
       bottom: 0;
       left: 107px;
-      background-color: $background-one;
+
       z-index: -1;
     }
   }
@@ -646,6 +646,8 @@ body {
 .media {
   display: flex;
   align-items: center;
+  background-image: url("/assets/images/background1.svg");
+  background-repeat: no-repeat;
   .media_img {
     position: relative;
     top: 20px;
@@ -656,6 +658,9 @@ body {
     .heading {
       @extend %title_headings;
       text-align: start;
+    }
+    p {
+      @extend %content-text_feature;
     }
     .media_link {
       display: flex;

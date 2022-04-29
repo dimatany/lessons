@@ -61,6 +61,12 @@
   font-family: "Helvetica", sans-serif;
 }
 
+.media .media_content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 .info_media h5, .info_help h5, .info_about h5 {
   font-size: 16px;
   line-height: 25px;
@@ -606,13 +612,14 @@ body {
   right: 0;
   bottom: 0;
   left: 107px;
-  background-color: #fde7f4;
   z-index: -1;
 }
 
 .media {
   display: flex;
   align-items: center;
+  background-image: url("/assets/images/background1.svg");
+  background-repeat: no-repeat;
 }
 .media .media_img {
   position: relative;
