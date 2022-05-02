@@ -16,31 +16,55 @@ const yourName = prompt('Как тебя зовут?');
 console.log(yourName);
 if(yourName != null) {
     if(yourName !== '') {
-        alert('твое имя - '+ yourName);
+        alert('твое имя: '+ yourName);
     }
 }
 //2.2. - спросить год рождения, вывести итоговый результат, год 2022 должен быть константой;
 let birthYear = prompt('Какой год твоего рождения?');
 const thisYear = 2022;
 let result = (thisYear - birthYear);
-alert(result);
+alert('тебе исполнилось: '+ result);
 
-//2.3.
+//2.3. Спроси у пользователя длину стороны квадрата и выведи его периметр
+let lengthSideSquare = prompt('Введи длину стороны квадрата!');
+const perimeter = lengthSideSquare * 4;
+alert('периметр квадрата равен: '+ perimeter);
+
+//3.1. Спроси у пользователя радиус круга и выведи площадь такой окружности
+let radius =  prompt('Назови любой произвольный радиус!');
+const Pi = 3.14;
+const square = radius * Pi;
+alert('площадь окружности равна: '+ perimeter);
+
+/*3.2. Спросить расстояние в км между населенным пунктом А и В.
+       Спросить за сколько времени хочется преодолеть километраж между населенными пунктами.
+       Просчитать итоговую скорость движения с учетом введенных данных.
+ */
+let distance = prompt('Назови расстояние в км между населенным пунктом А и В!');
+let time = prompt('За сколько времени хочется преодолеть километраж между населенными пунктами А и В в минутах!');
+let finalSpeed = (distance / time) * 60;
+alert('скорость движения равна: '+ finalSpeed + 'км/ч' );
 
 
+/*3.3. Реализовать конвертер валют
+       Пользователь вводит баксы.
+       Программа переводит баксы в евро.
+       Курс сберегаем в константе.
+ */
 
+let dollar = prompt('Введи любую сумму в $!');
+let course = 1.05;
+const converter = dollar / course;
+alert('ваша сумма в $: '+ converter + 'евро' );
 
 //Задачи от Саши из Slack
 // 1) Запросите у пользователя число, возведите это число во 2-ю степень и выведите на экран.
-const num = parseInt(prompt('Enter integer number'));
-const num2 = parseInt(prompt('Enter integer number 2'));
-const rez = num * num2;//чтоб вычислить куб нужно просто сделать num ** num
+
+//const num = parseInt(prompt('Enter integer number'));
+//const num2 = parseInt(prompt('Enter integer number 2'));
+//const rez = num * num2;//чтоб вычислить куб нужно просто сделать num ** num
 //можно воспользоваться встроенным методом Math.pow const rez =Math.pow(num, num2)
-alert(rez);
-
-
-
-
+//alert('итог возведения в степень: ' + rez);
 
 /*
  2) Запросите у пользователя 2 числа и выведите среднее арифметическое этих чисел.
