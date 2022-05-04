@@ -67,13 +67,6 @@ function backInFront() {
     alert(100 * (number % 10) + 10 * b + a);
 }
 
-function numViceVersa() {
-    var e = prompt("Enter number three-digit number"),
-        r = Math.trunc(e / 100),
-        t = Math.trunc(e % 100 / 10);
-    alert(100 * (e % 10) + 10 * t + r)
-}
-
 //3. Максимум
 //3.1. Користувач вводить суму вкладу в банк на 2 місяці, з процентною
 // ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
