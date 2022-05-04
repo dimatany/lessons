@@ -24,6 +24,17 @@
 2 && 0 || 3
 */
 
+// 7) Запросите у пользователя текущее время (часы и минуты) и выведите, сколько часов и минут осталось до следующего дня.
+
+function timeToDayEnd() {
+    const hour = +prompt('введите часы');
+    const minutes = +prompt('введите минуты');
+    const minutesTotalLeft = ( (24 * 60) - (hour * 60 + minutes)) / 60;
+    const hoursLeft = parseInt(minutesTotalLeft / 60);
+    const minutesLeft =  minutesTotalLeft - hoursLeft * 60;
+    alert(`hours left: ${hoursLeft}, minutes left:  ${minutesLeft}`);
+}
+
 
 
 //Задачи из slack
