@@ -60,7 +60,19 @@ function buying() {
 
 //2.3. Запитай у користувача тризначне число і виведи його задом наперед.
 // Для вирішення завдання тобі знадобиться оператор% (залишок від ділення).
+function backInFront() {
+    let number = prompt('введите трехзначное число');
+    let a = Math.trunc(number / 100);
+    let b = Math.trunc(number % 100 / 10);
+    alert(100 * (number % 10) + 10 * b + a);
+}
 
+function numViceVersa() {
+    var e = prompt("Enter number three-digit number"),
+        r = Math.trunc(e / 100),
+        t = Math.trunc(e % 100 / 10);
+    alert(100 * (e % 10) + 10 * t + r)
+}
 
 //3. Максимум
 //3.1. Користувач вводить суму вкладу в банк на 2 місяці, з процентною
