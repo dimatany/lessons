@@ -1,26 +1,134 @@
 "use strict"
 //Задачи из LMS
+
 //1. Мінімум
-
 //1.1. Запитай у користувача його вік і визначи, ким він є: дитиною (0-11), підлітком (12-17),
-// дорослим (18_59) або пенсіонером (60 ...), передбач можливість введення невірних даних.
+// дорослим (18-59) або пенсіонером (60 ...), передбач можливість введення невірних даних.
+function age() {
+ let userAge = parseInt(prompt('Введите свой возраст в формате числа!'));
+ let message = (userAge <= 11) ? 'Вы ребенок' :
+     (userAge <= 17 && userAge >= 12) ? 'Вы подросток' :
+         (userAge >= 18 && userAge <= 59) ? 'Вы взрослый' :
+             (userAge >= 60) ? 'Вы пенсионер' : 'Введите правильно данные';
+ alert(message);
+}
 
-//1.2. Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
-
+//1.2. Запитай у користувача число від 0 до 9 і виведи йому спецсимвол,
+// який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
+function removal() {
+ let userNumber = parseInt(prompt('Введите любое число (включая) от 0 до 9!'));
+ let massage;
+ if (userNumber === 0) {
+  massage = ')';
+ } else if (userNumber === 1) {
+  massage = '!';
+ } else if (userNumber === 2) {
+  massage = '@';
+ } else if (userNumber === 3) {
+  massage = '#';
+ } else if (userNumber === 4) {
+  massage = '$';
+ } else if (userNumber === 5) {
+  massage = '%';
+ } else if (userNumber === 6) {
+  massage = '^';
+ } else if (userNumber === 7) {
+  massage = '&';
+ } else if (userNumber === 8) {
+  massage = '*';
+ } else if (userNumber === 9) {
+  massage = '(';
+ } else {
+  massage = 'введите данные в соответствии с условием';
+ }
+ alert(massage);
+}
 
 //1.3. Підрахуй суму всіх чисел в заданому користувачем діапазоні.
+function adding() {
+ let num1 = parseInt(prompt('Введите любое число'));
+ let num2 = parseInt(prompt('Введите любое второе число'));
+ let rez = 0;
+ while (num1 < num2) {
+  num1++;
+  if (num1 < num2) {
+  rez = rez + num1;
+  }
+ }
+ alert(rez);//как учесть условие если num1 >= num2 и вывести сообщение
+}
 
 //1.4. Запитай у користувача 2 числа і знайди найбільший спільний дільник.
+function divider() {
+ const num1 = parseInt(document.getElementById('task_1.4._number1').value);
+ const num2 = parseInt(document.getElementById('task_1.4._number2').value);
+ let rez = '';
+ const minNum = num1 < num2 ? num1 : num2;
+ let i = 1;
+ while (i <= minNum / 2) {
+  if (num1 % i === 0 && num2 % i === 0) {
+   rez = rez + i + ', ';
+  }
+  i++;
+ }
+ if (minNum === num1) {
+  if (num2 % num1 === 0) {
+   rez = rez + num1;
+  }
+ } else {
+  if (num1 % num2 === 0) {
+   rez = (rez + num2);
+   return rez;
+  }
+ }
+ document.getElementById('task_1.4._result').innerText = rez;//как теперь пройтись по результатам и выбрать самое большое число ?
+}
+
 
 //1.5. Запитай у користувача число і виведи всі дільники цього числа.
+function divider2() {
+let num1 = parseInt(document.getElementById('task_1.5._number1').value);
+let rez;
+let i = 1;
+for (i = 1; i <= num1; i++) {
+ if (num1 % i ===0) {
+  rez = rez + i + ', ';//как убрать NAN?
+  document.getElementById('task_1.5._result').innerText = rez;
+ }
+}
+}
+
 
 //2. Норма
 //2.1. Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
+function palindrome() {
+ let num = parseInt(document.getElementById('task_2.1._number1').value);
+ let reverse = 0;
+ if (num < 0) {
+  alert('Введите положительное число');
+ } else if (num % 10 === 0) {
+  alert('Это число делится на 10 - введи число которое не делится на 10');
+ } else if (num < 10) {
+  alert('Это одинарное число единичное не подходит для условия получения палиндрома');
+ }
+ while (num > reverse) {
+  reverse = reverse * 10;
+  reverse = reverse + num % 10;
+  num = Math.trunc(num / 10)
+ }
+ if (num === reverse || num === Math.trunc(reverse / 10)) {
+  alert('палиндром');
+ } else  {
+  alert('не палиндром')//почему нужно по три раза нажимать?
+ }
+}
+
 
 //2.2. Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
 // від 200 до 300 - знижка буде 3%;
 // від 300 до 500 - 5%;
 // від 500 і вище - 7%.
+
 
 //2.3. Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх,
 // від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних.
@@ -45,8 +153,24 @@
 //3.2. Виведи таблицю множення для всіх чисел від 2 до 9.
 // Кожне число необхідно помножити на числа від 1 до 10.
 
+function table() {
+ let r = 'div style="display:flex;flex-wrap;gap:30px;">';
+ for (let i = 2; i <= 9; i++) {
+  r = r + '<ul>';
+  for (let j = 2; j <= 10; j++) {
+   r += '<li>'+i+' * '+j+' = '+(i * j) + '</li>';
+  }
+  r = r + '</ul>';
+ }
+ r = r + '</div>';
+ document.getElementById('multi_list').innerHTML = r;
+}
+
+
 //3.3. Запитай дату (день, місяць, рік) і виведи наступну за нею дату.
 // Враховуй можливість переходу на наступний місяць, рік, а також високосний рік.
+
+
 
 
 
@@ -75,7 +199,6 @@ function task2() {
   i--;
  }
  document.getElementById('task_2_result').innerText = rez;
-
 }
 
  //3) Запросить число и степень. Возвести число в указанную степень и вывести результат.
@@ -100,8 +223,8 @@ function task4() {
   if (num1 % num2 === 0) {
    rez = rez + num2;
   }
-  document.getElementById('task_4_result').innerText = rez;
  }
+  document.getElementById('task_4_result').innerText = rez;
 }
 
 
@@ -115,4 +238,3 @@ function task4() {
 // 1) Вывести все числа от 1 до 100, которые кратные указанному пользователем числу.
 // 2) Вывести каждый 4-й элемент из указанного пользователем диапазона. Пользователь указывает минимальное и максимальное значения диапазона.
 // 3) Запросить число и проверить, простое ли оно. Простое число делится без остатка только на себя и на единицу.
-
