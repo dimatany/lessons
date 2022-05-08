@@ -30,8 +30,48 @@
 // 1. Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”.
 // Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
 
-function getAndCheck (){
+function getAndCheck (inputId = '') {
+    let number = document.getElementById(inputId).value;
+    if (number!=='') {
+        number = parseInt(number);
+        if (!isNaN(number)) {
+            return number;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
 
+function showResult(result, whereId) {
+    document.getElementById(whereId).innerHTML = result;
+}
+
+function isNumberPerfect(n) {
+    let sum = 0;
+    for (let i = 1;  i < n; i++ ) {
+        if (n%i===0) {
+            sum += i;
+        }
+    }
+    return sum === n;
+}
+
+function task1() {
+      let num = 0,
+          rez = '';
+       if (getAndCheck('task_2.1._number')!==false) {
+           num = getAndCheck('task_2.1._number');
+       } else {
+           return false;
+       }
+       if (isNumberPerfect(num)) {
+           rez = `число ${num} э досконалим`;
+       } else {
+           rez = `число ${num} нэ э досконалим`;
+       }
+       showResult(rez,  'task_2.1._result');
 }
 
 // 2. Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону,
