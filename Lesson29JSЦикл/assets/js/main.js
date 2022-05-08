@@ -119,7 +119,7 @@ function palindrome() {
  if (num === reverse || num === Math.trunc(reverse / 10)) {
   alert('палиндром');
  } else  {
-  alert('не палиндром')//почему нужно по три раза нажимать?
+  alert('не палиндром')//почему нужно по два раза нажимать?
  }
 }
 
@@ -129,14 +129,76 @@ function palindrome() {
 // від 300 до 500 - 5%;
 // від 500 і вище - 7%.
 
+function discount() {
+ let prise = parseInt(document.getElementById('task_2.2._number').value);
+ let newPrise;
+ let min = 3;
+ let norm = 5;
+ let max = 7;
+ if (prise < 200) {
+  alert ('Вам не положена скидка');
+ } else if (prise >= 200 && prise <= 299.999) {
+  newPrise = Math.round(prise / 100 * min);
+  alert (`Ваша скидка 3% и ${newPrise} грн`);
+ } else if (prise >= 300 && prise < 499.999 ) {
+  newPrise = Math.round(prise / 100 * norm);
+  alert (`Ваша скидка 5% и ${newPrise} грн`);
+ } else if (prise >= 500) {
+  newPrise = Math.round(prise / 100 * max);
+  alert (`Ваша скидка 7% и ${newPrise} грн`);
+ }
+}
+
 
 //2.3. Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх,
 // від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних.
 // Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10)
 // для введення чисел користувачем.
+function checkTen() {
+ let dodatni = 0,
+     videmni = 0,
+     nuli = 0,
+     parni = 0,
+     neparni = 0,
+     result = '',
+     allNumbers = '',
+     number = 0,
+     i = 0;
+ const limit = 10;
+ while (i < limit) {
+  number = parseInt(prompt('Enter number'));
+  if (!isNaN(number)) {
+   allNumbers += number + ', ';
+   if (number === 0) {
+    nuli++;
+   } else {
+    if (number > 0) {
+     dodatni++;
+    } else {
+     videmni++;
+    }
+   }
+   if (number % 2 === 0) {
+    parni++;
+   } else {
+    neparni++;
+   }
+   i++;
+  }
+ }
+ result = `додатніх: ${dodatni}, від’ємних: ${videmni},  нулів: ${nuli},  парних: ${parni}, непарних: ${neparni}`;
+ document.getElementById('task_2.3._result').innerHTML = allNumbers + '<br>' + result;
+}
 
 //2.4. Зацикли відображення днів тижня таким чином: «День тижня.
 // Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
+function cycling () {
+ let answer = true;
+ while (answer) {
+  answer = confirm('«Понедельник. Хочешь увидеть следующий день?')
+ }
+ alert('END');
+}
 
 
 
@@ -150,19 +212,24 @@ function palindrome() {
 // І так до тих пір, поки користувач не вибере == N
 // (буде корисним почитати про алгоритм: "бінарний пошук").
 
+function game () {
+ let num = parseInt(confirm('Твое число больше чем 50?'));
+ 
+}
+
 //3.2. Виведи таблицю множення для всіх чисел від 2 до 9.
 // Кожне число необхідно помножити на числа від 1 до 10.
 
 function table() {
- let r = 'div style="display:flex;flex-wrap;gap:30px;">';
+ let r = 'div style="display:flex;flex-wrap;gap:30px;">';// ПОЧЕМУ НЕ ПОЛУЧАЕТСЯ С РАЗМЕТКОЙ?
  for (let i = 2; i <= 9; i++) {
-  r = r + '<ul>';
-  for (let j = 2; j <= 10; j++) {
+  r += '<ul>';
+  for (let j = 1; j <= 10; j++) {
    r += '<li>'+i+' * '+j+' = '+(i * j) + '</li>';
   }
-  r = r + '</ul>';
+  r += '</ul>';
  }
- r = r + '</div>';
+ r += '</div>';
  document.getElementById('multi_list').innerHTML = r;
 }
 
@@ -226,7 +293,6 @@ function task4() {
  }
   document.getElementById('task_4_result').innerText = rez;
 }
-
 
  //5) Посчитать факториал введенного пользователем числа.
 
