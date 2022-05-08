@@ -168,7 +168,7 @@ function checkTen() {
  while (i < limit) {
   number = parseInt(prompt('Enter number'));
   if (!isNaN(number)) {
-   allNumbers += number + ', ';
+   allNumbers += number + ', ';/////////////
    if (number === 0) {
     nuli++;
    } else {
@@ -212,10 +212,10 @@ function cycling () {
 // І так до тих пір, поки користувач не вибере == N
 // (буде корисним почитати про алгоритм: "бінарний пошук").
 
-function game () {
- let num = parseInt(confirm('Твое число больше чем 50?'));
- 
-}
+
+
+
+
 
 //3.2. Виведи таблицю множення для всіх чисел від 2 до 9.
 // Кожне число необхідно помножити на числа від 1 до 10.
