@@ -67,15 +67,15 @@ alert(createString(number1, number2, number3));
 // Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
 
 let widthFigure = 10;
-let lengthFigure = 15;
+let lengthFigure;
 
-function calcSquare(a, b) {
+function calcSquare(a=0, b=0) {
     if (a <= 0) {
         a = b;
     } else if (b <= 0)  {
         b = a;
     }
-    return (a * b);//вычисляем площадь фигуры по переданным параметрам
+    return (a * b);
 }
 alert(calcSquare(widthFigure, lengthFigure));//как встроить второе условие когда передан только один параметр?????
 
