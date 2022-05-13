@@ -6,10 +6,12 @@
 // 1. Напиши всі можливі варіанти створення функцій.
 function declaration() {
 }
-
 let expression = function() {
-
 };
+let sum = new Function('a', 'b', 'return a + b');
+//alert(sum(1, 2));
+
+let func = (a, b) => a + b;
 
 // 2. Створи функцію, яка буде виводити кількість переданих їй аргументів.
 
