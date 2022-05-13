@@ -16,12 +16,15 @@ body {
   background: $bg;
   color: $gray;
   display: flex;
-  min-height: 100vh;
   padding: 4rem;
 }
 
 h2 {
   align-items: center;
+}
+
+img {
+  width: 500px;
 }
 
 .container {
@@ -101,7 +104,7 @@ h2 {
     }
     + .accordion-content {
       opacity: 1;
-      max-height: 100em;
+      max-height: 200em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
       padding: 6px;
@@ -110,7 +113,7 @@ h2 {
   .accordion-content {
     opacity: 0;
     max-height: 0;
-    overflow: hidden;
+    overflow: auto;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
     p {
