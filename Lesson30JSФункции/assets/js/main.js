@@ -10,15 +10,17 @@ let expression = function() {
 };
 let sum = new Function('a', 'b', 'return a + b');
 //alert(sum(1, 2));
+let func = (a, b) =>a + b;
 
-let func = (a, b) => a + b;
 
 // 2. Створи функцію, яка буде виводити кількість переданих їй аргументів.
-
 let getNum = function () {
-    alert(arguments.length);
+    return arguments.length;
 };
-getNum(1,3,4,5,6,1,1,1,1,1,1);//11 штук
+function showArgs() {
+   const num = getNum(1,3,4,5,6,1,1,1,1,1,1);
+   document.getElementById('result1').innerHTML = num;
+}
 
 
 /* 3. Напиши функцію, яка приймає 2 числа і повертає :
@@ -26,50 +28,52 @@ getNum(1,3,4,5,6,1,1,1,1,1,1);//11 штук
     1 - якщо перше число більше, ніж друге;
     0 - якщо числа рівні.
 */
-let num = 4;
-let num1 = 4;
 function getValue(a, b) {
     if (a < b) {
-        alert('-1');
+        return '-1';
     } else if (a > b) {
-        alert('1');
+        return '1';
     } else if (a === b) {
-        alert('0');
+        return '0';
     } else {
-        alert('введите правильное, желательно числовое значение')
+        return 'введите правильное, желательно числовое значение';
     }
 }
-getValue(num, num1);
+function getTotal() {
+    let num = parseInt(document.getElementById('task_3_number').value);
+    let num2 = parseInt(document.getElementById('task_4_number').value);
+    document.getElementById('task_3_result').innerHTML = getValue(num, num2);
+}
 
 
 // 4. Напиши функцію, яка обчислює факторіал переданого їй числа.
-function factorial(n) {
-    if (n <= 0) { //если мы попытаемся найти факториал 1,
-        return 1; //возвращаем 1 это базовый случай.
-    }
-    //в остальных случаях возвращаем произведение n на факториал предыдущего числа,
-    // таким образом мы от n дойдем до 1, перебрав каждое число.
-    return n * factorial(n - 1)
+function factorial(n=1) {
+    return n ? n * factorial(n - 1) : 1;
 }
-document.getElementById('task_1.4._result').innerText = factorial(4);
+function calcFactorial () {
+    let num=parseInt( document.getElementById('task_1.4._number').value);
+    document.getElementById('task_1.4._result').innerText = factorial(num);
+}
+
 
 // 5. Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
 // Наприклад: цифри 1, 4, 9 перетворяться в число 149.
-let number1 = 1;
-let number2 = 4;
-let number3 = 9;
 
-function createString(a,b,c) {
-    return ("" + a + b + c);
+function concatenate(a=0, b=0, c=0) {
+    return (a * 100) + (b * 10) + c;
 }
-alert(createString(number1, number2, number3));
-
+function getConcat() {
+    let num = parseInt(document.getElementById('task_5_number').value);
+    let num2 = parseInt(document.getElementById('task_6_number').value);
+    let num3 = parseInt(document.getElementById('task_7_number').value);
+    document.getElementById('task_5_result').innerHTML = concatenate(num, num2, num3);
+}// каждое число должно быть не NaN и больше нуля
 
 // 6. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу.
 // Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
 
 let widthFigure = 10;
-let lengthFigure = 10;
+let lengthFigure;
 
 function calcSquare(a=0, b=0) {
     if (a <= 0) {
@@ -79,11 +83,17 @@ function calcSquare(a=0, b=0) {
     }
     return (a * b);
 }
+/*function getSquare() {
+    let num = parseInt(document.getElementById('task_8_number').value);
+    let num2 = parseInt(document.getElementById('task_9_number').value);
+    document.getElementById('task_6_result').innerHTML = calcSquare(num, num2);
+}*/
+
+
 alert(calcSquare(widthFigure, lengthFigure));
 
 
 //2. Норма
-
 // 2.1. Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”.
 // Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
 

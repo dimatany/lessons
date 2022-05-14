@@ -9,24 +9,31 @@
 <body>
 <h1>Home work on 30 lessons</h1>
 <h2>1. Мінімум</h2>
-<h5>1.1. Напиши всі можливі варіанти створення функцій.</h5>
+<h5>1. Напиши всі можливі варіанти створення функцій.</h5>
 <p>Есть четыре варианта создать функции: function declaration и function expression, стрелочная функция и функция конструктор</p>
 <div class="container pt-4">
     <div class="card mb-4">
         <div class="card body">
-            <p>1.2. Створи функцію, яка буде виводити кількість переданих їй аргументів.</p>
-            <button type="button" class="btn btn-info" onclick="showName()">Push</button>
+            <p>2. Створи функцію, яка буде виводити кількість переданих їй аргументів.</p>
+            <div id="result1"></div>
+            <button type="button" class="btn btn-info" onclick="showArgs()">Push</button>
         </div>
     </div>
 </div>
 <div class="container pt-4">
     <div class="card mb-4">
         <div class="card body">
-            <p>1.3. Напиши функцію, яка приймає 2 числа і повертає :
+            <p>3. Напиши функцію, яка приймає 2 числа і повертає :
                 <br>-1, якщо перше число менше, ніж друге;
                 <br>1 - якщо перше число більше, ніж друге;
                 <br>0 - якщо числа рівні.</p>
-            <button type="button" class="btn btn-info" onclick="getValue()">Push</button>
+            <label for="task_3_number"><input type="number" id="task_3_number" class="me-3"></label>
+            <label for="task_4_number"><input type="number" id="task_4_number" class="me-3"></label>
+            <button type="button" class="btn btn-info" onclick="getTotal()">Push</button>
+        </div>
+        <div class="col-4">
+            <p>Результат</p>
+            <div id="task_3_result"></div>
         </div>
     </div>
 </div>
@@ -35,11 +42,11 @@
         <div class="card body">
             <div class="row">
                 <div class="col-4">
-                    <p>1.4. Напиши функцію, яка обчислює факторіал переданого їй числа.</p>
+                    <p>4. Напиши функцію, яка обчислює факторіал переданого їй числа.</p>
                 </div>
                 <div class="col-4">
                     <label for="task_1.4._number"><input type="number" id="task_1.4._number" class="me-3"></label>
-                    <button type="button" class="btn btn-info" onclick="factorial()">Push</button>
+                    <button type="button" class="btn btn-info" onclick="calcFactorial()">Push</button>
                 </div>
                 <div class="col-4">
                     <p>Результат</p>
@@ -52,9 +59,15 @@
 <div class="container pt-4">
     <div class="card mb-4">
         <div class="card body">
-            <p>1.5.  Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
-                Наприклад: цифри 1, 4, 9 перетворяться в число 149.</p>
-            <button type="button" class="btn btn-info" onclick="createString()">Push</button>
+            <p>5. Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.</p>
+            <label for="task_1.4._number"><input type="number" id="task_5_number" class="me-3"></label>
+            <label for="task_1.4._number"><input type="number" id="task_6_number" class="me-3"></label>
+            <label for="task_1.4._number"><input type="number" id="task_7_number" class="me-3"></label>
+            <button type="button" class="btn btn-info" onclick="getConcat()">Push</button>
+        </div>
+        <div class="col-4">
+            <p>Результат</p>
+            <div id="task_5_result"></div>
         </div>
     </div>
 </div>
@@ -63,15 +76,17 @@
         <div class="card body">
             <div class="row">
                 <div class="col-4">
-                    <p>1.6. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу.
+                    <p>6. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу.
                         Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.</p>
                 </div>
                 <div class="col-4">
-                    <button type="button" class="btn btn-info" onclick="calcSquare()">Result</button>
+                    <label for="task_1.4._number"><input type="number" id="task_8_number" class="me-3"></label>
+                    <label for="task_1.4._number"><input type="number" id="task_9_number" class="me-3"></label>
+                    <button type="button" class="btn btn-info" onclick="getSquare()">Result</button>
                 </div>
                 <div class="col-4">
                     <p>Результат</p>
-                    <div id="task_1.6._result"></div>
+                    <div id="task_6_result"></div>
                 </div>
             </div>
         </div>
