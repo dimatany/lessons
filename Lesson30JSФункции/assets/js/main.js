@@ -4,14 +4,14 @@
 //1. Мінімум
 
 // 1. Напиши всі можливі варіанти створення функцій.
-function declaration() {
+/*function declaration() {
 }
 let expression = function() {
 };
 let sum = new Function('a', 'b', 'return a + b');
 //alert(sum(1, 2));
 let func = (a, b) =>a + b;
-
+*/
 
 // 2. Створи функцію, яка буде виводити кількість переданих їй аргументів.
 let getNum = function () {
@@ -56,41 +56,44 @@ function calcFactorial () {
 }
 
 
-// 5. Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
+// 5. Напиши функцію, яка приймає три окремі цифри й перетворює їх в одне число.
 // Наприклад: цифри 1, 4, 9 перетворяться в число 149.
-
 function concatenate(a=0, b=0, c=0) {
-    return (a * 100) + (b * 10) + c;
+    if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        return'введите какое-то число';
+    } else if (a < 0 || b < 0 || c < 0  ) {
+        return'введите положительное число';
+    }  else {
+        return (a * 100) + (b * 10) + c;
+    }
 }
+
 function getConcat() {
-    let num = parseInt(document.getElementById('task_5_number').value);
+    let num1 = parseInt(document.getElementById('task_5_number').value);
     let num2 = parseInt(document.getElementById('task_6_number').value);
     let num3 = parseInt(document.getElementById('task_7_number').value);
-    document.getElementById('task_5_result').innerHTML = concatenate(num, num2, num3);
-}// каждое число должно быть не NaN и больше нуля
+    document.getElementById('task_5_result').innerHTML = concatenate(num1, num2, num3);
+}
 
-// 6. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу.
+
+
+
+// 6. Напиши функцію, яка приймає довжину і ширину прямокутника й обчислює ого площу.
 // Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
-
-let widthFigure = 10;
-let lengthFigure;
-
 function calcSquare(a=0, b=0) {
-    if (a <= 0) {
+    if (a <= 0 || isNaN(a)) {
         a = b;
-    } else if (b <= 0)  {
+    } else if (b <= 0 || isNaN(b) )  {
         b = a;
     }
     return (a * b);
 }
-/*function getSquare() {
+function getSquare() {
     let num = parseInt(document.getElementById('task_8_number').value);
     let num2 = parseInt(document.getElementById('task_9_number').value);
     document.getElementById('task_6_result').innerHTML = calcSquare(num, num2);
-}*/
+}
 
-
-alert(calcSquare(widthFigure, lengthFigure));
 
 
 //2. Норма
