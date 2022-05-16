@@ -23,6 +23,7 @@ const topPanel = {
     },
 }
 
+
 const CART = [
     {
         name: 'Voter',
@@ -41,6 +42,8 @@ const CART = [
         
     }];
     viewCartTable();
+    
+    
 function addToCart(name, qty, price){
     if(CART.find(el => el.name===name) === undefined){
         CART.push({
@@ -61,7 +64,7 @@ function addToCart(name, qty, price){
     }
     viewCartTable();
 }
-//addToCart('Milk', 2, 23.45);
+
 
 function checkAndAddToCard(){
      let name = document.getElementById('product_name').value,
@@ -97,6 +100,7 @@ function checkAndAddToCard(){
        document.getElementById('product_price').value = '';
    }
 }   
+
 
 function viewCartTable(){
     let html = '';
