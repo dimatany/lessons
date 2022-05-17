@@ -1,62 +1,3 @@
-// $base_fz: 16;
-
-// @mixin fz($size_in_px){
-//     font-size:($size_in_px/$base_fz)+rem;
-// }
-
-// *, *::before, *::after {
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-// }
-// html, body {
-//     width: 100%;
-//     height: 100%;
-// }
-// body {
-//     @include  fz(16);
-//     text-align: center;
-// }
-// a, button{
-//     transform: all .2s ease;
-//     cursor: pointer;
-// }
-// a{
-//     text-decoration: none;
-// }
-// ol, ul{
-//     list-style: none;
-// }
-// .container{
-//     width: 1110px;
-//     width: 90%;
-//     margin: 0 auto;
-// }
-// .bec{
-//     .card-body {
-//         background: rgba(84, 119, 85, 0.278);
-    
-       
-//     }
-//     button{
-//         margin-bottom: 15px;
-//     }
-// }
-// .grid{
-//     display: grid;
-//     grid-template-columns: repeat(2, 50%);
-// }
-// .pin{
-//     .card-body {
-//         background: rgba(205, 129, 177, 0.509);
-     
-       
-//     }
-//     button{
-//         margin-bottom: 15px;
-//     }
-// }
-
 .top-panel{
     position: fixed;
     left: 0;
@@ -74,7 +15,7 @@
       background-color: green;
     }
     &.panel-info {
-      background-color: yellow;
+      background-color: blue;
     }
 
 }
