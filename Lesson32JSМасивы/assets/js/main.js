@@ -58,7 +58,7 @@ const CART = [
     {
         name: 'Voter',
         qty: 12,
-        isBuy: false,
+        isBuy: true,
         price: 10,
         total: 120
         
@@ -156,7 +156,7 @@ function sumTotal() {
 
 function askProdDel(name) {
     if(confirm('Delete' + name + ' ?')) {
-       let index = CART.findIndex((element) => element.name ===name);
+       let index = CART.findIndex((element) => element.name === name);
        CART.splice(index,1);
         viewCartTable();
         topPanel.info('Product successful deleted');
