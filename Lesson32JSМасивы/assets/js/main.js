@@ -140,6 +140,7 @@ function viewCartTable(){
                 <td>${product.price.toFixed(2)}</td>
                 <td>${product.total.toFixed(2)}</td>
                 <td>
+                <button type="button" class="btn btn-primary" onclick="chengeProdStatus('${product.name}')">Chenge status</button>
                 <button type="button" class="btn btn-danger" onclick="askProdDel('${product.name}')">&times;</button>
                 </td>
               </tr>
@@ -156,9 +157,20 @@ function sumTotal() {
 
 function askProdDel(name) {
     if(confirm('Delete' + name + ' ?')) {
-       let index = CART.findIndex((element) => element.name === name);
+       const index = CART.findIndex((element) => element.name === name);
        CART.splice(index,1);
         viewCartTable();
         topPanel.info('Product successful deleted');
     }
 }
+
+function chengeProdStatus(name) {
+    const index = CART.findIndex((element) => element.name === name);
+    CART[index].isBuy = !CART[index].isBuy;
+    viewCartTable();
+    topPanel.info('Product status changed');
+}
+
+
+
+

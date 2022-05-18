@@ -1,8 +1,7 @@
-"use strict"
+'use strict'
 //Задачи из LMS
 
 //1. Мінімум
-
 /*1. Створи об'єкт, що описує автомобіль (виробник, модель, рік випуску, ' +
 'середня швидкість, обсяг паливного бака, середня витрата палива ' +
 'на 100 км., водії), і наступні функції для роботи з цим об'єктом:
@@ -16,6 +15,85 @@
 'Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
 'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
 */
+
+
+//1.2. Висновок на екран з інформацією про автомобіль.
+const car = {
+    company: 'Hyundai',
+    model: 'Tucson',
+    year: 2015,
+    'average speed': 120,
+    'volume': 60,
+    'average expense': 10,
+    '100km/h expense': 8,
+    'driver': 'Vasa Pupkin',
+}
+let carUl = '<ul>';
+for(let key in car) {
+    console.log(key + ':' + car[key]);
+    carUl += '<li>'+key+' : '+car[key]+'</li>'
+}
+carUl += '</ul>';
+document.getElementById('task_1_result').innerHTML = carUl;
+
+//1.3. Додавання водія, який має право керувати автомобілем.
+car.driver2 = 'Anna';
+console.log(car);//через консоль получается через innerHTML нет - не понимаю почему
+document.getElementById('task_2_result').innerHTML = carUl;
+
+//1.4. Заправка автомобіля.
+let empty = 0;
+function volume(empty=0) {
+    if (car.volume === empty) {
+        return 'у вас  полный бак'
+    } else {
+        return `${(car.volume - empty)} литров долить до полного бака`;
+    }
+}
+console.log(volume(empty=40));
+/*
+1.5. Підрахунок необхідного часу для подолання переданої відстані
+з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві
+необхідно робити перерву на 1 годину, а також потрібно перевіряти чи має
+право водій керувати даним автомобілем (ім'я водія функція приймає другим аргументом). '
+'Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
+'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
+*/
+
+let distance = 0;
+let speed = 0;
+function rezTotal ( s=0, v=0) {
+    return  (s / v) * 60//ищем время в минутах - поэтому расстояние делим на скорость
+}
+function getTimeFromMin(min) {
+    let hours = Math.trunc(min/60);
+    let minutes = min % 60;
+    return hours + 'ч. ' + minutes + 'м.';
+}
+console.log(getTimeFromMin((rezTotal(700,60))));
+
+
+
+
+/*
+function getValue() {
+    distance = parseInt(document.getElementById('task_6_number').value);
+    speed = parseInt(document.getElementById('task_7_number').value);
+    document.getElementById('task_4_result').innerHTML = rezTotal();
+    
+}
+*/
+/*
+движение
+время  t = s/v (время = расстояние / скорость)
+расстояние s = v∗t (расстояние = скорость * время)
+скорость v = s/t (скорость = расстояние / время)
+*/
+
+
+
+
+
 
 //2. Норма
 /*
