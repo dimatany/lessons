@@ -26,9 +26,16 @@ const car = {
     'volume': 60,
     'average expense': 10,
     '100km/h expense': 8,
-    'driver1': 'Vasa Pupkin',
+    'driver': function allDriver(...drivers) {
+        let driver = 0;
+        for (let i = 0; i < driver.length; i++) {
+            driver += drivers[i];
+        }
+        return driver;
+    }
 };
 
+//1.2. Висновок на екран з інформацією про автомобіль.
 let carUl = '<ul>';
 for(let key in car) {
     console.log(key + ':' + car[key]);
@@ -38,12 +45,8 @@ carUl += '</ul>';
 document.getElementById('task_1_result').innerHTML = carUl;
 
 //1.3. Додавання водія, який має право керувати автомобілем.
-let driver2 = 'Anna';
-car.driver2 = driver2;
-
-
-console.log(car);//через консоль получается через innerHTML нет - не понимаю почему
-//document.getElementById('task_2_result').innerHTML = carUl;
+car.driver[0]='Vasa Pupkin';
+car.driver[1]='Anna Pupkin';
 
 //1.4. Заправка автомобіля.
 let empty = 0;
@@ -63,7 +66,7 @@ console.log(volume(empty=20));
 'Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
 'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
 */
-
+/*
 let distance = 0;
 let speed = 0;
 
