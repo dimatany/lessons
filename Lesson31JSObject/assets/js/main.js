@@ -50,7 +50,7 @@ function volume(empty=0) {
         return `${(car.volume - empty)} литров долить до полного бака`;
     }
 }
-console.log(volume(empty=40));
+console.log(volume(empty=60));
 /*
 1.5. Підрахунок необхідного часу для подолання переданої відстані
 з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві
@@ -62,15 +62,30 @@ console.log(volume(empty=40));
 
 let distance = 0;
 let speed = 0;
+
 function rezTotal ( s=0, v=0) {
     return  (s / v) * 60//ищем время в минутах - поэтому расстояние делим на скорость
 }
+let time = rezTotal ();
+
+function getConditions(driver) {
+    if (time > 240) {
+        console.log('больше чем 4 часа за рулем сделай остановку')
+    } else if (driver !== car.driver2 || car.driver) {
+        console.log('вы не имеете право водить эту машину')
+    } else if (volume()<=0) {
+        console.log('У вас нет бензина для поездки')
+    }
+}
+console.log(getConditions())
+
 function getTimeFromMin(min) {
     let hours = Math.trunc(min/60);
     let minutes = min % 60;
     return hours + 'ч. ' + minutes + 'м.';
 }
-console.log(getTimeFromMin((rezTotal(700,60))));
+console.log(getTimeFromMin((rezTotal(700,90))));
+
 
 
 

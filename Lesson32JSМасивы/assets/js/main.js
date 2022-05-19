@@ -26,7 +26,6 @@
  від меншого до більшого, в залежності від параметра функції, який вона приймає)
  */
 
-
 const topPanel = {
     show: function(text, className){
         let panel = `<div id="top-panel" class="top-panel ${className}">${text}</div>`;
@@ -56,17 +55,17 @@ const topPanel = {
 
 const CART = [
     {
-        name: 'Voter',
+        name: 'Milk',
         qty: 12,
-        isBuy: true,
+        isBuy: false,
         price: 10,
         total: 120
         
     },
     {
-        name: 'Milk',
+        name: 'Water',
         qty: 1,
-        isBuy: false,
+        isBuy: true,
         price: 23.45,
         total: 23.45
         
@@ -86,7 +85,6 @@ function addToCart(name, qty, price){
     } else {
         const prodIndex = CART.findIndex(el => el.name===name);
         const newQty = CART[prodIndex].qty + qty;
-        //CART[prodIndex].qty;
         CART[prodIndex].qty = newQty;
         CART[prodIndex].total = parseFloat((newQty *CART[prodIndex].price).toFixed(2));
         topPanel.success('Product successfully chenged');
@@ -131,6 +129,7 @@ function checkAndAddToCard(){
 
 function viewCartTable(){
     let html = '';
+    CART.sort((a, b) => Number (b.isBuy) - Number(a.isBuy));
     CART.forEach(product => {
         html += `
             <tr>
@@ -147,9 +146,9 @@ function viewCartTable(){
         `;
     });
     document.getElementById('cart-tbody').innerHTML = html;
-    document.getElementById('cart-total').innerText = sumTotal();
+    document.getElementById('cart-total').innerText = sumTotal().toFixed(2);
+   
 }
-
 
 function sumTotal() {
     return CART.reduce((acc, curr) => {return acc + curr.total;}, 0);
