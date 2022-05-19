@@ -32,7 +32,7 @@ const car = {
             driver += drivers[i];
         }
         return driver;
-    }
+    }//добавить внутренний метод с this который будет проверять водителей и разрешать вести машину
 };
 
 //1.2. Висновок на екран з інформацією про автомобіль.
@@ -47,6 +47,7 @@ document.getElementById('task_1_result').innerHTML = carUl;
 //1.3. Додавання водія, який має право керувати автомобілем.
 car.driver[0]='Vasa Pupkin';
 car.driver[1]='Anna Pupkin';
+console.log(car);
 
 //1.4. Заправка автомобіля.
 let empty = 0;

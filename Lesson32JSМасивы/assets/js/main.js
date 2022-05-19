@@ -147,7 +147,12 @@ function viewCartTable(){
     });
     document.getElementById('cart-tbody').innerHTML = html;
     document.getElementById('cart-total').innerText = sumTotal().toFixed(2);
-   
+}
+
+function setSorting(){
+    const sorting = document.getElementById('sorting').value
+    console.log(sorting);
+    return CART.filter().sort()
 }
 
 function sumTotal() {
