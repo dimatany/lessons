@@ -23,16 +23,23 @@ const car = {
     model: 'Tucson',
     year: 2015,
     'average speed': 120,
-    'volume': 60,
+    volume: 60,
     'average expense': 10,
     '100km/h expense': 8,
-    'driver': function allDriver(...drivers) {
+    driver: function allDriver(...drivers) {
         let driver = 0;
         for (let i = 0; i < driver.length; i++) {
             driver += drivers[i];
         }
-        return driver;
-    }//добавить внутренний метод с this который будет проверять водителей и разрешать вести машину
+        return driver;//добавить внутренний метод с this который будет проверять водителей и разрешать вести машину
+    },
+    permission: function check(driver) {
+        if (this.driver === true) {
+            return 'вы имеете право пользовать авто'
+        } else {
+            return 'вы не имеете право пользовать авто'
+        }
+    }
 };
 
 //1.2. Висновок на екран з інформацією про автомобіль.
@@ -59,6 +66,7 @@ function volume(empty=0) {
     }
 }
 console.log(volume(empty=20));
+
 /*
 1.5. Підрахунок необхідного часу для подолання переданої відстані
 з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві
@@ -67,7 +75,7 @@ console.log(volume(empty=20));
 'Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
 'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
 */
-/*
+
 let distance = 0;
 let speed = 0;
 
@@ -79,13 +87,13 @@ let time = rezTotal();
 function getConditions(driver=0) {
     if (time > 240) {
         console.log('больше чем 4 часа за рулем сделай остановку')
-    } else if (driver !== driver2 || car.driver1) {
+    } else if (driver !== driver) {
         console.log('вы не имеете право водить эту машину')
     } else if (volume()<=0) {
         console.log('У вас нет бензина для поездки')
     }
 }
-console.log(getConditions(driver2));
+console.log(getConditions());
 
 function getTimeFromMin(min=0) {
     let hours = Math.trunc(min/60);
@@ -100,15 +108,7 @@ function getValue() {
     speed = parseInt(document.getElementById('task_7_number').value);
     document.getElementById('task_4_result').innerHTML = rezTotal();
     
-}
-*/
-/*
-движение
-время  t = s/v (время = расстояние / скорость)
-расстояние s = v∗t (расстояние = скорость * время)
-скорость v = s/t (скорость = расстояние / время)
-*/
-
+}*/
 
 //2. Норма
 /*
