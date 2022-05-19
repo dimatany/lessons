@@ -119,7 +119,7 @@ function getValue() {
     можливість того що користувач може передати 150 секунд, або 75 хвилин.
 */
 let hours = 10;
-let minutes = 1000;
+let minutes = 500;
 let seconds = 30;
 
 const timeObj = {};
@@ -128,17 +128,23 @@ timeObj.minutes = minutes;
 timeObj.seconds = seconds;
 console.log(timeObj)
 
+let now = new Date();
+console.log(now)
+
 //2.1. Для виведення часу на екран.
+let plusHours = 300;
+let plusMinutes = 200;
+let plusSeconds = 100;
 
 function getTime(hours=0, minutes=0, seconds=0) {
-    hours = Math.trunc(hours/60);
-    minutes = minutes % 60;
-    seconds = seconds % 60;
+    let time = hours / 3600 + minutes / 60 + seconds;
+    
+    hours = Math.trunc((hours + plusHours) / 60);
+    minutes = (minutes + plusMinutes)% 60;
+    seconds = (seconds + plusSeconds)% 60;
     return hours + 'ч. ' + minutes + 'м.' + seconds + 'c.';
 }
 console.log(getTime(2000,34,21));
-
-//2.2. Зміни часу на передану кількість секунд.
 
 
 
