@@ -26,8 +26,9 @@ const car = {
     'volume': 60,
     'average expense': 10,
     '100km/h expense': 8,
-    'driver': 'Vasa Pupkin',
-}
+    'driver1': 'Vasa Pupkin',
+};
+
 let carUl = '<ul>';
 for(let key in car) {
     console.log(key + ':' + car[key]);
@@ -37,20 +38,23 @@ carUl += '</ul>';
 document.getElementById('task_1_result').innerHTML = carUl;
 
 //1.3. Додавання водія, який має право керувати автомобілем.
-car.driver2 = 'Anna';
+let driver2 = 'Anna';
+car.driver2 = driver2;
+
+
 console.log(car);//через консоль получается через innerHTML нет - не понимаю почему
-document.getElementById('task_2_result').innerHTML = carUl;
+//document.getElementById('task_2_result').innerHTML = carUl;
 
 //1.4. Заправка автомобіля.
 let empty = 0;
 function volume(empty=0) {
     if (car.volume === empty) {
-        return 'у вас  полный бак'
+        return 'у вас полный бак'
     } else {
         return `${(car.volume - empty)} литров долить до полного бака`;
     }
 }
-console.log(volume(empty=60));
+console.log(volume(empty=20));
 /*
 1.5. Підрахунок необхідного часу для подолання переданої відстані
 з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві
@@ -66,29 +70,25 @@ let speed = 0;
 function rezTotal ( s=0, v=0) {
     return  (s / v) * 60//ищем время в минутах - поэтому расстояние делим на скорость
 }
-let time = rezTotal ();
+let time = rezTotal();
 
-function getConditions(driver) {
+function getConditions(driver=0) {
     if (time > 240) {
         console.log('больше чем 4 часа за рулем сделай остановку')
-    } else if (driver !== car.driver2 || car.driver) {
+    } else if (driver !== driver2 || car.driver1) {
         console.log('вы не имеете право водить эту машину')
     } else if (volume()<=0) {
         console.log('У вас нет бензина для поездки')
     }
 }
-console.log(getConditions())
+console.log(getConditions(driver2));
 
-function getTimeFromMin(min) {
+function getTimeFromMin(min=0) {
     let hours = Math.trunc(min/60);
     let minutes = min % 60;
     return hours + 'ч. ' + minutes + 'м.';
 }
-console.log(getTimeFromMin((rezTotal(700,90))));
-
-
-
-
+console.log(getTimeFromMin((rezTotal(100,90))));
 
 /*
 function getValue() {
@@ -106,10 +106,6 @@ function getValue() {
 */
 
 
-
-
-
-
 //2. Норма
 /*
 2. Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
@@ -122,6 +118,35 @@ function getValue() {
     то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити
     можливість того що користувач може передати 150 секунд, або 75 хвилин.
 */
+let hours = 10;
+let minutes = 1000;
+let seconds = 30;
+
+const timeObj = {};
+timeObj.hours = hours;
+timeObj.minutes = minutes;
+timeObj.seconds = seconds;
+console.log(timeObj)
+
+//2.1. Для виведення часу на екран.
+
+function getTime(hours=0, minutes=0, seconds=0) {
+    hours = Math.trunc(hours/60);
+    minutes = minutes % 60;
+    seconds = seconds % 60;
+    return hours + 'ч. ' + minutes + 'м.' + seconds + 'c.';
+}
+console.log(getTime(2000,34,21));
+
+//2.2. Зміни часу на передану кількість секунд.
+
+
+
+
+
+
+
+//1 час = 60 минут = 3600 секунд
 
 //Максимум
 /*
@@ -145,7 +170,7 @@ const drobb = {
         ch: 0,
         zn: 0
     },
-    setValue: function(key, chisl, znam) {
+    setValue: function(key=0, chisl=0, znam=0) {
         this[key].ch = chisl;
         this[key].zn = znam;
     },
