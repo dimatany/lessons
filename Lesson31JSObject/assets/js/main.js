@@ -57,15 +57,25 @@ car.driver[1]='Anna Pupkin';
 console.log(car);
 
 //1.4. Заправка автомобіля.
-let empty = 0;
+let empty;
 function volume(empty=0) {
     if (car.volume === empty) {
         return 'у вас полный бак'
-    } else {
+    } else if (car.volume  === undefined || isNaN(empty)) {
+        return 'введите какое-то число'
+    } else if(empty<0) {
+        return 'введите положительное число'
+    }
+    else {
         return `${(car.volume - empty)} литров долить до полного бака`;
     }
 }
-console.log(volume(empty=20));
+function getVolume() {
+    let num = parseInt(document.getElementById('task_1_number').value);
+    document.getElementById('task_3_result').innerHTML = volume(num);
+}
+
+
 
 /*
 1.5. Підрахунок необхідного часу для подолання переданої відстані
