@@ -54,21 +54,17 @@ function addInfo() {
 }
 
 //1.3. Додавання водія, який має право керувати автомобілем.
-function fixUserName(str) {//чистая функция преобразования имени в нормальный вид
+document.querySelector('.a-y').addEventListener('click', () => {
+    getDriverName(fixUserName);
+})
+function getDriverName(fixFunc) {//как добавить результаты в массив?
+    car.driver[3] = document.querySelector('.a-i').value;
+    //console.log(fixFunc(car.driver[3]));
+}
+function fixUserName(str) {
     return str.trim().toLowerCase();
 }
-function getDriverName() {//нужно получить имя с преобразованием которое добавим в массив
-    const name = document.getElementById('task_3_result').value;
-    return(fixUserName(name));
-}
-function addDriver() {
-    document.getElementById('task_3_result').innerHTML = getDriverName(name);
-}
 
-
-car.driver[0]='Vasa Pupkin';
-car.driver[1]='Anna Pupkin';
-console.log(car);
 
 //1.4. Заправка автомобіля.
 let empty;
