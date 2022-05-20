@@ -49,9 +49,23 @@ for(let key in car) {
     carUl += '<li>'+key+' : '+car[key]+'</li>'
 }
 carUl += '</ul>';
-document.getElementById('task_1_result').innerHTML = carUl;
+function addInfo() {
+    document.getElementById('task_1_result').innerHTML = carUl;
+}
 
 //1.3. Додавання водія, який має право керувати автомобілем.
+function fixUserName(str) {//чистая функция преобразования имени в нормальный вид
+    return str.trim().toLowerCase();
+}
+function getDriverName() {//нужно получить имя с преобразованием которое добавим в массив
+    const name = document.getElementById('task_3_result').value;
+    return(fixUserName(name));
+}
+function addDriver() {
+    document.getElementById('task_3_result').innerHTML = getDriverName(name);
+}
+
+
 car.driver[0]='Vasa Pupkin';
 car.driver[1]='Anna Pupkin';
 console.log(car);
@@ -74,8 +88,6 @@ function getVolume() {
     let num = parseInt(document.getElementById('task_1_number').value);
     document.getElementById('task_3_result').innerHTML = volume(num);
 }
-
-
 
 /*
 1.5. Підрахунок необхідного часу для подолання переданої відстані
@@ -112,13 +124,7 @@ function getTimeFromMin(min=0) {
 }
 console.log(getTimeFromMin((rezTotal(100,90))));
 
-/*
-function getValue() {
-    distance = parseInt(document.getElementById('task_6_number').value);
-    speed = parseInt(document.getElementById('task_7_number').value);
-    document.getElementById('task_4_result').innerHTML = rezTotal();
-    
-}*/
+
 
 //2. Норма
 /*
