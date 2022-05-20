@@ -26,14 +26,14 @@ const car = {
     volume: 60,
     'average expense': 10,
     '100km/h expense': 8,
-    driver: function allDriver(...drivers) {
+    driver: function(...drivers) {
         let driver = 0;
         for (let i = 0; i < driver.length; i++) {
             driver += drivers[i];
         }
-        return driver;//добавить внутренний метод с this который будет проверять водителей и разрешать вести машину
+        return driver;
     },
-    permission: function check(driver) {
+    permission: function(driver) {
         if (this.driver === true) {
             return 'вы имеете право пользовать авто'
         } else {
@@ -227,12 +227,26 @@ console.log(multp);
 const div = drobb.divide();
 console.log(div);
 
-
 //доделать в этот объект еще два метода - плюс и минус
 //доделать интерфейс который бы вывел все эти вещи в HTML
 //результат выражения будет выводиться в два span - в 1‑й - числитель, а 2‑й - знаменатель
 
 
+//Задачи из codewars
+function Ship(draft,crew) {
+    this.draft = draft;
+    this.crew = crew;
+}
 
+function isWorthIt(draft,crew) {
+    let netWeight = draft - crew;
+    if (netWeight < 20) {
+        return 'Rob the ship'
+    } else {
+        return 'No Rob the ship'
+    }
+}
+let titanic = new Ship(15, 10);
+console.log(isWorthIt());
 
 
