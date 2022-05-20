@@ -231,22 +231,3 @@ console.log(div);
 //доделать интерфейс который бы вывел все эти вещи в HTML
 //результат выражения будет выводиться в два span - в 1‑й - числитель, а 2‑й - знаменатель
 
-
-//Задачи из codewars
-function Ship(draft,crew) {
-    this.draft = draft;
-    this.crew = crew;
-}
-
-function isWorthIt(draft,crew) {
-    let netWeight = draft - crew;
-    if (netWeight < 20) {
-        return 'Rob the ship'
-    } else {
-        return 'No Rob the ship'
-    }
-}
-let titanic = new Ship(15, 10);
-console.log(isWorthIt());
-
-
