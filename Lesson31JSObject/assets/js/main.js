@@ -57,14 +57,18 @@ function addInfo() {
 document.querySelector('.a-y').addEventListener('click', () => {
     getDriverName(fixUserName);
 })
-function getDriverName(fixFunc) {//как добавить результаты в массив?
+function getDriverName(fixFunc) {//как добавить результаты в массив правильного формата?
     car.driver[3] = document.querySelector('.a-i').value;
-    //console.log(fixFunc(car.driver[3]));
+    console.log(fixFunc(car.driver[3]));
 }
 function fixUserName(str) {
     return str.trim().toLowerCase();
 }
 
+car.driver[0]='Vasa Pupkin';
+car.driver[1]='Anna Pupkin';
+car.driver[2]='Una Pupkin';
+console.log(car);
 
 //1.4. Заправка автомобіля.
 let empty;
