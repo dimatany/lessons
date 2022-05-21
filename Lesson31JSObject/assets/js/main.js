@@ -110,31 +110,21 @@ function distanceOnVolume(distance=0, speed=0) {
     }
     return 'еще нужен бензин'
 }
-function checkDriver() {
+/*function checkDriver() {
     const nameDriver = document.getElementById().value;
     if (nameDriver ==='') {
         return 'введите имя водителя'
     }
     const name = car.driver.find(el => el.name === checkDriver);
-}
+    if (name === undefined) {
+        return 'не можете водить эту машину'
+    }
+}*/
 
-function checkAndApplyDiscount() {
-    const discPromo = document.getElementById('discountField').value;
-    if (discPromo === ''){
-        topPanel.error('Enter promo code');
-        return false;
-    }
-    const disc = DISCOUNT.find(el => el.promo === discPromo);
-    if(disc === undefined) {
-        topPanel.error('Promo code not found');
-        return false;
-    }
-    console.log(disc);
-}
 
 console.log(rezTotalTime(100,45));
 console.log(distanceOnVolume(100, 45));
-console.log(contains(car, 'Anna'));
+
 
 
 

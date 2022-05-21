@@ -1,66 +1,34 @@
-//2.
-let myName = 'Jane Dow';
-let fullName = 'Margaret Thatcher';
-let username = 'Eva Brown';
-let famousName= 'Isadora Duncan';
-//2. let 323342
-//2. let #ersf
-//2. let +43245
-//2. let @3452
-//2. ___name
-
-//3. - однострочные, и многострочные - /* 3 */
-
-//2.1. спросить имя у пользователя и вывести его с куском фразы - твоем имя ...
-const yourName = prompt('Как тебя зовут?');
-console.log(yourName);
-if(yourName != null) {
-    if(yourName !== '') {
-        alert('твое имя: '+ yourName);
-    }
+"use strict";
+function task1() {
+    let e = prompt("Enter your name");
+    alert("Hello, ".concat(e, "!"))
+}
+function task2() {
+    let e = 2022 - prompt("Enter your birth year");
+    e < 0 ? alert("You are not born yet!") : 100 < e ? alert("Xa-xa! You are the same age as the dinosaur!") : alert("Your age is ".concat(e, "!"))
+}
+function task3() {
+    let e = prompt("Enter square side");
+    alert("Square perimetr is: ".concat(Math.pow(e, 2), "!"))
+}
+function task4() {
+    let e = prompt("Enter circle radius"),
+        r = parseInt(Math.PI * Math.pow(e, 2) * 100);
+    alert("Circle square is: ".concat(r / 100, "!"))
+}
+function task5() {
+    let e = prompt("Enter distance"),
+        r = prompt("Enter travel time");
+    alert("You need to move at a speed of ".concat(e / r, " kilometers per hour!"))
+}
+function task6() {
+    let e = prompt("Enter the amount of dollars");
+    alert("You will receive ".concat(.95 * e, " euros!"))
 }
 
-//2.2. - спросить год рождения, вывести итоговый результат, год 2022 должен быть константой;
-let birthYear = prompt('Какой год твоего рождения?');
-const thisYear = 2022;
-let result = (thisYear - birthYear);
-alert('тебе исполнилось: '+ result);
-
-//2.3. Спроси у пользователя длину стороны квадрата и выведи его периметр
-let lengthSideSquare = prompt('Введи длину стороны квадрата!');
-const perimeter = lengthSideSquare * 4;
-alert('периметр квадрата равен: '+ perimeter);
-
-//3.1. Спроси у пользователя радиус круга и выведи площадь такой окружности
-let radius =  prompt('Назови любой произвольный радиус!');
-const Pi = 3.14;
-const square = radius * Pi;
-alert('площадь окружности равна: '+ perimeter);
-
-/*3.2. Спросить расстояние в км между населенным пунктом А и В.
-       Спросить за сколько времени хочется преодолеть километраж между населенными пунктами.
-       Просчитать итоговую скорость движения с учетом введенных данных.
- */
-let distance = prompt('Назови расстояние в км между населенным пунктом А и В!');
-let time = prompt('За сколько времени хочется преодолеть километраж между населенными пунктами А и В в минутах!');
-let finalSpeed = (distance / time) * 60;
-alert('скорость движения равна: '+ finalSpeed + 'км/ч' );
 
 
-/*3.3. Реализовать конвертер валют
-       Пользователь вводит баксы.
-       Программа переводит баксы в евро.
-       Курс сберегаем в константе.
- */
-
-let dollar = prompt('Введи любую сумму в $!');
-let course = 1.05;
-const converter = dollar / course;
-alert('ваша сумма в $: '+ converter + 'евро' );
-
-
-
-
+/*
 //ЗАДАЧИ С УРОКА (пусть будет посмотреть)
 // 1) Запросите у пользователя число, возведите это число во 2-ю степень и выведите на экран.
 
@@ -126,6 +94,6 @@ function digit2() {
     alert(`Другая  цифра: ${rez}`);
     
 }
-
+*/
 
 

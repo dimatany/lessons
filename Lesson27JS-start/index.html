@@ -9,86 +9,43 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<h1>Home work on 27 lessons</h1>
-
-<h2>minimum</h2>
-<h3>1. All JavaScript options</h3>
-<ul>
-    <li>Front-end - все с чем манипулирует пользователь.</li>
-    <li>Back-end - серверная часть на NodeJS</li>
-</ul>
-<h3>2. Variables with name and surname (4 pcs)</h3>
-<h3>3. There are two options for commenting the code // and /**/</h3>
-<h3>4. Variable names writing styles</h3>
-<ul>
-    <li> CamelCase - each word is written with a big letter</li>
-    <li>lowerCamelCase - the first word with a small letter</li>
-</ul>
-
-<h2>norm</h2>
-<h3>2.1 Спрашиваю имя пользователя. Вывожу привет, «имя»</h3>
-<h3>2.2 Спросить год рождения, вывести итоговый результат, год 2022 должен быть константой;</h3>
-<h3>2.3 Спроси у пользователя длину стороны квадрата и выведи его периметр.</h3>
-
-<h2>maximum</h2>
-<h3>3.1. Спроси у пользователя радиус круга и выведи площадь такой окружности</h3>
-<h3>3.2. Спросить расстояние в км между населенным пунктом А и В.
-    Спросить за сколько времени хочется преодолеть километраж между населенными пунктами.
-    Просчитать итоговую скорость движения с учетом введенных данных.</h3>
-<h3>Реализовать конвертер валют
-    Пользователь вводит баксы.
-    Программа переводит баксы в евро.
-    Курс сберегаем в константе.</h3>
-
-<div class="container pt-4">
+<div class="container">
+    <h2 class="display-5">Lesson27 Основи JavaScript</h2>
     <div class="card mb-4">
-        <div
-        class="card body">
-            <p>4) Реализуйте конвертор из километров в мили (пользователь вводит километры, программа выводит мили). 1 км = 0,621371 миль. Это значение укажите в коде как константу.</p>
-            <button type="button" class="btn btn-info" onclick="km2ml()">Km to Ml</button>
+        <div class="card-body">
+            <p class="text-danger">Task 1</p>
+            <p>Запитай ім’я користувача та виведи у відповідь “Привіт, *ім’я*”;</p>
+            <button type="button" class="btn btn-success" onclick="task1()">RESULT</button>
+        </div>
+        <div class="card-body">
+            <p class="text-danger">Task 2</p>
+            <p>Запитай рік народження користувача, порахуй його/її вік і виведи результат. Поточний рік вкажи в коді як константу;</p>
+            <button type="button" class="btn btn-success" onclick="task2()">RESULT</button>
+        </div>
+        <div class="card-body">
+            <p class="text-danger">Task 3</p>
+            <p>Запитай у користувача довжину сторони квадрату і виведи периметр цього квадрата</p>
+            <button type="button" class="btn btn-success" onclick="task3()">RESULT</button>
+        </div>
+        <div class="card-body">
+            <p class="text-danger">Task 4</p>
+            <p>Запитай у користувача радіус кола і виведи площу такої окружності.</p>
+            <button type="button" class="btn btn-success" onclick="task4()">RESULT</button>
+        </div>
+        <div class="card-body">
+            <p class="text-danger">Task 5</p>
+            <p>Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він хоче дістатися.
+                Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно.</p>
+            <button type="button" class="btn btn-success" onclick="task5()">RESULT</button>
+        </div>
+
+        <div class="card-body">
+            <p class="text-danger">Task 6</p>
+            <p>Реалізуй конвертор валют. Користувач вводить долари, програма переводить їх в євро. Курс валют зберігається в константі.</p>
+            <button type="button" class="btn btn-success" onclick="task6()">RESULT</button>
         </div>
     </div>
 </div>
-<div class="container pt-4">
-    <div class="card mb-4">
-        <div
-                class="card body">
-            <p>5) Реализуйте калькулятор. Пользователь вводит два числа, а программа выводит результаты действий + - * / между этими числами.</p>
-            <button type="button" class="btn btn-info" onclick="calc()">5я задача</button>
-        </div>
-    </div>
-</div>
-<div class="container pt-4">
-    <div class="card mb-4">
-        <div
-                class="card body">
-            <p>6) Пользователь вводит значения a и b для формулы a * x + b = 0, а программа считает и выводит значение x.</p>
-            <button type="button" class="btn btn-info" onclick="findX()">6я задача</button>
-        </div>
-    </div>
-</div>
-<!--a * x = b;
-    x = b / a;
- -->
-<div class="container pt-4">
-    <div class="card mb-4">
-        <div
-                class="card body">
-            <p> 7) Запросите у пользователя текущее время (часы и минуты) и выведите, сколько часов и минут осталось до следующего дня.</p>
-            <button type="button" class="btn btn-info" onclick="timeToDayEnd()">7я задача</button>
-        </div>
-    </div>
-</div>
-<div class="container pt-4">
-    <div class="card mb-4">
-        <div
-                class="card body">
-            <p>  8) Запросите у пользователя трехзначное число и выведите вторую цифру этого числа. Для решения задачи используйте оператор % (остаток от деления).</p>
-            <button type="button" class="btn btn-info" onclick="digit2()">8я задача</button>
-        </div>
-    </div>
-</div>
-
 <script src="assets/js/main.js"></script>
 </body>
 </html>
