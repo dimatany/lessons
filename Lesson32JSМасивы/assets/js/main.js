@@ -1,29 +1,6 @@
 "use strict"
 /*
- Мінімум
- 1. Створи масив «Список покупок». Кожен елемент масиву є об'єктом, який містить
- назву продукту, кількість і куплений він чи ні, ціну за одиницю товару, сума.
- Написати кілька функцій для роботи з таким масивом:
-   1.1. Виводити весь список на екран таким чином, щоб спочатку йшли продукти,
-   що ще не придбані, а потім - ті, що вже придбали.
-   1.2. Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
-   1.3. Створення списку (не) придбаних продуктів.
  
- Норма
- 1. Видалення продукту зі списку (видалення повинно проводитися шляхом
-    створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
- 2. Додавання покупки в список. Враховуй, що при додаванні покупки
-    з уже існуючим в списку продуктом, необхідно збільшувати кількість
-    в існуючій покупці, а не додавати нову. При цьому також повинна
-    змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості
-    товарів стало 2, то сума буде 24.
- 
- 
- Максимум
- 1. Підрахунок суми всіх продуктів (враховуючи кількість кожного) в списку.
- 2. Підрахунок суми всіх (не) придбаних продуктів.
- 3. Показання продуктів в залежності від суми, (від більшого до меншого /
- від меншого до більшого, в залежності від параметра функції, який вона приймає)
  */
 
 const topPanel = {
@@ -135,7 +112,7 @@ function viewCartTable(){
             <tr>
                 <td>${product.name}</td>
                 <td>${product.isBuy ? '<span class="badge bg-success">Yes</span>' : '<span class="badge bg-danger">No</span>'}</td>
-                <td>${product.qty}</td>
+                <td><button class="btn btn-info btn-sm" onclick="chengeProductQty('${product.name}', 'dec')">-</button>${product.qty}<button class="btn btn-info btn-sm" onclick="chengeProductQty('${product.name}', 'inc')">+</button></td>
                 <td>${product.price.toFixed(2)}</td>
                 <td>${product.total.toFixed(2)}</td>
                 <td>
@@ -147,6 +124,76 @@ function viewCartTable(){
     });
     document.getElementById('cart-tbody').innerHTML = html;
     document.getElementById('cart-total').innerText = sumTotal().toFixed(2);
+}
+function chengeProductQty(name, action) {
+    const index = CART.findIndex(el => el.name ===name);
+    let newQty = 0;
+    if (action === 'inc') {
+        newQty = CART[index].qty + 1;
+    } else {
+        if (CART[index].qty >= 2) {
+            newQty = CART[index].qty-1;
+        }else{
+            askProdDel(name);
+            return false;
+        }
+    }
+    CART[index].qty = newQty;
+    CART[index].total = CART[index].price * newQty;
+    viewCartTable();
+}
+
+function askProdDel(name) {
+    return confirm('Delete product '+ name +'?');
+}
+
+const DISCOUNT = [
+    {
+        promo: 'qwe',
+        type: 'fixed', //or persent
+        value: 15,
+        isUsed: false,
+    },
+    {
+        promo: 'qwert',
+        type: 'percent', //or summ
+        value: 5,
+        isUsed: false,
+    }
+];
+
+function checkAndApplyDiscount() {
+    const discPromo = document.getElementById('discountField').value;
+    if (discPromo === ''){
+        topPanel.error('Enter promo code');
+        return false;
+    }
+    const index = DISCOUNT.findIndex(el => el.promo === discPromo);
+    if(index === -1) {
+        topPanel.error('Promo code not found');
+        return false;
+    }
+    const disc = DISCOUNT[index];
+    if (disc.isUsed) {
+        topPanel.error('This promo already used')
+        return false;
+    }
+    let newTotal = calcDiscount(disc);
+    DISCOUNT[index].isUsed = true;
+    document.getElementById('discValue').innerText = disc.value + (disc.type === 'fixed') ? 'UAH' : '%';
+    document.getElementById('totalWithDisc').innerText = (newTotal).toFixed(2);
+    document.getElementById('discountField').value = '';
+}
+
+function calcDiscount(disc) {
+    const {type, value} = disc;
+    const sumTotalValue = sumTotal();
+    switch (type) {
+        case 'fixed':
+            return sumTotalValue - value;
+        case 'percent':
+            return sumTotalValue - (sumTotalValue / 100 * value);
+    }
 }
 
 function setSorting(){

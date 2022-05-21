@@ -47,11 +47,28 @@
                             <tbody id="cart-tbody"></tbody>
                             <tfoot>
                             <tr>
-                                <td colspan="5">TOTAL</td>
+                                <td colspan="5">SUBTOTAL</td>
                                 <td id="cart-total"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">Discount</td>
+                                <td id="discValue"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">TOTAL</td>
+                                <td id="totalWithDisc">1</td>
                             </tr>
                             </tfoot>
                         </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <label for="discountField"><input type="text" class="form-control" id="discountField"></label>
+                            <button type="button" class="btn btn-info" onclick="checkAndApplyDiscount()">Apply</button>
+
+                        </div>
                     </div>
                 </div>
             </div>

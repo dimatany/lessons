@@ -16,25 +16,18 @@
 'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
 */
 
-
 //1.2. Висновок на екран з інформацією про автомобіль.
 const car = {
     company: 'Hyundai',
     model: 'Tucson',
     year: 2015,
-    'average speed': 120,
-    volume: 60,
-    'average expense': 10,
-    '100km/h expense': 8,
-    driver: function(...drivers) {
-        let driver = 0;
-        for (let i = 0; i < driver.length; i++) {
-            driver += drivers[i];
-        }
-        return driver;
-    },
-    permission: function(driver) {
-        if (this.driver === true) {
+    'average speed': 120,//средняя скорость
+    volume: 60,//размер бака в литрах
+    averageExpense: 10,//средний расход бензина км/ч
+    Expense100: 8,//расход бензина км/ч
+    driver:['Anna','Bill'],
+    permission: function(person) {
+        if (this.driver.indexOf(person) !== -1) {
             return 'вы имеете право пользовать авто'
         } else {
             return 'вы не имеете право пользовать авто'
@@ -42,11 +35,16 @@ const car = {
     }
 };
 
+console.log(car.permission('Bob'));
+console.log(car.permission('Anna'));
+
 //1.2. Висновок на екран з інформацією про автомобіль.
 let carUl = '<ul>';
 for(let key in car) {
     console.log(key + ':' + car[key]);
-    carUl += '<li>'+key+' : '+car[key]+'</li>'
+    if (typeof car[key]!=='function') {
+        carUl += '<li>'+key+' : '+car[key]+'</li>'
+    }
 }
 carUl += '</ul>';
 function addInfo() {
@@ -57,17 +55,14 @@ function addInfo() {
 document.querySelector('.a-y').addEventListener('click', () => {
     getDriverName(fixUserName);
 })
-function getDriverName(fixFunc) {//как добавить результаты в массив правильного формата?
-    car.driver[3] = document.querySelector('.a-i').value;
-    console.log(fixFunc(car.driver[3]));
+function getDriverName() {
+    let totalName = fixUserName(document.querySelector('.a-i').value);
+    car.driver.push(totalName);
 }
 function fixUserName(str) {
     return str.trim().toLowerCase();
 }
 
-car.driver[0]='Vasa Pupkin';
-car.driver[1]='Anna Pupkin';
-car.driver[2]='Una Pupkin';
 console.log(car);
 
 //1.4. Заправка автомобіля.
@@ -98,31 +93,49 @@ function getVolume() {
 'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
 */
 
-let distance = 0;
-let speed = 0;
-
-function rezTotal ( s=0, v=0) {
-    return  (s / v) * 60//ищем время в минутах - поэтому расстояние делим на скорость
+function rezTotalTime ( distance=0, speed=0) {
+    let timeDriving = (distance / speed);// расстояние делим на скорость - время на дорогу без учета условий
+    let timeBrake = Math.trunc(timeDriving / 4);// время брейка
+    let totalTime = Math.trunc(timeDriving + timeBrake);// всего часов на путь
+    let timeMinutes = Math.trunc(((timeDriving + timeBrake) % totalTime) * 60);// минуты с округлением
+    return totalTime + 'ч. ' + timeMinutes + 'м.';
 }
-let time = rezTotal();
-
-function getConditions(driver=0) {
-    if (time > 240) {
-        console.log('больше чем 4 часа за рулем сделай остановку')
-    } else if (driver !== driver) {
-        console.log('вы не имеете право водить эту машину')
-    } else if (volume()<=0) {
-        console.log('У вас нет бензина для поездки')
+function distanceOnVolume(distance=0, speed=0) {
+    let distanceOnVolume = (car.volume / car.averageExpense) * 100// расстояние проезда на одном полном баке
+    let i = 0;
+    if ((distanceOnVolume - distance) >= 0) {
+        return 'вам хватает бензина'
+    } else {
+        i = ((distance - distanceOnVolume) / 100) * car.averageExpense; // расчет необходимого добавочного топлива
     }
+    return 'еще нужен бензин'
 }
-console.log(getConditions());
+function checkDriver() {
+    const nameDriver = document.getElementById().value;
+    if (nameDriver ==='') {
+        return 'введите имя водителя'
+    }
+    const name = car.driver.find(el => el.name === checkDriver);
+}
 
-function getTimeFromMin(min=0) {
-    let hours = Math.trunc(min/60);
-    let minutes = min % 60;
-    return hours + 'ч. ' + minutes + 'м.';
+function checkAndApplyDiscount() {
+    const discPromo = document.getElementById('discountField').value;
+    if (discPromo === ''){
+        topPanel.error('Enter promo code');
+        return false;
+    }
+    const disc = DISCOUNT.find(el => el.promo === discPromo);
+    if(disc === undefined) {
+        topPanel.error('Promo code not found');
+        return false;
+    }
+    console.log(disc);
 }
-console.log(getTimeFromMin((rezTotal(100,90))));
+
+console.log(rezTotalTime(100,45));
+console.log(distanceOnVolume(100, 45));
+console.log(contains(car, 'Anna'));
+
 
 
 
