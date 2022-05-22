@@ -92,7 +92,7 @@ function getVolume() {
 'Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
 'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
 */
-
+//1 условие
 function rezTotalTime ( distance=0, speed=0) {
     let timeDriving = (distance / speed);// расстояние делим на скорость - время на дорогу без учета условий
     let timeBrake = Math.trunc(timeDriving / 4);// время брейка
@@ -100,6 +100,7 @@ function rezTotalTime ( distance=0, speed=0) {
     let timeMinutes = Math.trunc(((timeDriving + timeBrake) % totalTime) * 60);// минуты с округлением
     return totalTime + 'ч. ' + timeMinutes + 'м.';
 }
+//2 условие
 function distanceOnVolume(distance=0, speed=0) {
     let distanceOnVolume = (car.volume / car.averageExpense) * 100// расстояние проезда на одном полном баке
     let i = 0;
@@ -110,23 +111,24 @@ function distanceOnVolume(distance=0, speed=0) {
     }
     return 'еще нужен бензин'
 }
-/*function checkDriver() {
-    const nameDriver = document.getElementById().value;
-    if (nameDriver ==='') {
-        return 'введите имя водителя'
+//3 условие
+function checkDriver(arr, elem) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr.includes(elem)) {
+            return true;
+        }
     }
-    const name = car.driver.find(el => el.name === checkDriver);
-    if (name === undefined) {
-        return 'не можете водить эту машину'
-    }
-}*/
-
-
-console.log(rezTotalTime(100,45));
-console.log(distanceOnVolume(100, 45));
-
-
-
+    return false;
+}
+function addingButtons() {//как сделать это все сразу?
+    let num1 = (document.getElementById('task_4_number').value);
+    let num2 = parseInt(document.getElementById('task_5_number').value);
+    let num3 = parseInt(document.getElementById('task_6_number').value);
+    document.getElementById('task_4_result').innerHTML = distanceOnVolume(num1, num2, num3);
+}
+console.log(rezTotalTime(150,45));
+console.log(distanceOnVolume(150, 45));
+console.log(checkDriver(car.driver,'Done'))
 
 
 //2. Норма
@@ -141,41 +143,12 @@ console.log(distanceOnVolume(100, 45));
     то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити
     можливість того що користувач може передати 150 секунд, або 75 хвилин.
 */
-let hours = 10;
-let minutes = 500;
-let seconds = 30;
-
-const timeObj = {};
-timeObj.hours = hours;
-timeObj.minutes = minutes;
-timeObj.seconds = seconds;
-console.log(timeObj)
-
-let now = new Date();
-console.log(now)
-
-//2.1. Для виведення часу на екран.
-let plusHours = 300;
-let plusMinutes = 200;
-let plusSeconds = 100;
-
-function getTime(hours=0, minutes=0, seconds=0) {
-    let time = hours / 3600 + minutes / 60 + seconds;
-    
-    hours = Math.trunc((hours + plusHours) / 60);
-    minutes = (minutes + plusMinutes)% 60;
-    seconds = (seconds + plusSeconds)% 60;
-    return hours + 'ч. ' + minutes + 'м.' + seconds + 'c.';
-}
-console.log(getTime(2000,34,21));
 
 
 
 
 
 
-
-//1 час = 60 минут = 3600 секунд
 
 //Максимум
 /*
