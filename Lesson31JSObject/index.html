@@ -43,9 +43,9 @@
                         'Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
                         'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
                     </p>
-                    <label for="task_1.5._number"><input type="text" id="task_4_number" class="me-3">введите имя водителя</label>
-                    <label for="task_1.5._number"><input type="number" id="task_5_number" class="me-3">введите время</label>
-                    <label for="task_1.5._number"><input type="number" id="task_6_number" class="me-3">введите расстояние</label>
+                    <label for="task_4_number"><input type="text" id="task_4_number" class="me-3">введите имя водителя</label>
+                    <label for="task_5_number"><input type="number" id="task_5_number" class="me-3">введите время</label>
+                    <label for="task_6_number"><input type="number" id="task_6_number" class="me-3">введите расстояние</label>
                     <button type="button" class="btn btn-info" onclick="addingButtons()">Push</button>
                 </div>
                 <div class="col-4">
@@ -57,7 +57,31 @@
     </div>
 </div>
 <h2>2. Норма</h2>
-
+<div class="container pt-4">
+    <div class="card mb-4">
+        <div class="card body">
+            <p>2. Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом: </p>
+            <ul>
+                <li>2.1. Для виведення часу на екран.</li>
+                <li>2.2. Зміни часу на передану кількість секунд.</li>
+                <li>2.3. Зміни часу на передану кількість хвилин.</li>
+                <li>2.4. Зміни часу на передану кількість годин.</li>
+                <li>2.5. Врахуйте, що в останніх 3-х функціях, при зміні однієї частини часу,
+                може змінитися та інша. Наприклад: якщо до часу «20:59:45» додати 30 секунд,
+                то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити
+                можливість того що користувач може передати 150 секунд, або 75 хвилин.</li>
+            </ul>
+            <label for="task_7_number"><input type="number" id="task_7_number" class="me-3">введите часы</label>
+            <label for="task_8_number"><input type="number" id="task_8_number" class="me-3">введите минуты</label>
+            <label for="task_9_number"><input type="number" id="task_9_number" class="me-3">введите секунды</label>
+            <button type="button" class="btn btn-info" onclick="addingButtons()">Push</button>
+        </div>
+        <div class="col-4">
+            <p>Результат</p>
+            <div id="task_5_result"></div>
+        </div>
+    </div>
+</div>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

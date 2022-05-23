@@ -124,8 +124,9 @@ function addingButtons() {//как сделать это все сразу?
     let num1 = (document.getElementById('task_4_number').value);
     let num2 = parseInt(document.getElementById('task_5_number').value);
     let num3 = parseInt(document.getElementById('task_6_number').value);
-    document.getElementById('task_4_result').innerHTML = distanceOnVolume(num1, num2, num3);
+   // document.getElementById('task_4_result').innerHTML = distanceOnVolume(num1, num2, num3);
 }
+
 console.log(rezTotalTime(150,45));
 console.log(distanceOnVolume(150, 45));
 console.log(checkDriver(car.driver,'Done'))
@@ -144,11 +145,33 @@ console.log(checkDriver(car.driver,'Done'))
     можливість того що користувач може передати 150 секунд, або 75 хвилин.
 */
 
+const dateObj = {
+    hours: 3,
+    minutes: 459,
+    seconds: 230
+}
 
+console.log(dateObj);
 
+//Переводим часы и минуты и секунды в тайстамп
+function totalTime(hours=0, minutes=0, seconds=0) {
+    let timestampHours = (hours * 60) * 60;
+    let timestampMinutes = minutes * 60;
+    return timestampHours + timestampMinutes + seconds;
+}
+function finalCount() {
+    let hours = Math.floor(timestamp / 60 / 60);
+    let minutes = Math.floor(timestamp / 60) - (hours * 60);
+    let seconds = timestamp % 60;
+    return hours + ':' + minutes + ':' + seconds;
+}
+let timestamp = totalTime(3, 459, 230);
+console.log(timestamp);
+console.log(finalCount());
 
-
-
+let num1 = parseInt(document.getElementById('task_7_number').value);
+let num2 = parseInt(document.getElementById('task_8_number').value);
+let num3 = parseInt(document.getElementById('task_9_number').value);
 
 //Максимум
 /*
