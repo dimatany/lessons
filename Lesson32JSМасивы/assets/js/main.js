@@ -132,7 +132,7 @@ function chengeProductQty(name, action) {
         newQty = CART[index].qty + 1;
     } else {
         if (CART[index].qty >= 2) {
-            newQty = CART[index].qty-1;
+            newQty = CART[index].qty - 1;
         }else{
             askProdDel(name);
             return false;
