@@ -158,19 +158,49 @@ function totalTime(hours=0, minutes=0, seconds=0) {
     let timestampMinutes = minutes * 60;
     return timestampHours + timestampMinutes + seconds;
 }
+let timestamp = totalTime(3, 459, 230);
 
-function finalCount() {
+function getHours() {
     let hours = Math.floor(timestamp / 60 / 60);
-    let minutes = Math.floor(timestamp / 60) - (hours * 60);
+    return hours;
+}
+function getMinutes() {
+    let minutes = Math.floor(timestamp / 60) - (getHours() * 60);
+    return minutes;
+}
+function getSeconds() {
     let seconds = timestamp % 60;
-    return hours + ':' + minutes + ':' + seconds;
+    return seconds;
+}
+function finalCount() {
+    return getHours() + ':' + getMinutes() + ':' + getSeconds();
 }
 
-let timestamp = totalTime(3, 459, 230);
+
 console.log(timestamp);
 console.log(finalCount());
 
+
 /*
+ function totalTime(hours=0, minutes=0, seconds=0) {
+ let timestampHours = (hours * 60) * 60;
+ let timestampMinutes = minutes * 60;
+ return timestampHours + timestampMinutes + seconds;
+ }
+ 
+ function finalCount() {
+ let hours = Math.floor(timestamp / 60 / 60);
+ let minutes = Math.floor(timestamp / 60) - (hours * 60);
+ let seconds = timestamp % 60;
+ return hours + ':' + minutes + ':' + seconds;
+ }
+ 
+ let timestamp = totalTime(3, 459, 230);
+ console.log(timestamp);
+ console.log(finalCount());
+ 
+ 
+ 
 let num1 = parseInt(document.getElementById('task_7_number').value);
 let num2 = parseInt(document.getElementById('task_8_number').value);
 let num3 = parseInt(document.getElementById('task_9_number').value);
