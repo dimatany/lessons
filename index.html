@@ -1156,15 +1156,26 @@
                     <li>- Соседи – это узлы, у которых один и тот же родитель. Например, head и body соседи</li>
                     <li>- Следующий узел того же родителя (следующий сосед) – в свойстве nextSibling, а предыдущий – в previousSibling.</li>
                     <li>- Родитель доступен через parentNode.</li>
-                    <li>Получив DOM-узел, мы можем перейти к его ближайшим соседям используя навигационные ссылки.</li>
-                    <li>Есть два основных набора ссылок:</li>
-                    <li>Для всех узлов: parentNode, childNodes, firstChild, lastChild, previousSibling, nextSibling.</li>
-                    <li>Только для узлов-элементов: parentElement, children, firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.</li>
-                    <li>getElement и querySelector - ниже скрин с разрядами</li>
-                    <li>Навигация по ДОМ дереву</li>
+                    <li>- Получив DOM-узел, мы можем перейти к его ближайшим соседям используя навигационные ссылки.</li>
+                    <li>- Есть два основных набора ссылок:</li>
+                    <li>- Для всех узлов: parentNode, childNodes, firstChild, lastChild, previousSibling, nextSibling.</li>
+                    <li>- Только для узлов-элементов: parentElement, children, firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.</li>
+                    <li>- getElement и querySelector - ниже скрин с разрядами</li>
+                    <li>- Навигация по ДОМ дереву</li>
                     <li><img src="Sources/assets/images/dom.jpg" alt="#"></li>
-                    <li>DOM дополнительные методы поиска</li>
+                    <li>- DOM дополнительные методы поиска</li>
                     <li><img src="Sources/assets/images/123.jpg" alt="#"></li>
+                    <li>- Метод elem.matches(css) ничего не ищет, а проверяет, удовлетворяет ли elem CSS-селектору, и возвращает true или false. Этот метод удобен, когда мы перебираем элементы (например, в массиве или в чём-то подобном) и пытаемся выбрать те из них, которые нас интересуют.</li>
+                    <li>- Метод elem.closest(css) ищет ближайшего предка, который соответствует CSS-селектору. Сам элемент также включается в поиск.</li>
+                    <li>- Все методы "getElementsBy*" возвращают живую коллекцию. Такие коллекции всегда отражают текущее состояние документа и автоматически обновляются при его изменении.</li>
+                    <li>- Напротив, querySelectorAll возвращает статическую коллекцию. Это похоже на фиксированный массив элементов.</li>
+                    <li><img src="Sources/assets/images/domclass.jpg" alt="#"></li>
+                    <li>Для того, чтобы узнать имя класса DOM-узла, вспомним, что обычно у объекта есть свойство constructor. Оно ссылается на конструктор класса, и в свойстве constructor.name содержится его имя - alert( document.body.constructor.name );</li>
+                    <li>Проверить наследование можно также при помощи instanceof - alert( document.body instanceof HTMLBodyElement ); // true</li>
+                    <li>console.log(elem) выводит элемент в виде DOM-дерева. console.dir(elem) выводит элемент в виде DOM-объекта, что удобно для анализа его свойств. Попробуйте сами на document.body.</li>
+                    <li>Свойство innerHTML позволяет получить HTML-содержимое элемента в виде строки.</li>
+                    <li>Другими словами, innerHTML+= делает следующее: Старое содержимое удаляется. На его место становится новое значение innerHTML (с добавленной строкой).</li>
+                    <li>Свойство outerHTML содержит HTML элемента целиком. Это как innerHTML плюс сам элемент.</li>
                 </ul>
             </div>
         </div> <!-- 35 урок - DOM-->
