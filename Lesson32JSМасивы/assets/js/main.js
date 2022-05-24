@@ -221,7 +221,3 @@ function chengeProdStatus(name) {
     viewCartTable();
     topPanel.info('Product status changed');
 }
-
-
-
-
