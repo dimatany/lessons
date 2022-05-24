@@ -1112,6 +1112,7 @@
                     <li><a href="#" target="_blank" title="">DOM дз</a></li>
                     <li><a href="https://www.youtube.com/watch?v=GJv5pXXOM3s&list=PLe5HAmNos_vsweR1UZzxVE_r31L1hSXzp&index=33" target="_blank" title="">Ссылка на видео урок Lesson - DOM</a></li>
                     <li><a href="https://youtu.be/DuWyc76lYC4" target="_blank" title="">Ссылка на видео с фрилансер по жизни</a></li>
+                    <li><a href="https://learn.javascript.ru/document" target="_blank" title="">Ссылка на раздел учебника Кантора</a></li>
                 </ul>
                 <h3>Timing</h3>
                 <ul>
@@ -1143,7 +1144,25 @@
                 <h3>Conclusions</h3>
                 <ul>
                     <li> - метод forEach используют для перебора массива и возвращает он всегда Undefined </li>
+                    <li> - Здесь и далее мы будем использовать два принципиально разных термина:</li>
+                    <li> - Дочерние узлы (или дети) – элементы, которые являются непосредственными детьми узла. Другими словами, элементы, которые лежат непосредственно внутри данного. Например, head и body являются детьми элемента html</li>
+                    <li>- Потомки – все элементы, которые лежат внутри данного, включая детей, их детей и т.д.</li>
+                    <li>- Для проверки наличия дочерних узлов существует также специальная функция elem.hasChildNodes().</li>
+                    <li>- Для перебора коллекции мы можем использовать for..of</li>
+                    <li>- Методы массивов не будут работать, потому что коллекция – это не массив</li>
+                    <li>- Первый пункт – это хорошо для нас. Второй – бывает неудобен, но можно пережить. Если нам хочется использовать именно методы массива, то мы можем создать настоящий массив из коллекции, используя Array.from</li>
+                    <li>- DOM-коллекции – только для чтения</li>
+                    <li>- Не используйте цикл for..in для перебора коллекций</li>
+                    <li>- Соседи – это узлы, у которых один и тот же родитель. Например, head и body соседи</li>
+                    <li>- Следующий узел того же родителя (следующий сосед) – в свойстве nextSibling, а предыдущий – в previousSibling.</li>
+                    <li>- Родитель доступен через parentNode.</li>
+                    <li>Получив DOM-узел, мы можем перейти к его ближайшим соседям используя навигационные ссылки.</li>
+                    <li>Есть два основных набора ссылок:</li>
+                    <li>Для всех узлов: parentNode, childNodes, firstChild, lastChild, previousSibling, nextSibling.</li>
+                    <li>Только для узлов-элементов: parentElement, children, firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.</li>
+                    <li>getElement и querySelector - ниже скрин с разрядами</li>
                     <li><img src="Sources/assets/images/123.jpg" alt="#"></li>
+                    <li><img src="Sources/assets/images/dom.jpg" alt="#"></li>
                 </ul>
             </div>
         </div> <!-- 35 урок - DOM-->
