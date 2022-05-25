@@ -54,15 +54,14 @@ for (let i = 0, ln = playList.length; i < ln; i++) {
 // на кнопку "Закрити" — зникає.
 
 document.addEventListener('DOMContentLoaded', function() {
-    /* Записываем в переменные массив элементов-кнопок и подложку.
-     Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
-    let modalButtons = document.querySelectorAll('.js-open-modal'),
-        overlay = document.querySelector('.js-overlay-modal'),
-        closeButtons = document.querySelectorAll('.js-modal-close');
+    /* Записываем в переменные элементов-кнопок и подложку*/
+    let modalButtons = document.querySelectorAll('.js-open-modal');
+    let overlay = document.querySelector('.js-overlay-modal');
+    let closeButtons = document.querySelectorAll('.js-close-modal');
     
-    /* Перебираем массив кнопок */
+    /* Перебираем кнопки если их будет больше одной*/
     modalButtons.forEach(function(item){
-        /* Назначаем каждой кнопке (если их больше одной )обработчик клика */
+        /* Назначаем каждой кнопке (если их больше одной) обработчик клика */
         item.addEventListener('click', function(e) {
             /* Предотвращаем стандартное действие элемента. Так как кнопку можно
             сделать по-разному (ссылкой или кнопкой)*/
@@ -98,3 +97,15 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.remove('active');
     });
 });
+
+
+//Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
+let i = -1;
+function trafficLight(){
+    i++;
+    let arr = ['red','orange','green'],
+        round = document.querySelectorAll('.round');
+    if(round[i-1]) round[i-1].style.backgroundColor = '';
+    if(i === arr.length) i = 0;
+    round[i].style.backgroundColor = arr[i];
+}

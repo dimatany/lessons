@@ -84,21 +84,24 @@ button {
   display: inline-block;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
-}
-
-.btn {
-  background: rgb(96, 9, 240);
   background: linear-gradient(0deg, rgb(96, 9, 240) 0%, rgb(129, 5, 240) 100%);
   border: none;
 }
 
-.btn:before {
+.my_btn:before {
   height: 0%;
   width: 2px;
 }
 
-.btn:hover {
+.my_btn:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.round {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
