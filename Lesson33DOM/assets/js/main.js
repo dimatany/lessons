@@ -105,7 +105,10 @@ function trafficLight(){
     i++;
     let arr = ['red','orange','green'],
         round = document.querySelectorAll('.round');
+    //Условие if(round[i-1]) означает что если элемент не undefined тогда удалить цвет
+    // round[i-1].style.backgroundColor = '';, без этого условия возникнет вышеприведенная ошибка.
     if(round[i-1]) round[i-1].style.backgroundColor = '';
+    //if(i == arr.length) i = 0; // а если i равна 3 сбрасываем i обратно в 0
     if(i === arr.length) i = 0;
     round[i].style.backgroundColor = arr[i];
 }
