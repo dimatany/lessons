@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     document.body.addEventListener('keyup', function (e) {
-        let key = e.keyCode;
-        if (key === 27) {
+        let key = e.code;
+        if (key === '27') {
             document.querySelector('.modal.active').classList.remove('active');
             document.querySelector('.overlay').classList.remove('active');
         }
