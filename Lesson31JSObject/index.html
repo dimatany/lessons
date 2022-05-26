@@ -71,14 +71,14 @@
                 то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити
                 можливість того що користувач може передати 150 секунд, або 75 хвилин.</li>
             </ul>
-            <label for="task_7_number"><input type="number" id="task_7_number" class="me-3">введите часы</label>
-            <label for="task_8_number"><input type="number" id="task_8_number" class="me-3">введите минуты</label>
-            <label for="task_9_number"><input type="number" id="task_9_number" class="me-3">введите секунды</label>
-            <button type="button" class="btn btn-info" onclick="buttons()">Push</button>
+            <label for="hours"><input type="number" id="hours" class="me-3">введите часы</label>
+            <label for="minutes"><input type="number" id="minutes" class="me-3">введите минуты</label>
+            <label for="seconds"><input type="number" id="seconds" class="me-3">введите секунды</label>
+            <button type="button" class="btn btn-info" onclick="totalResult()">Push</button>
         </div>
         <div class="col-4">
             <p>Результат</p>
-            <div id="task_5_result"></div>
+            <div class="ms-4" id="showTime"></div>
         </div>
     </div>
 </div>

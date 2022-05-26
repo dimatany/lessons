@@ -152,44 +152,50 @@ function totalTime(hours=0, minutes=0, seconds=0) {
     return timestampHours + timestampMinutes + seconds;
 }
 
+let hours = parseInt(document.getElementById('hours').value);
+let minutes = parseInt(document.getElementById('minutes').value);
+let seconds = parseInt(document.getElementById('seconds').value);
+
 let timestamp = totalTime(3, 45, 23);
-
-/*
-function buttons() {
-    document.getElementById('task_3_result').innerHTML = finalCount();
-}
-let timestamp = totalTime(parseInt(document.getElementById('task_7_number').value),
-    parseInt(document.getElementById('task_8_number').value),
-    parseInt(document.getElementById('task_9_number').value));
-*/
-
+//получаем часы
 function getHours() {
     let hours = Math.floor(timestamp / 60 / 60);
     return hours;
 }
-
+//получаем минуты
 function getMinutes() {
     let minutes = Math.floor(timestamp / 60) - (getHours() * 60);
     return minutes;
 }
-
+//получаем секунды
 function getSeconds() {
     let seconds = timestamp % 60;
     return seconds;
 }
-
+//получаем итоговые результат в виде :::
 function finalCount() {
     return getHours() + ':' + getMinutes() + ':' + getSeconds();
 }
-
-const dateObj = {
-    hours: getHours(),
-    minutes: getMinutes(),
-    seconds: getSeconds()
-}
-console.log(dateObj);
 console.log(finalCount());
-console.log(timestamp);
+
+function totalResult() {
+    document.getElementById("showTime").innerHTML = finalCount();
+}
+
+
+
+
+
+/*
+ const dateObj = {
+ hours: getHours(),
+ minutes: getMinutes(),
+ seconds: getSeconds()
+ }
+ console.log(dateObj);
+ console.log(finalCount());
+ console.log(timestamp);
+ */
 
 //Максимум
 /*
