@@ -42,7 +42,7 @@ let playList = [
 
 for (let i = 0, ln = playList.length; i < ln; i++) {
     let li = document.createElement('li');
-    li.innerHTML = playList[i].song+' : '+playList[i].author;
+    li.innerHTML = (playList[i].song).bold()+' : '+playList[i].author;
     ol.appendChild(li);
 }
 
