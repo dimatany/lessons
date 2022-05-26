@@ -182,11 +182,11 @@ function getSeconds() {
 }
 //получаем итоговые результаты в виде строки с проверкой на минус или пустое поле
 function finalCount() {
-    if (getHours() || getMinutes() || getSeconds() < 0){
-        return "введите положительное число"
-    }else if (isNaN(getHours() || getMinutes() || getSeconds())) {
+    if (isNaN(getHours() || getMinutes() || getSeconds())) {
         return "введите какое-то число в пустое поле"
-    } else {
+    }else if (getHours() && getMinutes() && getSeconds() < 0){
+        return "введите положительное число"}
+    else {
         return getHours() + ':' + getMinutes() + ':' + getSeconds();
     }
 }
