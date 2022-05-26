@@ -151,6 +151,7 @@ function totalTime(hours=0, minutes=0, seconds=0) {
     let timestampMinutes = minutes * 60;
     return timestampHours + timestampMinutes + seconds;
 }
+//не хочет подтягивать
 
 let hours = parseInt(document.getElementById('hours').value);
 let minutes = parseInt(document.getElementById('minutes').value);
