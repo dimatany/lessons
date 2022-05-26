@@ -93,7 +93,7 @@ function getVolume() {
 'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
 */
 //1 условие
-function rezTotalTime ( distance=0, speed=0) {
+function rezTotalTime(distance=0, speed=0) {
     let timeDriving = (distance / speed);// расстояние делим на скорость - время на дорогу без учета условий
     let timeBrake = Math.trunc(timeDriving / 4);// время брейка
     let totalTime = Math.trunc(timeDriving + timeBrake);// всего часов на путь
@@ -115,21 +115,28 @@ function distanceOnVolume(distance=0, speed=0) {
 function checkDriver(arr, elem) {
     for (let i = 0; i < arr.length; i++) {
         if (arr.includes(elem)) {
-            return true;
+            return 'вы можете ездить';
         }
     }
-    return false;
-}
-function addingButtons() {//как сделать это все сразу?
-    let num1 = (document.getElementById('task_4_number').value);
-    let num2 = parseInt(document.getElementById('task_5_number').value);
-    let num3 = parseInt(document.getElementById('task_6_number').value);
-    document.getElementById('task_4_result').innerHTML = distanceOnVolume(num1, num2, num3);
+    return 'у вас нет прав ездить';
 }
 
-console.log(rezTotalTime(150,45));
+function final() {
+    return `итог ${rezTotalTime()} + ':' + ${distanceOnVolume()} + ':' + ${checkDriver()}`;
+}
+
+function addingButtons() {//как сделать это все сразу?
+    let name = (document.getElementById('name').value);
+    let time = parseInt(document.getElementById('time').value);
+    let distance = parseInt(document.getElementById('distance').value);
+    document.getElementById('task_4_result').innerHTML = distanceOnVolume(name, time, distance);
+}
+
+console.log(rezTotalTime(150,55));
 console.log(distanceOnVolume(150, 45));
-console.log(checkDriver(car.driver,'Done'))
+console.log(checkDriver(car.driver,'Done'));
+
+
 
 
 //2. Норма
@@ -151,52 +158,43 @@ function totalTime(hours=0, minutes=0, seconds=0) {
     let timestampMinutes = minutes * 60;
     return timestampHours + timestampMinutes + seconds;
 }
-//не хочет подтягивать
-
-let hours = parseInt(document.getElementById('hours').value);
-let minutes = parseInt(document.getElementById('minutes').value);
-let seconds = parseInt(document.getElementById('seconds').value);
-
-let timestamp = totalTime(3, 45, 23);
+//берем данные из импутов
+function timestamp() {
+    let hours = parseInt(document.getElementById('hours').value);
+    let minutes = parseInt(document.getElementById('minutes').value);
+    let seconds = parseInt(document.getElementById('seconds').value);
+    return totalTime(hours, minutes, seconds);
+}
 //получаем часы
 function getHours() {
-    let hours = Math.floor(timestamp / 60 / 60);
+    let hours = Math.floor(timestamp() / 60 / 60);
     return hours;
 }
 //получаем минуты
 function getMinutes() {
-    let minutes = Math.floor(timestamp / 60) - (getHours() * 60);
+    let minutes = Math.floor(timestamp() / 60) - (getHours() * 60);
     return minutes;
 }
 //получаем секунды
 function getSeconds() {
-    let seconds = timestamp % 60;
+    let seconds = timestamp() % 60;
     return seconds;
 }
-//получаем итоговые результат в виде :::
+//получаем итоговые результаты в виде строки с проверкой на минус или пустое поле
 function finalCount() {
-    return getHours() + ':' + getMinutes() + ':' + getSeconds();
+    if (getHours() || getMinutes() || getSeconds() < 0){
+        return "введите положительное число"
+    }else if (isNaN(getHours() || getMinutes() || getSeconds())) {
+        return "введите какое-то число в пустое поле"
+    } else {
+        return getHours() + ':' + getMinutes() + ':' + getSeconds();
+    }
 }
-console.log(finalCount());
 
 function totalResult() {
     document.getElementById("showTime").innerHTML = finalCount();
 }
 
-
-
-
-
-/*
- const dateObj = {
- hours: getHours(),
- minutes: getMinutes(),
- seconds: getSeconds()
- }
- console.log(dateObj);
- console.log(finalCount());
- console.log(timestamp);
- */
 
 //Максимум
 /*
