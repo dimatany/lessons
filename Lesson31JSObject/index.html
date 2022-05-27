@@ -7,59 +7,67 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<h1>Home work on 31 lessons</h1>
-<h2>1. Мінімум</h2>
+<h1>Home work on 31 lessons - Objects</h1>
 <div class="container pt-4">
     <div class="card mb-4">
-        <div class="card body">
-            <p>1. Створи об'єкт, що описує автомобіль (виробник, модель, рік випуску, ' +
-                'середня швидкість, обсяг паливного бака, середня витрата палива ' +
-                'на 100 км., водії), і наступні функції для роботи з цим об'єктом:</p>
-        </div>
-        <div class="col-4">
-            <p>Результат - 1.2. Висновок на екран з інформацією про автомобіль.</p>
-            <button type="button" class="btn btn-info" onclick="addInfo()">Push</button>
-            <div id="task_1_result"></div>
-        </div>
-        <div class="col-4">
-            <p>Результат - 1.3. Додавання водія, який має право керувати автомобілем.</p>
-            <label for="task_2_number"><input type="text" id="task_2_number" class="me-3 a-i">Введи имя водителя</label>
-            <button type="button" class="btn btn-info a-y">Push</button>
-            <div id="task_2_result"></div>
-        </div>
-        <div class="col-4">
-            <p>Результат - 1.4. Заправка автомобіля.</p>
-            <label for="task_1_number"><input type="number" id="task_1_number" class="me-3">введи бенз в литрах</label>
-            <button type="button" class="btn btn-info" onclick="getVolume()">Push</button>
-            <div id="task_3_result"></div>
-        </div>
-        <div class="container pt-4">
-            <div class="card mb-4">
-                <div class="card body">
-                    <p>1.5. Підрахунок необхідного часу для подолання переданої відстані
-                        з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві
-                        необхідно робити перерву на 1 годину, а також потрібно перевіряти чи має
-                        право водій керувати даним автомобілем (ім'я водія функція приймає другим аргументом). '
-                        'Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки,
-                        'якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
-                    </p>
-                    <label for="task_4_number"><input type="text" id="name" class="me-3">введите имя водителя</label>
-                    <label for="task_5_number"><input type="number" id="time" class="me-3">введите время</label>
-                    <label for="task_6_number"><input type="number" id="distance" class="me-3">введите расстояние</label>
-                    <button type="button" class="btn btn-info" onclick="addingButtons()">Push</button>
+        <div class="card-body">
+            <div class="p-1">
+                <p class="text-info">Задача 1 - минимум</p>
+                <ol>
+                    <li>Створи об'єкт, що описує автомобіль (виробник, модель, рік випуску, середня швидкість, обсяг паливного бака, середня витрата палива на 100 км., водії), і наступні функції для роботи з цим об'єктом:
+                        <ul>
+                            <li>Вивести на екран інформацією про автомобіль.</li>
+                            <li>Додавання водія, який має право керувати автомобілем.</li>
+                            <li>Заправка автомобіля.</li>
+                        </ul>
+                    </li>
+                    <li>Підрахунок необхідного часу для подолання переданої відстані з середньою швидкістю:
+                        <ul>
+                            <li>Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину;</li>
+                            <li>Потрібно перевіряти чи має право водій керувати даним автомобілем (ім'я водія функція приймає другим аргументом);</li>
+                            <li>Потрібно перевірити чи вистачить палива, для здійснення цієї поїздки, якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="card body mb-3">
+                <p>Висновок на екран з інформацією про автомобіль.</p>
+                <button type="button" class="btn btn-info m-3" onclick="car.marking()">Push</button>
+                <div id="result1" class="m-3"></div>
+            </div>
+            <div class="card body mb-3">
+                <p>Додавання водія, який має право керувати автомобілем.</p>
+                <label for="task_2_number"><input type="text" id="driver" class="form-control" placeholder="Введи имя водителя"></label>
+                <button type="button" class="btn btn-info m-3" onclick="checkDrivers()">Push</button>
+                <div id="result2" class="text-center m-3"></div>
+            </div>
+            <div class="card body mb-3">
+                <p>Необходимость заправки автомобиля.</p>
+                <label for="task_1_number"><input type="number" id="task_1_number" class="form-control" placeholder="Bведи бенз в литрах"></label>
+                <button type="button" class="btn btn-info m-2" onclick="getVolume()">Push</button>
+                <div id="result3" class="text-center m-3"></div>
+            </div>
+                <div class="card body mb-3">
+                    <ul class="m-3">1.5. Підрахунок необхідного часу для подолання переданої відстані
+                        з середньою швидкістю:
+                        <li>Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину;</li>
+                        <li>Потрібно перевіряти чи має право водій керувати даним автомобілем (ім'я водія функція приймає другим аргументом);</li>
+                        <li>Потрібно перевірити чи вистачить палива, для здійснення цієї поїздки, якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.</li>
+                    </ul>
+                    <label for="task_4_number"><input type="text" id="name" class="form-control mb-3" placeholder="введите имя водителя для проверки права пользования"></label>
+                    <label for="task_6_number"><input type="number" id="distance" class="form-control mb-3" placeholder="введите расстояние на которое хотите ехать"></label>
+                    <button type="button" class="btn btn-info m2" onclick="total()">Push</button>
                 </div>
                 <div class="col-4">
-                    <p>Результат</p>
-                    <div id="task_4_result"></div>
-                </div>
+                    <div id="result4" class="text-center m-3"></div>
             </div>
         </div>
     </div>
 </div>
-<h2>2. Норма</h2>
 <div class="container pt-4">
     <div class="card mb-4">
         <div class="card body">
+            <p class="text-info">Задача 2 - норма</p>
             <p>2. Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом: </p>
             <ul>
                 <li>2.1. Для виведення часу на екран.</li>
@@ -67,18 +75,18 @@
                 <li>2.3. Зміни часу на передану кількість хвилин.</li>
                 <li>2.4. Зміни часу на передану кількість годин.</li>
                 <li>2.5. Врахуйте, що в останніх 3-х функціях, при зміні однієї частини часу,
-                може змінитися та інша. Наприклад: якщо до часу «20:59:45» додати 30 секунд,
-                то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити
-                можливість того що користувач може передати 150 секунд, або 75 хвилин.</li>
+                    може змінитися та інша. Наприклад: якщо до часу «20:59:45» додати 30 секунд,
+                    то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити
+                    можливість того що користувач може передати 150 секунд, або 75 хвилин.</li>
             </ul>
-            <label for="hours"><input type="number" id="hours" class="me-3">введите часы</label>
-            <label for="minutes"><input type="number" id="minutes" class="me-3">введите минуты</label>
-            <label for="seconds"><input type="number" id="seconds" class="me-3">введите секунды</label>
+            <label for="hours"><input type="number" id="hours" placeholder="введите часы" class="form-control mb-3"></label>
+            <label for="minutes"><input type="number" id="minutes" class="form-control mb-3" placeholder="введите минуты"></label>
+            <label for="seconds"><input type="number" id="seconds" class="form-control mb-3" placeholder="введите секунды"></label>
             <button type="button" class="btn btn-info" onclick="totalResult()">Push</button>
         </div>
-        <div class="col-4">
-            <p>Результат</p>
-            <div class="ms-4" id="showTime"></div>
+        <div class="card body mb-3">
+            <p class="text-center mb-3">Результат</p>
+            <div class="text-center mb-3" id="showTime"></div>
         </div>
     </div>
 </div>
