@@ -25,7 +25,7 @@ const car = {
     volume: 60,//размер бака в литрах
     averageExpense: 10,//средний расход бензина км/ч
     Expense100: 8,//расход бензина км/ч
-    driver:['anna','bill'],
+    driver: ['anna','bill'],
     permission: function(person) {
         if (this.driver.indexOf(person) !== -1) {
             return 'вы имеете право пользовать авто'
@@ -33,7 +33,7 @@ const car = {
             return 'вы не имеете право пользовать авто'
         }
     },
-    marking:function() {
+    marking: function() {
         let carUl = '<ul>';
         for(let key in car) {
             if (typeof car[key]!=='function') {
@@ -42,6 +42,7 @@ const car = {
             }
         }
     },
+    
 };
 
 function checkDrivers() {
@@ -49,17 +50,18 @@ function checkDrivers() {
     document.getElementById("result2").innerHTML = car.permission(person);
 }
 
-//1.4. Заправка автомобіля.
+//Заправка автомобіля.
 let empty;
-function volume(empty=0) {
+function volume(empty= 0) {
     if (car.volume === empty) {
         return 'у вас полный бак'
     } else if (car.volume  === undefined || isNaN(empty)) {
         return 'введите какое-то число'
-    } else if(empty<0) {
+    } else if(empty < 0) {
         return 'введите положительное число'
-    }
-    else {
+    } else if (empty > car.volume) {
+        return 'вы не можете долить больше чем емкость вашего бака'
+    } else {
         return `${(car.volume - empty)} литров долить до полного бака`;
     }
 }
@@ -76,7 +78,7 @@ function getVolume() {
  - перевірити чи вистачить палива, для здійснення цієї поїздки, якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
  */
 //1 условие - time
-function rezTotalTime(distance=getDistance(), speed=0) {
+function rezTotalTime(distance= 0, speed= 0) {
     let timeDriving = (distance / speed);// расстояние делим на скорость - время на дорогу без учета условий
     let timeBrake = Math.trunc(timeDriving / 4);// время брейка
     let totalTime = Math.trunc(timeDriving + timeBrake);// всего часов на путь
@@ -84,7 +86,7 @@ function rezTotalTime(distance=getDistance(), speed=0) {
     return totalTime + 'ч. ' + timeMinutes + 'м.';
 }
 //2 условие - distance
-function distanceOnVolume(distance=getDistance(), speed=0) {
+function distanceOnVolume(distance= 0, speed= 0) {
     let distanceOnVolume = (car.volume / car.averageExpense) * 100// расстояние проезда на одном полном баке
     let i = 0;
     if ((distanceOnVolume - distance) >= 0) {
@@ -103,15 +105,22 @@ function checkDriver(arr=car.driver, elem= getDrivers() ) {
     }
     return 'у вас нет прав ездить';
 }
-//беру данные из импутов
-function getDrivers() {
-    let name = (document.getElementById('name').value);
-    return checkDriver(car.driver, name);
+//беру расстояние из input для rezTotalTime + средняя скорость
+function getDistance2() {
+    let distance = (document.getElementById('distance').value);
+    return rezTotalTime(distance, car['average speed']);
 }
+//беру расстояние из input для  distanceOnVolume + средняя скорость
 function getDistance() {
     let distance = (document.getElementById('distance').value);
-    return distanceOnVolume(distance);
+    return distanceOnVolume(distance, car['average speed']);
 }
+//беру массив и имя из импута
+function getDrivers() {
+    let name = (document.getElementById('name').value);
+    return checkDriver(name);
+}
+//конкатенирую результаты трех функций
 function result() {
     return `время поездки: ${rezTotalTime()},
     для заданного расстояния: ${distanceOnVolume()},
@@ -120,6 +129,8 @@ function result() {
 function total() {
     document.getElementById("result4").innerHTML = result();
 }
+console.log(rezTotalTime());
+console.log(distanceOnVolume());
 
 //2. Норма
 /*
@@ -226,7 +237,6 @@ const drobb = {
                 break;
             }
         }
-        
         if (nzd !== 0) {
             return {
                 ch: rez.ch / nzd,
