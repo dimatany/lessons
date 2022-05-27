@@ -76,7 +76,7 @@ function getVolume() {
  - перевірити чи вистачить палива, для здійснення цієї поїздки, якщо палива не вистачить потрібно вивести повідомлення, про це і запропонувати заправити автомобіль.
  */
 //1 условие - time
-function rezTotalTime(distance=0, speed=0) {
+function rezTotalTime(distance=getDistance(), speed=0) {
     let timeDriving = (distance / speed);// расстояние делим на скорость - время на дорогу без учета условий
     let timeBrake = Math.trunc(timeDriving / 4);// время брейка
     let totalTime = Math.trunc(timeDriving + timeBrake);// всего часов на путь
@@ -84,7 +84,7 @@ function rezTotalTime(distance=0, speed=0) {
     return totalTime + 'ч. ' + timeMinutes + 'м.';
 }
 //2 условие - distance
-function distanceOnVolume(distance=0, speed=0) {
+function distanceOnVolume(distance=getDistance(), speed=0) {
     let distanceOnVolume = (car.volume / car.averageExpense) * 100// расстояние проезда на одном полном баке
     let i = 0;
     if ((distanceOnVolume - distance) >= 0) {
@@ -95,25 +95,32 @@ function distanceOnVolume(distance=0, speed=0) {
     return 'еще нужен бензин'
 }
 //3 условие - name
-function checkDriver(arr, elem) {
+function checkDriver(arr=car.driver, elem= getDrivers() ) {
     for (let i = 0; i < arr.length; i++) {
-        if (arr.includes(elem)) {
+        if (arr.includes(elem.trim().toLowerCase())) {
             return 'вы можете ездить';
         }
     }
     return 'у вас нет прав ездить';
 }
+//беру данные из импутов
+function getDrivers() {
+    let name = (document.getElementById('name').value);
+    return checkDriver(car.driver, name);
+}
+function getDistance() {
+    let distance = (document.getElementById('distance').value);
+    return distanceOnVolume(distance);
+}
+function result() {
+    return `время поездки: ${rezTotalTime()},
+    для заданного расстояния: ${distanceOnVolume()},
+    право пользования машиной: ${checkDriver()}!`;
+}
+function total() {
+    document.getElementById("result4").innerHTML = result();
+}
 
-
-console.log(rezTotalTime(150,55));
-console.log(distanceOnVolume(150, 45));
-console.log(checkDriver(car.driver,'Done'));
-
-
-
-
-// let name = (document.getElementById('name').value);
-// let time = parseInt(document.getElementById('time').value);
 //2. Норма
 /*
  2. Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
