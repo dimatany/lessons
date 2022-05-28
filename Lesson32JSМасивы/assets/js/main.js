@@ -1,223 +1,286 @@
 "use strict"
-/*
- 
- */
-
 const topPanel = {
-    show: function(text, className){
-        let panel = `<div id="top-panel" class="top-panel ${className}">${text}</div>`;
-        if(document.getElementById('top-panel') !== null){
+    show: function (text, className) {
+        let panel = `<div  id="top-panel" class="top-panel ${className}">${text}</div>`;
+        if (document.getElementById('top-panel') !== null) {
             document.getElementById('top-panel').remove();
         }
         document.body.insertAdjacentHTML('afterbegin', panel);
         this.hide();
     },
-    hide: function(){
-        setTimeout(function(){
-            if(document.getElementById('top-panel') !== null){
+    hide: function () {
+        setTimeout(function () {
+            if (document.getElementById('top-panel') !== null) {
                 document.getElementById('top-panel').remove();
             }
-        }, 3000);
+        }, 3000)
     },
-    error: function(text){
-        this.show(text, 'panel-error');   
+    error: function (text) {
+        this.show(text, 'panel-error');
     },
-    success: function(text){
-        this.show(text, 'panel-success');   
+    success: function (text) {
+        this.show(text, 'panel-success');
     },
-    info: function(text){
-        this.show(text, 'panel-info');   
-    },
+    info: function (text) {
+        this.show(text, 'panel-info');
+    }
 }
 
-const CART = [
-    {
-        name: 'Milk',
-        qty: 12,
-        isBuy: false,
-        price: 10,
-        total: 120
-        
-    },
-    {
-        name: 'Water',
+const CARD = [{
+    // одразу додано до масиву
+    name: 'Chocolate',
+    qty: 1,
+    isBuy: true,
+    price: 25.25,
+    total: 25.25
+},
+    { // одразу додано до масиву
+        name: 'Bread',
         qty: 1,
         isBuy: true,
-        price: 23.45,
-        total: 23.45
-        
-    }];
-    viewCartTable();
-    
-function addToCart(name, qty, price){
-    if(CART.find(el => el.name===name) === undefined){
-        CART.push({
+        price: 20,
+        total: 20
+    },
+    { // одразу додано до масиву
+        name: 'Apple',
+        qty: 1,
+        isBuy: true,
+        price: 45,
+        total: 45
+    }
+];
+
+viewCardTable()
+
+function addToCard(name, qty, price) {
+    if (CARD.find(el => el.name === name) === undefined) {
+        CARD.push({
             name: name,
             qty: qty,
             isBuy: false,
             price: price,
             total: parseFloat((qty * price).toFixed(2))
-    });
-    topPanel.success('Product successfully added');
+        })
     } else {
-        const prodIndex = CART.findIndex(el => el.name===name);
-        const newQty = CART[prodIndex].qty + qty;
-        CART[prodIndex].qty = newQty;
-        CART[prodIndex].total = parseFloat((newQty *CART[prodIndex].price).toFixed(2));
-        topPanel.success('Product successfully chenged');
+        const prodIndex = CARD.findIndex(el => el.name === name);
+        const newQty = CARD[prodIndex].qty + qty;
+        CARD[prodIndex].qty = newQty;
+        CARD[prodIndex].total = parseFloat((newQty * CARD[prodIndex].price).toFixed(2));
+        topPanel.success('Product quantity changed')
     }
-    viewCartTable();
+    viewCardTable();
 }
 
-function checkAndAddToCard(){
-     let name = document.getElementById('product_name').value,
-         qty = parseInt(document.getElementById('product_qty').value),
-         price = parseFloat(document.getElementById('product_price').value);
+function checkAndAddToCard() {
+    let name = document.getElementById('product_name').value,
+        qty = parseInt(document.getElementById('product_qty').value),
+        price = parseFloat(document.getElementById('product_price').value);
+    
     let valid = true;
-     if(name === '')
-     {
+    if (name === '') {
+        // alert('Enter product name');
         topPanel.error('Enter product name');
-         valid = false;
-     }   
-     if (isNaN(qty)){
+        valid = false;
+    }
+    if (isNaN(qty)) {
         topPanel.error('Enter quantity valid value');
-         valid = false;
-     }
-     if (qty <= 0){
-        topPanel.error('Quantity must be positive');
         valid = false;
     }
-    if (isNaN(price)){
-        topPanel.error('Enter price valid value'); 
+    if (qty <= 0) {
+        topPanel.error('Quantity value must be positive');
         valid = false;
     }
-    if (price <= 0){
+    
+    if (isNaN(price)) {
+        topPanel.error('Enter price valid value');
+        valid = false;
+    }
+    if (price <= 0) {
         topPanel.error('Price must be positive');
-       valid = false;
-   }
-   if(valid){
-       addToCart(name, qty, price);
-       
-       document.getElementById('product_name').value = '';
-       document.getElementById('product_qty').value = 1;
-       document.getElementById('product_price').value = '';
-   }
-}   
-
-function viewCartTable(){
-    let html = '';
-    CART.sort((a, b) => Number (b.isBuy) - Number(a.isBuy));
-    CART.forEach(product => {
-        html += `
-            <tr>
-                <td>${product.name}</td>
-                <td>${product.isBuy ? '<span class="badge bg-success">Yes</span>' : '<span class="badge bg-danger">No</span>'}</td>
-                <td><button class="btn btn-info btn-sm" onclick="chengeProductQty('${product.name}', 'dec')">-</button>${product.qty}<button class="btn btn-info btn-sm" onclick="chengeProductQty('${product.name}', 'inc')">+</button></td>
-                <td>${product.price.toFixed(2)}</td>
-                <td>${product.total.toFixed(2)}</td>
-                <td>
-                <button type="button" class="btn btn-primary" onclick="chengeProdStatus('${product.name}')">Chenge status</button>
-                <button type="button" class="btn btn-danger" onclick="askProdDel('${product.name}')">&times;</button>
-                </td>
-              </tr>
-        `;
-    });
-    document.getElementById('cart-tbody').innerHTML = html;
-    document.getElementById('cart-total').innerText = sumTotal().toFixed(2);
+        valid = false;
+    }
+    if (valid) {
+        addToCard(name, qty, price)
+        topPanel.success('Product successfully added');
+        document.getElementById('product_name').value = '';
+        document.getElementById('product_qty').value = '1';
+        document.getElementById('product_price').value = '';
+    }
 }
-function chengeProductQty(name, action) {
-    const index = CART.findIndex(el => el.name ===name);
-    let newQty = 0;
+
+function viewCardTable() {
+    let html = '';
+    CARD.sort((a, b) => Number(a.isBuy) - Number(b.isBuy));
+    CARD.forEach(product => {
+        html +=
+            `<tr>
+        <td>${product.name}</td>
+        <td>${product.isBuy ? '<span class="badge bg-success">Yes</span>' : '<span class="badge bg-danger">No</span>'} </td>
+        <td>
+            <button class="btn btn-info btn-sm" onclick="changeProductQty('${product.name}', 'dec')">-</button>
+            ${product.qty}
+            <button class="btn btn-info btn-sm" onclick="changeProductQty('${product.name}', 'inc')">+</button>
+        </td>
+        <td>${product.price.toFixed(2)}</td>
+        <td>${product.total.toFixed(2)}</td>
+        <td>
+        <button type="button" class="btn btn-primary" onclick="changeProdStatus('${product.name}')">Change Status</button></td>
+        <td>
+        <button type="button" class="btn btn-danger" onclick="askProdDel('${product.name}')">&times;</button>
+        </td>
+    </tr>`;
+    });
+    document.getElementById('cart-body').innerHTML = html;
+    document.getElementById('cart-total').innerText = summTotal();
+}
+
+function changeProductQty(name, action) {
+    let index = CARD.findIndex(el => el.name === name);
+    let newQty;
+    newQty = 0;
     if (action === 'inc') {
-        newQty = CART[index].qty + 1;
+        newQty = CARD[index].qty + 1;
     } else {
-        if (CART[index].qty >= 2) {
-            newQty = CART[index].qty - 1;
-        }else{
+        if (CARD[index].qty >= 2) {
+            newQty = CARD[index].qty - 1;
+        } else {
             askProdDel(name);
             return false;
         }
     }
-    CART[index].qty = newQty;
-    CART[index].total = CART[index].price * newQty;
-    viewCartTable();
+    CARD[index].qty = newQty;
+    CARD[index].total = CARD[index].price * newQty;
+    viewCardTable();
+    setSorting();
+}
+
+function summTotal() {
+    return CARD.reduce((acc, curr) => {
+        return acc + curr.total;
+    }, 0);
 }
 
 function askProdDel(name) {
-    return confirm('Delete product '+ name +'?');
+    if (confirm('Delete ' + name + '?')) {
+        let index = CARD.findIndex(el => el.name === name);
+        CARD.splice(index, 1);
+        viewCardTable();
+        setSorting();
+        topPanel.info('Product successfuly deleted!')
+    }
 }
 
-const DISCOUNT = [
+function changeProdStatus(name) {
+    let index = CARD.findIndex((el) => el.name === name);
+    CARD[index].isBuy = !CARD[index].isBuy;
+    viewCardTable();
+    setSorting();
+}
+
+const DISCOUNT = [{
+    promo: 'qwerty',
+    type: 'fixed', //  or 'persent'
+    value: 15,
+    isUsed: false,
+},
     {
-        promo: 'qwe',
-        type: 'fixed', //or persent
-        value: 15,
-        isUsed: false,
-    },
-    {
-        promo: 'qwert',
-        type: 'percent', //or summ
+        promo: 'asdfg',
+        type: 'persent', //  or 'fixed'
         value: 5,
         isUsed: false,
     }
-];
+]
 
 function checkAndApplyDiscount() {
     const discPromo = document.getElementById('discountField').value;
-    if (discPromo === ''){
+    if (discPromo === '') {
         topPanel.error('Enter promo code');
         return false;
     }
+    
     const index = DISCOUNT.findIndex(el => el.promo === discPromo);
-    if(index === -1) {
+    
+    if (index === -1) {
         topPanel.error('Promo code not found');
         return false;
     }
+    
     const disc = DISCOUNT[index];
+    
     if (disc.isUsed) {
-        topPanel.error('This promo already used')
+        topPanel.error('Promo code already used');
         return false;
     }
     let newTotal = calcDiscount(disc);
     DISCOUNT[index].isUsed = true;
-    document.getElementById('discValue').innerText = disc.value + (disc.type === 'fixed') ? 'UAH' : '%';
-    document.getElementById('totalWithDisc').innerText = (newTotal).toFixed(2);
+    document.getElementById('discValue').innerText = disc.value + ((disc.type === 'fixed') ? 'UAH' : '%');
+    document.getElementById('totalWithDisc').innerText = newTotal.toFixed(2);
     document.getElementById('discountField').value = '';
+    document.getElementById('viewReceiptTotalWithDisc').innerHTML =
+        `
+    <div class="col-8">Total with discount</div>
+    <div class="col-4">${newTotal.toFixed(2)}</div>
+    `
 }
 
 function calcDiscount(disc) {
-    const {type, value} = disc;
-    const sumTotalValue = sumTotal();
+    debugger;
+    const {
+        type,
+        value
+    } = disc;
+    const sumTotalValue = summTotal();
     switch (type) {
         case 'fixed':
             return sumTotalValue - value;
-        case 'percent':
+        case 'persent':
             return sumTotalValue - (sumTotalValue / 100 * value);
     }
 }
 
-function setSorting(){
-    const sorting = document.getElementById('sorting').value
-    console.log(sorting);
-    return CART.filter().sort()
+viewReceipt();
+
+function viewReceipt() {
+    let html = '';
+    let sum = 0;
+    CARD.map(function (el) {
+        if (el.isBuy === true) {
+            sum += el.total;
+            html +=
+                `<div class="row">
+            <div class="col-8">${el.name}</div>
+            <div class="col-8 small">${el.qty} x ${el.price.toFixed(2)}</div>
+            <div class="col-4">${el.total.toFixed(2)}</div>
+            <hr>
+            </div>
+            `
+        }
+    });
+    document.getElementById('viewReceipt').innerHTML = html;
+    document.getElementById('viewReceiptTotal').innerHTML =
+        `<div>${sum} </div> `;
 }
 
-function sumTotal() {
-    return CART.reduce((acc, curr) => {return acc + curr.total;}, 0);
-}
+setSorting();
 
-function askProdDel(name) {
-    if(confirm('Delete' + name + ' ?')) {
-       const index = CART.findIndex((element) => element.name === name);
-       CART.splice(index,1);
-        viewCartTable();
-        topPanel.info('Product successful deleted');
+function setSorting() {
+    const sorting = document.getElementById('sorting').value;
+    switch (sorting) {
+        default:
+            CARD.sort((a, b) => a.name.localeCompare(b.name));
+            break;
+        case 'az':
+            CARD.sort((a, b) => a.name.localeCompare(b.name));
+            break;
+        case 'za':
+            CARD.sort((a, b) => b.name.localeCompare(a.name));
+            break;
+        case 'desc':
+            CARD.sort((a, b) => a.total - b.total);
+            break;
+        case 'asc':
+            CARD.sort((a, b) => b.total - a.total);
+            break;
     }
-}
-
-function chengeProdStatus(name) {
-    const index = CART.findIndex((element) => element.name === name);
-    CART[index].isBuy = !CART[index].isBuy;
-    viewCartTable();
-    topPanel.info('Product status changed');
+    viewReceipt();
 }
