@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /* Назначаем каждой кнопке (если их больше одной) обработчик клика */
         item.addEventListener('click', function(e) {
             /* Предотвращаем стандартное действие элемента. Так как кнопку можно
-            сделать по-разному (ссылкой или кнопкой)*/
+             сделать по-разному (ссылкой или кнопкой)*/
             e.preventDefault();
             /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
              и будем искать модальное окно с таким же атрибутом.*/
@@ -100,15 +100,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
+
+let circleRed = document.createElement('div')
+let circleOrange = document.createElement('div')
+let circleGreen = document.createElement('div')
+let button =  document.createElement('button')
+let app = document.querySelector('.app')
+app.appendChild(circleRed);
+app.appendChild(circleOrange);
+app.appendChild(circleGreen);
+app.appendChild(button);
+circleRed.className = 'round';
+circleOrange.className = 'round';
+circleGreen.className = 'round';
+button.className = 'my_btn';
+button.innerText = 'Push';
+button = trafficLight;
+
+
 let i = -1;
-function trafficLight(){
+function trafficLight() {
     i++;
     let arr = ['red','orange','green'],
         round = document.querySelectorAll('.round');
-    //Условие if(round[i-1]) означает что если элемент не undefined тогда удалить цвет
-    // round[i-1].style.backgroundColor = '';, без этого условия возникнет вышеприведенная ошибка.
     if(round[i-1]) round[i-1].style.backgroundColor = '';
-    //if(i == arr.length) i = 0; // а если i равна 3 сбрасываем i обратно в 0
     if(i === arr.length) i = 0;
     round[i].style.backgroundColor = arr[i];
 }
