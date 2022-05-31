@@ -53,13 +53,50 @@ for (let i = 0, ln = playList.length; i < ln; i++) {
 // При кліку на кнопку "Відкрити" з'являється модальне вікно,
 // на кнопку "Закрити" — зникає.
 
-let modal = document.querySelector('.modal')
-let button1 =  document.createElement('button')
-button1.innerText = 'Push';
-button1.className = 'my_btn';
-modal.append(button1);
+
+let modalContainer = document.querySelector('.modalContainer')
+
+let buttonF = document.createElement('button')
+buttonF.innerText = 'open modal';
+buttonF.className = 'my_btn';
+buttonF.id = 'btn_modal_window';
+modalContainer.append(buttonF);
 
 
+let divWrap = document.createElement('div');
+divWrap.className = 'modal';
+divWrap.id = 'my_modal';
+modalContainer.append(divWrap);
+
+let divContent = document.createElement('div');
+divContent.className = 'modal_content';
+divWrap.append(divContent);
+
+let contentText = document.createElement('p');
+contentText.innerText = 'Створити HTML-сторінку з кнопкою "Відкрити" і модальним вікном. На модальном вікні повинен бути текст і кнопка "Закрити". Спочатку модальне вікно не відображається. При кліку на кнопку "Відкрити" з\'являється модальне вікно, на кнопку "Закрити" — зникає.!';
+divContent.append(contentText);
+
+let btnInner = document.createElement('button');
+btnInner.innerText = 'close modal';
+btnInner.className = 'close_modal_window';
+divContent.append(btnInner);
+
+
+let modal = document.getElementById('my_modal');
+let btn = document.getElementById('btn_modal_window');
+let button1 = document.getElementsByClassName('close_modal_window')[0];
+
+btn.onclick = function () {
+    modal.style.display = 'block';
+}
+button1.onclick = function () {
+    modal.style.display = 'none';
+}
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
 
 //Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
 let circleRed = document.createElement('div')
