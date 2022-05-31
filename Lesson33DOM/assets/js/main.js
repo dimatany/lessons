@@ -100,30 +100,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
-
 let circleRed = document.createElement('div')
+circleRed.className = 'round';
+circleRed.id = 'red';
+
 let circleOrange = document.createElement('div')
+circleOrange.className = 'round';
+circleOrange.id = 'orange';
+
 let circleGreen = document.createElement('div')
+circleGreen.className = 'round';
+circleGreen.id = 'green';
+
 let button =  document.createElement('button')
 let app = document.querySelector('.app')
+
 app.appendChild(circleRed);
 app.appendChild(circleOrange);
 app.appendChild(circleGreen);
 app.appendChild(button);
-circleRed.className = 'round';
-circleOrange.className = 'round';
-circleGreen.className = 'round';
+
 button.className = 'my_btn';
 button.innerText = 'Push';
-button = trafficLight;
+button.onclick = next;
 
+//RED = 1: RED & YELLOW = 2: GREEN = 3;
+let state = 1;
+let greenLight = document.getElementById ("green").style;
+let redLight = document.getElementById ("red").style;
+let orangeLight = document.getElementById ("orange").style;
 
-let i = -1;
-function trafficLight() {
-    i++;
-    let arr = ['red','orange','green'],
-        round = document.querySelectorAll('.round');
-    if(round[i-1]) round[i-1].style.backgroundColor = '';
-    if(i === arr.length) i = 0;
-    round[i].style.backgroundColor = arr[i];
+function next(){
+    if (state === 1) {
+        state = state + 1;
+        orangeLight.backgroundColor = "orange";
+        redLight.backgroundColor = "white";
+        greenLight.backgroundColor = "white";
+    } else if (state === 2) {
+        state = state + 1;
+        orangeLight.backgroundColor = "white";
+        redLight.backgroundColor = "white";
+        greenLight.backgroundColor = "green";
+    } else if (state === 3) {
+        state = 1;
+        orangeLight.backgroundColor = "white";
+        redLight.backgroundColor = "red";
+        greenLight.backgroundColor = "white";
+    }
 }
+
+
+
