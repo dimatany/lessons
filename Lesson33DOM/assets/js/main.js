@@ -53,50 +53,12 @@ for (let i = 0, ln = playList.length; i < ln; i++) {
 // При кліку на кнопку "Відкрити" з'являється модальне вікно,
 // на кнопку "Закрити" — зникає.
 
-document.addEventListener('DOMContentLoaded', function() {
-    /* Записываем в переменные элементов-кнопок и подложку*/
-    let modalButtons = document.querySelectorAll('.js-open-modal');
-    let overlay = document.querySelector('.js-overlay-modal');
-    let closeButtons = document.querySelectorAll('.js-close-modal');
-    
-    /* Перебираем кнопки если их будет больше одной*/
-    modalButtons.forEach(function(item){
-        /* Назначаем каждой кнопке (если их больше одной) обработчик клика */
-        item.addEventListener('click', function(e) {
-            /* Предотвращаем стандартное действие элемента. Так как кнопку можно
-             сделать по-разному (ссылкой или кнопкой)*/
-            e.preventDefault();
-            /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
-             и будем искать модальное окно с таким же атрибутом.*/
-            let modalId = this.getAttribute('data-modal'),
-                modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
-            /* После того как нашли нужное модальное окно, добавим классы
-             подложке и окну, чтобы показать их. */
-            modalElem.classList.add('active');
-            overlay.classList.add('active');
-        });
-    });
-    
-    closeButtons.forEach(function(item){
-        item.addEventListener('click', function(e) {
-            let parentModal = this.closest('.modal');
-            parentModal.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-    });
-    
-    document.body.addEventListener('keyup', function (e) {
-        let key = e.code;
-        if (key === '27') {
-            document.querySelector('.modal.active').classList.remove('active');
-            document.querySelector('.overlay').classList.remove('active');
-        }
-    }, false);
-    overlay.addEventListener('click', function() {
-        document.querySelector('.modal.active').classList.remove('active');
-        this.classList.remove('active');
-    });
-});
+let modal = document.querySelector('.modal')
+let button1 =  document.createElement('button')
+button1.innerText = 'Push';
+button1.className = 'my_btn';
+modal.append(button1);
+
 
 
 //Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
@@ -115,10 +77,10 @@ circleGreen.id = 'green';
 let button =  document.createElement('button')
 let app = document.querySelector('.app')
 
-app.appendChild(circleRed);
-app.appendChild(circleOrange);
-app.appendChild(circleGreen);
-app.appendChild(button);
+app.append(circleRed);
+app.append(circleOrange);
+app.append(circleGreen);
+app.append(button);
 
 button.className = 'my_btn';
 button.innerText = 'Push';
@@ -148,6 +110,3 @@ function next(){
         greenLight.backgroundColor = "white";
     }
 }
-
-
-
