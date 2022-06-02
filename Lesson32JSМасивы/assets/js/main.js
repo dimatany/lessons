@@ -179,13 +179,13 @@ function changeProdStatus(name) {
 
 const DISCOUNT = [{
     promo: 'qwerty',
-    type: 'fixed', //  or 'persent'
+    type: 'fixed',
     value: 15,
     isUsed: false,
 },
     {
         promo: 'asdfg',
-        type: 'persent', //  or 'fixed'
+        type: 'persent',
         value: 5,
         isUsed: false,
     }

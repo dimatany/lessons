@@ -52,8 +52,6 @@ for (let i = 0, ln = playList.length; i < ln; i++) {
 // Спочатку модальне вікно не відображається.
 // При кліку на кнопку "Відкрити" з'являється модальне вікно,
 // на кнопку "Закрити" — зникає.
-
-
 let modalContainer = document.querySelector('.modalContainer')
 
 let buttonF = document.createElement('button')
@@ -61,7 +59,6 @@ buttonF.innerText = 'open modal';
 buttonF.className = 'my_btn';
 buttonF.id = 'btn_modal_window';
 modalContainer.append(buttonF);
-
 
 let divWrap = document.createElement('div');
 divWrap.className = 'modal';
@@ -80,7 +77,6 @@ let btnInner = document.createElement('button');
 btnInner.innerText = 'close modal';
 btnInner.className = 'close_modal_window';
 divContent.append(btnInner);
-
 
 let modal = document.getElementById('my_modal');
 let btn = document.getElementById('btn_modal_window');
@@ -132,18 +128,18 @@ let orangeLight = document.getElementById ("orange").style;
 function next(){
     if (state === 1) {
         state = state + 1;
-        orangeLight.backgroundColor = "orange";
-        redLight.backgroundColor = "white";
-        greenLight.backgroundColor = "white";
-    } else if (state === 2) {
-        state = state + 1;
-        orangeLight.backgroundColor = "white";
-        redLight.backgroundColor = "white";
-        greenLight.backgroundColor = "green";
-    } else if (state === 3) {
-        state = 1;
         orangeLight.backgroundColor = "white";
         redLight.backgroundColor = "red";
         greenLight.backgroundColor = "white";
+    } else if (state === 2) {
+        state = state + 1;
+        orangeLight.backgroundColor = "orange";
+        redLight.backgroundColor = "white";
+        greenLight.backgroundColor = "white";
+    } else if (state === 3) {
+        state = 1;
+        orangeLight.backgroundColor = "white";
+        redLight.backgroundColor = "white";
+        greenLight.backgroundColor = "green";
     }
 }
