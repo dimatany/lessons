@@ -16,11 +16,11 @@ html, body {
 img {
     vertical-align: top;
 }
-
+/*
 ol, ul {
     list-style: none;
 }
-
+*/
 a {
     text-decoration: none;
     color: inherit;
