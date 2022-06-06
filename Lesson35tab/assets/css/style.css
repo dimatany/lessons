@@ -1,3 +1,10 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #E5E5E5;
   font-family: "Lato", sans-serif;
@@ -27,9 +34,9 @@ body {
 
 #tabs {
   margin: 0 auto;
-  max-height: 600px;
-  max-width: 550px;
-  padding: 200px 149px 200px 149px;
+  max-height: 586px;
+  max-width: 600px;
+  padding: 147px 0 0 0;
 }
 
 .tabs-nav {
@@ -37,13 +44,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  font-size: 16px;
 }
 
 .tabs-nav li {
@@ -63,6 +63,19 @@ body {
   color: #999;
 }
 
+.tabs-nav img {
+  display: block;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.tabs-nav span {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 22px;
+  margin: 0 auto;
+}
+
 .tabs-nav li:last-child a {
   display: block;
 }
@@ -73,43 +86,91 @@ body {
 }
 
 .tabs-items {
-  display: flex;
-  flex-direction: row;
   color: rgb(255, 255, 255);
   border-top: none;
   background: rgb(33, 37, 52);
 }
 
 .tabs-item {
-  padding: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-left: 40px;
 }
 
-.tabs-item-img {
-  padding-left: 10px;
+.tabs-foto-stars {
+  padding-top: 77px;
+  padding-right: 41px;
 }
 
-.stars {
+.tabs-info-class {
+  padding-top: 47px;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
+}
+
+.date {
+  padding-top: -2px;
+  font-size: 14px;
+}
+
+.tabs-info-header {
   display: flex;
   flex-direction: row;
 }
 
-.info-class:first-child {
-  font-size: 32px;
+.tabs-info-header-text {
+  padding-right: 80px;
 }
 
-.date {
-  font-size: 20px;
+.tabs-info-header-donut {
+  padding-top: 10px;
+}
+
+.text {
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  width: 285px;
+  word-spacing: 3px;
+}
+
+.prising {
+  display: flex;
+  flex-direction: row;
+}
+
+.prise {
+  line-height: 0;
+}
+
+.prise-percent {
+  color: rgb(255, 221, 63);
+  font-size: 13px;
+  padding-top: 34px;
+}
+
+.prise-numbers {
+  font-size: 34px;
+  padding-bottom: 40px;
 }
 
 button {
+  margin-top: 35px;
+  margin-left: 45px;
+  padding: 23px 38px;
   background-color: rgb(19, 226, 141);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
   color: rgb(255, 255, 255);
   border: none;
   cursor: pointer;
@@ -119,8 +180,96 @@ button {
 button:hover {
   color: rgb(33, 37, 52);
   background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(255, 221, 63);
+  border: 0 solid rgb(255, 221, 63);
   cursor: pointer;
+}
+
+.rating-result {
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.rating-result span {
+  font-size: 22px;
+  margin: 10px 3px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-result > span:before {
+  content: "★";
+}
+
+.rating-result > span.active {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.donut-size {
+  font-size: 5em;
+}
+
+.pie-wrapper {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin: 0 auto;
+}
+
+.pie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
+}
+
+.half-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgb(19, 226, 141);
+  border-radius: 50%;
+  clip: rect(0em, 0.5em, 1em, 0em);
+}
+
+.right-side {
+  transform: rotate(0deg);
+}
+
+.label {
+  position: absolute;
+  top: 0.52em;
+  right: 0.4em;
+  bottom: 0.4em;
+  left: 0.4em;
+  display: block;
+  background: none;
+  border-radius: 50%;
+  color: rgb(141, 145, 163);
+  font-size: 0.25em;
+  line-height: 2.6em;
+  text-align: center;
+  cursor: default;
+  z-index: 2;
+}
+
+.smaller {
+  padding-bottom: 20px;
+  color: #BDC3C7;
+  font-size: 0.45em;
+  vertical-align: super;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  border: 0.1em solid #BDC3C7;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

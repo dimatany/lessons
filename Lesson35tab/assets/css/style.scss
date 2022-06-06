@@ -6,6 +6,18 @@ $white: rgba(255, 255, 255, 1);
 $inactive: rgba(141, 145, 163, 1);
 $text: rgba(183, 186, 205, 1);
 $background-color: #E5E5E5;
+$pie-main: $light-green;
+$pie-text: $inactive;
+$pie-shadow: #BDC3C7;
+
+
+
+//общие стили
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 body {
   background-color: $background-color;
@@ -13,7 +25,6 @@ body {
   font-weight: 400;
   color: $white;
 }
-
 .container {
   max-width: 1440px;
   max-height: 1024px;
@@ -24,7 +35,6 @@ body {
   padding: 82px 220px 82px 220px;
   margin: 0 auto;
 }
-
 .wrapper {
   background-image: url("../img/bg-image.png");
   margin: 0 auto;
@@ -34,34 +44,25 @@ body {
   height: 100%;
 }
 
+//стили tabs
 #tabs {
   margin: 0 auto;
-  max-height: 600px;
-  max-width: 550px;
-  padding: 200px 149px 200px 149px;
+  max-height: 586px;
+  max-width: 600px;
+  padding: 147px 0 0 0;
 }
-
 .tabs-nav {
   display: table;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  font-size: 16px;
-}
-
 .tabs-nav li {
   display: table-cell;
   float: none;
   margin: 0;
   padding: 0;
 }
-
 .tabs-nav a {
   display: block;
   padding: 10px 20px;
@@ -71,66 +72,193 @@ body {
   text-align: center;
   color: #999;
 }
-
-.tabs-nav li:first-child a {
-
+.tabs-nav img{
+  display: block;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+.tabs-nav span{
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 22px;
+  margin: 0 auto;
 }
 
+.tabs-nav li:first-child a {
+}
 .tabs-nav li:last-child a {
   display: block;
 }
-
 .tabs-nav a.active {
   background: $dark-blue;
   color: $white;
 }
-
 .tabs-items {
-  display: flex;
-  flex-direction: row;
   color: $white;
   border-top: none;
   background: $deep-blue;
 }
-
 .tabs-item {
-  padding: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-left: 40px;
 }
-
-.tabs-item-img {
-  padding-left: 10px;
+.tabs-foto-stars {
+  padding-top: 77px;
+  padding-right: 41px;
 }
-
-.stars {
+.tabs-info-class {
+  padding-top: 47px;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
+}
+.date {
+  padding-top: -2px;
+  font-size: 14px;
+}
+.tabs-info-header {
   display: flex;
   flex-direction: row;
 }
-
-.info-class:first-child {
-  font-size: 32px;
+.tabs-info-header-text {
+  padding-right: 80px;
 }
-.date {
-  font-size: 20px;
+.tabs-info-header-donut {
+  padding-top: 10px;
+}
+.text {
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  width: 285px;
+  word-spacing: 3px;
+}
+.prising {
+  display: flex;
+  flex-direction: row;
+}
+.prise {
+  line-height: 0;
+}
+.prise-percent {
+  color: $yellow;
+  font-size: 13px;
+  padding-top: 34px;
 }
 
+.prise-numbers {
+  font-size: 34px;
+  padding-bottom: 40px;
+}
+
+//стили кнопки
 button {
+  margin-top: 35px;
+  margin-left: 45px;
+  padding: 23px 38px;
   background-color: $light-green;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
   color: $white;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 button:hover {
   color: $deep-blue;
   background-color: $white;
-  border: 3px solid $yellow;
+  border: 0 solid $yellow;
   cursor: pointer;
 }
+
+//стили звезд
+.rating-result {
+  margin: 0 auto;
+  padding-top: 18px;
+}
+.rating-result span {
+  font-size: 22px;
+  margin: 10px 3px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+  content: '★';
+}
+.rating-result > span.active {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+//Donut
+.donut-size {
+  font-size: 5em;
+}
+.pie-wrapper {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin: 0 auto;
+}
+.pie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
+}
+.half-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid $pie-main;
+  border-radius: 50%;
+  clip: rect(0em, 0.5em, 1em, 0em);
+}
+.right-side {
+  transform: rotate(0deg);
+}
+.label {
+  position: absolute;
+  top: 0.52em;
+  right: 0.4em;
+  bottom: 0.4em;
+  left: 0.4em;
+  display: block;
+  background: none;
+  border-radius: 50%;
+  color: $pie-text;
+  font-size: 0.25em;
+  line-height: 2.6em;
+  text-align: center;
+  cursor: default;
+  z-index: 2;
+}
+.smaller {
+  padding-bottom: 20px;
+  color: $pie-shadow;
+  font-size: .45em;
+  vertical-align: super;
+}
+.shadow {
+  width: 100%;
+  height: 100%;
+  border: 0.1em solid $pie-shadow;
+  border-radius: 50%;
+}
+
+
+
