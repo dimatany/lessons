@@ -1,13 +1,136 @@
-$color-content: #4b5d68;
+$dark-blue: rgba(43, 48, 64, 1);
+$deep-blue: rgba(33, 37, 52, 1);
+$light-green: rgba(19, 226, 141, 1);
+$yellow: rgba(255, 221, 63, 1);
+$white: rgba(255, 255, 255, 1);
+$inactive: rgba(141, 145, 163, 1);
+$text: rgba(183, 186, 205, 1);
+$background-color: #E5E5E5;
 
 body {
-  color: $color-content;
+  background-color: $background-color;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: $white;
 }
 
 .container {
-  max-width: 1250px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 30px;
+  max-width: 1440px;
+  max-height: 1024px;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-blue;
   box-sizing: border-box;
+  padding: 82px 220px 82px 220px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-image: url("../img/bg-image.png");
+  margin: 0 auto;
+  max-width: 1000px;
+  max-height: 850px;
+  width: 100%;
+  height: 100%;
+}
+
+#tabs {
+  margin: 0 auto;
+  max-height: 600px;
+  max-width: 550px;
+  padding: 200px 149px 200px 149px;
+}
+
+.tabs-nav {
+  display: table;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 16px;
+}
+
+.tabs-nav li {
+  display: table-cell;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-nav a {
+  display: block;
+  padding: 10px 20px;
+  background: $dark-blue;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: #999;
+}
+
+.tabs-nav li:first-child a {
+
+}
+
+.tabs-nav li:last-child a {
+  display: block;
+}
+
+.tabs-nav a.active {
+  background: $dark-blue;
+  color: $white;
+}
+
+.tabs-items {
+  display: flex;
+  flex-direction: row;
+  color: $white;
+  border-top: none;
+  background: $deep-blue;
+}
+
+.tabs-item {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-item-img {
+  padding-left: 10px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-class:first-child {
+  font-size: 32px;
+}
+.date {
+  font-size: 20px;
+}
+
+button {
+  background-color: $light-green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: $deep-blue;
+  background-color: $white;
+  border: 3px solid $yellow;
+  cursor: pointer;
 }
