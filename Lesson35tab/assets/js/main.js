@@ -1,4 +1,5 @@
 "use strict"
+//реализация tabs
 $(function() {
     let tab = $('#tabs .tabs-items > div');
     tab.hide().filter(':first').show();
@@ -28,19 +29,19 @@ $(function() {
  * Обновляет процентное число диаграммы donut и положение CSS в строке прогресса.
  * Также позволяет установить, если это donut или pie
  * @param  {string}  el      Селектор для обновления пончика. '#thing'
- * @param  {number}  percent Проходя в 22.3, будет сделано график показывать 22
+ * @param  {number}  number  Проходя в 2.3, будет сделано график показывать 2.3
  * @param  {boolean} donut   True показывает donut, false показывает pie
  */
-function updateDonutChart (el, percent, donut) {
-    percent = Math.round(percent);
-    if (percent > 100) {
-        percent = 100;
-    } else if (percent < 0) {
-        percent = 0;
+function updateDonutChart (el, number, donut) {
+    number = (number);
+    if (number > 10) {
+        number = 10;
+    } else if (number < 0) {
+        number = 0;
     }
-    let deg = Math.round(360 * (percent / 100));
+    let deg = (360 * (number / 10));
     
-    if (percent > 50) {
+    if (number > 5) {
         $(el + ' .pie').css('clip', 'rect(auto, auto, auto, auto)');
         $(el + ' .right-side').css('transform', 'rotate(180deg)');
     } else {
@@ -56,10 +57,10 @@ function updateDonutChart (el, percent, donut) {
         $(el + ' .left-side').css('border-width', '0.5em');
         $(el + ' .shadow').css('border-width', '0.5em');
     }
-    $(el + ' .num').text(percent);
+    $(el + ' .num').text(number);
     $(el + ' .left-side').css('transform', 'rotate(' + deg + 'deg)');
 }
 
 // задаем в функцию параметры
-updateDonutChart('#specificChart', 63.67, true);
+updateDonutChart('#specificChart', 8.7, true);
 

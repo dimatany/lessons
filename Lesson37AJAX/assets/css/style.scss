@@ -6,58 +6,6 @@ body {
 
 .container {
   max-width: 1250px;
-  width: 90%;
   margin: 0 auto;
-  padding: 30px;
   box-sizing: border-box;
 }
-
-.textContainer {
-  border: 1px solid $color-content;
-  background-color: #ffebcd;
-  border-radius: 20px;
-  margin: 0 auto;
-  padding: 15px;
-}
-textarea {
-  border: 1px solid $color-content;
-  background-color: #846868;
-  border-radius: 20px;
-  margin: 0 auto;
-  padding: 15px;
-}
-.table_sort table {
-  border-collapse: collapse;
-}
-.table_sort th {
-  color: #ffebcd;
-  background: $color-content;
-  cursor: pointer;
-}
-.table_sort td,
-.table_sort th {
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  border: 1px solid #846868;
-}
-
-
-p {
-  background: #ffebcd;
-  height: 200px;
-  width: 300px;
-  text-align: center;
-}
-p.resizable {
-  background: #ffebcd;
-  position: relative;
-}
-p .resizer {
-  width: 15px;
-  height: 15px;
-  background: $color-content;
-  position:absolute;
-  right: 0;
-  bottom: 0;
-  cursor: se-resize; }
