@@ -85,6 +85,15 @@ function loadPage(page) {
 }
 loadPage('main');
 
+$(function() {
+    $('.nav-masthead a').on('click', function(e){
+        e.preventDefault();
+        loadPage($(this).attr('href'));
+        $('.nav-link. active').removeClass('active ');
+        $(this).addClass('active');
+    })
+});
+
 
 
 
