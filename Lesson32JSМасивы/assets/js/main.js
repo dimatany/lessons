@@ -5,7 +5,7 @@ const topPanel = {
         if (document.getElementById('top-panel') !== null) {
             document.getElementById('top-panel').remove();
         }
-        document.body.insertAdjacentHTML('afterbegin', panel);
+        document.body.insertAdjacentHTML('afterBegin', panel);
         this.hide();
     },
     hide: function () {
@@ -27,21 +27,20 @@ const topPanel = {
 }
 
 const CARD = [{
-    // одразу додано до масиву
     name: 'Chocolate',
     qty: 1,
     isBuy: true,
     price: 25.25,
     total: 25.25
 },
-    { // одразу додано до масиву
+    {
         name: 'Bread',
         qty: 1,
         isBuy: true,
         price: 20,
         total: 20
     },
-    { // одразу додано до масиву
+    {
         name: 'Apple',
         qty: 1,
         isBuy: true,
