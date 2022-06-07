@@ -6,78 +6,56 @@
 }
 
 body {
-  background-color: #E5E5E5;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
+  background-color: #2B3040;
+  font-family: Lato, sans-serif;
+  color: #B7BACD;
+  font-size: 14px;
 }
 
 .container {
-  max-width: 1440px;
-  max-height: 1024px;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(43, 48, 64);
-  box-sizing: border-box;
-  padding: 82px 220px 82px 220px;
-  margin: 0 auto;
+  width: 1000px;
+  height: 860px;
+  margin: 85px auto;
+  padding-top: 150px;
+  background: rgb(43, 48, 64) url("../img/bg-image.png") no-repeat center;
+  background-blend-mode: overlay;
 }
 
-.wrapper {
-  background-image: url("../img/bg-image.png");
+.card {
+  width: 600px;
+  height: 552px;
   margin: 0 auto;
-  max-width: 1000px;
-  max-height: 850px;
-  width: 100%;
-  height: 100%;
-}
-
-#tabs {
-  margin: 0 auto;
-  max-height: 586px;
-  max-width: 600px;
-  padding: 147px 0 0 0;
+  background-color: rgb(33, 37, 52);
 }
 
 .tabs-nav {
-  display: table;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .tabs-nav li {
-  display: table-cell;
-  float: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .tabs-nav a {
+  width: 100%;
   display: block;
-  padding: 10px 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
   background: rgb(43, 48, 64);
   font-size: 16px;
-  text-decoration: none;
   text-align: center;
-  color: #999;
+  color: rgb(141, 145, 163);
+  text-decoration: none;
 }
 
 .tabs-nav img {
-  display: block;
-  padding: 15px 0;
-  margin: 0 auto;
-}
-
-.tabs-nav span {
-  display: block;
-  padding-top: 4px;
-  padding-bottom: 22px;
-  margin: 0 auto;
-}
-
-.tabs-nav li:last-child a {
-  display: block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 19px;
 }
 
 .tabs-nav a.active {
@@ -86,86 +64,78 @@ body {
 }
 
 .tabs-items {
-  color: rgb(255, 255, 255);
-  border-top: none;
-  background: rgb(33, 37, 52);
+  padding: 60px 40px 60px 40px;
 }
 
 .tabs-item {
   display: flex;
-  flex-direction: row;
-  padding-left: 40px;
 }
 
 .tabs-foto-stars {
-  padding-top: 77px;
-  padding-right: 41px;
+  margin-right: 40px;
+  margin-top: 27px;
 }
 
 .tabs-info-class {
-  padding-top: 47px;
-}
-
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 .date {
-  padding-top: -2px;
   font-size: 14px;
+  margin-bottom: 35px;
 }
 
 .tabs-info-header {
   display: flex;
-  flex-direction: row;
+  margin-top: 8px;
 }
 
 .tabs-info-header-text {
-  padding-right: 80px;
+  margin-right: 72px;
+  margin-top: 17px;
+}
+
+.tabs-info-header-text h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 .tabs-info-header-donut {
-  padding-top: 10px;
+  margin-left: 10px;
 }
 
 .text {
-  padding-top: 10px;
   font-size: 13px;
   line-height: 22px;
   width: 285px;
   word-spacing: 3px;
+  margin-bottom: 14px;
 }
 
 .prising {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .prise {
-  line-height: 0;
+  margin-top: 30px;
 }
 
 .prise-percent {
   color: rgb(255, 221, 63);
   font-size: 13px;
-  padding-top: 34px;
+  margin-bottom: 10px;
 }
 
 .prise-numbers {
   font-size: 34px;
-  padding-bottom: 40px;
 }
 
 button {
   margin-top: 35px;
   margin-left: 45px;
-  padding: 23px 38px;
+  padding: 18px 37px;
   background-color: rgb(19, 226, 141);
   display: flex;
   flex-direction: row;
@@ -185,13 +155,12 @@ button:hover {
 }
 
 .rating-result {
-  margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 23px;
 }
 
 .rating-result span {
   font-size: 22px;
-  margin: 10px 3px;
+  margin: 0 4px;
   line-height: 1;
   color: lightgrey;
   text-shadow: 1px 1px #bbb;
@@ -207,7 +176,7 @@ button:hover {
 }
 
 .donut-size {
-  font-size: 5em;
+  font-size: 75px;
 }
 
 .pie-wrapper {
