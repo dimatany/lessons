@@ -20,6 +20,7 @@ fetch('assets/data/cart.json')
        return resp.json();
 })
     .then(resp=>{
+    console.log(resp);
     viewCart(resp);
 })
  */
