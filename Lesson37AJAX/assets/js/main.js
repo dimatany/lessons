@@ -90,7 +90,7 @@ $(function() {
     $('.nav-masthead a').on('click', function(e){
         e.preventDefault();
         loadPage($(this).attr('href'));
-        $('.nav-link. active').removeClass('active ');
+        $('.nav-link.active').removeClass('active');
         $(this).addClass('active');
     })
 });
