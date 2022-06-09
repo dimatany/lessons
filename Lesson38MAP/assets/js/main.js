@@ -22,11 +22,17 @@ window.initMap = initMap;
 //карта leaflet
 let map2 = L.map('map2').setView([50.387273, 30.624084], 13);//координаты маркера
 
+let myIcon = L.icon({
+    iconUrl: '/assets/img/marker.png',
+    iconSize: [38, 95],
+});
+
+
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map2);
 
-L.marker([50.387273, 30.624084]).addTo(map2)//координаты popup
+L.marker([50.387273, 30.624084], {icon: myIcon}).addTo(map2)//координаты popup
     .bindPopup('This is my place of residence.<br> Not for spread.')
     .openPopup();
 
