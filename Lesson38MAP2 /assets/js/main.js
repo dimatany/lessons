@@ -6,13 +6,22 @@ let tiles = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/ligh
 
 let map = L.map('map', {center: latlng, zoom: 13, layers: [tiles]});
 
-let markers = L.markerClusterGroup({ disableClusteringAtZoom: 17 });
+let markers = L.markerClusterGroup();
 
 for (let i = 0; i < addressPoints.length; i++) {
     let a = addressPoints[i];
     let title = a[2];
-    let customMarker = a[3];
-    let marker = L.marker(L.latLng(a[0], a[1]), { title: title }, { customMarker:customMarker });
+    let marker = L.marker(L.latLng(a[0], a[1]), { title: title });
+    /*
+    if(a[3]===0) {
+        marker[{icon}]=myIcon;
+    }else if(a[3]===1) {
+        marker[{icon}]=myIcon2;
+    }else if(a[3]===2) {
+        marker[{icon}]=myIcon2;
+    }else {
+        return false;
+    }*/
     marker.bindPopup(title);
     markers.addLayer(marker);
 }

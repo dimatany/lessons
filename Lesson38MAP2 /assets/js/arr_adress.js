@@ -20,7 +20,7 @@ let myIcon3 = L.icon({
 });
 
 let addressPoints = [
-[50.387273, 30.624084, 'This is my place of residence.<br> Not for spread.', myIcon],
-[50.401849382118435, 30.632636297957657, 'Here they sell the most delicious fish in the city.<br> I\'m often there.', myIcon2],
-[50.346753332881136, 30.48959863146808, 'This is my favorite park in town.<br> I\'m often there.', myIcon3]
+[50.387273, 30.624084, 'This is my place of residence.<br> Not for spread.',1],
+[50.401849382118435, 30.632636297957657, 'Here they sell the most delicious fish in the city.<br> I\'m often there.',2],
+[50.346753332881136, 30.48959863146808, 'This is my favorite park in town.<br> I\'m often there.',3]
 ];

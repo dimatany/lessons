@@ -48,15 +48,15 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map2);
 
-L.marker([50.387273, 30.624084],{icon: myIcon}).addTo(map2)//координаты popup
+L.marker([50.387273, 30.624084],{icon: myIcon}).addTo(map2)//координаты маркера
     .bindPopup('This is my place of residence.<br> Not for spread.')
     .openPopup();
 
-L.marker([50.401849382118435, 30.632636297957657],{icon: myIcon2}).addTo(map2)//координаты popup
+L.marker([50.401849382118435, 30.632636297957657],{icon: myIcon2}).addTo(map2)//координаты маркера
     .bindPopup('Here they sell the most delicious fish in the city.<br> I\'m often there.')
     .openPopup();
 
-L.marker([50.346753332881136, 30.48959863146808],{icon: myIcon3}).addTo(map2)//координаты popup
+L.marker([50.346753332881136, 30.48959863146808],{icon: myIcon3}).addTo(map2)//координаты маркера
     .bindPopup('This is my favorite park in town.<br> I\'m often there.')
     .openPopup();
 
