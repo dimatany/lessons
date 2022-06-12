@@ -9,4 +9,10 @@ body {
   border-radius: 10px;
 }
 
+.form img {
+  object-fit: inherit;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
