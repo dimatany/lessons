@@ -1,1 +1,133 @@
+$text-color1: rgba(44, 64, 88, 1);
+$text-color2: #FFFFFF;
 
+body {
+  color: $text-color1;
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.item {
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  color: $text-color2;
+  .slider_title {
+    text-align: center;
+    h2 {
+      font-size: 80px;
+    }
+    p {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.slider_item1 {
+  background: url("../img/Header1.jpg") 50% 50%/cover no-repeat;
+}
+.slider_item2 {
+  background: url("../img/Header2.jpg") 50% 50%/cover no-repeat;
+}
+.slider_item3 {
+  background: url("../img/Header3.jpg") 50% 50%/cover no-repeat;
+}
+.slider_item4 {
+  background: url("../img/Header4.jpg") 50% 50%/cover no-repeat;
+}
+.slider_item5 {
+  background: url("../img/Header5.jpg") 50% 50%/cover no-repeat;
+}
+
+//slick custom dots
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.slick-dots li button {
+
+}
+.slick-dots li button:before {
+  font-family: 'slick', serif;
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: '•';
+  text-align: center;
+  opacity: .99;
+  color: transparent;
+  border-radius: 50%;
+  border: 1px solid $text-color2;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: $text-color2;
+}
+//наложение
+header{
+  position: relative;
+  z-index: 2;
+}
+.top-line{
+  height: 50px;
+  line-height:50px;
+
+  color: $text-color2;
+  position: fixed;
+  z-index: 2;
+  top:0;
+  left:0;
+  right:0;
+  justify-content:space-between;
+}
+.top-line.active{
+  background: $text-color2;
+}
+.top-line, .top-line > div, .header-logo, nav{
+  display:flex;
+}
+
+nav a{
+  color: $text-color2;
+  text-decoration: blink;
+  padding: 0 5px;
+}
+.top-line.active nav a{
+  color: #444;
+}
+.header-logo{
+  padding: 5px;
+  line-height: 40px;
+}
+.header-logo img{
+  margin: 5px;
+}
+
+.header-menu-item {
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+//projects block
+h3 {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+}
