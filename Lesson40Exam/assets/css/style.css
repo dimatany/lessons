@@ -13,9 +13,17 @@ body {
   height: 100%;
 }
 
-.item {
-  width: 100%;
+header {
   height: 800px;
+}
+
+.slick_slider {
+  height: 800px;
+}
+
+.item {
+  height: 800px;
+  width: 100%;
   text-align: center;
   color: #FFFFFF;
 }
@@ -180,6 +188,10 @@ h3 {
 
 .news h3 {
   color: #FFFFFF;
+}
+
+.news-slider {
+  margin-bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
