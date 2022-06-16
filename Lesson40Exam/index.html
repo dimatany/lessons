@@ -34,6 +34,11 @@
     <link rel="stylesheet" href="assets/plugins/slick-1.8.1/slick.css">
     <link rel="stylesheet" href="assets/plugins/slick-1.8.1/slick-theme.css">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin="" />
+    <link rel="stylesheet" href="assets/css/MarkerCluster.css"/>
+    <link rel="stylesheet" href="assets/css/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="assets/css/screen.css"/>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -43,7 +48,7 @@
         <div class="top-line" id="top-line">
             <div>
                 <div class="header-logo">
-                    <img src="assets/img/Logo.png" alt="logo" />
+                    <img src="assets/img/Logo.png" alt="logo"/>
                 </div>
             </div>
             <div>
@@ -108,7 +113,7 @@
                     <h3>TRADE CENTER</h3>
                     <p>Increasing prosperity in our lives can be accomplished by having the right
                         frame of mind. The truth is, our thoughts are very powerful.</p>
-                    <button>MORE DETAILS</button>
+                    <button class="btn">MORE DETAILS</button>
                     <div class="reference-token">
                         <img src="assets/img/mark.png" alt="">
                         <a href="https://goo.gl/maps/dyjjzwf66i1bhXti7">New York City, United States - 1776 feet</a>
@@ -146,8 +151,8 @@
                                 <div class="signature-avatar"><img src="assets/img/details1.jpg" alt=""></div>
                                 <div class="signature-name">
                                     <div class="signature-name-details">
-                                        <p>ALJA BRUN</p>
-                                        <p>20 Jan 2020</p>
+                                        <p class="name">ALJA BRUN</p>
+                                        <p class="date">20 Jan 2020</p>
                                     </div>
                                 </div>
                             </div>
@@ -162,8 +167,8 @@
                                 <div class="signature-avatar"><img src="assets/img/details2.jpg" alt=""></div>
                                 <div class="signature-name">
                                     <div class="signature-name-details">
-                                        <p>DOMINIC FREEMAN</p>
-                                        <p>13 Dec 2019</p>
+                                        <p class="name">DOMINIC FREEMAN</p>
+                                        <p class="date">13 Dec 2019</p>
                                     </div>
                                 </div>
                             </div>
@@ -178,8 +183,8 @@
                                 <div class="signature-avatar"><img src="assets/img/details3.jpg" alt=""></div>
                                 <div class="signature-name">
                                     <div class="signature-name-details">
-                                        <p>ALICE WARD</p>
-                                        <p>30 Nov 2019</p>
+                                        <p class="name">ALICE WARD</p>
+                                        <p class="date">30 Nov 2019</p>
                                     </div>
                                 </div>
                             </div>
@@ -193,8 +198,8 @@
                                 <div class="signature-avatar"><img src="assets/img/details1.jpg" alt=""></div>
                                 <div class="signature-name">
                                     <div class="signature-name-details">
-                                        <p>DOMINIC FREEMAN</p>
-                                        <p>20 Jan 2020</p>
+                                        <p class="name">DOMINIC FREEMAN</p>
+                                        <p class="date">20 Jan 2020</p>
                                     </div>
                                 </div>
                             </div>
@@ -203,22 +208,49 @@
                 </div>
             </div>
         </div>
-        <div class="gallery_item">
-            <div class="parent">
-                <div class="box1"><img src="assets/img/1.jpg" alt="image"></div>
-                <div class="box2"><img src="assets/img/2.jpg" alt="image"></div>
-                <div class="box3"><img src="assets/img/3.jpg" alt="image"></div>
-                <div class="box4"><img src="assets/img/4.jpg" alt="image"></div>
-                <div class="box5"><img src="assets/img/5.jpg" alt="image"></div>
+        <div class="gallery">
+            <div class="line"></div>
+            <h3>Gallery</h3>
+            <div class="gallery-box">
+                <div class="box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+                <div class="box box5"></div>
+            </div>
+            <button class="btn gallery-btn">SEE MORE</button>
+        </div>
+        <div class="map-form">
+            <div class="contact-form">
+                <div class="line"></div>
+                <h3>GET IN TOUCH</h3>
+                <div class="contact-form-title"></div>
+                <div class="contact-form-input"></div>
+            </div>
+            <div class="map wrap" id="map" >
+                <a href="javascript:void(0)" id="load-map-link">
+                    <img src="assets/img/map.jpg" alt="images" class="map">
+                </a>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/img/Logo.png" alt="logo"/>
+            <p class="copyright">Copyrights © 2020 Montichello</p>
+        </div>
+        <div class="footer-icon">
+            <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/fb.png" alt="logo"></a>
+            <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/tw.png" alt="logo"></a>
+            <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/in.png" alt="logo"></a>
+        </div>
+    </footer>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/plugins/slick-1.8.1/slick.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js" integrity="sha512-WXoSHqw/t26DszhdMhOXOkI7qCiv5QWXhH9R7CgvgZMHz1ImlkVQ3uNsiQKu5wwbbxtPzFXd1hK4tzno2VqhpA==" crossorigin=""></script>
+<script src="assets/js/leaflet.markercluster-src.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
