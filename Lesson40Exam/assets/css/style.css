@@ -261,7 +261,7 @@ h3 {
   margin: 50px auto 50px;
 }
 
-.box {
+.box a img {
   height: 214px;
   width: 285px;
   min-width: 100%;
@@ -314,41 +314,43 @@ h3 {
   margin-top: 20px;
   margin-bottom: 17px;
 }
-.contact-form .contact-form-text {
+
+.contact-form-text {
   display: flex;
   justify-content: space-between;
   padding: 30px 60px 0 59px;
 }
-.contact-form .contact-form-text .contact-form-title {
+.contact-form-text .contact-form-title {
   width: 296px;
 }
-.contact-form .contact-form-text .contact-form-title .contact-form-title-details {
+.contact-form-text .contact-form-title .contact-form-title-details {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
 }
-.contact-form .contact-form-text .contact-form-title .contact-form-title-details img {
+.contact-form-text .contact-form-title .contact-form-title-details img {
   width: 15px;
   height: 15px;
   margin-right: 11px;
 }
-.contact-form .contact-form-text .contact-form-input {
+
+.contact-form-input {
   display: flex;
   flex-direction: column;
   border: none;
   width: 310px;
 }
-.contact-form .contact-form-text .contact-form-input label {
+.contact-form-input label {
   display: flex;
   flex-direction: column;
 }
-.contact-form .contact-form-text .contact-form-input label p {
+.contact-form-input label p {
   margin-bottom: -13px;
 }
-.contact-form .contact-form-text .contact-form-input label:hover {
+.contact-form-input label:hover {
   color: transparent;
 }
-.contact-form .contact-form-text .contact-form-input label input {
+.contact-form-input label input {
   outline: none;
   background: none;
   font-family: Montserrat, sans-serif;
@@ -360,14 +362,14 @@ h3 {
   border-bottom: 1px solid black;
   margin-bottom: 33px;
 }
-.contact-form .contact-form-text .contact-form-input .submit {
+.contact-form-input .submit {
   font-weight: 400;
   font-size: 18px;
   border: 1px solid rgb(44, 64, 88);
   width: 150px;
   height: 50px;
 }
-.contact-form .contact-form-text .contact-form-input .submit:hover {
+.contact-form-input .submit:hover {
   color: rgb(44, 64, 88);
   background-color: rgb(85, 183, 255);
   cursor: pointer;
@@ -436,6 +438,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 17.07px;
+  margin-bottom: 153px;
 }
 .footer .footer-icon {
   width: 160px;

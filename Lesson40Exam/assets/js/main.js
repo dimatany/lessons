@@ -117,3 +117,32 @@ document.getElementById('load-map-link').addEventListener('click', function(){
     initMap();
 })
 
+/////////////////////////////////////////////////////////// lite gallery
+lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom, lgThumbnail],
+    selector: '.my-lg-photo',
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
