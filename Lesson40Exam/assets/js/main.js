@@ -122,20 +122,3 @@ lightGallery(document.getElementById('lightgallery'), {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
