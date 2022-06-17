@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>Save your data storage together with us</title>
+    <title>Monticello</title>
 
     <meta name="description" content="Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.">
-
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
     <meta name="robots" content="all">
     <meta name="revisit-after" content="30 days">
-
     <meta property="og:locale" content="en_EN">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WE MAKE THE WORLD BEAUTIFUL EVERYDAY">
-    <meta property="og:description" content="Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help." />
+    <meta property="og:description" content="Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.." />
     <meta property="og:url" content="https://dimatany.github.io/lessons/Lesson40Exam/index.html">
     <meta property="og:image" content="https://github.com/dimatany/lessons/blob/master/Lesson40Exam/assets/img/1.jpg">
-
     <meta name="twitter:title" content="WE MAKE THE WORLD BEAUTIFUL EVERYDAY">
-    <meta name="twitter:description" content="Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.">
+    <meta name="twitter:description" content="Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful..">
     <meta name="twitter:image" content="https://github.com/dimatany/lessons/blob/master/Lesson40Exam/assets/img/1.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,10 +37,7 @@
     <link rel="stylesheet" href="assets/css/screen.css"/>
     <!--light gallery-->
     <link rel="stylesheet" href="assets/plugins/lightGallery/css/lightgallery-bundle.min.css"/>
-
-
-
-
+    <!--my stylesheet-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -52,25 +45,21 @@
 <div class="container">
     <header>
         <div class="top-line" id="top-line">
-            <div>
-                <div class="header-logo">
-                    <img src="assets/img/Logo.png" alt="logo"/>
-                </div>
+            <div class="header-logo">
+                <img src="assets/img/Logo.png" alt="logo"/>
             </div>
-            <div>
-                <div class="header-icon">
-                    <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/fb.png" alt="logo"></a>
-                    <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/tw.png" alt="logo"></a>
-                    <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/in.png" alt="logo"></a>
-                </div>
-                <nav class="header-menu">
-                    <ul class="header-menu-item">
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav class="header-menu">
+                <ul class="header-menu-item">
+                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#">About Us</a></li>
+                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#title2">Projects</a></li>
+                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#title3">News</a></li>
+                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#title4">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icon">
+                <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/fb.png" alt="logo"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/tw.png" alt="logo"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/in.png" alt="logo"></a>
             </div>
         </div>
     </header>
@@ -80,6 +69,7 @@
                 <div class="slider_title">
                     <h2>SIMPLE & MODERN</h2>
                     <p>We make the world beautiful everyday</p>
+                    <a class="scroll" href="#scroll-next"><img src="assets/img/arrow.png" alt=""></a>
                 </div>
             </div>
             <div class="slider_item2 item">
@@ -109,7 +99,7 @@
         </div>
         <div class="projects">
             <div class="line"></div>
-            <h3>What we do</h3>
+            <h3 id="scroll-next title2">What we do</h3>  <!--не выходит автоскролл -->
             <div class="project1">
                 <div class="project1-illustration">
                     <img src="assets/img/Img1.jpg" alt="">
@@ -145,11 +135,11 @@
         </div>
         <div class="news">
             <div class="color"></div>
-            <h3>LATEST NEWS</h3>
+            <h3 id="title3">LATEST NEWS</h3>
             <div class="news-slider">
                 <div class="wrap">
                     <div class="cart">
-                    <img src="assets/img/details11.jpg" alt="">
+                        <img src="assets/img/details11.jpg" alt="">
                         <div class="cart-wrap">
                             <h5>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h5>
                             <p>Free directories: directories are perfect for customers that are searching for...</p>
@@ -244,12 +234,14 @@
                     </a>
                 </div>
             </div>
-            <button class="btn gallery-btn">SEE MORE</button>
+            <div class="gallery-btn">
+                <button class="btn">SEE MORE</button>
+            </div>
         </div>
         <div class="map-form">
             <div class="contact-form">
                 <div class="line"></div>
-                <h3>GET IN TOUCH</h3>
+                <h3 id="title4">GET IN TOUCH</h3>
                 <div class="contact-form-text">
                     <div class="contact-form-title">
                         <div class="contact-form-title-details">
