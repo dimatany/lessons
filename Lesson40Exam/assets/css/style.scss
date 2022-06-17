@@ -107,6 +107,8 @@ header {
     }
   }
 }
+////////////////////////////////////////////////////////////humburger
+
 //////////////////////////////////////////////////////////// slider
 .item {
   height: 100%;
@@ -207,12 +209,13 @@ header {
     line-height: 53.64px;
   }
   .project1 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 1170px;
     max-width: 100%;
     margin: 0 auto 185px auto;
-    .project1-illustration{
+    .project1-illustration {
       img {
       }
     }
@@ -245,7 +248,6 @@ header {
       button {
         align-items: flex-start;
         margin-bottom: 60px;
-
       }
       .reference-token {
         display: flex;
@@ -420,8 +422,59 @@ header {
   }
 }
 
-/////////////////////////////////////////////////////// галерея
+@media (max-width: 1200px) {
+  .projects {
+    margin-bottom: 100px;
+    .line {
+      margin: 97px auto 30px auto;
+    }
+    h3 {
+      margin-bottom: 100px;
+    }
+    .project1,
+    .project2{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      .project1-illustration,
+      .project2-illustration {
+        margin: 0 auto;
+      }
+      .project1-content,
+      .project2-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 470px;
+        max-width: 100%;
+        margin: 94px auto 0 auto;
+        h4 {
+          margin-bottom: 132px;
+        }
+        h3 {
+          margin-top: -100px;
+        }
+        p {
+          margin-top: -60px;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+        button {
+          margin-bottom: 60px;
+        }
+        .reference-token {
+          display: flex;
+        }
+      }
+    }
+  }
+}
 
+  @media (max-width: 768px) {
+
+}
+/////////////////////////////////////////////////////// галерея
 .gallery {
   .line {
     border-bottom: 1px solid black;
@@ -478,7 +531,6 @@ header {
 /////////////////////////////////////////////contact-form
 .contact-form {
   background-image: url("../img/form.png");
-  margin: 0 auto;
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -489,7 +541,8 @@ header {
   box-shadow: 30px 70px 73px -90px #000000;
   position: absolute;
   z-index: 2;
-  left: 391px;
+  margin-left: -385px;
+  left: 50%;
   top: 400px;
   h3 {
     margin-bottom: 13px;
@@ -638,16 +691,4 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+////////////////////////////////////////////////////////

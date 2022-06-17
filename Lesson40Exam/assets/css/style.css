@@ -206,6 +206,7 @@ header .top-line .header-icon {
   line-height: 53.64px;
 }
 .projects .project1 {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 1170px;
@@ -397,6 +398,73 @@ header .top-line .header-icon {
   margin-bottom: 18px;
 }
 
+@media (max-width: 1200px) {
+  .projects {
+    margin-bottom: 100px;
+  }
+  .projects .line {
+    margin: 97px auto 30px auto;
+  }
+  .projects h3 {
+    margin-bottom: 100px;
+  }
+  .projects .project1,
+.projects .project2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .projects .project1 .project1-illustration,
+.projects .project1 .project2-illustration,
+.projects .project2 .project1-illustration,
+.projects .project2 .project2-illustration {
+    margin: 0 auto;
+  }
+  .projects .project1 .project1-content,
+.projects .project1 .project2-content,
+.projects .project2 .project1-content,
+.projects .project2 .project2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 470px;
+    max-width: 100%;
+    margin: 94px auto 0 auto;
+  }
+  .projects .project1 .project1-content h4,
+.projects .project1 .project2-content h4,
+.projects .project2 .project1-content h4,
+.projects .project2 .project2-content h4 {
+    margin-bottom: 132px;
+  }
+  .projects .project1 .project1-content h3,
+.projects .project1 .project2-content h3,
+.projects .project2 .project1-content h3,
+.projects .project2 .project2-content h3 {
+    margin-top: -100px;
+  }
+  .projects .project1 .project1-content p,
+.projects .project1 .project2-content p,
+.projects .project2 .project1-content p,
+.projects .project2 .project2-content p {
+    margin-top: -60px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .projects .project1 .project1-content button,
+.projects .project1 .project2-content button,
+.projects .project2 .project1-content button,
+.projects .project2 .project2-content button {
+    margin-bottom: 60px;
+  }
+  .projects .project1 .project1-content .reference-token,
+.projects .project1 .project2-content .reference-token,
+.projects .project2 .project1-content .reference-token,
+.projects .project2 .project2-content .reference-token {
+    display: flex;
+  }
+}
 .gallery .line {
   border-bottom: 1px solid black;
   width: 100px;
@@ -455,7 +523,6 @@ header .top-line .header-icon {
 
 .contact-form {
   background-image: url("../img/form.png");
-  margin: 0 auto;
   background-size: contain;
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -466,7 +533,8 @@ header .top-line .header-icon {
   box-shadow: 30px 70px 73px -90px #000000;
   position: absolute;
   z-index: 2;
-  left: 391px;
+  margin-left: -385px;
+  left: 50%;
   top: 400px;
 }
 .contact-form h3 {
