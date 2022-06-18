@@ -15,7 +15,7 @@ body {
   z-index: 2;
   height: 100%;
 }
-.wrap {
+.wrap-container {
   width: 1170px;
   margin: 0 auto;
 }
@@ -53,6 +53,7 @@ h3 {
 header {
   position: relative;
   z-index: 2;
+
   .top-line {
     padding-top: 12px;
     height: 50px;
@@ -107,9 +108,9 @@ header {
     }
   }
 }
-////////////////////////////////////////////////////////////humburger
+////////////////////////////////////////////////////////////hamburger
 
-//////////////////////////////////////////////////////////// slider
+///////////////////////////////////////////////////////////////slider
 .item {
   height: 100%;
   width: 100%;
@@ -192,7 +193,7 @@ header {
   color: $text-color2;
 }
 
-////////////////////////////////////////////// проекты
+////////////////////////////////////////////////проекты
 .projects {
   margin-bottom: 100px;
   .line {
@@ -471,9 +472,6 @@ header {
   }
 }
 
-  @media (max-width: 768px) {
-
-}
 /////////////////////////////////////////////////////// галерея
 .gallery {
   .line {
@@ -497,15 +495,11 @@ header {
   width: 1170px;
   margin: 50px auto 50px;
 }
-
 .box a img{
   height: 214px;
   width: 285px;
-  min-width: 100%;
-  min-height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .box1 {
   grid-column-start: 1;
@@ -514,7 +508,6 @@ header {
   grid-row-end: 3;
   background-image: url("../img/1.jpg");
 }
-
 .box2 {
   background-image: url("../img/2.jpg");
 }
@@ -527,6 +520,10 @@ header {
 .box5 {
   background-image: url("../img/5.jpg");
 }
+
+@media screen and (max-width: 1200px) {
+}
+
 
 /////////////////////////////////////////////contact-form
 .contact-form {
@@ -619,6 +616,9 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+}
 //////////////////////////////////////////////map
 .map-form {
   margin: 147px auto 0;
@@ -690,3 +690,7 @@ footer {
 }
 
 ////////////////////////////////////////////////////////
+/*
+-webkit-box-shadow: -260px -57px #55b7ff;
+                box-shadow: -260px -57px #55b7ff;
+ */

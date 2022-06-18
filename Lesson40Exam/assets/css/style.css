@@ -12,7 +12,7 @@ body {
   height: 100%;
 }
 
-.wrap {
+.wrap-container {
   width: 1170px;
   margin: 0 auto;
 }
@@ -491,8 +491,6 @@ header .top-line .header-icon {
 .box a img {
   height: 214px;
   width: 285px;
-  min-width: 100%;
-  min-height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -679,5 +677,10 @@ footer {
   justify-content: space-between;
   padding-top: 5px;
 }
+
+/*
+-webkit-box-shadow: -260px -57px #55b7ff;
+                box-shadow: -260px -57px #55b7ff;
+ */
 
 /*# sourceMappingURL=style.css.map */

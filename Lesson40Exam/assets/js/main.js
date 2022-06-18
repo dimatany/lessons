@@ -116,7 +116,15 @@ lightGallery(document.getElementById('lightgallery'), {
     selector: '.my-lg-photo',
 });
 
-
+/*
+ $(window).on('scroll', function(){
+ if($(window).scrollTop() > 0){
+ $('.navigation').addClass('scroll')
+ }else{
+ $('.navigation').removeClass('scroll')
+ }
+ })
+ */
 
 
 
