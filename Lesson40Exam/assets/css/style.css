@@ -7,9 +7,6 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  height: 100%;
 }
 
 .wrap-container {
@@ -44,12 +41,18 @@ h3 {
   background-color: rgb(85, 183, 255);
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: inset 3px 3px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 3px 3px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 header {
-  position: relative;
-  z-index: 2;
+  background-color: rgba(85, 183, 255, 0.7);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+  height: 130px;
 }
 header .top-line {
   padding-top: 12px;
@@ -95,11 +98,20 @@ header .top-line .header-menu .header-menu-item li a {
   font-size: 14px;
   line-height: 17.6px;
 }
+header .top-line .header-menu .header-menu-item li a:hover {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 17.6px;
+}
 header .top-line .header-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 160px;
+}
+header .top-line .header-icon a img:hover {
+  width: 45px;
+  height: 45px;
 }
 
 .item {
@@ -608,9 +620,42 @@ header .top-line .header-icon {
   box-shadow: inset 3px 3px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  .contact-form {
+    max-width: 570px;
+    width: 100%;
+    padding: 20px;
+    margin-left: -285px;
+    left: 50%;
+  }
+  .contact-form h3 {
+    font-size: 30px;
+    margin-bottom: 13px;
+  }
+  .contact-form .contact-form-text {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 60px 0 59px;
+  }
+  .contact-form .contact-form-text .contact-form-title .contact-form-title-details {
+    margin-bottom: 32px;
+  }
+  .contact-form .contact-form-text .contact-form-title .contact-form-title-details img {
+    width: 15px;
+    height: 15px;
+    margin-right: 11px;
+  }
+  .contact-form .contact-form-text .contact-form-title .contact-form-title-details p {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
 .map-form {
   margin: 147px auto 0;
   position: relative;
+  z-index: auto;
 }
 
 .map img {
@@ -618,6 +663,7 @@ header .top-line .header-icon {
   margin: 0 auto;
   width: 100%;
   height: 698px;
+  z-index: 1;
 }
 
 #map {
@@ -677,7 +723,17 @@ footer {
   justify-content: space-between;
   padding-top: 5px;
 }
+.footer .footer-icon a img:hover {
+  width: 45px;
+  height: 45px;
+}
 
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 /*
 -webkit-box-shadow: -260px -57px #55b7ff;
                 box-shadow: -260px -57px #55b7ff;
