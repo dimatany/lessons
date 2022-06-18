@@ -635,6 +635,7 @@ header {
     padding: 20px;
     margin-left: -285px;
     left: 50%;
+    height: 100%;
     h3 {
       font-size: 30px;
       margin-bottom: 13px;
@@ -741,6 +742,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .footer {
+    padding-top: 500px;
     display: flex;
     flex-wrap: wrap;
   }

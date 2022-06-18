@@ -627,6 +627,7 @@ header .top-line .header-icon a img:hover {
     padding: 20px;
     margin-left: -285px;
     left: 50%;
+    height: 100%;
   }
   .contact-form h3 {
     font-size: 30px;
@@ -730,6 +731,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .footer {
+    padding-top: 500px;
     display: flex;
     flex-wrap: wrap;
   }
