@@ -70,30 +70,33 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<!--Я БОЛЬШЛЕ САМА НИЧЕГО НЕ МОГУ С НИМ СДЕЛАТЬ -->
+<!--итого -->
 <div class="container">
     <header>
-        <div class="top-line wrap-container" id="top-line">
-            <div class="header-logo">
+        <nav>
+            <div class="logo">
                 <img src="assets/img/Logo.png" alt="logo"/>
             </div>
-            <nav class="header-menu">
-                <ul class="header-menu-item">
-                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#">About Us</a></li>
-                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#title2">Projects</a></li>
-                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#title3">News</a></li>
-                    <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#title4">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-icon">
-                <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/fb.png" alt="logo"></a>
-                <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/tw.png" alt="logo"></a>
-                <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/in.png" alt="logo"></a>
+            <ul class="nav-links">
+                <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#">Home</a></li>
+                <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#">About</a></li>
+                <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#">Portfolio</a></li>
+                <li><img src="assets/img/ellipse.png" alt="ellipse"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/fb.png" alt="logo"></a></li>
+                <li><a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/tw.png" alt="logo"></a></li>
+                <li><a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/in.png" alt="logo"></a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
-        <div class="slick_slider">
+        <section class="slick_slider">
             <div class="slider_item1 item">
                 <div class="slider_title wrap-container">
                     <h2>SIMPLE & MODERN</h2>
@@ -125,8 +128,8 @@
                     <p>We bring good things to life.</p>
                 </div>
             </div>
-        </div>
-        <div class="projects wrap-container">
+        </section>
+        <section class="projects wrap-container">
             <div class="line"></div>
             <h3 id="scroll-next title2">What we do</h3>  <!--не выходит автоскролл -->
             <div class="project1">
@@ -161,8 +164,8 @@
                     <img src="assets/img/Img2.jpg" alt="">
                 </div>
             </div>
-        </div>
-        <div class="news">
+        </section>
+        <section class="news">
             <div class="color"></div>
             <h3 id="title3">LATEST NEWS</h3>
             <div class="news-slider wrap-container">
@@ -232,12 +235,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="gallery wrap-container">
+        </section>
+        <section class="gallery wrap-container">
             <div class="line"></div>
             <h3>Gallery</h3>
             <div class="gallery-box" id="lightgallery">
-                <div class="box1">
+                <div class="box1 box2">
                     <a href="assets/img/1.jpg" data-lg-size="1600-2400" class="my-lg-photo">
                         <img alt="img1" src="assets/img/1.jpg" />
                     </a>
@@ -266,8 +269,8 @@
             <div class="gallery-btn">
                 <button class="btn">SEE MORE</button>
             </div>
-        </div>
-        <div class="map-form">
+        </section>
+        <section class="map-form">
             <div class="contact-form">
                 <div class="line"></div>
                 <h3 id="title4">GET IN TOUCH</h3>
@@ -309,10 +312,10 @@
                     <img src="assets/img/map.jpg" alt="images" >
                 </a>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <div class="footer wrap-container">
+        <section class="footer wrap-container">
             <div class="footer-logo">
                 <img src="assets/img/Logo.png" alt="logo"/>
                 <p class="copyright">Copyrights © 2020 Montichello</p>
@@ -322,7 +325,7 @@
                 <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/tw.png" alt="logo"></a>
                 <a href="#" target="_blank" rel="noreferrer noopener"><img src="assets/img/in.png" alt="logo"></a>
             </div>
-        </div>
+        </section>
     </footer>
 </div>
 <!--jQuery-->
