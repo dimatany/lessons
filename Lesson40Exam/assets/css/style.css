@@ -82,7 +82,7 @@ header nav .logo img {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 515px;
 }
 .nav-links li {
   display: flex;
@@ -520,7 +520,7 @@ header nav .logo img {
 .projects .project1 .project2-illustration,
 .projects .project2 .project1-illustration,
 .projects .project2 .project2-illustration {
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .projects .project1 .project1-content,
 .projects .project1 .project2-content,
