@@ -1,0 +1,20 @@
+$color-content: #4b5d68;
+
+body {
+  color: $color-content;
+}
+.container {
+  max-width: 1250px;
+  width: 90%;
+  margin: 0 auto;
+}
+h1 {
+  font-style: italic;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 25px;
+}
