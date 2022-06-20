@@ -7,7 +7,6 @@ html {
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
   color: rgb(44, 64, 88);
   font-family: Montserrat, sans-serif;
 }
@@ -70,7 +69,7 @@ header nav {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 52px 44px;
+  padding: 55px 44px;
 }
 header nav .logo img {
   width: 100%;
@@ -126,7 +125,6 @@ header nav .logo img {
   transition: all 0.3s ease;
 }
 
-/* media query for responsive design */
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
@@ -143,11 +141,17 @@ header nav .logo img {
     overflow-x: hidden;
   }
 
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 10px;
+  }
+
   .nav-links {
     position: absolute;
     right: 0;
     height: 92vh;
-    top: 158px;
+    top: 150px;
     background-color: rgb(85, 183, 255);
     display: flex;
     flex-direction: column;
@@ -248,6 +252,31 @@ header nav .logo img {
   background: url("../img/Header5.jpg") 50% 50%/cover no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+  .item .slider_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    position: relative;
+  }
+  .item .slider_title h2 {
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    margin-top: -18px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .item .slider_title p {
+    margin-top: 26px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 15px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+  }
+}
 .slick-dots {
   display: flex;
   flex-direction: column;
@@ -313,6 +342,8 @@ header nav .logo img {
   height: 100%;
   vertical-align: top;
   object-fit: cover;
+  -webkit-box-shadow: -260px -57px #55b7ff;
+  box-shadow: -260px -57px #55b7ff;
 }
 .projects .project1 .project1-content {
   display: flex;
@@ -342,7 +373,6 @@ header nav .logo img {
   margin-bottom: 32px;
 }
 .projects .project1 .project1-content button {
-  align-items: flex-start;
   margin-bottom: 60px;
 }
 .projects .project1 .project1-content .reference-token {
@@ -384,9 +414,22 @@ header nav .logo img {
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
 }
+.projects .project2 .project2-illustration {
+  width: 630px;
+  height: 470px;
+}
+.projects .project2 .project2-illustration img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  -webkit-box-shadow: 260px 57px #795cf6;
+  box-shadow: 260px -57px #795cf6;
+}
 .projects .project2 .project2-content {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 476px;
   max-width: 100%;
   margin: 94px auto 0 auto;
@@ -436,8 +479,42 @@ header nav .logo img {
   margin: 0 auto 45px auto;
 }
 
+@media screen and (max-width: 768px) {
+  .projects h3 {
+    font-size: 34px;
+    text-align: center;
+    line-height: 33px;
+  }
+  .projects a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project2-content h4 {
+    margin-bottom: 100px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .project2-content h3 {
+    margin-top: -100px;
+  }
+  .project2-content p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: -100px;
+    margin-bottom: 22px;
+  }
+  .project2-content button {
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+}
 .news {
-  background: url("../img/Background.png");
+  background: url("../img/Background.png") no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
   padding-bottom: 100px;
 }
 .news .color {
@@ -585,7 +662,7 @@ header nav .logo img {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  width: 1170px;
+  max-width: 1170px;
   margin: 50px auto 50px;
 }
 
@@ -630,6 +707,10 @@ header nav .logo img {
     border-bottom: 1px solid black;
     width: 100px;
   }
+  .gallery h3 {
+    font-size: 32px;
+  }
+
   .gallery-btn {
     margin: 0 auto;
   }
@@ -694,6 +775,9 @@ header nav .logo img {
 }
 .contact-form-text .contact-form-title .contact-form-title-details p {
   letter-spacing: 1px;
+}
+.contact-form-text .contact-form-title .contact-form-title-details p:hover {
+  color: #795cf6;
 }
 
 .contact-form-input {
@@ -815,7 +899,7 @@ header nav .logo img {
 }
 
 footer {
-  background-image: url("../img/footer.png");
+  background: url("../img/footer.png") no-repeat;
   display: flex;
   justify-content: space-between;
   padding: 150px 50px 50px 150px;
@@ -852,11 +936,8 @@ footer {
     padding-top: 500px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 }
-/*
--webkit-box-shadow: -260px -57px #55b7ff;
-                box-shadow: -260px -57px #55b7ff;
- */
 
 /*# sourceMappingURL=style.css.map */
