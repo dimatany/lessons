@@ -19,9 +19,9 @@ $('.wrap').slick({
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    //autoplay: true,
-    //infinite: true,
-    //autoplaySpeed: 1000,
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 3000,
     responsive: [
         {
             breakpoint: 1024,

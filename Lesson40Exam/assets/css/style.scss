@@ -700,6 +700,7 @@ header {
   .wrap-container {
     width: 100%;
     max-width: 900px;
+    margin: auto 20px;
   }
   .gallery {
     .line {
@@ -904,11 +905,12 @@ header {
 }
 ////////////////////////////////////////////////////footer
 footer {
-  background: url("../img/footer.png") no-repeat;
+  background: url("../img/footer.png")no-repeat;
   display: flex;
   justify-content: space-between;
   padding: 150px 50px 50px 150px;
 }
+
 .footer {
   margin: 55px auto 30px auto;
   padding-left: 10px;
@@ -946,6 +948,9 @@ footer {
 }
 
 ////////////////////////////////////////////////////////
-
+/*
+-webkit-box-shadow: -260px -57px #55b7ff;
+                box-shadow: -260px -57px #55b7ff;
+ */
 
 

@@ -701,6 +701,7 @@ header nav .logo img {
   .wrap-container {
     width: 100%;
     max-width: 900px;
+    margin: auto 20px;
   }
 
   .gallery .line {
@@ -939,5 +940,9 @@ footer {
     margin: 0 auto;
   }
 }
+/*
+-webkit-box-shadow: -260px -57px #55b7ff;
+                box-shadow: -260px -57px #55b7ff;
+ */
 
 /*# sourceMappingURL=style.css.map */
