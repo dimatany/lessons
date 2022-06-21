@@ -13,7 +13,7 @@ class CircleDescription {
     constructor(radius) {
         this.radius = radius;
     }
-    Q = this.radius;
+    
     
     get() {
         return this.radius;
