@@ -28,6 +28,12 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/bundle.js",
+  },//тут что-то пропущено
+  devServer: {
+    port: 9000,
+    hot: true,
+    liveReload: true,
+    watchFiles:['src/html/**/*.html']
   },
   devtool: "source-map",
   mode: "production",

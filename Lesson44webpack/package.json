@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
-    "start": "webpack serve --no-client-overlay-warnings",
+    "start": "webpack-dev-server --mode development --hot --open",
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
