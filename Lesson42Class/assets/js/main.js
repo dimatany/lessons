@@ -60,6 +60,7 @@ class Employee {
         this.name = empl.name;
         this.position = empl.position;
         this.age = empl.age;
+        this.qualification = empl.qualification;
     }
 }
 
@@ -75,6 +76,7 @@ class EmpTable {
              <td>${element.name}</td>
              <td>${element.position}</td>
              <td>${element.age}</td>
+             <td>${element.qualification}</td>
             </tr>
             `;
         });
@@ -84,20 +86,30 @@ class EmpTable {
         document.getElementById(elementId).innerHTML = this.getHTML();
     }
 }
-
+///массив объектов
 const list = [
     new Employee({
         name:'Bob',
         position:'manager',
-        age:30
+        age:30,
+        qualification:'low',
     }),
     new Employee({
         name:'John',
         position:'High manager',
-        age:35
+        age:35,
+        qualification:'high',
+    }),
+    new Employee({
+        name:'Sara',
+        position:'manager',
+        age:27,
+        qualification:'average',
     }),
 ];
 
+const myTable = new EmpTable(list);
+myTable.viewHtml('emp_tbody');
 
 
 
