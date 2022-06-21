@@ -54,9 +54,49 @@ console.log('methodArea =', example.methodArea().toFixed(2));
 console.log('methodPerimeter =', example.methodPerimeter().toFixed(2));
 
 
+/////////////////////////////////////////////////////////////////////
+class Employee {
+    constructor(empl) {
+        this.name = empl.name;
+        this.position = empl.position;
+        this.age = empl.age;
+    }
+}
 
+class EmpTable {
+    constructor(empList) {
+        this.empList = empList;
+    }
+    getHTML() {
+        let html = '';
+        this.empList.forEach(element =>{
+            html += `
+            <tr>
+             <td>${element.name}</td>
+             <td>${element.position}</td>
+             <td>${element.age}</td>
+            </tr>
+            `;
+        });
+        return html;
+    }
+    viewHtml(elementId) {
+        document.getElementById(elementId).innerHTML = this.getHTML();
+    }
+}
 
-
+const list = [
+    new Employee({
+        name:'Bob',
+        position:'manager',
+        age:30
+    }),
+    new Employee({
+        name:'John',
+        position:'High manager',
+        age:35
+    }),
+];
 
 
 
