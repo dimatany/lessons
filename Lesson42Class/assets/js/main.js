@@ -14,27 +14,45 @@ class CircleDescription {
         this.radius = radius;
     }
     
-    
     get() {
         return this.radius;
     }
     
-    get diameter() {
-        this.diameter = this.radius * 2;
-        return this.diameter
+    set (newRadius) {
+        this.radius = newRadius;
+    }
+    
+    get diametr() {
+        return this.radius * 2;
     }
     
     methodArea = function() {
         return Math.PI * this.radius * this.radius;
     };
+    
     methodPerimeter = function() {
         return 2 * Math.PI * this.radius;
     };
-}
+    
+    show1 () {
+        document.getElementById('radius').innerText = this.radius;
+    };
+    
+    show2 () {
+        document.getElementById('area').innerText = this.methodArea();
+    };
+    
+    show3 () {
+        document.getElementById('perimeter').innerText = this.methodPerimeter();
+    };
+ }
 
-let example = new CircleDescription (10);
+let example = new CircleDescription (15);
+example.set(6);
+console.log(example);
 console.log('methodArea =', example.methodArea().toFixed(2));
 console.log('methodPerimeter =', example.methodPerimeter().toFixed(2));
+
 
 
 
