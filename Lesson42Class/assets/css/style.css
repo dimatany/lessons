@@ -23,26 +23,26 @@ h2 {
 table {
   border-collapse: collapse;
   /*убираем пустые промежутки между ячейками*/
-  border: 2px solid grey;
+  border: 2px solid rebeccapurple;
   /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
   width: 600px;
   margin: 30px auto;
 }
 
 th {
-  border: 1px solid grey;
+  border: 1px solid rebeccapurple;
   width: 20%;
 }
 
 td {
-  border: 1px solid grey;
+  border: 1px solid rebeccapurple;
 }
 td :first-child {
   width: 30%;
 }
 
 th, td {
-  border: 1px solid grey;
+  border: 1px solid rebeccapurple;
   padding: 10px 15px;
 }
 
