@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  lang="en" class="h-100">
 <head>
-	<title>Leaflet debug page</title>
+	<title>Classes homework</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css"/>
 </head>
@@ -19,13 +19,20 @@
 		<li>метод, що обчислює довжину кола.</li>
 	</ul>
 	<p>Продемонструй роботу властивостей і методів.</p>
-	<p>Радиус круга введи</p>
-	<label for="radius"><input type="number" id="radius"></label>
 	<p>Вывод методов</p>
-	<ul>
-		<li>Площадь кола: <span id="area"></span></li>
-		<li>Довжина кола: <span id=""></span></li>
-	</ul>
+	<div>
+		<div>
+			<label for="first"><input type="number" id="first" placeholder="Введите радиус"></label>
+			<button class="firstCalc custom-btn btn" type="button">Нажми</button>
+			<button class="secondCalc custom-btn btn" type="button">Вычисление площади</button>
+			<button class="thirdCalc custom-btn btn" type="button">Вычисление длины</button>
+		</div>
+	</div>
+	<div>
+		<div>Результат:
+			<span id="result"></span>
+		</div>
+	</div>
 
 
 	<h2>Завдання 2</h2>
@@ -37,6 +44,7 @@
 	</ul>
 	<p>Реалізуй клас, що описує маркер, який можна перезаправляти. Успадкуй цей клас від простого маркера і додай метод для заправки.</p>
 	<p>Продемонструй роботу написаних методів.</p>
+
 
 	<h2>Завдання 3</h2>
 	<p>Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.</p>
@@ -59,7 +67,7 @@
 		<tbody id="emp_tbody"></tbody>
 	</table>
 </div>
-
+<script src="assets/js/classes.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

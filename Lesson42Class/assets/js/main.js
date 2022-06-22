@@ -1,92 +1,33 @@
 'use strict'
-/*
- Реалізуй клас, що описує коло. У класі повинні бути такі компоненти:
- поле, що зберігає радіус кола;
- get-властивість, яке повертає радіус кола;
- set-властивість, що встановлює радіус кола;
- get-властивість, яке повертає діаметр кола;
- метод, що обчислює площу кола;
- метод, що обчислює довжину кола.
- 
- */
-class CircleDescription {
-    constructor(radius) {
-        this.radius = radius;
-    }
-    
-    get() {
-        return this.radius;
-    }
-    
-    set (newRadius) {
-        this.radius = newRadius;
-    }
-    
-    get diametr() {
-        return this.radius * 2;
-    }
-    
-    methodArea = function() {
-        return Math.PI * this.radius * this.radius;
-    };
-    
-    methodPerimeter = function() {
-        return 2 * Math.PI * this.radius;
-    };
-    
-    show1 () {
-        document.getElementById('radius').innerText = this.radius;
-    };
-    
-    show2 () {
-        document.getElementById('area').innerText = this.methodArea();
-    };
-    
-    show3 () {
-        document.getElementById('perimeter').innerText = this.methodPerimeter();
-    };
- }
+////////////////////////////////////////////////////////////////////////////////
+//1я задача
+document.querySelector(".firstCalc").addEventListener("click", function () {
+    const r = document.querySelector("#first").value;
+    const myCircle = new DescriptionCircle(r);
+    document.querySelector("#result").innerHTML += `
+        <div>Радиус круга: ${myCircle.radius}</div>
+        <div>Диаметр круга: ${myCircle.diametr}</div>
+    `
+});
 
-let example = new CircleDescription (15);
-example.set(6);
-console.log(example);
-console.log('methodArea =', example.methodArea().toFixed(2));
-console.log('methodPerimeter =', example.methodPerimeter().toFixed(2));
+document.querySelector(".secondCalc").addEventListener("click", function () {
+    const r = document.querySelector("#first").value;
+    const myCircle = new DescriptionCircle(r);
+    document.querySelector("#result").innerHTML += `
+        <div>Площадь круга: ${myCircle.circleSquare()}</div>
+    `
+});
 
+document.querySelector(".thirdCalc").addEventListener("click", function () {
+    const r = document.querySelector("#first").value;
+    const myCircle = new DescriptionCircle(r);
+    document.querySelector("#result").innerHTML += `
+        <div>Длина круга: ${myCircle.circleLength()}</div>
+    `
+});
 
-/////////////////////////////////////////////////////////////////////
-class Employee {
-    constructor(empl) {
-        this.name = empl.name;
-        this.position = empl.position;
-        this.age = empl.age;
-        this.qualification = empl.qualification;
-    }
-}
-
-class EmpTable {
-    constructor(empList) {
-        this.empList = empList;
-    }
-    getHTML() {
-        let html = '';
-        this.empList.forEach(element =>{
-            html += `
-            <tr>
-             <td>${element.name}</td>
-             <td>${element.position}</td>
-             <td>${element.age}</td>
-             <td>${element.qualification}</td>
-            </tr>
-            `;
-        });
-        return html;
-    }
-    viewHtml(elementId) {
-        document.getElementById(elementId).innerHTML = this.getHTML();
-    }
-}
-///массив объектов
+////////////////////////////////////////////////////////////////////////////////
+//3я задача
 const list = [
     new Employee({
         name:'Bob',
