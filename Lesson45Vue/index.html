@@ -25,7 +25,19 @@
             return {
                 text: 'Hello Vue',
                 counter: 0,
-                isEven: true,
+                //isEven: true,
+            }
+        },
+        /*
+        watch: {
+            counter(value) {
+                this.isEven = value % 2 === 0;
+            }
+        },
+         */
+        computed: {
+            isEven() {
+                return this.counter %2 ===0;
             }
         },
         created() {
@@ -43,7 +55,7 @@
             checkDecCounter() {
                 return this.counter>0;
             }
-        }
+        },
     }
 
     Vue.createApp(App).mount('#app');
