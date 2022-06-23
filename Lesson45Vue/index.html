@@ -4,10 +4,18 @@
 	<title>Classes homework</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css"/>
+    <style>
+        .even {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <p>{{text}}</p>
+    <p>{{ text }}</p>
+    <p>Counter: <span v-bind:class="{'even': isEven}">{{ counter }}</span></p>
+    <button type="button" v-on:click="decCounter">-</button>
+    <button type="button" v-on:click="incCounter">+</button>
 </div>
 
 <script src="https://unpkg.com/vue@next"></script>
@@ -15,12 +23,30 @@
     const App = {
         data() {
             return {
-                text: 'Hello Vue'
+                text: 'Hello Vue',
+                counter: 0,
+                isEven: true,
+            }
+        },
+        created() {
+            this.incCounter();
+        },
+        methods: {
+            incCounter() {
+                this.counter++;
+            },
+            decCounter() {
+                if (this.checkDecCounter()) {
+                    this.counter--;
+                }
+            },
+            checkDecCounter() {
+                return this.counter>0;
             }
         }
     }
 
-    Vue.create(App).mount('#app');
+    Vue.createApp(App).mount('#app');
 
 </script>
 <script src="assets/js/main.js"></script>
