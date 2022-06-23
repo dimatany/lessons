@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html  lang="en" class="h-100">
+<head>
+	<title>Classes homework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<div id="app">
+    <p>{{text}}</p>
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const App = {
+        data() {
+            return {
+                text: 'Hello Vue'
+            }
+        }
+    }
+
+    Vue.create(App).mount('#app');
+
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
