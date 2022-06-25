@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html  lang="en" class="h-100">
+<head>
+	<title>Vue lesson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css"/>
+    <style>
+        .even {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p>{{ text }}</p>
+    <p>Counter: <span v-bind:class="{'even': isEven}">{{ counter }}</span></p>
+    <button type="button" v-on:click="decCounter">-</button>
+    <button type="button" v-on:click="incCounter">+</button>
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const App = {
+        data() {
+            return {
+                text: 'Hello Vue',
+                counter: 0,
+                //isEven: true,
+            }
+        },
+        /*
+        watch: {
+            counter(value) {
+                this.isEven = value % 2 === 0;
+            }
+        },
+         */
+        computed: {
+            isEven() {
+                return this.counter %2 ===0;
+            }
+        },
+        created() {
+            this.incCounter();
+        },
+        methods: {
+            incCounter() {
+                this.counter++;
+            },
+            decCounter() {
+                if (this.checkDecCounter()) {
+                    this.counter--;
+                }
+            },
+            checkDecCounter() {
+                return this.counter>0;
+            }
+        },
+    }
+
+    Vue.createApp(App).mount('#app');
+
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
