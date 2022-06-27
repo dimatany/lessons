@@ -3,8 +3,8 @@
 const App = {
 	data(){
 		return {
-			API_BOT_ID: '',
-			CHAT_ID: '',
+			API_BOT_ID: '5336059209:AAE3iqce9jpn0WQTqpINcqvul0XgTHp0hxA',
+			CHAT_ID: '-1001599421581',
 			name: '',
 			email: '',
 			phone: '',
@@ -56,10 +56,16 @@ const App = {
 				this.errors.message = 'Enter message text'
 				valid = false
 			}
-			
-			
 			if(valid) {
-				//todo
+				const message_text = '<i>Feedback data</i>' +
+					'%0a<b>Name: </b>' + this.name +
+					'%0a<b>Email: </b>' + this.email +
+					'%0a<b>Phone: </b>' + this.phone +
+					'%0a<b>Subject: </b>' + this.subject +
+					'%0a<b>Message: </b>' + this.message +
+				fetch(`https://api.telegram.org/bot${this.API_BOT_ID}/
+				sendMessage?chat_id=${this.CHAT_ID}&text=${message_text}&
+				parse_mode=HTML`)
 			}
 		},
 		resetError(fld) {
