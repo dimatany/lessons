@@ -29,9 +29,22 @@
             <div class="card-header">
                 <h3>Movies list</h3>
             </div>
-            <div class="card-body">
-
+            <div class="card-body row">
+                <div class="card col-3 m-5" v-for="movie in movieList" :key="movie.imdbID">
+                    <img :src="movie.Poster" class="card-img-top" :alt="movie.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ movie.Title }}</h5>
+                        <p class="card-text">{{ movie.Year }}</p>
+                        <button type="button" class="btn btn-primary" @click="getMovieInfo(movie.imdbID)">Info</button>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="modal_overlay" v-if="showModal">
+        <div class="my_modal">
+            {{ movieInfo.Title }}
+            <button type="button" class="btn btn-info" @click="showModal = false">Close</button>
         </div>
     </div>
 </div>
