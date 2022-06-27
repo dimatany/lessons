@@ -63,11 +63,32 @@ const App = {
 					'%0a<b>Phone: </b>' + this.phone +
 					'%0a<b>Subject: </b>' + this.subject +
 					'%0a<b>Message: </b>' + this.message +
-				fetch(`https://api.telegram.org/bot${this.API_BOT_ID}/
+					fetch(`https://api.telegram.org/bot${this.API_BOT_ID}/
 				sendMessage?chat_id=${this.CHAT_ID}&text=${message_text}&
 				parse_mode=HTML`)
+					.then(resp => {
+						return resp.json()
+					})
+					.then(resp => {
+						if (resp.ok) {
+							this.answer.success = true
+							this.answer.text = 'Message successfully send'
+							this.name = this.email = this.phone = this.subject = this.message = ''
+						} else {
+							this.answer.success = false
+							this.answer.text = resp.description
+						}
+						setTimeout(() => {
+							this.answer.success = null
+							this.answer.text = ''
+						}, 3000)
+					})
+					.catch(() => {
+						this.answer.success = false
+						this.answer.text = 'AJAX error. Please try again later'
+					})
 			}
-		},
+			},
 		resetError(fld) {
 			this.errors[fld] = ''
 		},
