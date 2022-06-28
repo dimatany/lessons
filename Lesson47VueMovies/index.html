@@ -37,15 +37,15 @@
                 <h3>Search result</h3>
             </div>
             <div class="card-body text-bg-dark d-flex flex-wrap">
-                <div class="card col-4" v-for="movie in movieList" :key="movie.imdbID">
-                    <img :src="movie.Poster" class="card-img-top figure-img img-fluid rounded" :alt="movie.Title">
+                <div class="card col-4" v-for="movie in movieListWithFavourite()" :key="movie.imdbID">
+                    <img :src="movie.Poster" class="card-img-top" :alt="movie.Title">
                     <div class="card-body text-bg-dark my_card">
                         <h5 class="card-title">{{ movie.Title }}</h5>
                         <p class="card-text">{{ movie.Year }}</p>
                         <button type="button" class="btn btn-dark" @click="getMovieInfo(movie.imdbID)">Detail</button>
                         <button class="btn btn-secondary favourite" @click="addToFavourites(movie.imdbID)">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
-                                <path fill="#fff" d="M34,9c-4.2,0-7.9,2.1-10,5.4C21.9,11.1,18.2,9,14,9C7.4,9,2,14.4,2,21c0,11.9,22,24,22,24s22-12,22-24 C46,14.4,40.6,9,34,9z"/>
+                                <path :fill="movie.inFav ? '#f00': '#fff'" d="M34,9c-4.2,0-7.9,2.1-10,5.4C21.9,11.1,18.2,9,14,9C7.4,9,2,14.4,2,21c0,11.9,22,24,22,24s22-12,22-24 C46,14.4,40.6,9,34,9z"/>
                             </svg>
                         </button>
                     </div>

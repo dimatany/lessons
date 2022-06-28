@@ -52,12 +52,18 @@ const App = {
 		},
 		addToFavourites(id) {
 			const index = this.movieList.findIndex((el) => el.imdbID === id)
-			
-			if (this.favourite.find((el) => el.imdbID === id) === undefined) {
+			//удаление при клике на сердечко
+			const index2 = this.favourite.findIndex((el) => el.imdbID === id)
+			if (index2 === -1) {
+				let item = this.movieList[index]
+				item.inFav = true
+				this.favourite.push(item);
 				
-				this.favourite.push(this.movieList[index]);
-				localStorage.setItem("user_favourites", JSON.stringify(this.favourite))
+			} else {
+				this.favourite.splice(index2, 1)
 			}
+			
+			localStorage.setItem("user_favourites", JSON.stringify(this.favourite))
 		},
 		showErr(text) {
 			let html = ""
@@ -76,6 +82,18 @@ const App = {
 				
 			},2000)
 		},
+		//делаем проверку фильмов - если они есть в массиве favourite тогда меняем цвет сердца
+		movieListWithFavourite() {
+			let arr = []
+			this.movieList.forEach(el => {
+				let findFav =  this.favourite.find(item =>{
+					return el.imdbID === item.imdbID
+				})
+				el.inFav = findFav !== undefined ? true : false
+				arr.push(el)
+			})
+			return arr
+		}
 	}
 }
 
