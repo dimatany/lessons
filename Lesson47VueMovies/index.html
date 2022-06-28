@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html  lang="en" class="h-100">
+<head>
+    <title>Vue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="container pt-5">
+        <h2 class="display-4 text-uppercase text-white text-center fw-bold mb-5">movie search</h2>
+        <div class="card text-bg-dark mb-4">
+            <div class="card-body bg-info">
+                <form action="" id="search_form" @submit.prevent="searchMovie">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="search" class="form-control" placeholder="Enter movie title" v-model="search">
+                        </div>
+                        <div class="col-2">
+                            <select class="form-select" v-model="select">
+                                <option value="">{{ selected[0] }}</option>
+                                <option>{{ selected[1] }}</option>
+                            </select>
+                        </div>
+                        <div class="col-2">
+                            <button type="submit" class="btn w-100 btn-dark">SEARCH</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card text-bg-warning mb-4" v-if="movieList.length !== 0">
+            <div class="card-header text-bg-warning">
+                <h3>Search result</h3>
+            </div>
+            <div class="card-body text-bg-dark d-flex flex-wrap">
+                <div class="card col-4" v-for="movie in movieList" :key="movie.imdbID">
+                    <img :src="movie.Poster" class="card-img-top figure-img img-fluid rounded" :alt="movie.Title">
+                    <div class="card-body text-bg-dark my_card">
+                        <h5 class="card-title">{{ movie.Title }}</h5>
+                        <p class="card-text">{{ movie.Year }}</p>
+                        <button type="button" class="btn btn-dark" @click="getMovieInfo(movie.imdbID)">Detail</button>
+                        <button class="btn btn-secondary favourite" @click="addToFavourites(movie.imdbID)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
+                                <path fill="#fff" d="M34,9c-4.2,0-7.9,2.1-10,5.4C21.9,11.1,18.2,9,14,9C7.4,9,2,14.4,2,21c0,11.9,22,24,22,24s22-12,22-24 C46,14.4,40.6,9,34,9z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card text-bg-warning" v-if="favourite.length !== 0">
+            <div class="card-header text-bg-warning">
+                <h3>Favourite films</h3>
+            </div>
+            <div class="card-body text-bg-dark d-flex flex-wrap">
+                <div class="card col-4" v-for="movie in favourite" :key="movie.imdbID">
+                    <img :src="movie.Poster" class="card-img-top" :alt="movie.Title">
+                    <div class="card-body text-bg-dark my_card">
+                        <h5 class="card-title">{{ movie.Title }}</h5>
+                        <p class="card-text">{{ movie.Year }}</p>
+                        <button type="button" class="btn btn-dark" @click="getMovieInfo(movie.imdbID)">Detail</button>
+                        <button class="btn btn-secondary favourite" @click="addToFavourites(movie.imdbID)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
+                                <path fill="#fff" d="M34,9c-4.2,0-7.9,2.1-10,5.4C21.9,11.1,18.2,9,14,9C7.4,9,2,14.4,2,21c0,11.9,22,24,22,24s22-12,22-24 C46,14.4,40.6,9,34,9z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_overlay" v-if="showModal">
+        <div class="my_modal text-bg-secondary">
+            <div><b>Title: </b>{{ movieInfo.Title }}</div>
+            <div><b>Year: </b>{{ movieInfo.Year }}</div>
+            <div><b>Director: </b>{{ movieInfo.Director }}</div>
+            <div><b>Actors: </b>{{ movieInfo.Actors }}</div>
+            <div><b>Rating: </b> {{ movieInfo.Ratings[0].Value }}</div>
+            <div><b>Type: </b>{{ movieInfo.Type }}</div>
+            <div><b>Runtime: </b>{{ movieInfo.Runtime }}</div>
+            <div><b>Country: </b>{{ movieInfo.Country }}</div>
+            <div><b>Language: </b>{{ movieInfo.Language }}</div>
+            <button type="button" class="btn btn-danger my_btn" @click="showModal = false">X</button>
+        </div>
+    </div>
+    <div class="card-footer m-5">
+        <p>2022 - Beetroot lesson</p>
+        <p>HBO ® and related service marks are the property of Home Box Office, Inc</p>
+    </div>
+</div>
+
+<script src="assets/js/vue.js"></script>
+<script src="assets/js/axios.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
