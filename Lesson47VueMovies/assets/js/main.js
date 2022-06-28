@@ -17,7 +17,7 @@ const App = {
 			API_KEY: 'ece4f8e9',
 			search: '',
 			selected: ['Movie', 'Series'],
-			select: '',
+			select: 'Movie',
 			movieList: [],
 			movieInfo: {},
 			favourite: [],

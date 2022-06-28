@@ -21,8 +21,7 @@
                         </div>
                         <div class="col-2">
                             <select class="form-select" v-model="select">
-                                <option value="">{{ selected[0] }}</option>
-                                <option>{{ selected[1] }}</option>
+                                <option v-for="select in selected">{{ select }}</option>
                             </select>
                         </div>
                         <div class="col-2">
@@ -37,7 +36,7 @@
                 <h3>Search result</h3>
             </div>
             <div class="card-body text-bg-dark d-flex flex-wrap">
-
+                <!--
                 <div class="card col-4" v-for="movie in movieListWithFavourite()" :key="movie.imdbID">
                     <img :src="movie.Poster" class="card-img-top" :alt="movie.Title">
                     <div class="card-body text-bg-dark my_card">
@@ -51,12 +50,11 @@
                         </button>
                     </div>
                 </div>
+                -->
+                 <template v-for="movie in movieListWithFavourite()" :key="movie.imdbID">
+                     <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'></movie-item>
+                </template>
 
-                <!-- у меня не срабатывают компоненты-->
-                <!--
-                <template v-for="movie in favourite" :key="movie.imdbID">
-                    <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'/>
-                </template>-->
             </div>
         </div>
         <div class="card text-bg-warning" v-if="favourite.length !== 0">
@@ -64,7 +62,7 @@
                 <h3>Favourite films</h3>
             </div>
             <div class="card-body text-bg-dark d-flex flex-wrap">
-
+                <!--
                 <div class="card col-4" v-for="movie in favourite" :key="movie.imdbID">
                     <img :src="movie.Poster" class="card-img-top" :alt="movie.Title">
                     <div class="card-body text-bg-dark my_card">
@@ -77,24 +75,22 @@
                             </svg>
                         </button>
                     </div>
-                </div>
-
-                <!-- у меня не срабатывают компоненты-->
-                <!--
-                <template v-for="movie in movieListWithFavourite()" :key="movie.imdbID">
-                     <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'/>
-                </template>-->
+                </div>  -->
+                <template v-for="movie in favourite" :key="movie.imdbID">
+                    <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'></movie-item>
+                </template>
             </div>
         </div>
     </div>
     <div class="modal_overlay" v-if="showModal">
         <div class="my_modal text-bg-secondary">
-            <div><b><img :src="movieInfo.Poster" :alt="movieInfo.Title"></b></div>
+            <div><b><img :src="movieInfo.Poster" :alt="movieInfo.Title" v-if="movieInfo.Poster !=='N/A'"><img src="https://via.placeholder.com/468x60" :alt="movieInfo.Title"v-else></b></div>
             <div><b>Title: </b>{{ movieInfo.Title }}</div>
             <div><b>Year: </b>{{ movieInfo.Year }}</div>
             <div><b>Director: </b>{{ movieInfo.Director }}</div>
             <div><b>Actors: </b>{{ movieInfo.Actors }}</div>
-            <div><b>Rating: </b> {{ movieInfo.Ratings[0].Value }}</div>
+            <!-- добавляем условие если рейтинга нет -->
+            <div v-if="movieInfo.Ratings.length !==0"><b>Rating: </b> {{ movieInfo.Ratings[0].Value }}</div>
             <div><b>Type: </b>{{ movieInfo.Type }}</div>
             <div><b>Runtime: </b>{{ movieInfo.Runtime }}</div>
             <div><b>Country: </b>{{ movieInfo.Country }}</div>
@@ -111,7 +107,9 @@
 <!-- пример работы с компонентами -->
 <template id="movieItem">
     <div class="card col-4">
-        <img :src="movie.Poster" class="card-img-top" :alt="movie.Title">
+        <img :src="movie.Poster" class="card-img-top" :alt="movie.Title" v-if="movie.Poster !=='N/A'">
+        <img src="assets/img/Stitch.jpg" class="card-img-top" :alt="movie.Title" v-else>
+        <!-- вывести заглушку можно и с помощью сайта https://via.placeholder.com/468x60-->
         <div class="card-body text-bg-dark my_card">
             <h5 class="card-title">{{ movie.Title }}</h5>
             <p class="card-text">{{ movie.Year }}</p>
