@@ -75,6 +75,7 @@
     </div>
     <div class="modal_overlay" v-if="showModal">
         <div class="my_modal text-bg-secondary">
+            <div><b><img :src="movieInfo.Poster" :alt="movieInfo.Title"></b></div>
             <div><b>Title: </b>{{ movieInfo.Title }}</div>
             <div><b>Year: </b>{{ movieInfo.Year }}</div>
             <div><b>Director: </b>{{ movieInfo.Director }}</div>
@@ -84,7 +85,8 @@
             <div><b>Runtime: </b>{{ movieInfo.Runtime }}</div>
             <div><b>Country: </b>{{ movieInfo.Country }}</div>
             <div><b>Language: </b>{{ movieInfo.Language }}</div>
-            <button type="button" class="btn btn-danger my_btn" @click="showModal = false">X</button>
+            <div><b>Description: </b>{{ movieInfo.Plot }}</div>
+            <button type="button" class="btn btn-success my_btn" @click="showModal = false">X</button>
         </div>
     </div>
     <div class="card-footer m-5">

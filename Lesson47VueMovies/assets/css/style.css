@@ -18,11 +18,15 @@ body {
 
 .modal_overlay .my_modal {
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #b6d4fe;
   padding: 20px;
   width: 90%;
   max-width: 600px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .favourite, .my_btn {

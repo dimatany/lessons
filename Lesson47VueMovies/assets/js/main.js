@@ -13,12 +13,11 @@ const App = {
 		}
 	},
 	created() {
-		// при загрузці берем дані з localStorage і записуєм у нашу змінну storage
+		//загружаем, получаем данные из localStorage и присваиваем нашей переменной storage
 		const local = localStorage.getItem("user_favourites")
 		this.storage = JSON.parse(local)
-		
-		// перебираєм storage і записуем у favourite, щоб відобразити при завантаженні App
-		for (key in this.storage) {
+		// перебираем storage, записываем в favourite - оно отобразится при загрузке App
+		for (let key in this.storage) {
 			this.favourite.push(this.storage[key])
 		}
 	},
