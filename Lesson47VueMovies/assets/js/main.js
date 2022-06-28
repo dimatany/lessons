@@ -1,10 +1,23 @@
+const movieItem = {
+	props: ['movie'],
+	methods: {
+		getMovieInfo(id) {
+			this.$emit('getMovie', id)
+		},
+		addToFavourites(id){
+			this.$emit('addToFavourites', id)
+		}
+	},
+	template: '#movieItem',
+}
+
 const App = {
 	data() {
 		return {
-			API_KEY: "e6735353",
-			search: "",
-			selected: ["Movie", "Series"],
-			select: "",
+			API_KEY: 'ece4f8e9',
+			search: '',
+			selected: ['Movie', 'Series'],
+			select: '',
 			movieList: [],
 			movieInfo: {},
 			favourite: [],
@@ -12,9 +25,12 @@ const App = {
 			storage: {}
 		}
 	},
+	components: {
+		movieItem
+	},
 	created() {
 		//загружаем, получаем данные из localStorage и присваиваем нашей переменной storage
-		const local = localStorage.getItem("user_favourites")
+		const local = localStorage.getItem('user_favourites')
 		this.storage = JSON.parse(local)
 		// перебираем storage, записываем в favourite - оно отобразится при загрузке App
 		for (let key in this.storage) {
@@ -23,18 +39,18 @@ const App = {
 	},
 	methods: {
 		searchMovie() {
-			if (this.search !== "") {
+			if (this.search !== '') {
 				axios
 				.get(`https://www.omdbapi.com/?apikey=${this.API_KEY}&s=${this.search}&type=${this.select}`)
 				.then(response => {
 					this.movieList = response.data.Search
-					this.search = ""
+					this.search = ''
 				})
 				.catch(error => {
 					this.showErr(error.code)
 				})
 			} else {
-				this.showErr("Enter movie title.")
+				this.showErr('Enter movie title.')
 			}
 		},
 		showMovieInfo() {
@@ -63,22 +79,22 @@ const App = {
 				this.favourite.splice(index2, 1)
 			}
 			
-			localStorage.setItem("user_favourites", JSON.stringify(this.favourite))
+			localStorage.setItem('user_favourites', JSON.stringify(this.favourite))
 		},
 		showErr(text) {
-			let html = ""
+			let html = ''
 			html += `
-                    <div class="modal_overlay">
-                        <div class="my_modal text-bg-warning text-center fs-2">
+                    <div class='modal_overlay'>
+                        <div class='my_modal text-bg-warning text-center fs-2'>
                             ${text}
                         </div>
                     </div>
                 `
-			document.body.insertAdjacentHTML("afterbegin", html)
+			document.body.insertAdjacentHTML('afterbegin', html)
 			
 			setTimeout(() => {
 				let el = document.querySelector(".modal_overlay")
-				el.classList.add("none")
+				el.classList.add('none')
 				
 			},2000)
 		},
@@ -97,4 +113,4 @@ const App = {
 	}
 }
 
-Vue.createApp(App).mount("#app")
+Vue.createApp(App).mount('#app')
