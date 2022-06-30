@@ -188,10 +188,6 @@ header nav .logo img {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
-.slick_slider {
-  margin: 0 auto;
-}
-
 .item {
   height: 100%;
   text-align: center;
@@ -659,6 +655,9 @@ header nav .logo img {
   .slick-prev:before {
     display: none;
   }
+  .slick-next:before {
+    display: none;
+  }
 }
 .gallery .line {
   border-bottom: 1px solid black;
@@ -716,7 +715,7 @@ header nav .logo img {
   .wrap-container {
     width: 100%;
     max-width: 900px;
-    margin: auto 20px;
+    margin: auto 0;
   }
   .gallery .line {
     border-bottom: 1px solid black;
@@ -862,7 +861,7 @@ header nav .logo img {
 }
 @media screen and (max-width: 768px) {
   .contact-form {
-    max-width: 470px;
+    max-width: 370px;
     position: absolute;
     top: 0;
     bottom: 0;

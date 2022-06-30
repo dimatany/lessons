@@ -201,7 +201,6 @@ header {
 
 ///////////////////////////////////////////////////////////////slick slider
 .slick_slider {
-  margin: 0 auto;
 
 }
 .item {
@@ -672,10 +671,10 @@ header {
   .slick-prev:before {
     display: none;
   }
+  .slick-next:before {
+    display: none;
+  }
 }
-
-
-
 
   /////////////////////////////////////////////////////// галерея
 
@@ -730,7 +729,7 @@ header {
   .wrap-container {
     width: 100%;
     max-width: 900px;
-    margin: auto 20px;
+    margin: auto 0;
   }
   .gallery {
     .line {
@@ -888,7 +887,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .contact-form {
-    max-width: 470px;
+    max-width: 370px;
     position: absolute;
     top: 0;
     bottom: 0;
