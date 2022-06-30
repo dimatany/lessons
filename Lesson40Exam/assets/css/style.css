@@ -17,7 +17,7 @@ body {
 }
 
 .wrap-container {
-  width: 90%;
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@ h3 {
 }
 
 .gallery-btn {
-  margin: 0 auto;
+  margin: 0 calc(50% - 95px);
 }
 
 .btn:hover {
@@ -195,6 +195,10 @@ header nav .logo img {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+.slick_slider {
+  margin: 0 auto;
+}
+
 .item {
   height: 100%;
   text-align: center;
@@ -283,6 +287,7 @@ header nav .logo img {
     word-spacing: 2px;
   }
 }
+/*
 .slick-dots {
   display: flex;
   flex-direction: column;
@@ -293,6 +298,7 @@ header nav .logo img {
   left: 95%;
 }
 
+ */
 .slick-dots li button:before {
   font-family: "slick", serif;
   font-size: 10px;

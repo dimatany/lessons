@@ -5,7 +5,7 @@ $(function() {
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 1,
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 1000,
         dots: true,
         arrows: false,
