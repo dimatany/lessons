@@ -101,8 +101,7 @@ header nav .logo img {
   line-height: 17.6px;
 }
 .nav-links li a:hover {
-  color: #FFFFFF;
-  font-size: 16px;
+  color: #795cf6;
   line-height: 17.6px;
 }
 
@@ -111,6 +110,12 @@ header nav .logo img {
   justify-content: space-between;
   align-items: center;
   width: 160px;
+}
+.nav-icons .fa-brands:hover {
+  border: 1px solid #795cf6;
+}
+.nav-icons a:hover {
+  text-decoration: none;
 }
 
 .hamburger {
@@ -945,7 +950,6 @@ footer {
 
 .footer {
   margin: 55px auto 30px auto;
-  padding-left: 10px;
   width: 780px;
   display: flex;
   justify-content: space-between;
@@ -963,23 +967,43 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.footer .footer-icon a img:hover {
-  width: 45px;
-  height: 45px;
+.footer a:hover {
+  text-decoration: none;
+}
+.footer .footer-icon .fa-brands:hover {
+  border: 1px solid #795cf6;
+}
+
+.fa-brands {
+  color: #FFFFFF;
+  font-size: 16px;
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  border-radius: 50%;
+  height: 37px;
+  width: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
+  footer {
+    padding: 150px 50px 0 50px;
+    align-items: center;
+  }
   .footer {
-    padding-top: 90px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 50px;
     margin: 0 auto;
   }
   .footer .footer-icon {
     width: 100px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
