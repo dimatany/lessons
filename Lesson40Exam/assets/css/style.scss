@@ -199,7 +199,7 @@ header {
   }
 }
 
-///////////////////////////////////////////////////////////////slider
+///////////////////////////////////////////////////////////////slick slider
 .item {
   height: 100%;
   width: 100%;
@@ -253,6 +253,10 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .slick_slider {
+    max-width: 768px;
+
+  }
   .item {
     .slider_title {
       display: flex;
@@ -948,9 +952,7 @@ footer {
 }
 
 ////////////////////////////////////////////////////////
-/*
--webkit-box-shadow: -260px -57px #55b7ff;
-                box-shadow: -260px -57px #55b7ff;
- */
+
+
 
 
