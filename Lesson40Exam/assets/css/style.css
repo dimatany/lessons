@@ -966,7 +966,6 @@ footer {
   width: 160px;
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
 }
 .footer .footer-icon a img:hover {
   width: 45px;
@@ -975,10 +974,19 @@ footer {
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding-top: 500px;
+    padding-top: 90px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
+  }
+  .footer .footer-logo img {
+    margin: 0 auto;
+  }
+  .footer .footer-icon {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
