@@ -22,8 +22,9 @@ body {
   margin: 0 auto;
 }
 .wrap-container {
-  width: 1170px;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 1170px;
+  margin:0 auto
 }
 h3 {
   text-transform: uppercase;
@@ -49,6 +50,7 @@ h3 {
 .gallery-btn {
   margin: 0 auto;
 }
+
 .btn:hover {
   color: $text-color1;
   background-color: $text-color3;
@@ -200,6 +202,9 @@ header {
 }
 
 ///////////////////////////////////////////////////////////////slick slider
+.slick_slider {
+  width: 1600px;
+}
 .item {
   height: 100%;
   width: 100%;
@@ -255,7 +260,6 @@ header {
 @media screen and (max-width: 768px) {
   .slick_slider {
     max-width: 768px;
-
   }
   .item {
     .slider_title {
@@ -662,9 +666,6 @@ header {
     margin-bottom: 89px;
   }
 }
-.gallery-btn {
-  margin: 0 auto;
-}
 .gallery-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -732,7 +733,41 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
 
+
+@media screen and (max-width: 1300px) {
+  .wrap-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto 20px;
+  }
+  .gallery {
+    .line {
+      border-bottom: 1px solid black;
+      width: 100px;
+    }
+    h3 {
+      font-size: 32px;
+    }
+  }
+  .gallery-btn {
+    margin: 0 auto;
+  }
+  .gallery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box, .box2 a img{
+    width: 100%;
+    max-width: 320px;
+    max-height: 240px;
+    height: auto;
+    vertical-align: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 
@@ -831,14 +866,27 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   .contact-form {
     max-width: 570px;
-    width: 100%;
-    padding: 20px;
-    margin-left: -285px;
-    left: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    max-width: 470px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
+    margin: 0 auto;
     h3 {
       font-size: 30px;
       margin-bottom: 13px;
