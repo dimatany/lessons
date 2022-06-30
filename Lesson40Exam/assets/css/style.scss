@@ -203,11 +203,11 @@ header {
 
 ///////////////////////////////////////////////////////////////slick slider
 .slick_slider {
-  width: 1600px;
+
 }
 .item {
   height: 100%;
-  width: 100%;
+ // width: 100%;
   text-align: center;
   color: $text-color2;
   .slider_title {
@@ -618,6 +618,7 @@ header {
     }
     h3 {
       margin-bottom: 100px;
+      padding-top: 40px;
     }
     .project1,
     .project2{
@@ -996,9 +997,6 @@ footer {
 
 @media screen and (max-width: 768px) {
   .footer {
-    .footer-logo img{
-      margin: 0 auto;
-    }
     padding-top: 90px;
     display: flex;
     flex-direction: column;

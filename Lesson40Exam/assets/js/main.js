@@ -22,6 +22,7 @@ $('.wrap').slick({
     autoplay: true,
     infinite: true,
     autoplaySpeed: 3000,
+    dots: true,
     responsive: [
         {
             breakpoint: 1024,
@@ -33,7 +34,7 @@ $('.wrap').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -41,6 +42,7 @@ $('.wrap').slick({
         },
     ]
 });
+
 
 //////////////////////////////////////////////////map
 const Icons = {
