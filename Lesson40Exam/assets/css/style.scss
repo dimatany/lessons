@@ -396,9 +396,6 @@ header {
       }
       .reference-token {
         display: flex;
-        i.fa-solid .fa-location-dot:before {
-          margin-right: 5px;
-        }
         a {
           font-family: "Open Sans", sans-serif;
           font-weight: 400;
@@ -494,6 +491,17 @@ header {
       }
     }
   }
+}
+
+
+.fa-location-dot:before, .fa-map-marker-alt:before {
+  margin-right: 10px;
+  color: $text-color1;
+}
+
+.projects .project2 .project2-content .reference-token {
+  display: flex;
+  margin-bottom: 100px;
 }
 
 .color {
@@ -1030,11 +1038,14 @@ footer {
     flex-wrap: wrap;
     padding-top: 50px;
     margin: 0 auto;
+    .footer-logo {
+      margin: 0 auto;
+    }
     .footer-icon {
-      width: 100px;
+      width: 200px;
       display: flex;
       justify-content: space-between;
-      margin: 0 auto;
+      margin: 0 auto 30px;
     }
   }
 }
