@@ -5,26 +5,15 @@ $text-color4: #795cf6;
 
 
 //////////////////////////////////////////////общие
-html {
-  width: 100%;
-  max-width: 100%;
-  //overflow-x: hidden;
-}
 body {
   width: 100%;
   max-width: 100%;
-  //overflow-x: hidden;
   color: $text-color1;
   font-family: Montserrat, sans-serif;
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.wrap-container {
-  width: 100%;
+  width: 90%;
   max-width: 1170px;
   margin:0 auto
 }
@@ -35,9 +24,6 @@ h3 {
   font-weight: 700;
   text-align: center;
   line-height: 53.64px;
-}
-
-@media screen and (max-width: 768px) {
 }
 
 ///////////////////////////////////////////////кнопки
@@ -73,11 +59,11 @@ header {
   width: 100%;
   height: 130px;
   nav {
-    background-color: rgba(85, 183, 255, .7);
-    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(85, 183, 255, .7);
+    backdrop-filter: blur(10px);
     min-height: 17vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -158,13 +144,16 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   header nav {
     display: flex;
     justify-content: space-between;
     padding: 55px 10px;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+    max-width: 180px;
+    max-height: 54px;
   }
   .nav-links {
     position: absolute;
@@ -314,7 +303,6 @@ header {
   top: 37%;
   left: 95%;
 }
-
  */
 .slick-dots li button:before {
   font-family: 'slick', serif;
@@ -610,7 +598,6 @@ header {
 ////////////////////////////////////////////////////////////////// новости
 .news {
   background: url("../img/Background.png") 50% 50%/cover no-repeat;;
-  background-size: contain;
   background-position-y: bottom;
   padding-bottom: 100px;
   .color {
@@ -681,8 +668,16 @@ header {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .slick-prev:before {
+    display: none;
+  }
+}
 
-/////////////////////////////////////////////////////// галерея
+
+
+
+  /////////////////////////////////////////////////////// галерея
 
 .gallery {
   .line {
@@ -747,7 +742,7 @@ header {
     }
   }
   .gallery-btn {
-    margin: 0 auto;
+    align-items: center;
   }
   .gallery-box {
     display: flex;
@@ -756,22 +751,11 @@ header {
   }
   .box, .box2 a img{
     width: 100%;
-    max-width: 320px;
-    max-height: 240px;
-    height: auto;
-    vertical-align: top;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
 
 @media screen and (max-width: 1300px) {
-  .wrap-container {
-    width: 100%;
-    max-width: 900px;
-    margin: auto 20px;
-  }
   .gallery {
     .line {
       border-bottom: 1px solid black;
@@ -781,9 +765,7 @@ header {
       font-size: 32px;
     }
   }
-  .gallery-btn {
-    margin: 0 auto;
-  }
+
   .gallery-box {
     display: flex;
     flex-direction: column;
@@ -794,9 +776,6 @@ header {
     max-width: 320px;
     max-height: 240px;
     height: auto;
-    vertical-align: top;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
@@ -1058,7 +1037,3 @@ footer {
 }
 
 ////////////////////////////////////////////////////////
-
-
-
-
