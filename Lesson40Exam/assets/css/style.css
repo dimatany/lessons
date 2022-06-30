@@ -11,13 +11,11 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-/*
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
- */
 .wrap-container {
   width: 90%;
   max-width: 1170px;
@@ -680,8 +678,10 @@ header nav .logo img {
 }
 
 .box a img {
-  height: 214px;
-  width: 285px;
+  max-width: 320px;
+  max-height: 240px;
+  height: auto;
+  vertical-align: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
