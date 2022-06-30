@@ -243,18 +243,23 @@ header {
 
 .slider_item1 {
   background: url("../img/Header1.jpg") 50% 50%/cover no-repeat;
+  max-width: 100vw;
 }
 .slider_item2 {
   background: url("../img/Header2.jpg") 50% 50%/cover no-repeat;
+  max-width: 100vw;
 }
 .slider_item3 {
   background: url("../img/Header3.jpg") 50% 50%/cover no-repeat;
+  max-width: 100vw;
 }
 .slider_item4 {
   background: url("../img/Header4.jpg") 50% 50%/cover no-repeat;
+  max-width: 100vw;
 }
 .slider_item5 {
   background: url("../img/Header5.jpg") 50% 50%/cover no-repeat;
+  max-width: 100vw;
 }
 
 @media screen and (max-width: 768px) {
