@@ -60,7 +60,7 @@ header nav {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 55px 44px;
+  padding: 55px 44px 0;
 }
 header nav .logo img {
   width: 100%;
@@ -257,7 +257,7 @@ header nav .logo img {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 800px;
+    height: 600px;
     position: relative;
   }
   .item .slider_title h2 {
@@ -600,6 +600,9 @@ header nav .logo img {
   color: #FFFFFF;
   margin-bottom: 88px;
 }
+.news .news-slider {
+  margin: 0 auto;
+}
 .news .news-slider .wrap {
   margin-bottom: 113px;
 }
@@ -715,7 +718,7 @@ header nav .logo img {
   .wrap-container {
     width: 100%;
     max-width: 900px;
-    margin: auto 0;
+    margin: 0 auto;
   }
   .gallery .line {
     border-bottom: 1px solid black;
