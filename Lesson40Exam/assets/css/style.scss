@@ -673,6 +673,9 @@ header {
   bottom: -56px;
 }
 @media screen and (max-width: 1200px) {
+  .slick-prev .slick-arrow button {//не срабатывает от этого есть горизонтальный скролл на 20 px - не знаю как убрать
+    width: 0;
+  }
   .slick-prev:before {
     display: none;
   }

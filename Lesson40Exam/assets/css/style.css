@@ -659,6 +659,9 @@ header nav .logo img {
 }
 
 @media screen and (max-width: 1200px) {
+  .slick-prev .slick-arrow button {
+    width: 0;
+  }
   .slick-prev:before {
     display: none;
   }
