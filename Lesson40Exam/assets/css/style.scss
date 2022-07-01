@@ -201,7 +201,6 @@ header {
 
 ///////////////////////////////////////////////////////////////slick slider
 .slick_slider {
-
 }
 .item {
   height: 100%;
@@ -506,6 +505,7 @@ header {
   margin: 0 auto 45px auto;
 
 }
+
 @media (max-width: 1200px) {
   .projects {
     margin-bottom: 100px;
@@ -669,7 +669,9 @@ header {
     }
   }
 }
-
+.slick-dots {
+  bottom: -56px;
+}
 @media screen and (max-width: 1200px) {
   .slick-prev:before {
     display: none;
@@ -679,8 +681,7 @@ header {
   }
 }
 
-  /////////////////////////////////////////////////////// галерея
-
+/////////////////////////////////////////////////////// галерея
 .gallery {
   .line {
     border-bottom: 1px solid black;
@@ -728,6 +729,31 @@ header {
   background-image: url("../img/5.jpg") 50% 50%/cover no-repeat;;
 }
 
+
+@media screen and (max-width: 1300px) {
+  .gallery {
+    .line {
+      border-bottom: 1px solid black;
+      width: 100px;
+    }
+    h3 {
+      font-size: 32px;
+    }
+  }
+  .gallery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box, .box2 a img{
+    width: 100%;
+    max-width: 320px;
+    max-height: 240px;
+    height: auto;
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .wrap-container {
     width: 100%;
@@ -755,32 +781,6 @@ header {
     width: 100%;
   }
 }
-
-
-@media screen and (max-width: 1300px) {
-  .gallery {
-    .line {
-      border-bottom: 1px solid black;
-      width: 100px;
-    }
-    h3 {
-      font-size: 32px;
-    }
-  }
-
-  .gallery-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .box, .box2 a img{
-    width: 100%;
-    max-width: 320px;
-    max-height: 240px;
-    height: auto;
-  }
-}
-
 
 ///////////////////////////////////////////// contact-form
 .contact-form {

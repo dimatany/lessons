@@ -654,6 +654,10 @@ header nav .logo img {
   margin-bottom: 18px;
 }
 
+.slick-dots {
+  bottom: -56px;
+}
+
 @media screen and (max-width: 1200px) {
   .slick-prev:before {
     display: none;
@@ -714,6 +718,26 @@ header nav .logo img {
   background-image: url("../img/5.jpg") 50% 50%/cover no-repeat;
 }
 
+@media screen and (max-width: 1300px) {
+  .gallery .line {
+    border-bottom: 1px solid black;
+    width: 100px;
+  }
+  .gallery h3 {
+    font-size: 32px;
+  }
+  .gallery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box, .box2 a img {
+    width: 100%;
+    max-width: 320px;
+    max-height: 240px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 900px) {
   .wrap-container {
     width: 100%;
@@ -737,26 +761,6 @@ header nav .logo img {
   }
   .box, .box2 a img {
     width: 100%;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .gallery .line {
-    border-bottom: 1px solid black;
-    width: 100px;
-  }
-  .gallery h3 {
-    font-size: 32px;
-  }
-  .gallery-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .box, .box2 a img {
-    width: 100%;
-    max-width: 320px;
-    max-height: 240px;
-    height: auto;
   }
 }
 .contact-form {
