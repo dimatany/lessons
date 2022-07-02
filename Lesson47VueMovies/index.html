@@ -86,7 +86,7 @@
 <!-- пример работы с компонентами -->
 
 <template id="movieItem">
-    <div class="col-lg-4 col-md-10">
+    <div class="col-lg-4 col-md-10 p-2 mx-auto">
         <div class="card">
             <img :src="movie.Poster" class="card-img-top" :alt="movie.Title" v-if="movie.Poster !=='N/A'">
             <img src="assets/img/Stitch.jpg" class="card-img-top" :alt="movie.Title" v-else>
