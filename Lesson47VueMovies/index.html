@@ -15,13 +15,9 @@
 <div id="app" v-cloak>
     <div class="container pt-5">
         <h2 class="display-4 text-uppercase text-center fw-bold mb-1">movie search</h2>
-
-
-        <div class="">
-            <input type="checkbox" id="myCheck" onclick="myFunction()"/>
+        <div class="checkbox">
+            <input type="checkbox" id="switch" onclick="myFunction()"/><label for="switch"></label>
         </div>
-
-
         <div class="card mb-4">
             <div class="card-body">
                 <form action="" id="search_form" @submit.prevent="searchMovie">

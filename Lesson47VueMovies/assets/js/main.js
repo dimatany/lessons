@@ -78,7 +78,6 @@ const App = {
 			} else {
 				this.favourite.splice(index2, 1)
 			}
-			
 			localStorage.setItem('user_favourites', JSON.stringify(this.favourite))
 		},
 		showErr(text) {
@@ -105,16 +104,16 @@ const App = {
 				let findFav =  this.favourite.find(item =>{
 					return el.imdbID === item.imdbID
 				})
-				el.inFav = findFav !== undefined ? true : false
+				el.inFav = findFav !== undefined
 				arr.push(el)
 			})
 			return arr
 		}
 	}
 }
-
+//переключение цвета темы
 function myFunction() {
-	let checkBox = document.getElementById("myCheck");
+	let checkBox = document.getElementById("switch");
 	if (checkBox.checked === true){
 		document.body.classList.toggle('dark');
 	} else {
