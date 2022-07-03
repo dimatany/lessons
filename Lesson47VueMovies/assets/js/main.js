@@ -22,6 +22,7 @@ const App = {
 			movieInfo: {},
 			favourite: [],
 			showModal: false,
+			year:'',
 			totalPages: 0,
 			page: 1,
 			perPage: 10,
@@ -38,26 +39,38 @@ const App = {
 		searchMovie() {
 			if (this.search !== '') {
 				axios
-				.get(`https://www.omdbapi.com/?apikey=${this.API_KEY}&s=${this.search}&type=${this.select}&page=${this.page}`)
+				.get(`https://www.omdbapi.com/?apikey=${this.API_KEY}&s=${this.search}&y=${this.year}&type=${this.select}&page=${this.page}`)
 				.then(response => {
+					
 					if (response.data.Responce === 'False') {
-						this.showInfo('Movie not found')
+						this.showMessage('Movie not found')
 					} else {
 						this.movieList = response.data.Search
 						this.totalPages = Math.ceil(response.data.totalResults / 10)
 					}
+					
+					if (this.year.length !== 0 && this.year.length !== 4 && this.year > new Date()) {
+						this.showMessage('Enter correct data')
+					} else {
+						this.movieList = response.data.Search
+					}
 				})
 				.catch(error => {
-					this.showInfo(`${error.code}. Try again later.`)
+					this.showMessage(`${error.code}. Try again later.`)
 				})
 			} else {
-				this.showInfo('Enter movie title.')
+				this.showMessage('Enter movie title.')
 			}
 		},
 		goToPage(pageNum) {
 			this.page = pageNum
 			this.searchMovie()
 		},
+		
+		/////////////////
+		createdPages() {},
+		////////////////
+		
 		showMovieInfo() {
 			this.showModal = true
 		},
@@ -73,19 +86,18 @@ const App = {
 		},
 		addToFavourites(id) {
 			const index = this.movieList.findIndex((el) => el.imdbID === id)
-			//удаление при клике на сердечко
 			const index2 = this.favourite.findIndex((el) => el.imdbID === id)
 			if (index2 === -1) {
 				let item = this.movieList[index]
 				item.inFav = true
 				this.favourite.push(item);
-				alert('You added the movie to the section on "Favorite"')
+				this.showMessage('You added the movie to the section on "Favorite"')
 			} else {
 				this.favourite.splice(index2, 1)
 			}
 			localStorage.setItem('user_favourites', JSON.stringify(this.favourite))
 		},
-		showErr(text) {
+		showMessage(text) {
 			let html = ''
 			html += `
                     <div class='modal_overlay'>
@@ -100,7 +112,7 @@ const App = {
 				let el = document.querySelector(".modal_overlay")
 				el.classList.add('none')
 				
-			},2000)
+			},800)
 		},
 		//делаем проверку фильмов - если они есть в массиве favourite тогда меняем цвет сердца
 		movieListWithFavourite() {

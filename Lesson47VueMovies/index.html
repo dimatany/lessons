@@ -26,7 +26,7 @@
                             <input type="search" class="form-control" placeholder="Enter movie title" v-model="search">
                         </div>
                         <div class="col-6 col-sm-9 col-md-7 col-lg-5 col-xl-3  mx-auto m-1">
-                            <input type="search" class="form-control" placeholder="Enter Year" v-model="search2">
+                            <input type="search" class="form-control" placeholder="Enter Year" v-model="year">
                         </div>
                         <div class="col-6 col-sm-9 col-md-7 col-lg-5 col-xl-3  mx-auto m-1">
                             <select class="form-select" v-model="select">
@@ -60,6 +60,29 @@
                 </template>
             </div>
         </div>
+
+
+        <nav aria-label="...">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link text-black">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-black" href="#"  @click="goToPage(1)">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-black" href="#" @click="goToPage(2)">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-black" href="#" @click="goToPage(3)">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-black" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+
     </div>
     <div class="modal_overlay" v-if="showModal">
         <div class="my_modal text-bg-secondary">
@@ -78,29 +101,6 @@
             <button type="button" class="btn btn-success my_btn" @click="showModal = false">X</button>
         </div>
     </div>
-
-
-    <nav aria-label="...">
-        <ul class="pagination mx-auto">
-            <li class="page-item disabled">
-                <a class="page-link">Previous</a>
-            </li>
-            <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#"  @click="goToPage(2)">1</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#" @click="goToPage(3)">2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#" @click="goToPage(4)">3</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
-
-
     <div class="card-footer m-5">
         <p>2022 - Beetroot lesson</p>
         <p>HBO ® and related service marks are the property of Home Box Office, Inc</p>
