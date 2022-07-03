@@ -22,7 +22,9 @@ const App = {
 			movieInfo: {},
 			favourite: [],
 			showModal: false,
-			storage: {}
+			totalPages: 0,
+			page: 1,
+			perPage: 10,
 		}
 	},
 	components: {
@@ -30,28 +32,31 @@ const App = {
 	},
 	created() {
 		//загружаем, получаем данные из localStorage и присваиваем нашей переменной storage
-		const local = localStorage.getItem('user_favourites')
-		this.storage = JSON.parse(local)
-		// перебираем storage, записываем в favourite - оно отобразится при загрузке App
-		for (let key in this.storage) {
-			this.favourite.push(this.storage[key])
-		}
+		this.storage = JSON.parse(localStorage.getItem('user_favourites'))
 	},
 	methods: {
 		searchMovie() {
 			if (this.search !== '') {
 				axios
-				.get(`https://www.omdbapi.com/?apikey=${this.API_KEY}&s=${this.search}&type=${this.select}`)
+				.get(`https://www.omdbapi.com/?apikey=${this.API_KEY}&s=${this.search}&type=${this.select}&page=${this.page}`)
 				.then(response => {
-					this.movieList = response.data.Search
-					this.search = ''
+					if (response.data.Responce === 'False') {
+						this.showInfo('Movie not found')
+					} else {
+						this.movieList = response.data.Search
+						this.totalPages = Math.ceil(response.data.totalResults / 10)
+					}
 				})
 				.catch(error => {
-					this.showErr(error.code)
+					this.showInfo(`${error.code}. Try again later.`)
 				})
 			} else {
-				this.showErr('Enter movie title.')
+				this.showInfo('Enter movie title.')
 			}
+		},
+		goToPage(pageNum) {
+			this.page = pageNum
+			this.searchMovie()
 		},
 		showMovieInfo() {
 			this.showModal = true
@@ -74,7 +79,7 @@ const App = {
 				let item = this.movieList[index]
 				item.inFav = true
 				this.favourite.push(item);
-				
+				alert('You added the movie to the section on "Favorite"')
 			} else {
 				this.favourite.splice(index2, 1)
 			}
@@ -120,5 +125,6 @@ function myFunction() {
 		document.body.classList.toggle('dark');
 	}
 }
+//////////////////////////////////////////////////////////////
 
 Vue.createApp(App).mount('#app')
