@@ -113,4 +113,13 @@ const App = {
 	}
 }
 
+function myFunction() {
+	let checkBox = document.getElementById("myCheck");
+	if (checkBox.checked === true){
+		document.body.classList.toggle('dark');
+	} else {
+		document.body.classList.toggle('dark');
+	}
+}
+
 Vue.createApp(App).mount('#app')

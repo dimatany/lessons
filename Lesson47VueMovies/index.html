@@ -14,9 +14,16 @@
 <body>
 <div id="app" v-cloak>
     <div class="container pt-5">
-        <h2 class="display-4 text-uppercase text-white text-center fw-bold mb-1">movie search</h2>
-        <div class="card text-bg-dark mb-4">
-            <div class="card-body bg-info">
+        <h2 class="display-4 text-uppercase text-center fw-bold mb-1">movie search</h2>
+
+
+        <div class="">
+            <input type="checkbox" id="myCheck" onclick="myFunction()"/>
+        </div>
+
+
+        <div class="card mb-4">
+            <div class="card-body">
                 <form action="" id="search_form" @submit.prevent="searchMovie">
                     <div class="row">
                         <div class="col-6 col-sm-9 col-md-7 col-lg-5 col-xl-3  mx-auto m-1">
@@ -28,7 +35,7 @@
                             </select>
                         </div>
                         <div class="col-6 col-sm-9 col-md-7 col-lg-5 col-xl-3  mx-auto m-1">
-                            <button type="submit" class="btn w-100 btn-dark">SEARCH</button>
+                            <button type="submit" class="btn w-100">SEARCH</button>
                         </div>
                     </div>
                 </form>
@@ -38,17 +45,17 @@
             <div class="card-header text-bg-warning">
                 <h3>Search result</h3>
             </div>
-            <div class="card-body text-bg-dark d-flex flex-wrap">
+            <div class="card-body d-flex flex-wrap">
                  <template v-for="movie in movieListWithFavourite()" :key="movie.imdbID">
                      <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'></movie-item>
                 </template>
             </div>
         </div>
-        <div class="card text-bg-warning" v-if="favourite.length !== 0">
+        <div class="card" v-if="favourite.length !== 0">
             <div class="card-header text-bg-warning">
                 <h3>Favourite films</h3>
             </div>
-            <div class="card-body text-bg-dark d-flex flex-wrap">
+            <div class="card-body d-flex flex-wrap">
                 <template v-for="movie in favourite" :key="movie.imdbID">
                     <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'></movie-item>
                 </template>

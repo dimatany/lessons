@@ -1,16 +1,9 @@
-$color-content: #4b5d68;
 $heart-color: red;
 $color-content: rgba(0, 0, 0, .7);
 
 body {
   color: $color-content;
   background-color: $color-content;
-}
-.container {
-  //max-width: 1250px;
-  // width: 90%;
-  // margin: 0 auto;
-  // background-color: $color-content;
 }
 
 .modal_overlay {
@@ -92,4 +85,73 @@ img {
   height: 100%;
   object-fit: cover;
   vertical-align: top;
+}
+//////////////////////////////////////////////////
+body{
+  --background-color: #E9E9E9;
+  --text-color: black;
+  --header-color: #dcdcdc;
+  --border: 2px solid #22222E;
+  background-color:var(--background-color);
+  color:var(--text-color);
+  transition:0.5s;
+}
+
+body.dark{
+  --background-color: #22222E;
+  --text-color: #E9E9E9;
+  --header-color:#a9a9a9;
+  --border: 2px solid #ffffff;
+}
+
+.card-header {
+  background: var(--background-color);
+}
+.card-body {
+  background: var(--background-color);
+}
+.btn {
+  background: #616264;
+  color: var(--text-color);
+}
+
+h3 {
+  --text-color: $color-content;
+}
+
+.card-footer p{
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+input[type="checkbox"]{
+  height:40px;
+  width:80px;
+  -webkit-appearance:none;
+  background:var(--header-color);
+  border-radius:20px;
+  box-shadow: inset 0px 2px 5px rgb(0,0,0,.4);
+  outline:none;
+  transition:0.5s;
+}
+
+input:checked[type="checkbox"]{
+  background:var(--header-color);
+}
+
+input[type="checkbox"]:before{
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 75px;
+  border-radius: 100%;
+  background: var(--background-color);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 60%);
+  transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:before{
+  background: var(--background-color);
+  left: 110px;
 }
