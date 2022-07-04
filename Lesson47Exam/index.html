@@ -99,6 +99,11 @@
                 <div><b>Country: </b>{{ movieInfo.Country }}</div>
                 <div><b>Language: </b>{{ movieInfo.Language }}</div>
                 <div><b>Description: </b>{{ movieInfo.Plot }}</div>
+                <div v-if="movieInfo.Ratings.length !== 0">
+                    <div class="center-block">
+                        <b>Rating: </b> {{ movieInfo.Ratings[0].Value }}
+                    </div>
+                </div>
                 <button type="button" class="btn btn-success my_btn" @click="showModal = false">X</button>
             </div>
         </div>

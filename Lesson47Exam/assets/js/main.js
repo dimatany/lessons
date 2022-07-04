@@ -23,6 +23,7 @@ const App = {
 			favourite: [],
 			showModal: false,
 			year:'',
+			rating: "",
 			totalPages: 0,
 			page: 1,
 			perPage: 10,
@@ -41,7 +42,6 @@ const App = {
 				axios
 				.get(`https://www.omdbapi.com/?apikey=${this.API_KEY}&s=${this.search}&y=${this.year}&type=${this.select}&page=${this.page}`)
 				.then(response => {
-					
 					if (response.data.Responce === 'False') {
 						this.showMessage('Movie not found')
 					} else {
@@ -82,7 +82,7 @@ const App = {
 				this.showMovieInfo()
 			})
 			.catch(error => {
-				this.showErr(error.code)
+				this.showMessage(error.code)
 			})
 		},
 		
@@ -95,7 +95,13 @@ const App = {
 				this.favourite.push(item);
 				this.showMessage('You added the movie to the section on "Favorite"')
 			} else {
-				this.favourite.splice(index2, 1)
+				if (this.favourite.length > 1) {
+					this.favourite.splice(index2, 1)
+					this.showMessage("Removed your favorite")
+				} else {
+					this.favourite.splice(index2, 1)
+					this.showMessage("List is empty.")
+				}
 			}
 			localStorage.setItem('user_favourites', JSON.stringify(this.favourite))
 		},
@@ -121,10 +127,10 @@ const App = {
 		movieListWithFavourite() {
 			let arr = []
 			this.movieList.forEach(el => {
-				let findFav =  this.favourite.find(item =>{
+				let findFav =  this.favourite.find(item => {
 					return el.imdbID === item.imdbID
 				})
-				el.inFav = findFav !== undefined
+				el.inFav = findFav !== undefined ? true : false
 				arr.push(el)
 			})
 			return arr
