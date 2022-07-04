@@ -50,7 +50,7 @@ const App = {
 					}
 					
 					if (this.year.length !== 0 && this.year.length !== 4 && this.year > new Date()) {
-						this.showMessage('Enter correct data')
+						this.showMessage('Your data is wrong')
 					} else {
 						this.movieList = response.data.Search
 					}
@@ -62,16 +62,19 @@ const App = {
 				this.showMessage('Enter movie title.')
 			}
 		},
+		
 		goToPage(pageNum) {
 			this.page = pageNum
 			this.searchMovie()
 		},
+		
 		/////////////////
 		createdPages() {},
 		////////////////
 		showMovieInfo() {
 			this.showModal = true
 		},
+		
 		getMovieInfo(id) {
 			axios.get(`https://www.omdbapi.com/?apikey=${this.API_KEY}&i=${id}`)
 			.then(response => {
@@ -82,6 +85,7 @@ const App = {
 				this.showErr(error.code)
 			})
 		},
+		
 		addToFavourites(id) {
 			const index = this.movieList.findIndex((el) => el.imdbID === id)
 			const index2 = this.favourite.findIndex((el) => el.imdbID === id)
@@ -95,6 +99,7 @@ const App = {
 			}
 			localStorage.setItem('user_favourites', JSON.stringify(this.favourite))
 		},
+		
 		showMessage(text) {
 			let html = ''
 			html += `
@@ -112,6 +117,7 @@ const App = {
 				
 			},800)
 		},
+		
 		movieListWithFavourite() {
 			let arr = []
 			this.movieList.forEach(el => {
