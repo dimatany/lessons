@@ -68,9 +68,6 @@ const App = {
 			this.searchMovie()
 		},
 		
-		/////////////////
-		createdPages() {},
-		////////////////
 		showMovieInfo() {
 			this.showModal = true
 		},
@@ -130,7 +127,7 @@ const App = {
 				let findFav =  this.favourite.find(item => {
 					return el.imdbID === item.imdbID
 				})
-				el.inFav = findFav !== undefined ? true : false
+				el.inFav = findFav !== undefined
 				arr.push(el)
 			})
 			return arr
