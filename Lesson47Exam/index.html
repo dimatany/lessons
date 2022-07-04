@@ -99,7 +99,7 @@
                 <div><b>Description: </b>{{ movieInfo.Plot }}</div>
                 <!-- добавляем условие если рейтинга нет -->
                 <div class="progress" v-if="movieInfo.Ratings.length !==0">
-                    <div class="progress-value">
+                    <div class="progress-value"  :style="{ 'width': rating }" >
                         <b>Rating: </b> {{ movieInfo.Ratings[0].Value }}
                     </div>
                 </div>
