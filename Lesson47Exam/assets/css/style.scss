@@ -187,6 +187,7 @@ label:active:after {
   display: flex;
   height: 40px;
   width: 500px;
+  transition: width 0.1s;
 }
 
 .progress-value {
@@ -196,6 +197,11 @@ label:active:after {
   background: #fff;
   height: 30px;
   width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: 14px;
 }
 
 @keyframes load {
