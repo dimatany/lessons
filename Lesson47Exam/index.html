@@ -92,15 +92,14 @@
                 <div><b>Year: </b>{{ movieInfo.Year }}</div>
                 <div><b>Director: </b>{{ movieInfo.Director }}</div>
                 <div><b>Actors: </b>{{ movieInfo.Actors }}</div>
-                <!-- добавляем условие если рейтинга нет -->
-                <div v-if="movieInfo.Ratings.length !==0"><b>Rating: </b> {{ movieInfo.Ratings[0].Value }}</div>
                 <div><b>Type: </b>{{ movieInfo.Type }}</div>
                 <div><b>Runtime: </b>{{ movieInfo.Runtime }}</div>
                 <div><b>Country: </b>{{ movieInfo.Country }}</div>
                 <div><b>Language: </b>{{ movieInfo.Language }}</div>
                 <div><b>Description: </b>{{ movieInfo.Plot }}</div>
-                <div v-if="movieInfo.Ratings.length !== 0">
-                    <div class="center-block">
+                <!-- добавляем условие если рейтинга нет -->
+                <div class="progress" v-if="movieInfo.Ratings.length !==0">
+                    <div class="progress-value">
                         <b>Rating: </b> {{ movieInfo.Ratings[0].Value }}
                     </div>
                 </div>

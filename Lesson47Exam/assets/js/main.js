@@ -34,7 +34,7 @@ const App = {
 	},
 	created() {
 		//загружаем, получаем данные из localStorage и присваиваем нашей переменной storage
-		this.storage = JSON.parse(localStorage.getItem('user_favourites'))
+		this.favourite = JSON.parse(localStorage.getItem('user_favourites'))
 	},
 	methods: {
 		searchMovie() {
