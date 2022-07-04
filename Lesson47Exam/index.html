@@ -61,10 +61,8 @@
                     </template>
                 </div>
             </div>
-
-
             <nav aria-label="...">
-                <ul class="pagination justify-content-center">
+                <ul class="pagination justify-content-center m-5">
                     <li class="page-item">
                         <a class="page-link text-black">Previous</a>
                     </li>
@@ -82,8 +80,6 @@
                     </li>
                 </ul>
             </nav>
-
-
         </div>
         <div class="modal_overlay" v-if="showModal">
             <div class="my_modal text-bg-secondary">
@@ -99,7 +95,7 @@
                 <div><b>Description: </b>{{ movieInfo.Plot }}</div>
                 <!-- добавляем условие если рейтинга нет -->
                 <div class="progress" v-if="movieInfo.Ratings.length !==0">
-                    <div class="progress-value"  :style="{ 'width': rating }" >
+                    <div class="progress-value" >
                         <b>Rating: </b> {{ movieInfo.Ratings[0].Value }}
                     </div>
                 </div>

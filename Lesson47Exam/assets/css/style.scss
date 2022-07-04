@@ -176,9 +176,13 @@ label:active:after {
   //width: 130px;
 }
 
+.page-item a {
+  background:var(--header-color);
+  color: var(--text-color);
+}
 /////////////////////////////////////////
 .progress {
-  background: rgba(255,255,255,0.1);
+  background: var(--background-color);
   justify-content: flex-start;
   border-radius: 100px;
   align-items: center;
@@ -194,7 +198,7 @@ label:active:after {
   animation: load 3s normal forwards;
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
-  background: #fff;
+  background: var(--header-color);
   height: 30px;
   width: 0;
   display: flex;
@@ -202,9 +206,10 @@ label:active:after {
   justify-content: center;
   font-style: italic;
   font-size: 14px;
+  color: var(--text-color);
 }
 
 @keyframes load {
   0% { width: 0; }
-  100% { width: 68%; }
+  100% { width: 70%; }
 }
