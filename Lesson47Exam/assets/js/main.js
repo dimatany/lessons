@@ -66,11 +66,9 @@ const App = {
 			this.page = pageNum
 			this.searchMovie()
 		},
-		
 		/////////////////
 		createdPages() {},
 		////////////////
-		
 		showMovieInfo() {
 			this.showModal = true
 		},
@@ -114,7 +112,6 @@ const App = {
 				
 			},800)
 		},
-		//делаем проверку фильмов - если они есть в массиве favourite тогда меняем цвет сердца
 		movieListWithFavourite() {
 			let arr = []
 			this.movieList.forEach(el => {
@@ -125,11 +122,11 @@ const App = {
 				arr.push(el)
 			})
 			return arr
-		}
+		},
 	}
 }
 //переключение цвета темы
-function myFunction() {
+function changTheme() {
 	let checkBox = document.getElementById("switch");
 	if (checkBox.checked === true){
 		document.body.classList.toggle('dark');
@@ -137,6 +134,5 @@ function myFunction() {
 		document.body.classList.toggle('dark');
 	}
 }
-//////////////////////////////////////////////////////////////
 
 Vue.createApp(App).mount('#app')

@@ -3,7 +3,12 @@ $color-content: rgba(0, 0, 0, .7);
 
 body {
   color: $color-content;
-  background-color: $color-content;
+}
+
+.wrap-container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .modal_overlay {

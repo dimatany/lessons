@@ -1,6 +1,11 @@
 body {
   color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wrap-container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .modal_overlay {
