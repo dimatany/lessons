@@ -11,6 +11,22 @@ const movieItem = {
 	template: '#movieItem',
 }
 
+const Pagination = {
+	props: {
+		page: {
+			type: Number,
+			default: 0,
+			required: true,
+		}
+	},
+	methods: {
+		goToPage(new_page){
+			this.$emit('goToPage', new_page)
+		}
+	},
+	template:  '#pagination',
+}
+
 const App = {
 	data() {
 		return {
@@ -30,8 +46,11 @@ const App = {
 		}
 	},
 	components: {
-		movieItem
+		movieItem,
+		Pagination,
 	},
+	
+	
 	created() {
 		//загружаем, получаем данные из localStorage и присваиваем нашей переменной storage
 		this.favourite = JSON.parse(localStorage.getItem('user_favourites'))
@@ -67,6 +86,13 @@ const App = {
 			this.page = pageNum
 			this.searchMovie()
 		},
+		
+		
+		goToPage(new_page) {
+			this.page = new_page
+			this.searchMovie()
+		},
+	
 		
 		showMovieInfo() {
 			this.showModal = true
@@ -145,3 +171,16 @@ function changTheme() {
 }
 
 Vue.createApp(App).mount('#app')
+
+
+
+
+
+
+
+
+
+
+
+
+

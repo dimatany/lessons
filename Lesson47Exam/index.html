@@ -50,6 +50,7 @@
                         <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'></movie-item>
                     </template>
                 </div>
+                <pagination :page="page" :total="totalPages" @go-to-page="goToPage"></pagination>
             </div>
             <div class="card" v-if="favourite.length !== 0">
                 <div class="card-header text-bg-warning">
@@ -61,28 +62,6 @@
                     </template>
                 </div>
             </div>
-            <nav aria-label="...">
-                <ul class="pagination justify-content-center m-5">
-                    <li class="page-item">
-                        <a class="page-link text-black">Previous</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link text-black" href="#"  @click="goToPage(2)">1</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link text-black" href="#" @click="goToPage(3)">2</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link text-black" href="#" @click="goToPage(4)">3</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link text-black" href="#" @click="goToPage(5)">4</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link text-black" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
         <div class="modal_overlay" v-if="showModal">
             <div class="my_modal text-bg-secondary">
@@ -112,6 +91,7 @@
     </div>
 </div>
 <!-- пример работы с компонентами -->
+<!-- модалка -->
 <template id="movieItem">
     <div class="col-lg-4 col-md-10 p-2 mx-auto">
         <div class="card">
@@ -130,6 +110,23 @@
             </div>
         </div>
     </div>
+</template>
+<!-- пагинация -->
+
+<template id="pagination">
+    <nav aria-label="Page navigation example" v-if="total !== 0 ">
+        <ul class="pagination justify-content-center m-5">
+            <li class="page-item" :class="{disabled: page ===1 }">
+                <a class="page-link text-black" href="#" @click="goToPage(page - 1)">Previous</a>
+            </li>
+            <li class="page-item" :class="{active: p === page}" v-for="p in total" :key="p">
+                <a class="page-link text-black" href="#" @click="goToPage(p)">{{ p }}</a>
+            </li>
+            <li class="page-item" :class="{disabled: page === total}">
+                <a class="page-link text-black" href="#" @click="goToPage(page + 1)">Next</a>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 <script src="assets/js/wow.min.js"></script>
