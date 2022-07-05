@@ -127,6 +127,10 @@ h3 {
   --text-color: $color-content;
 }
 
+nav {
+  background: var(--background-color);
+}
+
 .card-footer p {
   color: var(--text-color);
   background-color: transparent;
