@@ -20,8 +20,8 @@ const Pagination = {
 		}
 	},
 	methods: {
-		goToPage(new_page){
-			this.$emit('goToPage', new_page)
+		goToPage(new_number){
+			this.$emit('goToPage', new_number)
 		}
 	},
 	template:  '#pagination',
@@ -45,11 +45,11 @@ const App = {
 			perPage: 10,
 		}
 	},
+	
 	components: {
 		movieItem,
 		Pagination,
 	},
-	
 	
 	created() {
 		//загружаем, получаем данные из localStorage и присваиваем нашей переменной storage
@@ -86,13 +86,13 @@ const App = {
 			this.page = pageNum
 			this.searchMovie()
 		},
-		
-		
+		/*
 		goToPage(new_page) {
 			this.page = new_page
 			this.searchMovie()
 		},
-	
+		
+		 */
 		
 		showMovieInfo() {
 			this.showModal = true
