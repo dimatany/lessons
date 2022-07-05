@@ -49,9 +49,10 @@
                     <template v-for="movie in movieListWithFavourite()" :key="movie.imdbID">
                         <movie-item :movie="movie" @get-movie ='getMovieInfo' @add-to-favourites='addToFavourites'></movie-item>
                     </template>
+                    <pagination :page="page" :total="totalPages" @go-to-page="goToPage"></pagination>
                 </div>
-                <pagination :page="page" :total="totalPages" @go-to-page="goToPage"></pagination>
-            </div>
+                </div>
+
             <div class="card" v-if="favourite.length !== 0">
                 <div class="card-header text-bg-warning">
                     <h3>Favourite films</h3>
@@ -114,7 +115,7 @@
 <!-- пагинация -->
 <template id="pagination">
     <nav aria-label="Page navigation example" v-if="total !== 0 ">
-        <ul class="pagination justify-content-center m-5">
+        <ul class="pagination justify-content-center m-5 flex-wrap">
             <li class="page-item" :class="{disabled: page ===1 }">
                 <a class="page-link text-black" href="#" @click="goToPage(page - 1)">Previous</a>
             </li>
