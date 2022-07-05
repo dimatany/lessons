@@ -82,17 +82,10 @@ const App = {
 			}
 		},
 		
-		goToPage(pageNum) {
-			this.page = pageNum
-			this.searchMovie()
-		},
-		/*
 		goToPage(new_page) {
 			this.page = new_page
 			this.searchMovie()
 		},
-		
-		 */
 		
 		showMovieInfo() {
 			this.showModal = true
