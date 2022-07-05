@@ -50,9 +50,7 @@ const App = {
 		movieItem,
 		Pagination,
 	},
-	
 	created() {
-		//загружаем, получаем данные из localStorage и присваиваем нашей переменной storage
 		this.favourite = JSON.parse(localStorage.getItem('user_favourites'))
 	},
 	methods: {

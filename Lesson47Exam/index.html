@@ -120,7 +120,7 @@
                 <a class="page-link text-black" href="#" @click="goToPage(page - 1)">Previous</a>
             </li>
             <li class="page-item" :class="{active: p === page}" v-for="p in total" :key="p">
-                <a class="page-link text-black" href="#" @click="goToPage(p)">{{ p }}</a>
+                <a class="page-link text-black" href="#" @click.prevent="goToPage(p)">{{ p }}</a>
             </li>
             <li class="page-item" :class="{disabled: page === total}">
                 <a class="page-link text-black" href="#" @click="goToPage(page + 1)">Next</a>
