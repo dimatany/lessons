@@ -85,12 +85,6 @@ p {
   border-radius: 0.45rem;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  vertical-align: top;
-}
 //////////////////////////////////////////////////
 body{
   --background-color: #ffffff;
@@ -115,6 +109,11 @@ body.dark{
 .card-text {
   color: var(--text-color);
 }
+.card-title {
+  max-height: 70px;
+  min-height: 70px;
+  overflow: hidden;
+}
 .card-body {
   background: var(--background-color);
 }
@@ -136,6 +135,8 @@ nav {
 }
 
 img {
+  max-height: 450px;
+  min-height: 450px;
   width: 100%;
   height: 100%;
   object-fit: cover;
