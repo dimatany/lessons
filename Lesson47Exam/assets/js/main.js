@@ -15,7 +15,7 @@ const Pagination = {
 	props: {
 		page: {
 			type: Number,
-			default: 0,
+			default: 1,
 			required: true,
 		}
 	},
