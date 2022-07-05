@@ -17,12 +17,18 @@ const Pagination = {
 			type: Number,
 			default: 1,
 			required: true,
+		},
+		total: {
+			type: Number,
+			default: 0,
+			required: true
 		}
 	},
 	methods: {
-		goToPage(new_number){
-			this.$emit('goToPage', new_number)
-		}
+		goToPage(new_page) {
+			this.$emit("goToPage", new_page)
+			console.log(new_page);
+		},
 	},
 	template:  '#pagination',
 }
