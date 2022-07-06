@@ -57,7 +57,7 @@ const App = {
 		Pagination,
 	},
 	created() {
-		this.favourite = JSON.parse(localStorage.getItem('user_favourites'))
+		this.favourite = JSON.parse(localStorage.getItem('user_favourites')) || []
 	},
 	methods: {
 		searchMovie() {
