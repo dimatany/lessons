@@ -37,7 +37,7 @@ const App = {
 	data() {
 		return {
 			API_KEY: 'ece4f8e9',
-			search: 'batman',
+			search: '',
 			selected: ['Movie', 'Series'],
 			select: 'Movie',
 			movieList: [],
