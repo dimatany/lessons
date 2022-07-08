@@ -28,7 +28,6 @@ $border-color: rgba(154, 156, 203, 0.6);
   align-items: center;
   font-size: 14px;
   line-height: 16.94px;
-  font-weight: 400;
   height: 80px;
   margin: 0 50px 38px 50px;
   .header-block-left {
@@ -37,26 +36,23 @@ $border-color: rgba(154, 156, 203, 0.6);
     align-items: center;
     width: 46%;
     .header-block-left-logo {
-      height: 39px;
-      width: 82px;
     }
     .header-block-left-navigation {
       width: 58%;
       .header-block-left-navigation-item {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
       }
     }
   }
   .header-block-right {
-
     .header-block-right-button {
       padding: 12px 32px;
       background-color: $highlighting-elements;
       color: $text-button;
       border-radius: 6px;
-
+      &:hover {
+      }
     }
   }
 }
@@ -66,25 +62,45 @@ $border-color: rgba(154, 156, 203, 0.6);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   .hero-section-avatar {
     img {
-      width: 785px;
-      height: 752px;
-      margin-left: -55px;
-      z-index: 2;
+      width: 702px;
+      height: 775px;
     }
     .hero-section-avatar-position {
       img:nth-child(1){
         position: relative;
-        top: -588px;
-        right: -57px;
-        max-width: 579px;
-        max-height: 604px;
-        z-index: 1;
-        border-radius: 8px;
+        top: -617px;
+        right: -27px;
+        max-width: 90px;
+        max-height: 90px;
+        border-radius: 20px;
+        background-color: $background-color-element;
+        padding: 13px;
+        transform: rotate(-8deg);
       }
-
+      img:nth-child(2){
+        position: relative;
+        top: -726px;
+        right: -399px;
+        max-width: 90px;
+        max-height: 90px;
+        border-radius: 20px;
+        background-color: $background-color-element;
+        padding: 13px;
+        transform: rotate(12deg);
+      }
+      img:nth-child(3){
+        position: relative;
+        top: -135px;
+        right: -155px;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        border-radius: 20px;
+        background-color: #282B57;
+        padding: 10px;
+      }
     }
   }
   .hero-section-description {
@@ -181,7 +197,24 @@ $border-color: rgba(154, 156, 203, 0.6);
   }
 }
 
+.hero-section-avatar-position-blocks {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  .hero-section-avatar-position-block1 {
+    img {
+      width: 50px;
+      height: 50px;
 
+    }
+
+  }
+  .hero-section-avatar-position-block2 {
+    p {
+
+    }
+  }
+}
 
 
 
