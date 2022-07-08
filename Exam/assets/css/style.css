@@ -160,8 +160,7 @@
 .featured {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0px 100px 210px 68px;
+  margin: 0 39px 169px 68px;
 }
 .featured .featured-block .featured-icon {
   display: flex;
@@ -177,8 +176,8 @@
   font-size: 20px;
 }
 .featured .featured-block .featured-text {
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 27px;
+  margin-left: 60px;
 }
 .featured .featured-block .featured-text p {
   max-width: 311px;
@@ -186,6 +185,24 @@
   line-height: 24px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.classes .classes-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.classes .classes-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.classes .classes-header p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
 }
 
 /*# sourceMappingURL=style.css.map */

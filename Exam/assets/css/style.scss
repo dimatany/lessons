@@ -193,11 +193,8 @@ $border-color: rgba(154, 156, 203, 0.6);
 .featured {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0px 100px 210px 68px;
-
+  margin: 0 39px 169px 68px;
   .featured-block {
-
     .featured-icon {
       display: flex;
       img {
@@ -210,11 +207,10 @@ $border-color: rgba(154, 156, 203, 0.6);
         font-weight: 600;
         font-size: 20px;
       }
-
     }
     .featured-text {
-      margin-top: 20px;
-      margin-left: 30px;
+      margin-top: 27px;
+      margin-left: 60px;
      p {
        max-width: 311px;
        font-size: 14px;
@@ -226,5 +222,25 @@ $border-color: rgba(154, 156, 203, 0.6);
   }
 }
 
+/////////////////////--featured--//////////////////////////
+.classes {
+  .classes-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 54px;
+      color: $headings-text;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+  }
+}
 
 
