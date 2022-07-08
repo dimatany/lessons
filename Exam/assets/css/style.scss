@@ -3,6 +3,7 @@ $background-color-element: #282B57;
 $headings-text: rgba(255, 255, 255, 0.8);
 $headings-text2: rgba(255, 255, 255, 0.7);
 $text-color: rgba(255, 255, 255, 0.4);
+$text-color2: rgba(255, 255, 255, 0.6);
 $text-button: rgba(255, 255, 255, 1);
 $highlighting-elements: rgba(245, 68, 59, 1);
 $icon-color: #ACABBF;
@@ -11,7 +12,7 @@ $border-color: rgba(154, 156, 203, 0.6);
 
 
 
-//////////////////////--styles for the whole project--//////////////////////
+///////////////////////--styles for the whole project--///////
 .wrap-container {
   max-width: 1440px;
   width: 90%;
@@ -21,7 +22,7 @@ $border-color: rgba(154, 156, 203, 0.6);
   font-family: Inter, sans-serif;
 }
 
-//////////////////////--header--///////////////////////
+//////////////////////--header--/////////////////////////////
 .header {
   display: flex;
   justify-content: space-between;
@@ -57,10 +58,11 @@ $border-color: rgba(154, 156, 203, 0.6);
   }
 }
 
-//////////////////////--first section--///////////////////////
+//////////////////////--first section--//////////////////////
 .hero-section {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 164px;
   .hero-section-avatar {
     img {
       width: 702px;
@@ -187,7 +189,42 @@ $border-color: rgba(154, 156, 203, 0.6);
   }
 }
 
+/////////////////////--featured--//////////////////////////
+.featured {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 100px 210px 68px;
 
+  .featured-block {
+
+    .featured-icon {
+      display: flex;
+      img {
+        margin-right: 38px;
+        width: 24px;
+        height: 24px;
+      }
+      h4 {
+        color: $headings-text2;
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+    }
+    .featured-text {
+      margin-top: 20px;
+      margin-left: 30px;
+     p {
+       max-width: 311px;
+       font-size: 14px;
+       line-height: 24px;
+       font-weight: 400;
+       color: $text-color2;
+     }
+    }
+  }
+}
 
 
 
