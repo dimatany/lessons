@@ -239,46 +239,58 @@ $border-color: rgba(154, 156, 203, 0.6);
       font-weight: 400;
       line-height: 27px;
       margin-left: 3px;
-      margin-bottom: 40px;
+      margin-bottom: 85px;
     }
   }
   .classes-card {
     display: flex;
-    margin-bottom: 100px;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
     .classes-card-item {
       width: 276px;
       padding: 10px;
       border: 1px solid $headings-text2;
-      margin-left: 20px;
-      border-radius: 10px;
+      border-radius: 15px;
       img {
         width: 252px;
         height: 169px;
         border-radius: 13px;
+        margin-bottom: 21px;
       }
-      span {
+      .classes-card-item-title {
         display: block;
         color: $headings-text3;
         font-weight: 500;
         font-size: 12px;
+        margin-bottom: 7px;
       }
       h4 {
         font-weight: 600;
         font-size: 18px;
         color: $headings-text;
+        margin-bottom: 12px;
       }
       p {
         font-weight: 400;
         font-size: 14px;
         color: $text-color;
+        line-height: 22px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+        margin-bottom: 16px;
       }
       .classes-card-footer {
+        display: flex;
+        margin-bottom: -10px;
         .classes-card-footer-avatar img {
           width: 40px;
           height: 40px;
           border-radius: 50%;
         }
         .classes-card-footer-name {
+          display: flex;
+          flex-direction: column;
+          margin-left: 15px;
           .name {
             font-weight: 500;
             font-size: 14px;
@@ -300,6 +312,10 @@ $border-color: rgba(154, 156, 203, 0.6);
         line-height: 17px;
         font-weight: 600;
         color: $headings-text;
+        display: none;
+        &:hover {
+          display: block;
+        }
       }
     }
   }
