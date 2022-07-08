@@ -51,7 +51,7 @@
   width: 785px;
   height: 752px;
   margin-left: -55px;
-  z-index: 1;
+  z-index: 2;
 }
 .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
   position: relative;
@@ -59,7 +59,7 @@
   right: -57px;
   max-width: 579px;
   max-height: 604px;
-  z-index: 100;
+  z-index: 1;
   border-radius: 8px;
 }
 .hero-section .hero-section-description {
