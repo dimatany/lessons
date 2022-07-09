@@ -7,12 +7,15 @@ $text-color: rgba(255, 255, 255, 0.4);
 $text-color2: rgba(255, 255, 255, 0.6);
 $text-button: rgba(255, 255, 255, 1);
 $highlighting-elements: rgba(245, 68, 59, 1);
+$highlighting-elements2: rgba(41, 43, 86, 1);
 $icon-color: #ACABBF;
 $focus-color: #008ABF;
 $border-color: rgba(154, 156, 203, 0.6);
 
-
 ///////////////////////--styles for the whole project--///////
+body {
+  background-color: $highlighting-elements2;
+}
 .wrap-container {
   max-width: 1440px;
   width: 90%;
@@ -219,11 +222,21 @@ $border-color: rgba(154, 156, 203, 0.6);
        color: $text-color2;
      }
     }
+    /*
+    .featured-vector {
+      width: 300px;
+      height: 500px;
+      position: absolute;
+      top: -100px;
+      left: -100px;
+    }
+     */
   }
 }
 
 /////////////////////--featured--//////////////////////////
 .classes {
+  margin-bottom: 100px;
   .classes-header {
     margin: 0 auto;
     width: 495px;
@@ -245,7 +258,7 @@ $border-color: rgba(154, 156, 203, 0.6);
   .classes-card {
     display: flex;
     justify-content: space-between;
-    margin: 0 50px 0 50px;
+    margin: 0 50px 120px 50px;
     .classes-card-item {
       width: 276px;
       padding: 10px;
@@ -276,7 +289,7 @@ $border-color: rgba(154, 156, 203, 0.6);
         color: $text-color;
         line-height: 22px;
         padding-bottom: 20px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $highlighting-elements2;
         margin-bottom: 16px;
       }
       .classes-card-footer {
@@ -315,6 +328,7 @@ $border-color: rgba(154, 156, 203, 0.6);
         display: none;
         &:hover {
           display: block;
+          margin: 0 auto;
         }
       }
     }
@@ -335,4 +349,6 @@ $border-color: rgba(154, 156, 203, 0.6);
   }
 }
 
+/////////////////////--webinar--//////////////////////////
+.webinar {}
 
