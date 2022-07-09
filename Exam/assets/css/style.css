@@ -295,11 +295,13 @@ body {
   line-height: 17px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
-  display: none;
+  margin: 0 auto;
 }
 .classes .classes-card .classes-card-item button:hover {
   display: block;
   margin: 0 auto;
+  border: 1px solid #008ABF;
+  box-shadow: inset 0px 0px 15px 3px rgb(0, 0, 0);
 }
 .classes button {
   margin: 0 auto;
@@ -314,6 +316,7 @@ body {
 }
 .classes button:hover {
   border: 1px solid #008ABF;
+  box-shadow: inset 0px 0px 15px 3px rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

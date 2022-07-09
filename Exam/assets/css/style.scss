@@ -264,6 +264,9 @@ body {
       padding: 10px;
       border: 1px solid $headings-text2;
       border-radius: 15px;
+      &:hover {
+
+      }
       img {
         width: 252px;
         height: 169px;
@@ -325,10 +328,13 @@ body {
         line-height: 17px;
         font-weight: 600;
         color: $headings-text;
-        display: none;
+        margin: 0 auto;
+        //display: none;
         &:hover {
           display: block;
           margin: 0 auto;
+          border: 1px solid $focus-color;
+          box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, 1);
         }
       }
     }
@@ -345,6 +351,7 @@ body {
     color: $highlighting-elements;
     &:hover {
       border: 1px solid $focus-color;
+      box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, 1);
     }
   }
 }
