@@ -46,6 +46,12 @@ body {
       .header-block-left-navigation-item {
         display: flex;
         justify-content: space-between;
+        li a {
+          &:hover {
+            font-size: 15px;
+            text-shadow:4px 4px 5px $highlighting-elements;
+          }
+        }
       }
     }
   }
@@ -58,7 +64,7 @@ body {
       border: 1px solid transparent;
       &:hover {
         border: 1px solid $focus-color;
-        box-shadow:inset 0px 0px 15px 3px rgba(17, 37, 93, 1);
+        box-shadow:inset 0 0 15px 3px rgba(17, 37, 93, 1);
         background:linear-gradient(rgba(208, 2, 27, 1), rgba(208, 2, 27, 1));
       }
     }
@@ -263,13 +269,16 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 50px 120px 50px;
+    align-items: flex-start;
     .classes-card-item {
       width: 276px;
       padding: 10px;
       border: 1px solid $headings-text2;
       border-radius: 15px;
       &:hover {
-
+        .classes-card-button {
+          height: 43px;
+        }
       }
       img {
         width: 252px;
@@ -324,6 +333,10 @@ body {
         }
       }
       .classes-card-button {
+        overflow: hidden;
+        transition: all .4s ease-in;
+        text-align: center;
+        height: 0;
         button {
           width: 155px;
           padding: 12px 32px;
@@ -334,8 +347,9 @@ body {
           font-weight: 600;
           color: $headings-text;
           border: 1px solid transparent;
-          display: none;
+          margin: 0 auto;
           &:hover {
+            margin: 0 auto;
             display: block;
             border: 1px solid $focus-color;
             box-shadow:inset 0px 0px 15px 3px rgba(17, 37, 93, 1);
