@@ -55,6 +55,7 @@ body {
       background-color: $highlighting-elements;
       color: $text-button;
       border-radius: 6px;
+      border: 1px solid transparent;
       &:hover {
         border: 1px solid $focus-color;
         box-shadow:inset 0px 0px 15px 3px rgba(17, 37, 93, 1);
@@ -332,7 +333,8 @@ body {
           line-height: 17px;
           font-weight: 600;
           color: $headings-text;
-          //display: none;
+          border: 1px solid transparent;
+          display: none;
           &:hover {
             display: block;
             border: 1px solid $focus-color;

@@ -38,6 +38,7 @@ body {
   background-color: rgb(245, 68, 59);
   color: rgb(255, 255, 255);
   border-radius: 6px;
+  border: 1px solid transparent;
 }
 .header .header-block-right .header-block-right-button:hover {
   border: 1px solid #008ABF;
@@ -301,6 +302,8 @@ body {
   line-height: 17px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
+  border: 1px solid transparent;
+  display: none;
 }
 .classes .classes-card .classes-card-item .classes-card-button button:hover {
   display: block;
