@@ -56,6 +56,9 @@ body {
       color: $text-button;
       border-radius: 6px;
       &:hover {
+        border: 1px solid $focus-color;
+        box-shadow:inset 0px 0px 15px 3px rgba(17, 37, 93, 1);
+        background:linear-gradient(rgba(208, 2, 27, 1), rgba(208, 2, 27, 1));
       }
     }
   }
@@ -319,39 +322,43 @@ body {
           }
         }
       }
-      button {
-        width: 155px;
-        padding: 12px 32px;
-        background-color: $highlighting-elements;
-        border-radius: 6px;
-        font-size: 14px;
-        line-height: 17px;
-        font-weight: 600;
-        color: $headings-text;
-        margin: 0 auto;
-        //display: none;
-        &:hover {
-          display: block;
-          margin: 0 auto;
-          border: 1px solid $focus-color;
-          box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, 1);
+      .classes-card-button {
+        button {
+          width: 155px;
+          padding: 12px 32px;
+          background-color: $highlighting-elements;
+          border-radius: 6px;
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: 600;
+          color: $headings-text;
+          //display: none;
+          &:hover {
+            display: block;
+            border: 1px solid $focus-color;
+            box-shadow:inset 0px 0px 15px 3px rgba(17, 37, 93, 1);
+            background:linear-gradient(rgba(208, 2, 27, 1), rgba(208, 2, 27, 1));
+          }
         }
       }
     }
   }
-  button {
+  .classes-button {
+    width: 200px;
     margin: 0 auto;
-    width: 198px;
-    padding: 16px 32px;
-    border: 1px solid $highlighting-elements;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 19px;
-    color: $highlighting-elements;
-    &:hover {
-      border: 1px solid $focus-color;
-      box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, 1);
+    button {
+      width: 198px;
+      padding: 16px 32px;
+      border: 1px solid $highlighting-elements;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 19px;
+      color: $highlighting-elements;
+      &:hover {
+        border: 1px solid $focus-color;
+        box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, 1);
+      }
     }
   }
 }
