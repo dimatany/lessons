@@ -11,6 +11,8 @@ $highlighting-elements: rgba(245, 68, 59, 1);
 $highlighting-elements2: rgba(41, 43, 86, 1);
 $highlighting-elements3: rgba(151, 153, 206, 1);
 $highlighting-elements4: #212145;
+$highlighting-elements5: #4c4567;
+$highlighting-elements6: rgba(255, 255, 255, 0.2);
 $icon-color: #ACABBF;
 $focus-color: #008ABF;
 $border-color: rgba(154, 156, 203, 0.6);
@@ -627,6 +629,8 @@ body {
     }
   }
   .apps-visual {
+    margin-bottom: -59px;
+    position: relative;
     .apps-visual-card {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.192) 0%, rgba(255, 255, 255, 0.088) 100%);
       border-radius: 20px;
@@ -635,6 +639,7 @@ body {
       margin-top: -29px;
       margin-left: -10px;
       .apps-visual-card-header {
+        margin-bottom: 36px;
         display: flex;
         .apps-visual-card-header-avatar {
           margin-right: 10px;
@@ -679,7 +684,140 @@ body {
         }
       }
       .apps-visual-card-body {
-
+        display: flex;
+        justify-content: space-between;
+        background-color: $highlighting-elements5;
+        padding: 20px;
+        border-radius: 17px;
+        margin-bottom: 150px;
+        .apps-visual-card-body-icon {
+          width: 100px;
+          img {
+            margin-top: -6px;
+            margin-left: 6px;
+            width: 68px;
+            height: 68px;
+          }
+        }
+        .apps-visual-card-body-description {
+          width: 106px;
+          .header-text {
+            color: $text-button;
+            font-size: 11px;
+            line-height: 18px;
+            margin-bottom: 8px;
+          }
+          .descr-text {
+            color: $text-color2;
+            font-size: 8px;
+            line-height: 12px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+    .apps-visual-ref {
+      position: absolute;
+      top: 243px;
+      left: -96px;
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+      .apps-visual-ref-course {
+        padding: 20px;
+        background-color: $highlighting-elements6;
+        border-radius: 17px;
+        width: 159px;
+        height: 94px;
+        position: relative;
+        img {
+          position: absolute;
+          top: -30px;
+          left: 30px;
+          width: 100px;
+          height: 88px;
+        }
+        p {
+          margin-top: 40px;
+          color: $text-button;
+          font-weight: 600;
+          font-size: 12px;
+          i {
+            border: solid $text-button;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+          }
+          .right {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+      .apps-visual-ref-class {
+        padding: 20px;
+        background-color: $highlighting-elements6;
+        border-radius: 17px;
+        width: 159px;
+        height: 94px;
+        position: relative;
+        img {
+          position: absolute;
+          top: -36px;
+          left: 22px;
+          width: 104px;
+          height: 96px;
+        }
+        p {
+          margin-top: 40px;
+          color: $text-button;
+          font-weight: 600;
+          font-size: 12px;
+          i {
+            border: solid $text-button;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+          }
+          .right {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    .apps-visual-avatar1 {
+      background-color: $highlighting-elements6;
+      padding: 7px;
+      border-radius: 50%;
+      position: absolute;
+      top: 27px;
+      left: -91px;
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    .apps-visual-avatar2 {
+      background-color: $highlighting-elements6;
+      padding: 4px;
+      border-radius: 50%;
+      position: absolute;
+      top: 145px;
+      left: -62px;
+      img {
+        width: 38px;
+        height: 38px;
+      }
+    }
+    .apps-visual-avatar3 {
+      background-color: $highlighting-elements6;
+      padding: 5px;
+      border-radius: 50%;
+      position: absolute;
+      top: 185px;
+      left: 255px;
+      img {
+        width: 43px;
+        height: 43px;
       }
     }
   }
