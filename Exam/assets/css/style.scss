@@ -633,11 +633,12 @@ body {
     position: relative;
     .apps-visual-card {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.192) 0%, rgba(255, 255, 255, 0.088) 100%);
-      border-radius: 20px;
+      border-radius: 20px 20px 0 0;
       padding: 20px;
       width: 285px;
       margin-top: -29px;
       margin-left: -10px;
+      margin-bottom: -10px;
       .apps-visual-card-header {
         margin-bottom: 36px;
         display: flex;
