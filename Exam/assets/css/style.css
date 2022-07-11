@@ -397,6 +397,9 @@ body {
   padding-top: 1px;
 }
 
+.pricing {
+  margin-bottom: 174px;
+}
 .pricing .pricing-header {
   margin: 0 auto;
   width: 330px;
@@ -418,7 +421,6 @@ body {
   justify-content: space-between;
   padding-left: 48px;
   padding-right: 48px;
-  margin-bottom: 300px;
 }
 .pricing .pricing-block .pricing-block-item {
   border: 3px solid #282B57;
@@ -522,6 +524,50 @@ body {
 }
 .pricing .pricing-block .pricing-block-item .pricing-block-item-sub3 {
   margin-top: 29px;
+}
+
+.apps {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 48px;
+  margin-right: 48px;
+  padding: 70px;
+  background-color: #212145;
+  border-radius: 40px;
+}
+.apps .apps-info {
+  padding-top: 16px;
+  padding-left: 31px;
+}
+.apps .apps-info h3 {
+  font-size: 47px;
+  color: rgb(255, 255, 255);
+  line-height: 75px;
+  margin-bottom: 12px;
+}
+.apps .apps-info p {
+  width: 406px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 32px;
+  padding-left: 5px;
+  margin-bottom: 40px;
+}
+.apps .apps-info .apps-info-brands {
+  display: flex;
+  justify-content: space-between;
+  width: 342px;
+  padding-left: 5px;
+}
+.apps .apps-info .apps-info-brands .apps-info-brands-google img {
+  width: 165px;
+  height: 55px;
+}
+.apps .apps-info .apps-info-brands .apps-info-brands-apple img {
+  padding-top: 3px;
+  width: 148px;
+  height: 53px;
 }
 
 /*# sourceMappingURL=style.css.map */
