@@ -34,7 +34,6 @@ body {
   justify-content: space-between;
 }
 .header .header-block-left .header-block-left-navigation .header-block-left-navigation-item li a:hover {
-  font-size: 15px;
   text-shadow: 4px 4px 5px rgb(245, 68, 59);
 }
 .header .header-block-right .header-block-right-button {
@@ -214,7 +213,7 @@ body {
 }
 
 .classes {
-  margin-bottom: 100px;
+  margin-bottom: 173px;
 }
 .classes .classes-header {
   margin: 0 auto;
@@ -242,6 +241,7 @@ body {
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 15px;
+  background-color: #212145;
 }
 .classes .classes-card .classes-card-item:hover .classes-card-button {
   height: 43px;
@@ -314,7 +314,7 @@ body {
   margin: 0 auto;
   display: block;
   border: 1px solid #008ABF;
-  box-shadow: inset 0px 0px 15px 3px rgb(17, 37, 93);
+  box-shadow: inset 0 0 15px 3px rgb(17, 37, 93);
   background: linear-gradient(rgb(208, 2, 27), rgb(208, 2, 27));
 }
 .classes .classes-button {
@@ -333,7 +333,194 @@ body {
 }
 .classes .classes-button button:hover {
   border: 1px solid #008ABF;
-  box-shadow: inset 0px 0px 15px 3px rgb(0, 0, 0);
+  box-shadow: inset 0 0 15px 3px rgb(0, 0, 0);
+}
+
+.webinar {
+  margin-bottom: 159px;
+}
+.webinar .webinar-header {
+  margin: 0 auto;
+  width: 672px;
+}
+.webinar .webinar-header h2 {
+  font-size: 36px;
+  line-height: 54px;
+  color: rgba(255, 255, 255, 0.8);
+  width: 346px;
+  margin: 0 auto 20px;
+}
+.webinar .webinar-header p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 195px;
+}
+.webinar .webinar-block {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 119px;
+}
+.webinar .webinar-block .webinar-block-video1 img {
+  width: 401px;
+  height: 270px;
+}
+.webinar .webinar-block .webinar-block-video2 img {
+  width: 622px;
+  height: 424px;
+  position: absolute;
+  top: -91px;
+  left: 337px;
+}
+.webinar .webinar-block .webinar-block-video3 img {
+  width: 408px;
+  height: 270px;
+}
+.webinar .webinar-reference {
+  display: flex;
+  justify-content: end;
+  padding-right: 49px;
+}
+.webinar .webinar-reference a {
+  color: rgb(209, 209, 215);
+  font-size: 14px;
+  margin-right: 9px;
+}
+.webinar .webinar-reference a:hover {
+  text-shadow: 4px 4px 5px rgb(245, 68, 59);
+}
+.webinar .webinar-reference img {
+  width: 24px;
+  height: 32px;
+  padding-top: 1px;
+}
+
+.pricing .pricing-header {
+  margin: 0 auto;
+  width: 330px;
+}
+.pricing .pricing-header h2 {
+  font-size: 36px;
+  line-height: 54px;
+  color: rgba(255, 255, 255, 0.8);
+  width: 257px;
+  margin: 0 auto 20px;
+}
+.pricing .pricing-header p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 84px;
+}
+.pricing .pricing-block {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 300px;
+}
+.pricing .pricing-block .pricing-block-item {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #282B57;
+  border-radius: 20px;
+  padding: 33px;
+  background-color: #212145;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header {
+  display: flex;
+  border-bottom: 1px solid rgb(41, 43, 86);
+  padding-bottom: 24px;
+  margin-bottom: 23px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-exception {
+  position: relative;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-exception img {
+  width: 99px;
+  height: 92px;
+  position: absolute;
+  top: -36px;
+  left: 237px;
+  border-radius: 20px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-stick {
+  margin: 14px 40px 0 10px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-stick img {
+  width: 36px;
+  height: 36px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 67px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-name {
+  padding-top: 3px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 18px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price {
+  display: flex;
+  height: 34px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .sign {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  color: rgb(245, 68, 59);
+  margin-right: 3px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
+  color: rgb(245, 68, 59);
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 5px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .period {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-info ul li {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 37px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-info ul li:before {
+  content: "";
+  color: rgb(151, 153, 206);
+  width: 10px;
+  height: 10px;
+}
+.pricing .pricing-block .pricing-block-item .sub-btn button {
+  width: 300px;
+  border: 1px solid rgb(245, 68, 59);
+  border-radius: 6px;
+  color: rgb(245, 68, 59);
+  height: 50px;
+}
+.pricing .pricing-block .pricing-block-item .sub-btn button:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(245, 68, 59);
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-sub1 {
+  margin-top: 130px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-sub2 {
+  margin-top: 93px;
+}
+.pricing .pricing-block .pricing-block-item .pricing-block-item-sub3 {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

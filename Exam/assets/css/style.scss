@@ -5,9 +5,12 @@ $headings-text2: rgba(255, 255, 255, 0.7);
 $headings-text3: rgba(59, 245, 189, 1);
 $text-color: rgba(255, 255, 255, 0.4);
 $text-color2: rgba(255, 255, 255, 0.6);
+$text-color3: rgba(209, 209, 215, 1);
 $text-button: rgba(255, 255, 255, 1);
 $highlighting-elements: rgba(245, 68, 59, 1);
 $highlighting-elements2: rgba(41, 43, 86, 1);
+$highlighting-elements3: rgba(151, 153, 206, 1);
+$highlighting-elements4: #212145;
 $icon-color: #ACABBF;
 $focus-color: #008ABF;
 $border-color: rgba(154, 156, 203, 0.6);
@@ -48,7 +51,6 @@ body {
         justify-content: space-between;
         li a {
           &:hover {
-            font-size: 15px;
             text-shadow:4px 4px 5px $highlighting-elements;
           }
         }
@@ -246,7 +248,7 @@ body {
 
 /////////////////////--featured--//////////////////////////
 .classes {
-  margin-bottom: 100px;
+  margin-bottom: 173px;
   .classes-header {
     margin: 0 auto;
     width: 495px;
@@ -272,6 +274,7 @@ body {
       padding: 10px;
       border: 1px solid $headings-text2;
       border-radius: 15px;
+      background-color: $highlighting-elements4;
       &:hover {
         .classes-card-button {
           height: 43px;
@@ -343,7 +346,7 @@ body {
             margin: 0 auto;
             display: block;
             border: 1px solid $focus-color;
-            box-shadow:inset 0px 0px 15px 3px rgba(17, 37, 93, 1);
+            box-shadow:inset 0 0 15px 3px rgba(17, 37, 93, 1);
             background:linear-gradient(rgba(208, 2, 27, 1), rgba(208, 2, 27, 1));
           }
         }
@@ -364,12 +367,216 @@ body {
       color: $highlighting-elements;
       &:hover {
         border: 1px solid $focus-color;
-        box-shadow:inset 0px 0px 15px 3px rgba(0, 0, 0, 1);
+        box-shadow:inset 0 0 15px 3px rgba(0, 0, 0, 1);
       }
     }
   }
 }
 
 /////////////////////--webinar--//////////////////////////
-.webinar {}
+.webinar {
+  margin-bottom: 159px;
+  .webinar-header {
+    margin: 0 auto;
+    width: 672px;
+    h2 {
+      font-size: 36px;
+      line-height: 54px;
+      color: $headings-text;
+      width: 346px;
+      margin: 0 auto 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 195px;
+    }
+  }
+  .webinar-block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 119px;
+    .webinar-block-video1 {
+      img {
+        width: 401px;
+        height: 270px;
+      }
+    }
+    .webinar-block-video2 {
+      img {
+        width: 622px;
+        height: 424px;
+        position: absolute;
+        top: -91px;
+        left: 337px;
+      }
+    }
+    .webinar-block-video3 {
+      img {
+        width: 408px;
+        height: 270px;
+      }
+    }
+  }
+  .webinar-reference {
+    display: flex;
+    justify-content: end;
+    padding-right: 49px;
+    a {
+      color: $text-color3;
+      font-size: 14px;
+      margin-right: 9px;
+      &:hover {
+        text-shadow: 4px 4px 5px $highlighting-elements;
+      }
+    }
+    img {
+      width: 24px;
+      height: 32px;
+      padding-top: 1px;
+    }
+  }
+}
+
+/////////////////////--pricing--//////////////////////////
+
+.pricing {
+  .pricing-header {
+    margin: 0 auto;
+    width: 330px;
+    h2 {
+      font-size: 36px;
+      line-height: 54px;
+      color: $headings-text;
+      width: 257px;
+      margin: 0 auto 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 84px;
+    }
+  }
+  .pricing-block {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 300px;
+    .pricing-block-item {
+      display: flex;
+      flex-direction: column;
+      border: 3px solid $background-color-element;
+      border-radius: 20px;
+      padding: 33px;
+      background-color: $highlighting-elements4;
+      .pricing-block-item-header {
+        display: flex;
+        border-bottom: 1px solid rgb(41, 43, 86);
+        padding-bottom: 24px;
+        margin-bottom: 23px;
+        .pricing-block-item-header-exception {
+          position: relative;
+          img {
+            width: 99px;
+            height: 92px;
+            position: absolute;
+            top: -36px;
+            left: 237px;
+            border-radius: 20px;
+          }
+        }
+        .pricing-block-item-header-stick {
+          margin: 14px 40px 0 10px;
+          img {
+            width: 36px;
+            height: 36px;
+          }
+        }
+        .pricing-block-item-header-tariffs {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 67px;
+          .pricing-block-item-header-tariffs-name {
+            padding-top: 3px;
+            color: $headings-text;
+            font-weight: 600;
+            font-size: 18px;
+          }
+          .pricing-block-item-header-tariffs-price {
+            display: flex;
+            height: 34px;
+            .sign {
+              display: flex;
+              align-items: flex-start;
+              height: 100%;
+              color: $highlighting-elements;
+              margin-right: 3px;
+            }
+            .price {
+              color: $highlighting-elements;
+              font-size: 28px;
+              display: flex;
+              align-items: center;
+              height: 100%;
+              margin-right: 5px;
+            }
+            .period {
+              color: $headings-text;
+              font-size: 11px;
+              font-weight: 500;
+              display: flex;
+              align-items: flex-end;
+              height: 100%;
+            }
+          }
+
+        }
+      }
+      .pricing-block-item-info {
+        ul {
+          li {
+            //list-style-type: disc;
+            color: $headings-text;
+            font-size: 14px;
+            line-height: 37px;
+
+            &:before {
+              content: '';
+              color: $highlighting-elements3;
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+      .sub-btn {
+        button {
+          width: 300px;
+          border: 1px solid $highlighting-elements;
+          border-radius: 6px;
+          color: $highlighting-elements;
+          height: 50px;
+          &:hover {
+            color: $headings-text;
+            background-color: $highlighting-elements;
+          }
+        }
+      }
+      .pricing-block-item-sub1 {
+        margin-top: 130px;
+      }
+      .pricing-block-item-sub2 {
+        margin-top: 93px;
+      }
+      .pricing-block-item-sub3 {
+        margin-top: 20px;
+      }
+    }
+  }
+}
 
