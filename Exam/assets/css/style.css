@@ -235,6 +235,7 @@ body {
 .classes .classes-card {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 0 50px 120px 50px;
 }
 .classes .classes-card .classes-card-item {
@@ -851,10 +852,6 @@ body {
 .footer .footer-copyright .footer-copyright-text p {
   color: rgb(143, 145, 208);
   line-height: 19px;
-}
-
-iframe {
-  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
