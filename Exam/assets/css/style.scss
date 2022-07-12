@@ -6,6 +6,7 @@ $headings-text3: rgba(59, 245, 189, 1);
 $text-color: rgba(255, 255, 255, 0.4);
 $text-color2: rgba(255, 255, 255, 0.6);
 $text-color3: rgba(209, 209, 215, 1);
+$text-color4: rgba(143, 145, 208, 1);
 $text-button: rgba(255, 255, 255, 1);
 $highlighting-elements: rgba(245, 68, 59, 1);
 $highlighting-elements2: rgba(41, 43, 86, 1);
@@ -17,10 +18,13 @@ $icon-color: #ACABBF;
 $focus-color: #008ABF;
 $border-color: rgba(154, 156, 203, 0.6);
 
+
+
 ///////////////////////--styles for the whole project--///////
 body {
   background-color: $highlighting-elements2;
 }
+
 .wrap-container {
   max-width: 1440px;
   width: 90%;
@@ -61,7 +65,8 @@ body {
   }
   .header-block-right {
     .header-block-right-button {
-      padding: 12px 32px;
+      width: 102px;
+      height: 43px;
       background-color: $highlighting-elements;
       color: $text-button;
       border-radius: 6px;
@@ -583,7 +588,7 @@ body {
 
 /////////////////////--pricing--//////////////////////////
 .apps {
-  margin-bottom: 100px;
+  margin-bottom: 157px;
   display: flex;
   justify-content: space-between;
   margin-left: 48px;
@@ -622,7 +627,6 @@ body {
       .apps-info-brands-apple {
         img {
           padding-top: 3px;
-          width: 148px;
           height: 53px;
         }
       }
@@ -675,18 +679,12 @@ body {
         .apps-visual-card-header-res {
           margin-top: 10px;
           img{
-            display: block;
-            margin: 0 auto;
-            align-items: center;
-            width: 23px;
             height: 23px;
-
           }
         }
       }
       .apps-visual-card-body {
         display: flex;
-        justify-content: space-between;
         background-color: $highlighting-elements5;
         padding: 20px;
         border-radius: 17px;
@@ -725,12 +723,11 @@ body {
       justify-content: space-between;
       width: 350px;
       .apps-visual-ref-course {
-        padding: 20px;
+        padding: 20px 14px 20px 14px;
         background-color: $highlighting-elements6;
         border-radius: 17px;
         width: 159px;
         height: 94px;
-        position: relative;
         img {
           position: absolute;
           top: -30px;
@@ -794,7 +791,6 @@ body {
       left: -91px;
       img {
         width: 45px;
-        height: 45px;
       }
     }
     .apps-visual-avatar2 {
@@ -823,3 +819,155 @@ body {
     }
   }
 }
+
+/////////////////////--footer--//////////////////////////
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px;
+  margin-right: 47px;
+  a {
+    color: $text-color2;
+    font-size: 20px;
+    &:hover {
+      color: $highlighting-elements;
+    }
+  }
+  .first {
+    color: $text-button;
+    font-weight: 700;
+  }
+  .retreat {
+    margin-bottom: 25px;
+  }
+  li {
+    margin-bottom: 18px;
+  }
+  svg:hover {
+    stroke: red;
+    fill: red;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+    .footer-social {
+      width: 300px;
+      .footer-social-logo {
+        margin-bottom: 10px;
+        img {
+          width: 117px;
+          height: 56px;
+        }
+      }
+      .footer-social-question {
+        margin-bottom: 24px;
+        width: 270px;
+        p {
+          color: $headings-text;
+          line-height: 27px;
+        }
+      }
+      .footer-social-links-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 155px;
+        margin-left: -7px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .footer-menu {
+      width: 79px;
+    }
+    .footer-services {
+      width: 162px;
+    }
+    .footer-info {
+      width: 192px;
+    }
+    .footer-apps {
+      width: 169px;
+    }
+  }
+  .footer-copyright {
+    margin: 0 auto 30px;
+    .footer-copyright-text {
+      p {
+        color: $text-color4;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
