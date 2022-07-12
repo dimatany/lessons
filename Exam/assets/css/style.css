@@ -853,4 +853,8 @@ body {
   line-height: 19px;
 }
 
+iframe {
+  border-radius: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */
