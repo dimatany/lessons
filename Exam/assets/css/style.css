@@ -243,6 +243,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 15px;
   background-color: #212145;
+  position: relative;
 }
 .classes .classes-card .classes-card-item:hover .classes-card-button {
   height: 43px;
@@ -252,6 +253,17 @@ body {
   height: 169px;
   border-radius: 13px;
   margin-bottom: 21px;
+}
+.classes .classes-card .classes-card-item .classes-card-item-count {
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  width: 88px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 139px;
+  left: 20px;
 }
 .classes .classes-card .classes-card-item .classes-card-item-title {
   display: block;

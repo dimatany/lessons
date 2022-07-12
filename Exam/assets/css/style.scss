@@ -282,6 +282,7 @@ body {
       border: 1px solid $headings-text2;
       border-radius: 15px;
       background-color: $highlighting-elements4;
+      position: relative;
       &:hover {
         .classes-card-button {
           height: 43px;
@@ -292,6 +293,17 @@ body {
         height: 169px;
         border-radius: 13px;
         margin-bottom: 21px;
+      }
+      .classes-card-item-count {
+        padding: 4px;
+        background: $highlighting-elements6;
+        border-radius: 8px;
+        width: 88px;
+        font-size: 12px;
+        color: $text-button;
+        position: absolute;
+        top: 139px;
+        left: 20px;
       }
       .classes-card-item-title {
         display: block;
