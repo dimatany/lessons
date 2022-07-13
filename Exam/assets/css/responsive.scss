@@ -828,8 +828,11 @@
           }
         }
         .sub-btn {
+          margin: 55px 20px 0 18px;
           button {
             height: 50px;
+            width: 190px;
+
           }
         }
         .pricing-block-item-sub1 {
@@ -1013,11 +1016,12 @@
   .webinar {
     .webinar-header {
       h2 {
+        width: 300px;
       }
       p {
         font-size: 16px;
         text-align: center;
-        width: 325px;
+        width: 300px;
         margin: 10px auto 60px;
       }
     }
@@ -1025,23 +1029,21 @@
       flex-wrap: wrap;
       .webinar-block-video1 {
         img {
-          width: 200px;
+          width: 180px;
           height: auto;
-          border-radius: 20px;
         }
       }
       .webinar-block-video2 {
         img {
-          width: 250px;
-          top: -17px;
-          left: 168px;
+          width: 190px;
+          top: -11px;
+          left: 155px;
         }
       }
       .webinar-block-video3 {
         img {
-          width: 200px;
+          width: 180px;
           height: auto;
-          border-radius: 20px;
         }
       }
     }
@@ -1161,8 +1163,161 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    .hero-section-avatar {
+      margin: 0 auto 0;
+      .avatar-max {
+        display: none;
+      }
+      .avatar-mini {
+        width: 425px;
+      }
+      .hero-section-avatar-position {
+        img:nth-child(1){
+          top: -245px;
+          right: -57px;
+          max-width: 50px;
+          max-height: 50px;
+        }
+        img:nth-child(2){
+          top: -290px;
+          right: -306px;
+          max-width: 50px;
+          max-height: 50px;
+        }
+        img:nth-child(3){
+          top: -57px;
+          right: -100px;
+          width: 40%;
+          height: auto;
+        }
+      }
+    }
+    .hero-section-description {
+      max-width: 506px;
+      margin: -60px auto;
+      .hero-section-description-info {
+        h1 {
+          width: 360px;
+          font-size: 28px;
+          margin: 0 auto 20px;
+        }
+        p {
+          font-size: 13px;
+          text-align: center;
+        }
+        .search-container {
+          margin: -10px auto 30px;
+          width: 360px;
+          input#search-bar{
+            width: 360px;
+            height: 60px;
+            margin: 0 auto;
+          }
+          .search-icon{
+            top: -42px;
+            right: 18px;
+          }
+        }
+      }
+      .hero-section-description-suggestions {
+        display: flex;
+        flex-wrap: wrap;
+        p {
+          display: none;
+          margin-right: 10px;
+        }
+        button {
+          width: 200px;
+          height: 50px;
+          margin-bottom: 20px;
+        }
+        .hero-section-description-suggestions-block1 {
+          display: flex;
+          flex-direction: column;
+        }
+        .hero-section-description-suggestions-block2 {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .pricing {
+    .pricing-header {
+      h2 {
+        font-size: 25px;
+        width: 200px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .pricing-block {
+      flex-wrap: wrap;
+      padding-left: 68px;
+      padding-right: 68px;
+      .pricing-block-item {
+        padding: 20px;
+        margin: 0 auto 30px;
+        .pricing-block-item-header {
+          .pricing-block-item-header-exception {
+            img {
+              width: 81px;
+              top: -22px;
+              left: 171px;
+              height: 75px;
+            }
+          }
+          .pricing-block-item-header-stick {
+            img {
+              height: 36px;
+            }
+          }
+          .pricing-block-item-header-tariffs {
+            flex-direction: column;
+            .pricing-block-item-header-tariffs-name {
+              font-size: 16px;
+            }
+            .pricing-block-item-header-tariffs-price {
+              .sign {
+              }
+              .price {
+                font-size: 25px;
+              }
+              .period {
+              }
+            }
+          }
+        }
+        .pricing-block-item-info {
+          ul {
+            li {
+            }
+          }
+        }
+        .pricing-block-item-sub1 {
+
+        }
+        .pricing-block-item-sub2 {
+
+        }
+        .pricing-block-item-sub3 {
+
+        }
+      }
+    }
+  }
 
 }
+
 @media screen and (max-width: 320px) {
 
 }
