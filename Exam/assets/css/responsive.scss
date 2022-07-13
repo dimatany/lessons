@@ -403,27 +403,35 @@
     }
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1080px) {
   .hero-section {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 120px;
     .hero-section-avatar {
-      margin-top: 95px;
+      margin: 0 auto 0;
+      .avatar-max {
+        display: none;
+      }
+      .avatar-mini {
+        display: block;
+      }
       img {
         width: 525px;
         height: 590px;
       }
       .hero-section-avatar-position {
         img:nth-child(1){
-          top: -587px;
-          right: -60px;
-          max-width: 70px;
-          max-height: 70px;
+          top: -385px;
+          right: 14px;
+          max-width: 90px;
+          max-height: 90px;
         }
         img:nth-child(2){
-          top: -663px;
-          right: -326px;
-          max-width: 70px;
-          max-height: 70px;
+          top: -459px;
+          right: -390px;
+          max-width: 90px;
+          max-height: 90px;
         }
         img:nth-child(3){
           top: -116px;
@@ -432,16 +440,18 @@
       }
     }
     .hero-section-description {
-      padding: 94px 0 0 0;
       max-width: 506px;
+      margin: -60px auto;
       .hero-section-description-info {
         h1 {
           width: 450px;
           font-size: 35px;
           margin-bottom: 24px;
+          text-align: center;
         }
         p {
           font-size: 15px;
+          text-align: center;
         }
         .search-container {
           input#search-bar{
@@ -450,7 +460,7 @@
             margin-left: 8px;
           }
           .search-icon{
-            top: -42px;
+            top: 17px;
             right: 50px;
           }
         }
@@ -477,597 +487,12 @@
           flex-direction: column;
           height: 210px;
         }
-      }
-    }
-  }
-  .featured {
-    margin: 0 39px 169px 68px;
-    .featured-block {
-      .featured-icon {
-        img {
-          margin-right: 20px;
-        }
-        h4 {
-          font-size: 20px;
-        }
-      }
-      .featured-text {
-        p {
-          margin-left: -19px;
-          max-width: 211px;
-          font-size: 13px;
-          line-height: 22px;
-        }
-      }
-    }
-  }
-  .classes {
-    .classes-header {
-      h2 {
-        margin-left: 30px;
-        font-size: 25px;
-      }
-      p {
-        font-size: 16px;
-        margin-bottom: 75px;
-      }
-    }
-    .classes-card {
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      .classes-card-item {
-        padding: 20px;
-        margin: 40px;
-        img {
-          margin-left: -10px;
-        }
-        .classes-card-item-count {
-          top: 139px;
-          left: 20px;
-        }
-        .classes-card-item-title {
-        }
-        h4 {
-
-        }
-        p {
-
-        }
-        .classes-card-footer {
-          .classes-card-footer-avatar img {
-          }
-          .classes-card-footer-name {
-            .name {
-
-            }
-            .position {
-
-            }
-          }
-        }
-        .classes-card-button {
-          button {
-          }
-        }
-      }
-    }
-    .classes-button {
-      button {
-
-      }
-    }
-  }
-  .webinar {
-    .webinar-header {
-      h2 {
-        font-size: 25px;
-        width: 300px;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-    .webinar-block {
-      flex-wrap: wrap;
-      .webinar-block-video1 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
-      }
-      .webinar-block-video2 {
-        img {
-          border-radius: 20px;
-          width: 380px;
-          height: 280px;
-          top: -60px;
-          left: 290px;
-        }
-      }
-      .webinar-block-video3 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
-      }
-    }
-  }
-  .pricing {
-    .pricing-header {
-      h2 {
-        font-size: 25px;
-        width: 200px;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-    .pricing-block {
-      flex-wrap: wrap;
-      padding-left: 68px;
-      padding-right: 68px;
-      .pricing-block-item {
-        padding: 62px;
-        margin: 0 auto 30px;
-        .pricing-block-item-header {
-          .pricing-block-item-header-exception {
-            img {
-              width: 103px;
-              top: -64px;
-              left: 262px;
-            }
-          }
-          .pricing-block-item-header-stick {
-            img {
-              height: 36px;
-            }
-          }
-          .pricing-block-item-header-tariffs {
-            flex-direction: column;
-            .pricing-block-item-header-tariffs-name {
-              font-size: 16px;
-            }
-            .pricing-block-item-header-tariffs-price {
-              .sign {
-              }
-              .price {
-                font-size: 25px;
-              }
-              .period {
-              }
-            }
-          }
-        }
-        .pricing-block-item-info {
-          ul {
-            li {
-            }
-          }
-        }
-        .sub-btn {
-          button {
-            height: 50px;
-          }
-        }
-        .pricing-block-item-sub1 {
-
-        }
-        .pricing-block-item-sub2 {
-
-        }
-        .pricing-block-item-sub3 {
-
-        }
-      }
-    }
-  }
-  .apps {
-    flex-wrap: wrap;
-    .apps-info {
-      margin: 0 auto 140px;
-      h3 {
-        width: 250px;
-        margin: 0 auto 12px;
-        font-size: 25px;
-      }
-      p {
-        font-size: 16px;
-        margin: 0 auto 40px;
-      }
-      .apps-info-brands {
-        width: 400px;
-        margin: 0 auto;
-        .apps-info-brands-google {
-          img {
-          }
-        }
-        .apps-info-brands-apple {
-          img {
-          }
-        }
-      }
-    }
-    .apps-visual {
-      .apps-visual-card {
-        width: 327px;
-        margin-top: -29px;
-        margin-left: 35px;
-        .apps-visual-card-header {
-          .apps-visual-card-header-avatar {
-            img{
-            }
-          }
-          .apps-visual-card-header-description {
-            .hello {
-            }
-            .member {
-            }
-          }
-          .apps-visual-card-header-res {
-            img{
-            }
-          }
-        }
-        .apps-visual-card-body {
-          .apps-visual-card-body-icon {
-            width: 100px;
-            img {
-            }
-          }
-          .apps-visual-card-body-description {
-            .header-text {
-            }
-            .descr-text {
-            }
-          }
-        }
-      }
-      .apps-visual-ref {
-        top: 243px;
-        left: 0;
-        display: flex;
-        .apps-visual-ref-course {
-          img {
-          }
-          p {
-            i {
-
-            }
-          }
-        }
-        .apps-visual-ref-class {
-          img {
-          }
-          p {
-
-            i {
-            }
-          }
-        }
-      }
-      .apps-visual-avatar1 {
-        top: 33px;
-        left: -41px;
-        img {
-        }
-      }
-      .apps-visual-avatar2 {
-        top: 159px;
-        left: -19px;
-        img {
-        }
-      }
-      .apps-visual-avatar3 {
-        top: 182px;
-        left: 340px;
-        img {
-        }
-      }
-    }
-  }
-  .footer {
-    a {
-      font-size: 15px;
-    }
-    .retreat {
-      margin-bottom: 25px;
-    }
-    li {
-    }
-    .footer-links {
-      .footer-social {
-        .footer-social-logo {
-          img {
-          }
-        }
-        .footer-social-question {
-        }
-        .footer-social-links-ul {
-          img {
-          }
-        }
-      }
-      .footer-menu {
-        width: 116px;
-      }
-      .footer-services {
-        width: 162px;
-      }
-      .footer-info {
-        width: 192px;
-      }
-      .footer-apps {
-        width: 169px;
-      }
-    }
-    .footer-copyright {
-      .footer-copyright-text {
       }
     }
   }
 }
+
 @media screen and (max-width: 992px) {
-  .hero-section {
-    margin-bottom: 120px;
-    .hero-section-avatar {
-      margin-top: 95px;
-      img {
-        width: 525px;
-        height: 590px;
-      }
-      .hero-section-avatar-position {
-        img:nth-child(1){
-          top: -587px;
-          right: -60px;
-          max-width: 70px;
-          max-height: 70px;
-        }
-        img:nth-child(2){
-          top: -663px;
-          right: -326px;
-          max-width: 70px;
-          max-height: 70px;
-        }
-        img:nth-child(3){
-          top: -116px;
-          right: -15px;
-        }
-      }
-    }
-    .hero-section-description {
-      padding: 94px 0 0 0;
-      max-width: 506px;
-      .hero-section-description-info {
-        h1 {
-          width: 450px;
-          font-size: 35px;
-          margin-bottom: 24px;
-        }
-        p {
-          font-size: 15px;
-        }
-        .search-container {
-          input#search-bar{
-            width: 423px;
-            height: 60px;
-            margin-left: 8px;
-          }
-          .search-icon{
-            top: -42px;
-            right: 50px;
-          }
-        }
-      }
-      .hero-section-description-suggestions {
-        display: flex;
-        justify-content: space-evenly;
-        p {
-          display: none;
-          margin-right: 10px;
-        }
-        button {
-          width: 200px;
-          height: 50px;
-          margin-bottom: 20px;
-        }
-        .hero-section-description-suggestions-block1 {
-          display: flex;
-          flex-direction: column;
-          height: 210px;
-        }
-        .hero-section-description-suggestions-block2 {
-          display: flex;
-          flex-direction: column;
-          height: 210px;
-        }
-      }
-    }
-  }
-  .featured {
-    margin: 0 39px 169px 68px;
-    .featured-block {
-      .featured-icon {
-        img {
-          margin-right: 20px;
-        }
-        h4 {
-          font-size: 20px;
-        }
-      }
-      .featured-text {
-        p {
-          margin-left: -19px;
-          max-width: 211px;
-          font-size: 13px;
-          line-height: 22px;
-        }
-      }
-    }
-  }
-  .classes {
-    .classes-header {
-      h2 {
-        margin-left: 30px;
-        font-size: 25px;
-      }
-      p {
-        font-size: 16px;
-        margin-bottom: 75px;
-      }
-    }
-    .classes-card {
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      .classes-card-item {
-        padding: 20px;
-        margin: 40px;
-        img {
-          margin-left: -10px;
-        }
-        .classes-card-item-count {
-          top: 139px;
-          left: 20px;
-        }
-        .classes-card-item-title {
-        }
-        h4 {
-
-        }
-        p {
-
-        }
-        .classes-card-footer {
-          .classes-card-footer-avatar img {
-          }
-          .classes-card-footer-name {
-            .name {
-
-            }
-            .position {
-
-            }
-          }
-        }
-        .classes-card-button {
-          button {
-          }
-        }
-      }
-    }
-    .classes-button {
-      button {
-
-      }
-    }
-  }
-  .webinar {
-    .webinar-header {
-      h2 {
-        font-size: 25px;
-        width: 300px;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-    .webinar-block {
-      flex-wrap: wrap;
-      .webinar-block-video1 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
-      }
-      .webinar-block-video2 {
-        img {
-          border-radius: 20px;
-          width: 380px;
-          height: 280px;
-          top: -60px;
-          left: 290px;
-        }
-      }
-      .webinar-block-video3 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
-      }
-    }
-  }
-  .pricing {
-    .pricing-header {
-      h2 {
-        font-size: 25px;
-        width: 200px;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-    .pricing-block {
-      flex-wrap: wrap;
-      padding-left: 68px;
-      padding-right: 68px;
-      .pricing-block-item {
-        padding: 62px;
-        margin: 0 auto 30px;
-        .pricing-block-item-header {
-          .pricing-block-item-header-exception {
-            img {
-              width: 103px;
-              top: -64px;
-              left: 262px;
-            }
-          }
-          .pricing-block-item-header-stick {
-            img {
-              height: 36px;
-            }
-          }
-          .pricing-block-item-header-tariffs {
-            flex-direction: column;
-            .pricing-block-item-header-tariffs-name {
-              font-size: 16px;
-            }
-            .pricing-block-item-header-tariffs-price {
-              .sign {
-              }
-              .price {
-                font-size: 25px;
-              }
-              .period {
-              }
-            }
-          }
-        }
-        .pricing-block-item-info {
-          ul {
-            li {
-            }
-          }
-        }
-        .sub-btn {
-          button {
-            height: 50px;
-          }
-        }
-        .pricing-block-item-sub1 {
-
-        }
-        .pricing-block-item-sub2 {
-
-        }
-        .pricing-block-item-sub3 {
-
-        }
-      }
-    }
-  }
   .apps {
     flex-wrap: wrap;
     .apps-info {
@@ -1098,7 +523,7 @@
       .apps-visual-card {
         width: 327px;
         margin-top: -29px;
-        margin-left: 35px;
+        margin-left: 220px;
         .apps-visual-card-header {
           .apps-visual-card-header-avatar {
             img{
@@ -1131,7 +556,7 @@
       }
       .apps-visual-ref {
         top: 243px;
-        left: 0;
+        left: 120px;
         display: flex;
         .apps-visual-ref-course {
           img {
@@ -1153,20 +578,20 @@
         }
       }
       .apps-visual-avatar1 {
-        top: 33px;
-        left: -41px;
+        top: 53px;
+        left: 148px;
         img {
         }
       }
       .apps-visual-avatar2 {
-        top: 159px;
-        left: -19px;
+        top: 158px;
+        left: 169px;
         img {
         }
       }
       .apps-visual-avatar3 {
-        top: 182px;
-        left: 340px;
+        top: 154px;
+        left: 527px;
         img {
         }
       }

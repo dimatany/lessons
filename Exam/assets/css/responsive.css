@@ -233,44 +233,54 @@
     width: 169px;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1080px) {
   .hero-section {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
-    margin-top: 95px;
+    margin: 0 auto 0;
+  }
+  .hero-section .hero-section-avatar .avatar-max {
+    display: none;
+  }
+  .hero-section .hero-section-avatar .avatar-mini {
+    display: block;
   }
   .hero-section .hero-section-avatar img {
     width: 525px;
     height: 590px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
-    top: -587px;
-    right: -60px;
-    max-width: 70px;
-    max-height: 70px;
+    top: -385px;
+    right: 14px;
+    max-width: 90px;
+    max-height: 90px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
-    top: -663px;
-    right: -326px;
-    max-width: 70px;
-    max-height: 70px;
+    top: -459px;
+    right: -390px;
+    max-width: 90px;
+    max-height: 90px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
     top: -116px;
     right: -15px;
   }
   .hero-section .hero-section-description {
-    padding: 94px 0 0 0;
     max-width: 506px;
+    margin: -60px auto;
   }
   .hero-section .hero-section-description .hero-section-description-info h1 {
     width: 450px;
     font-size: 35px;
     margin-bottom: 24px;
+    text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info p {
     font-size: 15px;
+    text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
     width: 423px;
@@ -278,7 +288,7 @@
     margin-left: 8px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: -42px;
+    top: 17px;
     right: 50px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions {
@@ -303,343 +313,9 @@
     display: flex;
     flex-direction: column;
     height: 210px;
-  }
-  .featured {
-    margin: 0 39px 169px 68px;
-  }
-  .featured .featured-block .featured-icon img {
-    margin-right: 20px;
-  }
-  .featured .featured-block .featured-icon h4 {
-    font-size: 20px;
-  }
-  .featured .featured-block .featured-text p {
-    margin-left: -19px;
-    max-width: 211px;
-    font-size: 13px;
-    line-height: 22px;
-  }
-  .classes .classes-header h2 {
-    margin-left: 30px;
-    font-size: 25px;
-  }
-  .classes .classes-header p {
-    font-size: 16px;
-    margin-bottom: 75px;
-  }
-  .classes .classes-card {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .classes .classes-card .classes-card-item {
-    padding: 20px;
-    margin: 40px;
-  }
-  .classes .classes-card .classes-card-item img {
-    margin-left: -10px;
-  }
-  .classes .classes-card .classes-card-item .classes-card-item-count {
-    top: 139px;
-    left: 20px;
-  }
-  .webinar .webinar-header h2 {
-    font-size: 25px;
-    width: 300px;
-  }
-  .webinar .webinar-header p {
-    font-size: 16px;
-  }
-  .webinar .webinar-block {
-    flex-wrap: wrap;
-  }
-  .webinar .webinar-block .webinar-block-video1 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
-  }
-  .webinar .webinar-block .webinar-block-video2 img {
-    border-radius: 20px;
-    width: 380px;
-    height: 280px;
-    top: -60px;
-    left: 290px;
-  }
-  .webinar .webinar-block .webinar-block-video3 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
-  }
-  .pricing .pricing-header h2 {
-    font-size: 25px;
-    width: 200px;
-  }
-  .pricing .pricing-header p {
-    font-size: 16px;
-  }
-  .pricing .pricing-block {
-    flex-wrap: wrap;
-    padding-left: 68px;
-    padding-right: 68px;
-  }
-  .pricing .pricing-block .pricing-block-item {
-    padding: 62px;
-    margin: 0 auto 30px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-exception img {
-    width: 103px;
-    top: -64px;
-    left: 262px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-stick img {
-    height: 36px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs {
-    flex-direction: column;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-name {
-    font-size: 16px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
-    font-size: 25px;
-  }
-  .pricing .pricing-block .pricing-block-item .sub-btn button {
-    height: 50px;
-  }
-  .apps {
-    flex-wrap: wrap;
-  }
-  .apps .apps-info {
-    margin: 0 auto 140px;
-  }
-  .apps .apps-info h3 {
-    width: 250px;
-    margin: 0 auto 12px;
-    font-size: 25px;
-  }
-  .apps .apps-info p {
-    font-size: 16px;
-    margin: 0 auto 40px;
-  }
-  .apps .apps-info .apps-info-brands {
-    width: 400px;
-    margin: 0 auto;
-  }
-  .apps .apps-visual .apps-visual-card {
-    width: 327px;
-    margin-top: -29px;
-    margin-left: 35px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-icon {
-    width: 100px;
-  }
-  .apps .apps-visual .apps-visual-ref {
-    top: 243px;
-    left: 0;
-    display: flex;
-  }
-  .apps .apps-visual .apps-visual-avatar1 {
-    top: 33px;
-    left: -41px;
-  }
-  .apps .apps-visual .apps-visual-avatar2 {
-    top: 159px;
-    left: -19px;
-  }
-  .apps .apps-visual .apps-visual-avatar3 {
-    top: 182px;
-    left: 340px;
-  }
-  .footer a {
-    font-size: 15px;
-  }
-  .footer .retreat {
-    margin-bottom: 25px;
-  }
-  .footer .footer-links .footer-menu {
-    width: 116px;
-  }
-  .footer .footer-links .footer-services {
-    width: 162px;
-  }
-  .footer .footer-links .footer-info {
-    width: 192px;
-  }
-  .footer .footer-links .footer-apps {
-    width: 169px;
   }
 }
 @media screen and (max-width: 992px) {
-  .hero-section {
-    margin-bottom: 120px;
-  }
-  .hero-section .hero-section-avatar {
-    margin-top: 95px;
-  }
-  .hero-section .hero-section-avatar img {
-    width: 525px;
-    height: 590px;
-  }
-  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
-    top: -587px;
-    right: -60px;
-    max-width: 70px;
-    max-height: 70px;
-  }
-  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
-    top: -663px;
-    right: -326px;
-    max-width: 70px;
-    max-height: 70px;
-  }
-  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    top: -116px;
-    right: -15px;
-  }
-  .hero-section .hero-section-description {
-    padding: 94px 0 0 0;
-    max-width: 506px;
-  }
-  .hero-section .hero-section-description .hero-section-description-info h1 {
-    width: 450px;
-    font-size: 35px;
-    margin-bottom: 24px;
-  }
-  .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 15px;
-  }
-  .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
-    width: 423px;
-    height: 60px;
-    margin-left: 8px;
-  }
-  .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: -42px;
-    right: 50px;
-  }
-  .hero-section .hero-section-description .hero-section-description-suggestions {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .hero-section .hero-section-description .hero-section-description-suggestions p {
-    display: none;
-    margin-right: 10px;
-  }
-  .hero-section .hero-section-description .hero-section-description-suggestions button {
-    width: 200px;
-    height: 50px;
-    margin-bottom: 20px;
-  }
-  .hero-section .hero-section-description .hero-section-description-suggestions .hero-section-description-suggestions-block1 {
-    display: flex;
-    flex-direction: column;
-    height: 210px;
-  }
-  .hero-section .hero-section-description .hero-section-description-suggestions .hero-section-description-suggestions-block2 {
-    display: flex;
-    flex-direction: column;
-    height: 210px;
-  }
-  .featured {
-    margin: 0 39px 169px 68px;
-  }
-  .featured .featured-block .featured-icon img {
-    margin-right: 20px;
-  }
-  .featured .featured-block .featured-icon h4 {
-    font-size: 20px;
-  }
-  .featured .featured-block .featured-text p {
-    margin-left: -19px;
-    max-width: 211px;
-    font-size: 13px;
-    line-height: 22px;
-  }
-  .classes .classes-header h2 {
-    margin-left: 30px;
-    font-size: 25px;
-  }
-  .classes .classes-header p {
-    font-size: 16px;
-    margin-bottom: 75px;
-  }
-  .classes .classes-card {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .classes .classes-card .classes-card-item {
-    padding: 20px;
-    margin: 40px;
-  }
-  .classes .classes-card .classes-card-item img {
-    margin-left: -10px;
-  }
-  .classes .classes-card .classes-card-item .classes-card-item-count {
-    top: 139px;
-    left: 20px;
-  }
-  .webinar .webinar-header h2 {
-    font-size: 25px;
-    width: 300px;
-  }
-  .webinar .webinar-header p {
-    font-size: 16px;
-  }
-  .webinar .webinar-block {
-    flex-wrap: wrap;
-  }
-  .webinar .webinar-block .webinar-block-video1 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
-  }
-  .webinar .webinar-block .webinar-block-video2 img {
-    border-radius: 20px;
-    width: 380px;
-    height: 280px;
-    top: -60px;
-    left: 290px;
-  }
-  .webinar .webinar-block .webinar-block-video3 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
-  }
-  .pricing .pricing-header h2 {
-    font-size: 25px;
-    width: 200px;
-  }
-  .pricing .pricing-header p {
-    font-size: 16px;
-  }
-  .pricing .pricing-block {
-    flex-wrap: wrap;
-    padding-left: 68px;
-    padding-right: 68px;
-  }
-  .pricing .pricing-block .pricing-block-item {
-    padding: 62px;
-    margin: 0 auto 30px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-exception img {
-    width: 103px;
-    top: -64px;
-    left: 262px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-stick img {
-    height: 36px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs {
-    flex-direction: column;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-name {
-    font-size: 16px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
-    font-size: 25px;
-  }
-  .pricing .pricing-block .pricing-block-item .sub-btn button {
-    height: 50px;
-  }
   .apps {
     flex-wrap: wrap;
   }
@@ -662,27 +338,27 @@
   .apps .apps-visual .apps-visual-card {
     width: 327px;
     margin-top: -29px;
-    margin-left: 35px;
+    margin-left: 220px;
   }
   .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-icon {
     width: 100px;
   }
   .apps .apps-visual .apps-visual-ref {
     top: 243px;
-    left: 0;
+    left: 120px;
     display: flex;
   }
   .apps .apps-visual .apps-visual-avatar1 {
-    top: 33px;
-    left: -41px;
+    top: 53px;
+    left: 148px;
   }
   .apps .apps-visual .apps-visual-avatar2 {
-    top: 159px;
-    left: -19px;
+    top: 158px;
+    left: 169px;
   }
   .apps .apps-visual .apps-visual-avatar3 {
-    top: 182px;
-    left: 340px;
+    top: 154px;
+    left: 527px;
   }
   .footer a {
     font-size: 15px;

@@ -60,6 +60,9 @@ body {
   justify-content: space-between;
   margin-bottom: 164px;
 }
+.hero-section .hero-section-avatar .avatar-mini {
+  display: none;
+}
 .hero-section .hero-section-avatar img {
   width: 702px;
   height: 775px;
