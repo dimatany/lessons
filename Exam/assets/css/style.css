@@ -560,6 +560,7 @@ body {
   color: rgb(255, 255, 255);
   line-height: 75px;
   margin-bottom: 12px;
+  text-align: center;
 }
 .apps .apps-info p {
   width: 406px;

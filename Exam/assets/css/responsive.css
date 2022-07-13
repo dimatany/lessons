@@ -107,12 +107,18 @@
     top: 139px;
     left: 20px;
   }
+  .webinar .webinar-header {
+    width: 300px;
+  }
   .webinar .webinar-header h2 {
     font-size: 25px;
-    width: 300px;
+    margin: 0 auto;
+    text-align: center;
   }
   .webinar .webinar-header p {
     font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
@@ -175,9 +181,9 @@
   }
   .apps .apps-info {
     margin: 0 auto 140px;
+    width: 300px;
   }
   .apps .apps-info h3 {
-    width: 250px;
     margin: 0 auto 12px;
     font-size: 25px;
     text-align: center;
@@ -190,6 +196,14 @@
   .apps .apps-info .apps-info-brands {
     width: 400px;
     margin: 0 auto;
+  }
+  .apps .apps-info .apps-info-brands .apps-info-brands-google img {
+    width: 164px;
+    height: auto;
+  }
+  .apps .apps-info .apps-info-brands .apps-info-brands-apple img {
+    width: 147px;
+    height: auto;
   }
   .apps .apps-visual .apps-visual-card {
     width: 327px;
@@ -349,6 +363,10 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .wrap-container {
+    width: 100%;
+    margin: 0 auto;
+  }
   .hero-section {
     display: flex;
     flex-wrap: wrap;
@@ -475,11 +493,6 @@
   .classes .classes-card .classes-card-item .classes-card-item-count {
     top: 139px;
     left: 20px;
-  }
-  .webinar .webinar-header h2 {
-    font-size: 25px;
-    width: 300px;
-    text-align: center;
   }
   .webinar .webinar-header p {
     font-size: 16px;
@@ -652,49 +665,81 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  .webinar .webinar-header p {
+    font-size: 16px;
+    text-align: center;
+    width: 325px;
+    margin: 10px auto 60px;
+  }
+  .webinar .webinar-block {
+    flex-wrap: wrap;
+  }
+  .webinar .webinar-block .webinar-block-video1 img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
+  .webinar .webinar-block .webinar-block-video2 img {
+    width: 250px;
+    top: -17px;
+    left: 168px;
+  }
+  .webinar .webinar-block .webinar-block-video3 img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
+  .webinar .webinar-reference a {
+    font-size: 11px;
+  }
+  .webinar .webinar-reference img {
+    width: 22px;
+    height: 27px;
+    padding-top: 4px;
+  }
   .apps {
     flex-wrap: wrap;
   }
-  .apps .apps-info {
-    margin: 0 auto 140px;
-  }
   .apps .apps-info h3 {
-    width: 250px;
     margin: 0 auto 12px;
     font-size: 25px;
+    width: 300px;
   }
   .apps .apps-info p {
     font-size: 16px;
     margin: 0 auto 40px;
+    width: 300px;
   }
   .apps .apps-info .apps-info-brands {
-    width: 400px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 300px;
   }
   .apps .apps-visual .apps-visual-card {
-    width: 327px;
-    margin-top: -29px;
-    margin-left: 90px;
+    width: 280px;
+    margin-top: 0;
+    margin-left: 45px;
   }
   .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-icon {
     width: 100px;
   }
   .apps .apps-visual .apps-visual-ref {
-    top: 243px;
-    left: 40px;
+    top: 282px;
+    left: -19px;
   }
   .apps .apps-visual .apps-visual-avatar1 {
-    top: 40px;
-    left: 20px;
+    top: 64px;
+    left: -21px;
   }
   .apps .apps-visual .apps-visual-avatar2 {
-    top: 165px;
-    left: 40px;
+    top: 194px;
+    left: -5px;
   }
   .apps .apps-visual .apps-visual-avatar3 {
-    top: 173px;
-    left: 395px;
+    top: 209px;
+    left: 306px;
   }
 }
 

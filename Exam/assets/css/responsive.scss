@@ -154,12 +154,16 @@
   }
   .webinar {
     .webinar-header {
+      width: 300px;
       h2 {
         font-size: 25px;
-        width: 300px;
+        margin: 0 auto;
+        text-align: center;
       }
       p {
         font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
       }
     }
     .webinar-block {
@@ -262,8 +266,8 @@
     flex-wrap: wrap;
     .apps-info {
       margin: 0 auto 140px;
+      width: 300px;
       h3 {
-        width: 250px;
         margin: 0 auto 12px;
         font-size: 25px;
         text-align: center;
@@ -278,10 +282,14 @@
         margin: 0 auto;
         .apps-info-brands-google {
           img {
+            width: 164px;
+            height: auto;
           }
         }
         .apps-info-brands-apple {
           img {
+            width: 147px;
+            height: auto;
           }
         }
       }
@@ -545,6 +553,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .wrap-container {
+    width: 100%;
+    margin: 0 auto;
+  }
   .hero-section {
     display: flex;
     flex-wrap: wrap;
@@ -718,9 +730,6 @@
   .webinar {
     .webinar-header {
       h2 {
-        font-size: 25px;
-        width: 300px;
-        text-align: center;
       }
       p {
         font-size: 16px;
@@ -1000,23 +1009,71 @@
     }
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  .webinar {
+    .webinar-header {
+      h2 {
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+        width: 325px;
+        margin: 10px auto 60px;
+      }
+    }
+    .webinar-block {
+      flex-wrap: wrap;
+      .webinar-block-video1 {
+        img {
+          width: 200px;
+          height: auto;
+          border-radius: 20px;
+        }
+      }
+      .webinar-block-video2 {
+        img {
+          width: 250px;
+          top: -17px;
+          left: 168px;
+        }
+      }
+      .webinar-block-video3 {
+        img {
+          width: 200px;
+          height: auto;
+          border-radius: 20px;
+        }
+      }
+    }
+    .webinar-reference {
+      a {
+        font-size: 11px;
+      }
+      img {
+        width: 22px;
+        height: 27px;
+        padding-top: 4px;
+      }
+    }
+  }
   .apps {
     flex-wrap: wrap;
     .apps-info {
-      margin: 0 auto 140px;
       h3 {
-        width: 250px;
         margin: 0 auto 12px;
         font-size: 25px;
+        width: 300px;
       }
       p {
         font-size: 16px;
         margin: 0 auto 40px;
+        width: 300px;
       }
       .apps-info-brands {
-        width: 400px;
-        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 300px;
         .apps-info-brands-google {
           img {
           }
@@ -1029,9 +1086,9 @@
     }
     .apps-visual {
       .apps-visual-card {
-        width: 327px;
-        margin-top: -29px;
-        margin-left: 90px;
+        width: 280px;
+        margin-top: 0;
+        margin-left: 45px;
         .apps-visual-card-header {
           .apps-visual-card-header-avatar {
             img{
@@ -1063,8 +1120,8 @@
         }
       }
       .apps-visual-ref {
-        top: 243px;
-        left: 40px;
+        top: 282px;
+        left: -19px;
         .apps-visual-ref-course {
           img {
           }
@@ -1085,25 +1142,26 @@
         }
       }
       .apps-visual-avatar1 {
-        top: 40px;
-        left: 20px;
+        top: 64px;
+        left: -21px;
         img {
         }
       }
       .apps-visual-avatar2 {
-        top: 165px;
-        left: 40px;
+        top: 194px;
+        left: -5px;
         img {
         }
       }
       .apps-visual-avatar3 {
-        top: 173px;
-        left: 395px;
+        top: 209px;
+        left: 306px;
         img {
         }
       }
     }
   }
+
 }
 @media screen and (max-width: 320px) {
 
