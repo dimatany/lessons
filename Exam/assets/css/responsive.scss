@@ -33,11 +33,11 @@
       .hero-section-description-info {
         h1 {
           width: 450px;
-          font-size: 35px;
+          font-size: 50px;
           margin-bottom: 24px;
         }
         p {
-          font-size: 15px;
+          font-size: 18px;
         }
         .search-container {
           input#search-bar{
@@ -95,7 +95,7 @@
         p {
           margin-left: -19px;
           max-width: 211px;
-          font-size: 13px;
+          font-size: 16px;
           line-height: 22px;
         }
       }
@@ -103,13 +103,16 @@
   }
   .classes {
     .classes-header {
+      width: 495px;
       h2 {
-        margin-left: 30px;
-        font-size: 25px;
+        margin-left: 0;
+        font-size: 36px;
+        text-align: center;
       }
       p {
         font-size: 16px;
         margin-bottom: 75px;
+        text-align: center;
       }
     }
     .classes-card {
@@ -128,10 +131,10 @@
         .classes-card-item-title {
         }
         h4 {
-
+          font-size: 18px;
         }
         p {
-
+          font-size: 16px;
         }
         .classes-card-footer {
           .classes-card-footer-avatar img {
@@ -162,7 +165,7 @@
       width: 300px;
       margin-bottom: 150px;
       h2 {
-        font-size: 25px;
+        font-size: 30px;
         margin: 0 auto;
         text-align: center;
       }
@@ -191,7 +194,7 @@
   .pricing {
     .pricing-header {
       h2 {
-        font-size: 25px;
+        font-size: 30px;
         width: 200px;
       }
       p {
@@ -227,7 +230,7 @@
               .sign {
               }
               .price {
-                font-size: 25px;
+                font-size: 20px;
               }
               .period {
               }
@@ -264,7 +267,7 @@
       width: 100%;
       margin-bottom: 100px;
       h3 {
-        font-size: 35px;
+        font-size: 40px;
         margin: 0 auto 25px;
         text-align: center;
       }
@@ -339,7 +342,7 @@
   }
   .footer {
     a {
-      font-size: 15px;
+      font-size: 16px;
     }
     .retreat {
       margin-bottom: 25px;
@@ -385,7 +388,7 @@
       width: 300px;
       margin-bottom: 150px;
       h2 {
-        font-size: 25px;
+        font-size: 30px;
         margin: 0 auto;
         text-align: center;
       }
@@ -464,7 +467,7 @@
           text-align: center;
         }
         p {
-          font-size: 15px;
+          font-size: 14px;
           text-align: center;
         }
         .search-container {
@@ -485,6 +488,7 @@
         p {
           display: none;
           margin-right: 10px;
+          font-size: 14px;
         }
         button {
           width: 200px;
@@ -543,12 +547,12 @@
       width: 300px;
       margin-bottom: 150px;
       h2 {
-        font-size: 25px;
+        font-size: 20px;
         margin: 0 auto;
         text-align: center;
       }
       p {
-        font-size: 16px;
+        font-size: 12px;
         margin: 0 auto;
         text-align: center;
       }
@@ -574,7 +578,7 @@
     flex-direction: column;
     margin-left: 35px;
     a {
-      font-size: 13px;
+      font-size: 12px;
     }
     .retreat {
       margin-bottom: 25px;
@@ -590,7 +594,7 @@
         .footer-social-question {
           width: 200px;
           p {
-            font-size: 13px;
+            font-size: 12px;
           }
         }
         .footer-social-links-ul {
@@ -737,12 +741,12 @@
       .hero-section-description-info {
         h1 {
           width: 450px;
-          font-size: 35px;
+          font-size: 25px;
           margin-bottom: 24px;
           text-align: center;
         }
         p {
-          font-size: 15px;
+          font-size: 12px;
           text-align: center;
         }
         .search-container {
@@ -763,11 +767,13 @@
         p {
           display: none;
           margin-right: 10px;
+          font-size: 12px;
         }
         button {
           width: 200px;
           height: 50px;
           margin-bottom: 20px;
+          font-size: 11px;
         }
         .hero-section-description-suggestions-block1 {
           display: flex;
@@ -795,14 +801,14 @@
           margin-left: 80px;
         }
         h4 {
-          font-size: 20px;
+          font-size: 14px;
         }
       }
       .featured-text {
         p {
           margin-left: -19px;
           max-width: 400px;
-          font-size: 13px;
+          font-size: 12px;
           line-height: 22px;
         }
       }
@@ -810,13 +816,13 @@
   }
   .classes {
     .classes-header {
+      width: 495px;
       h2 {
-        margin-left: 30px;
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
       }
       p {
-        font-size: 16px;
+        font-size: 12px;
         margin-bottom: 75px;
         text-align: center;
       }
@@ -837,17 +843,16 @@
         .classes-card-item-title {
         }
         h4 {
-
+          font-size: 14px;
         }
         p {
-
+          font-size: 12px;
         }
         .classes-card-footer {
           .classes-card-footer-avatar img {
           }
           .classes-card-footer-name {
             .name {
-
             }
             .position {
 
@@ -856,13 +861,14 @@
         }
         .classes-card-button {
           button {
+            font-size: 11px;
           }
         }
       }
     }
     .classes-button {
       button {
-
+        font-size: 11px;
       }
     }
   }
@@ -870,9 +876,10 @@
     .webinar-header {
       margin-bottom: 150px;
       h2 {
+        font-size: 18px;
       }
       p {
-        font-size: 16px;
+        font-size: 12px;
         text-align: center;
         width: 325px;
         margin: 10px auto 60px;
@@ -907,11 +914,11 @@
   .pricing {
     .pricing-header {
       h2 {
-        font-size: 25px;
+        font-size: 18px;
         width: 200px;
       }
       p {
-        font-size: 16px;
+        font-size: 12px;
       }
     }
     .pricing-block {
@@ -944,7 +951,7 @@
               .sign {
               }
               .price {
-                font-size: 25px;
+                font-size: 14px;
               }
               .period {
               }
@@ -954,6 +961,7 @@
         .pricing-block-item-info {
           ul {
             li {
+              font-size: 12px;
             }
           }
         }
@@ -962,28 +970,24 @@
           button {
             height: 50px;
             width: 190px;
-
           }
-        }
-        .pricing-block-item-sub1 {
-
-        }
-        .pricing-block-item-sub2 {
-
-        }
-        .pricing-block-item-sub3 {
-
         }
       }
     }
   }
   .apps {
     .apps-info {
+      margin: 0;
+      padding: 0;
       h3 {
-        font-size: 35px;
+        font-size: 20px;
+        width: 200px;
+        margin: 0 auto;
       }
       p {
-        width: 300px;
+        width: 200px;
+        margin: 0 auto;
+        font-size: 12px;
       }
       .apps-info-brands {
         width: 380px;
@@ -1041,7 +1045,7 @@
     flex-direction: column;
     margin-left: 35px;
     a {
-      font-size: 13px;
+      font-size: 11px;
     }
     .retreat {
       margin-bottom: 25px;
@@ -1061,13 +1065,11 @@
         width: 300px;
         .footer-social-logo {
           padding-left: 30px;
-          img {
-          }
         }
         .footer-social-question {
           width: 200px;
           p {
-            font-size: 13px;
+            font-size: 12px;
           }
         }
         .footer-social-links-ul {
@@ -1106,7 +1108,6 @@
         width: 300px;
       }
       p {
-        font-size: 16px;
         text-align: center;
         width: 300px;
         margin: 10px auto 60px;
@@ -1140,13 +1141,6 @@
   }
   .apps {
     .apps-info {
-      h3 {
-        font-size: 25px;
-      }
-      p {
-        width: 270px;
-        font-size: 14px;
-      }
       .apps-info-brands {
         display: flex;
         flex-wrap: wrap;
@@ -1275,15 +1269,6 @@
       max-width: 506px;
       margin: -60px auto;
       .hero-section-description-info {
-        h1 {
-          width: 360px;
-          font-size: 28px;
-          margin: 0 auto 20px;
-        }
-        p {
-          font-size: 13px;
-          text-align: center;
-        }
         .search-container {
           margin: -10px auto 30px;
           width: 360px;
@@ -1304,11 +1289,13 @@
         p {
           display: none;
           margin-right: 10px;
+          font-size: 12px;
         }
         button {
           width: 200px;
           height: 50px;
           margin-bottom: 20px;
+          font-size: 11px;
         }
         .hero-section-description-suggestions-block1 {
           display: flex;
@@ -1324,18 +1311,7 @@
   }
   .classes {
     .classes-header {
-      width: 260px;
-      h2 {
-        margin-left: 0;
-        font-size: 20px;
-        text-align: center;
-        line-height: 35px;
-      }
-      p {
-        font-size: 14px;
-        margin-bottom: 75px;
-        text-align: center;
-      }
+      width: 495px;
     }
     .classes-card {
       justify-content: space-evenly;
@@ -1352,23 +1328,7 @@
         }
         .classes-card-item-title {
         }
-        h4 {
-
-        }
-        p {
-
-        }
         .classes-card-footer {
-          .classes-card-footer-avatar img {
-          }
-          .classes-card-footer-name {
-            .name {
-
-            }
-            .position {
-
-            }
-          }
         }
         .classes-card-button {
           button {
@@ -1388,15 +1348,6 @@
   }
   .pricing {
     .pricing-header {
-      h2 {
-        font-size: 25px;
-        width: 200px;
-        text-align: center;
-      }
-      p {
-        font-size: 16px;
-        text-align: center;
-      }
     }
     .pricing-block {
       flex-wrap: wrap;
@@ -1424,21 +1375,7 @@
             .pricing-block-item-header-tariffs-name {
               font-size: 16px;
             }
-            .pricing-block-item-header-tariffs-price {
-              .sign {
-              }
-              .price {
-                font-size: 25px;
-              }
-              .period {
-              }
-            }
-          }
-        }
-        .pricing-block-item-info {
-          ul {
-            li {
-            }
+            .pricing-block-item-header-tariffs-price {}
           }
         }
         .pricing-block-item-sub1 {
@@ -1456,99 +1393,7 @@
       }
     }
   }
-  .apps {
-    .apps-info {
-      h3 {
-        font-size: 25px;
-      }
-      p {
-        width: 270px;
-        font-size: 14px;
-      }
-      .apps-info-brands {
-        display: flex;
-        flex-wrap: wrap;
-        width: 300px;
 
-        .apps-info-brands-google {
-          margin: 0 auto;
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-        .apps-info-brands-apple {
-          margin: 0 auto;
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
-    .apps-visual {
-      .apps-visual-card {
-        margin: 0 8%;
-        .apps-visual-card-header {
-          .apps-visual-card-header-avatar {}
-          .apps-visual-card-header-description {}
-          .apps-visual-card-header-res {}
-          .apps-visual-card-header-avatar1 {
-            padding: 4px;
-            top: 78%;
-            left: -24%;
-            img {
-              width: 40px;
-            }
-          }
-        }
-        .apps-visual-card-body {
-          padding: 30px;
-          .apps-visual-card-body-icon {}
-          .apps-visual-card-body-description {}
-          .apps-visual-card-body-avatar2 {
-            padding: 4px;
-            top: 89%;
-            left: -21%;
-          }
-          .apps-visual-card-body-avatar3 {
-            padding: 4px;
-            top: 80%;
-            right: -20%;
-            img {
-              width: 38px;
-              height: 38px;
-            }
-          }
-          .apps-visual-card-body-ref {
-            top: 137%;
-            left: -21%;
-            width: 342px;
-            .apps-visual-ref-course {
-              width: 140px;
-              height: 90px;
-              img {
-                top: -29px;
-                left: 20px;
-                width: 93px;
-                height: 79px;
-              }
-            }
-            .apps-visual-ref-class {
-              width: 149px;
-              height: 90px;
-              img {
-                top: -27px;
-                left: 31px;
-                width: 93px;
-                height: 79px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 320px) {

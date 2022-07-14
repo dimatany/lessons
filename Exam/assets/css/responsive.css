@@ -32,11 +32,11 @@
   }
   .hero-section .hero-section-description .hero-section-description-info h1 {
     width: 450px;
-    font-size: 35px;
+    font-size: 50px;
     margin-bottom: 24px;
   }
   .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 15px;
+    font-size: 18px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
     width: 423px;
@@ -86,16 +86,21 @@
   .featured .featured-block .featured-text p {
     margin-left: -19px;
     max-width: 211px;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 22px;
   }
+  .classes .classes-header {
+    width: 495px;
+  }
   .classes .classes-header h2 {
-    margin-left: 30px;
-    font-size: 25px;
+    margin-left: 0;
+    font-size: 36px;
+    text-align: center;
   }
   .classes .classes-header p {
     font-size: 16px;
     margin-bottom: 75px;
+    text-align: center;
   }
   .classes .classes-card {
     justify-content: space-evenly;
@@ -112,12 +117,18 @@
     top: 139px;
     left: 20px;
   }
+  .classes .classes-card .classes-card-item h4 {
+    font-size: 18px;
+  }
+  .classes .classes-card .classes-card-item p {
+    font-size: 16px;
+  }
   .webinar .webinar-header {
     width: 300px;
     margin-bottom: 150px;
   }
   .webinar .webinar-header h2 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 auto;
     text-align: center;
   }
@@ -142,7 +153,7 @@
     width: 34%;
   }
   .pricing .pricing-header h2 {
-    font-size: 25px;
+    font-size: 30px;
     width: 200px;
   }
   .pricing .pricing-header p {
@@ -172,7 +183,7 @@
     font-size: 16px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
-    font-size: 25px;
+    font-size: 20px;
   }
   .pricing .pricing-block .pricing-block-item .sub-btn button {
     height: 50px;
@@ -186,7 +197,7 @@
     margin-bottom: 100px;
   }
   .apps .apps-info h3 {
-    font-size: 35px;
+    font-size: 40px;
     margin: 0 auto 25px;
     text-align: center;
   }
@@ -243,7 +254,7 @@
     width: 417px;
   }
   .footer a {
-    font-size: 15px;
+    font-size: 16px;
   }
   .footer .retreat {
     margin-bottom: 25px;
@@ -267,7 +278,7 @@
     margin-bottom: 150px;
   }
   .webinar .webinar-header h2 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 auto;
     text-align: center;
   }
@@ -342,7 +353,7 @@
     text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
@@ -361,6 +372,7 @@
   .hero-section .hero-section-description .hero-section-description-suggestions p {
     display: none;
     margin-right: 10px;
+    font-size: 14px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions button {
     width: 200px;
@@ -413,12 +425,12 @@
     margin-bottom: 150px;
   }
   .webinar .webinar-header h2 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 auto;
     text-align: center;
   }
   .webinar .webinar-header p {
-    font-size: 16px;
+    font-size: 12px;
     margin: 0 auto;
     text-align: center;
   }
@@ -443,7 +455,7 @@
     margin-left: 35px;
   }
   .footer a {
-    font-size: 13px;
+    font-size: 12px;
   }
   .footer .retreat {
     margin-bottom: 25px;
@@ -452,7 +464,7 @@
     width: 200px;
   }
   .footer .footer-links .footer-social .footer-social-question p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .footer .footer-links .footer-menu {
     width: 95px;
@@ -566,12 +578,12 @@
   }
   .hero-section .hero-section-description .hero-section-description-info h1 {
     width: 450px;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 24px;
     text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
@@ -590,11 +602,13 @@
   .hero-section .hero-section-description .hero-section-description-suggestions p {
     display: none;
     margin-right: 10px;
+    font-size: 12px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions button {
     width: 200px;
     height: 50px;
     margin-bottom: 20px;
+    font-size: 11px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions .hero-section-description-suggestions-block1 {
     display: flex;
@@ -620,21 +634,23 @@
     margin-left: 80px;
   }
   .featured .featured-block .featured-icon h4 {
-    font-size: 20px;
+    font-size: 14px;
   }
   .featured .featured-block .featured-text p {
     margin-left: -19px;
     max-width: 400px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 22px;
   }
+  .classes .classes-header {
+    width: 495px;
+  }
   .classes .classes-header h2 {
-    margin-left: 30px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
   }
   .classes .classes-header p {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 75px;
     text-align: center;
   }
@@ -653,11 +669,26 @@
     top: 139px;
     left: 20px;
   }
+  .classes .classes-card .classes-card-item h4 {
+    font-size: 14px;
+  }
+  .classes .classes-card .classes-card-item p {
+    font-size: 12px;
+  }
+  .classes .classes-card .classes-card-item .classes-card-button button {
+    font-size: 11px;
+  }
+  .classes .classes-button button {
+    font-size: 11px;
+  }
   .webinar .webinar-header {
     margin-bottom: 150px;
   }
+  .webinar .webinar-header h2 {
+    font-size: 18px;
+  }
   .webinar .webinar-header p {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     width: 325px;
     margin: 10px auto 60px;
@@ -686,11 +717,11 @@
     padding-top: 4px;
   }
   .pricing .pricing-header h2 {
-    font-size: 25px;
+    font-size: 18px;
     width: 200px;
   }
   .pricing .pricing-header p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .pricing .pricing-block {
     flex-wrap: wrap;
@@ -717,7 +748,10 @@
     font-size: 16px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
-    font-size: 25px;
+    font-size: 14px;
+  }
+  .pricing .pricing-block .pricing-block-item .pricing-block-item-info ul li {
+    font-size: 12px;
   }
   .pricing .pricing-block .pricing-block-item .sub-btn {
     margin: 55px 20px 0 18px;
@@ -726,11 +760,19 @@
     height: 50px;
     width: 190px;
   }
+  .apps .apps-info {
+    margin: 0;
+    padding: 0;
+  }
   .apps .apps-info h3 {
-    font-size: 35px;
+    font-size: 20px;
+    width: 200px;
+    margin: 0 auto;
   }
   .apps .apps-info p {
-    width: 300px;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 12px;
   }
   .apps .apps-info .apps-info-brands {
     width: 380px;
@@ -775,7 +817,7 @@
     margin-left: 35px;
   }
   .footer a {
-    font-size: 13px;
+    font-size: 11px;
   }
   .footer .retreat {
     margin-bottom: 25px;
@@ -802,7 +844,7 @@
     width: 200px;
   }
   .footer .footer-links .footer-social .footer-social-question p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .footer .footer-links .footer-social .footer-social-links-ul {
     padding-left: 30px;
@@ -835,7 +877,6 @@
     width: 300px;
   }
   .webinar .webinar-header p {
-    font-size: 16px;
     text-align: center;
     width: 300px;
     margin: 10px auto 60px;
@@ -862,13 +903,6 @@
     width: 22px;
     height: 27px;
     padding-top: 4px;
-  }
-  .apps .apps-info h3 {
-    font-size: 25px;
-  }
-  .apps .apps-info p {
-    width: 270px;
-    font-size: 14px;
   }
   .apps .apps-info .apps-info-brands {
     display: flex;
@@ -984,15 +1018,6 @@
     max-width: 506px;
     margin: -60px auto;
   }
-  .hero-section .hero-section-description .hero-section-description-info h1 {
-    width: 360px;
-    font-size: 28px;
-    margin: 0 auto 20px;
-  }
-  .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 13px;
-    text-align: center;
-  }
   .hero-section .hero-section-description .hero-section-description-info .search-container {
     margin: -10px auto 30px;
     width: 360px;
@@ -1013,11 +1038,13 @@
   .hero-section .hero-section-description .hero-section-description-suggestions p {
     display: none;
     margin-right: 10px;
+    font-size: 12px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions button {
     width: 200px;
     height: 50px;
     margin-bottom: 20px;
+    font-size: 11px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions .hero-section-description-suggestions-block1 {
     display: flex;
@@ -1029,18 +1056,7 @@
     width: 100%;
   }
   .classes .classes-header {
-    width: 260px;
-  }
-  .classes .classes-header h2 {
-    margin-left: 0;
-    font-size: 20px;
-    text-align: center;
-    line-height: 35px;
-  }
-  .classes .classes-header p {
-    font-size: 14px;
-    margin-bottom: 75px;
-    text-align: center;
+    width: 495px;
   }
   .classes .classes-card {
     justify-content: space-evenly;
@@ -1066,15 +1082,6 @@
     font-size: 11px;
     padding: 10px 10px;
   }
-  .pricing .pricing-header h2 {
-    font-size: 25px;
-    width: 200px;
-    text-align: center;
-  }
-  .pricing .pricing-header p {
-    font-size: 16px;
-    text-align: center;
-  }
   .pricing .pricing-block {
     flex-wrap: wrap;
     padding-left: 68px;
@@ -1099,9 +1106,6 @@
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-name {
     font-size: 16px;
   }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
-    font-size: 25px;
-  }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-sub1 {
     font-size: 11px;
     padding: 10px 10px;
@@ -1113,85 +1117,6 @@
   .pricing .pricing-block .pricing-block-item .pricing-block-item-sub3 {
     font-size: 11px;
     padding: 10px 10px;
-  }
-  .apps .apps-info h3 {
-    font-size: 25px;
-  }
-  .apps .apps-info p {
-    width: 270px;
-    font-size: 14px;
-  }
-  .apps .apps-info .apps-info-brands {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-  }
-  .apps .apps-info .apps-info-brands .apps-info-brands-google {
-    margin: 0 auto;
-  }
-  .apps .apps-info .apps-info-brands .apps-info-brands-google img {
-    width: 100%;
-    height: auto;
-  }
-  .apps .apps-info .apps-info-brands .apps-info-brands-apple {
-    margin: 0 auto;
-  }
-  .apps .apps-info .apps-info-brands .apps-info-brands-apple img {
-    width: 100%;
-    height: auto;
-  }
-  .apps .apps-visual .apps-visual-card {
-    margin: 0 8%;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 {
-    padding: 4px;
-    top: 78%;
-    left: -24%;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 img {
-    width: 40px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body {
-    padding: 30px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar2 {
-    padding: 4px;
-    top: 89%;
-    left: -21%;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar3 {
-    padding: 4px;
-    top: 80%;
-    right: -20%;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar3 img {
-    width: 38px;
-    height: 38px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref {
-    top: 137%;
-    left: -21%;
-    width: 342px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course {
-    width: 140px;
-    height: 90px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course img {
-    top: -29px;
-    left: 20px;
-    width: 93px;
-    height: 79px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class {
-    width: 149px;
-    height: 90px;
-  }
-  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class img {
-    top: -27px;
-    left: 31px;
-    width: 93px;
-    height: 79px;
   }
 }
 @media screen and (max-width: 320px) {
