@@ -88,7 +88,7 @@ body {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 164px;
+  margin-bottom: 254px;
   .hero-section-avatar {
     position: relative;
     .avatar-mini {
@@ -153,6 +153,7 @@ body {
         margin-bottom: 56px;
       }
       .search-container {
+        position: relative;
         margin-bottom: 48px;
         input#search-bar{
           width: 506px;
@@ -174,11 +175,11 @@ body {
           }
         }
         .search-icon{
-          position: relative;
-          float: right;
+          position: absolute;
           width: 24px;
-          top: -46px;
-          right: 22px;
+          height: auto;
+          top: 32%;
+          right: 4%;
         }
       }
     }
@@ -430,8 +431,8 @@ body {
         width: 622px;
         height: 424px;
         position: absolute;
-        top: -91px;
-        left: 337px;
+        top: -34%;
+        left: 26%;
       }
     }
     .webinar-block-video3 {

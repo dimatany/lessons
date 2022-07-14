@@ -46,8 +46,12 @@
             margin-left: 8px;
           }
           .search-icon{
-            top: -42px;
-            right: 50px;
+            position: absolute;
+            float: right;
+            width: 24px;
+            height: auto;
+            top: 36%;
+            right: 9%;
           }
         }
       }
@@ -156,6 +160,7 @@
   .webinar {
     .webinar-header {
       width: 300px;
+      margin-bottom: 150px;
       h2 {
         font-size: 25px;
         margin: 0 auto;
@@ -178,11 +183,9 @@
       }
       .webinar-block-video2 {
         img {
-          border-radius: 20px;
-          width: 380px;
-          height: 280px;
-          top: -60px;
-          left: 290px;
+          width:calc(622px - 1%);
+          height: auto;
+          left: 25%;
         }
       }
       .webinar-block-video3 {
@@ -475,8 +478,8 @@
             margin-left: 8px;
           }
           .search-icon{
-            top: 17px;
-            right: 50px;
+            top: 36%;
+            right: 9%;
           }
         }
       }
@@ -505,9 +508,91 @@
       }
     }
   }
+  .webinar {
+    .webinar-header {
+      width: 300px;
+      margin-bottom: 150px;
+      h2 {
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .webinar-block {
+      flex-wrap: wrap;
+      .webinar-block-video1 {
+        img {
+          width: 300px;
+          height: 250px;
+          border-radius: 20px;
+        }
+      }
+      .webinar-block-video2 {
+        img {
+          width:calc(622px - 23%);
+          height: auto;
+          top: -16%;
+          left: 26%;
+        }
+      }
+      .webinar-block-video3 {
+        img {
+          width: 300px;
+          height: 250px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 990px) {
+  .webinar {
+    .webinar-header {
+      width: 300px;
+      margin-bottom: 150px;
+      h2 {
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .webinar-block {
+      flex-wrap: wrap;
+      .webinar-block-video1 {
+        img {
+          width: 300px;
+          height: 250px;
+          border-radius: 20px;
+        }
+      }
+      .webinar-block-video2 {
+        img {
+          width:calc(622px - 30%);
+          height: auto;
+          top: -8%;
+          left: 29%;
+        }
+      }
+      .webinar-block-video3 {
+        img {
+          width: 300px;
+          height: 250px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -622,8 +707,8 @@
             margin-left: 8px;
           }
           .search-icon{
-            top: 17px;
-            right: 50px;
+            top: 36%;
+            right: 9%;
           }
         }
       }
@@ -738,6 +823,7 @@
   }
   .webinar {
     .webinar-header {
+      margin-bottom: 150px;
       h2 {
       }
       p {
@@ -758,11 +844,8 @@
       }
       .webinar-block-video2 {
         img {
-          border-radius: 20px;
-          width: 270px;
+          width:calc(622px - 40%);
           height: auto;
-          top: -18px;
-          left: 211px;
         }
       }
       .webinar-block-video3 {
@@ -1025,6 +1108,7 @@
 @media screen and (max-width: 600px) {
   .webinar {
     .webinar-header {
+      margin-bottom: 150px;
       h2 {
         width: 300px;
       }
@@ -1235,8 +1319,8 @@
             margin: 0 auto;
           }
           .search-icon{
-            top: -42px;
-            right: 18px;
+            top: 36%;
+            right: 9%;
           }
         }
       }
@@ -1496,8 +1580,8 @@
             margin: 0 auto;
           }
           .search-icon{
-            top: -42px;
-            right: 18px;
+            top: 36%;
+            right: 5%;
           }
         }
       }

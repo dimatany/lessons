@@ -58,7 +58,7 @@ body {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 164px;
+  margin-bottom: 254px;
 }
 .hero-section .hero-section-avatar {
   position: relative;
@@ -121,6 +121,7 @@ body {
   margin-bottom: 56px;
 }
 .hero-section .hero-section-description .hero-section-description-info .search-container {
+  position: relative;
   margin-bottom: 48px;
 }
 .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
@@ -143,11 +144,11 @@ body {
   box-shadow: inset 5px -5px 10px #13141a, inset -5px 5px 10px #333644;
 }
 .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-  position: relative;
-  float: right;
+  position: absolute;
   width: 24px;
-  top: -46px;
-  right: 22px;
+  height: auto;
+  top: 32%;
+  right: 4%;
 }
 .hero-section .hero-section-description .hero-section-description-suggestions p {
   font-weight: 400;
@@ -385,8 +386,8 @@ body {
   width: 622px;
   height: 424px;
   position: absolute;
-  top: -91px;
-  left: 337px;
+  top: -34%;
+  left: 26%;
 }
 .webinar .webinar-block .webinar-block-video3 img {
   width: 408px;

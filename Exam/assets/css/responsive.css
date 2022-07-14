@@ -44,8 +44,12 @@
     margin-left: 8px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: -42px;
-    right: 50px;
+    position: absolute;
+    float: right;
+    width: 24px;
+    height: auto;
+    top: 36%;
+    right: 9%;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions {
     display: flex;
@@ -110,6 +114,7 @@
   }
   .webinar .webinar-header {
     width: 300px;
+    margin-bottom: 150px;
   }
   .webinar .webinar-header h2 {
     font-size: 25px;
@@ -130,11 +135,9 @@
     border-radius: 20px;
   }
   .webinar .webinar-block .webinar-block-video2 img {
-    border-radius: 20px;
-    width: 380px;
-    height: 280px;
-    top: -60px;
-    left: 290px;
+    width: calc(622px - 1%);
+    height: auto;
+    left: 25%;
   }
   .webinar .webinar-block .webinar-block-video3 img {
     width: 300px;
@@ -309,8 +312,8 @@
     margin-left: 8px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: 17px;
-    right: 50px;
+    top: 36%;
+    right: 9%;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions {
     display: flex;
@@ -335,8 +338,74 @@
     flex-direction: column;
     height: 210px;
   }
+  .webinar .webinar-header {
+    width: 300px;
+    margin-bottom: 150px;
+  }
+  .webinar .webinar-header h2 {
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .webinar .webinar-header p {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .webinar .webinar-block {
+    flex-wrap: wrap;
+  }
+  .webinar .webinar-block .webinar-block-video1 img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .webinar .webinar-block .webinar-block-video2 img {
+    width: calc(622px - 23%);
+    height: auto;
+    top: -16%;
+    left: 26%;
+  }
+  .webinar .webinar-block .webinar-block-video3 img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+  }
 }
 @media screen and (max-width: 990px) {
+  .webinar .webinar-header {
+    width: 300px;
+    margin-bottom: 150px;
+  }
+  .webinar .webinar-header h2 {
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .webinar .webinar-header p {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .webinar .webinar-block {
+    flex-wrap: wrap;
+  }
+  .webinar .webinar-block .webinar-block-video1 img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .webinar .webinar-block .webinar-block-video2 img {
+    width: calc(622px - 30%);
+    height: auto;
+    top: -8%;
+    left: 29%;
+  }
+  .webinar .webinar-block .webinar-block-video3 img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -430,8 +499,8 @@
     margin-left: 8px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: 17px;
-    right: 50px;
+    top: 36%;
+    right: 9%;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions {
     display: flex;
@@ -503,6 +572,9 @@
     top: 139px;
     left: 20px;
   }
+  .webinar .webinar-header {
+    margin-bottom: 150px;
+  }
   .webinar .webinar-header p {
     font-size: 16px;
     text-align: center;
@@ -518,11 +590,8 @@
     border-radius: 20px;
   }
   .webinar .webinar-block .webinar-block-video2 img {
-    border-radius: 20px;
-    width: 270px;
+    width: calc(622px - 40%);
     height: auto;
-    top: -18px;
-    left: 211px;
   }
   .webinar .webinar-block .webinar-block-video3 img {
     width: 200px;
@@ -680,6 +749,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .webinar .webinar-header {
+    margin-bottom: 150px;
+  }
   .webinar .webinar-header h2 {
     width: 300px;
   }
@@ -817,8 +889,8 @@
     margin: 0 auto;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: -42px;
-    right: 18px;
+    top: 36%;
+    right: 9%;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions {
     display: flex;
@@ -980,8 +1052,8 @@
     margin: 0 auto;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: -42px;
-    right: 18px;
+    top: 36%;
+    right: 5%;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions {
     display: flex;
