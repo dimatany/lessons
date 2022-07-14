@@ -2,6 +2,7 @@
   .hero-section {
     margin-bottom: 120px;
     .hero-section-avatar {
+      position: relative;
       margin-top: 95px;
       img {
         width: 525px;
@@ -9,20 +10,20 @@
       }
       .hero-section-avatar-position {
         img:nth-child(1){
-          top: -587px;
-          right: -60px;
+          top: 20%;
+          right: 83%;
           max-width: 70px;
           max-height: 70px;
         }
         img:nth-child(2){
-          top: -663px;
-          right: -326px;
+          top: 6%;
+          right: 17%;
           max-width: 70px;
           max-height: 70px;
         }
         img:nth-child(3){
-          top: -116px;
-          right: -15px;
+          top: 84%;
+          right: 2%;
         }
       }
     }
@@ -419,6 +420,7 @@
     flex-wrap: wrap;
     margin-bottom: 120px;
     .hero-section-avatar {
+      position: relative;
       margin: 0 auto 0;
       .avatar-max {
         display: none;
@@ -432,20 +434,23 @@
       }
       .hero-section-avatar-position {
         img:nth-child(1){
-          top: -385px;
-          right: 14px;
+          position: absolute;
+          top: 35%;
+          right: 88%;
           max-width: 90px;
           max-height: 90px;
         }
         img:nth-child(2){
-          top: -459px;
-          right: -390px;
+          position: absolute;
+          top: 23%;
+          right: -9%;
           max-width: 90px;
           max-height: 90px;
         }
         img:nth-child(3){
-          top: -116px;
-          right: -15px;
+          position: absolute;
+          top: 84%;
+          right: 2%;
         }
       }
     }
@@ -562,6 +567,7 @@
     flex-wrap: wrap;
     margin-bottom: 120px;
     .hero-section-avatar {
+      position: relative;
       margin: 0 auto 0;
       .avatar-max {
         display: none;
@@ -573,20 +579,23 @@
       }
       .hero-section-avatar-position {
         img:nth-child(1){
-          top: -275px;
-          right: -40px;
+          position: absolute;
+          top: 37%;
+          right: 83%;
           max-width: 60px;
           max-height: 60px;
         }
         img:nth-child(2){
-          top: -315px;
-          right: -338px;
+          position: absolute;
+          top: 25%;
+          right: 0;
           max-width: 60px;
           max-height: 60px;
         }
         img:nth-child(3){
-          top: -57px;
-          right: -100px;
+          position: absolute;
+          top: 84%;
+          right: 2%;
           width: 40%;
           height: auto;
         }
@@ -795,9 +804,10 @@
         .pricing-block-item-header {
           .pricing-block-item-header-exception {
             img {
-              width: 100px;
+              width: 92px;
               top: -32px;
-              left: 232px;
+              left: 170px;
+              height: 85px;
             }
           }
           .pricing-block-item-header-stick {
@@ -1171,6 +1181,7 @@
     flex-wrap: wrap;
     margin-bottom: 120px;
     .hero-section-avatar {
+      position: relative;
       margin: 0 auto 0;
       .avatar-max {
         display: none;
@@ -1180,20 +1191,23 @@
       }
       .hero-section-avatar-position {
         img:nth-child(1){
-          top: -245px;
-          right: -57px;
+          position: absolute;
+          top: 35%;
+          right: 77%;
           max-width: 50px;
           max-height: 50px;
         }
         img:nth-child(2){
-          top: -290px;
-          right: -306px;
+          position: absolute;
+          top: 24%;
+          right: 5%;
           max-width: 50px;
           max-height: 50px;
         }
         img:nth-child(3){
-          top: -57px;
-          right: -100px;
+          position: absolute;
+          top: 84%;
+          right: 2%;
           width: 40%;
           height: auto;
         }
@@ -1315,9 +1329,201 @@
       }
     }
   }
+  .apps {
+    flex-wrap: wrap;
+    .apps-info {
+      h3 {
+        margin: 0 auto 12px;
+        font-size: 25px;
+        width: 300px;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 auto 40px;
+        width: 300px;
+      }
+      .apps-info-brands {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 300px;
+        .apps-info-brands-google {
+          img {
+          }
+        }
+        .apps-info-brands-apple {
+          img {
+          }
+        }
+      }
+    }
+    .apps-visual {
+      .apps-visual-card {
+        width: 280px;
+        margin-top: 0;
+        margin-left: 45px;
+        .apps-visual-card-header {
+          .apps-visual-card-header-avatar {
+            img{
+            }
+          }
+          .apps-visual-card-header-description {
+            .hello {
+            }
+            .member {
+            }
+          }
+          .apps-visual-card-header-res {
+            img{
+            }
+          }
+        }
+        .apps-visual-card-body {
+          .apps-visual-card-body-icon {
+            width: 100px;
+            img {
+            }
+          }
+          .apps-visual-card-body-description {
+            .header-text {
+            }
+            .descr-text {
+            }
+          }
+        }
+      }
+      .apps-visual-ref {
+        top: 282px;
+        left: -19px;
+        .apps-visual-ref-course {
+          img {
+          }
+          p {
+            i {
 
+            }
+          }
+        }
+        .apps-visual-ref-class {
+          img {
+          }
+          p {
+
+            i {
+            }
+          }
+        }
+      }
+      .apps-visual-avatar1 {
+        top: 64px;
+        left: -21px;
+        img {
+        }
+      }
+      .apps-visual-avatar2 {
+        top: 194px;
+        left: -5px;
+        img {
+        }
+      }
+      .apps-visual-avatar3 {
+        top: 209px;
+        left: 306px;
+        img {
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
+  .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    .hero-section-avatar {
+      position: relative;
+      margin: 0 auto 0;
+      .avatar-max {
+        display: none;
+      }
+      .avatar-mini {
+        width: 425px;
+      }
+      .hero-section-avatar-position {
+        img:nth-child(1){
+          position: absolute;
+          top: 35%;
+          right: 77%;
+          max-width: 50px;
+          max-height: 50px;
+        }
+        img:nth-child(2){
+          position: absolute;
+          top: 24%;
+          right: 5%;
+          max-width: 50px;
+          max-height: 50px;
+        }
+        img:nth-child(3){
+          position: absolute;
+          top: 84%;
+          right: 2%;
+          width: 40%;
+          height: auto;
+        }
+      }
+    }
+    .hero-section-description {
+      max-width: 506px;
+      margin: -60px auto;
+      .hero-section-description-info {
+        h1 {
+          width: 360px;
+          font-size: 28px;
+          margin: 0 auto 20px;
+        }
+        p {
+          font-size: 13px;
+          text-align: center;
+        }
+        .search-container {
+          margin: -10px auto 30px;
+          width: 360px;
+          input#search-bar{
+            width: 360px;
+            height: 60px;
+            margin: 0 auto;
+          }
+          .search-icon{
+            top: -42px;
+            right: 18px;
+          }
+        }
+      }
+      .hero-section-description-suggestions {
+        display: flex;
+        flex-wrap: wrap;
+        p {
+          display: none;
+          margin-right: 10px;
+        }
+        button {
+          width: 200px;
+          height: 50px;
+          margin-bottom: 20px;
+        }
+        .hero-section-description-suggestions-block1 {
+          display: flex;
+          flex-direction: column;
+        }
+        .hero-section-description-suggestions-block2 {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    }
+  }
 
 }

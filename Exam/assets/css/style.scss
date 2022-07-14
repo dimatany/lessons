@@ -90,6 +90,7 @@ body {
   justify-content: space-between;
   margin-bottom: 164px;
   .hero-section-avatar {
+    position: relative;
     .avatar-mini {
       display: none;
     }
@@ -99,9 +100,9 @@ body {
     }
     .hero-section-avatar-position {
       img:nth-child(1){
-        position: relative;
-        top: -617px;
-        right: -27px;
+        position: absolute;
+        top: 20%;
+        right: 83%;
         max-width: 90px;
         max-height: 90px;
         border-radius: 20px;
@@ -110,9 +111,9 @@ body {
         transform: rotate(-8deg);
       }
       img:nth-child(2){
-        position: relative;
-        top: -726px;
-        right: -399px;
+        position: absolute;
+        top: 6%;
+        right: 17%;
         max-width: 90px;
         max-height: 90px;
         border-radius: 20px;
@@ -121,10 +122,10 @@ body {
         transform: rotate(12deg);
       }
       img:nth-child(3){
-        position: relative;
-        top: -135px;
-        right: -155px;
-        width: auto;
+        position: absolute;
+        top: 84%;
+        right: 2%;
+        width: 365px;
         height: auto;
         z-index: 1;
         border-radius: 20px;

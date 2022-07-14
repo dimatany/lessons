@@ -3,6 +3,7 @@
     margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
+    position: relative;
     margin-top: 95px;
   }
   .hero-section .hero-section-avatar img {
@@ -10,20 +11,20 @@
     height: 590px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
-    top: -587px;
-    right: -60px;
+    top: 20%;
+    right: 83%;
     max-width: 70px;
     max-height: 70px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
-    top: -663px;
-    right: -326px;
+    top: 6%;
+    right: 17%;
     max-width: 70px;
     max-height: 70px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    top: -116px;
-    right: -15px;
+    top: 84%;
+    right: 2%;
   }
   .hero-section .hero-section-description {
     padding: 94px 0 0 0;
@@ -256,6 +257,7 @@
     margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
+    position: relative;
     margin: 0 auto 0;
   }
   .hero-section .hero-section-avatar .avatar-max {
@@ -269,20 +271,23 @@
     height: 590px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
-    top: -385px;
-    right: 14px;
+    position: absolute;
+    top: 35%;
+    right: 88%;
     max-width: 90px;
     max-height: 90px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
-    top: -459px;
-    right: -390px;
+    position: absolute;
+    top: 23%;
+    right: -9%;
     max-width: 90px;
     max-height: 90px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    top: -116px;
-    right: -15px;
+    position: absolute;
+    top: 84%;
+    right: 2%;
   }
   .hero-section .hero-section-description {
     max-width: 506px;
@@ -373,6 +378,7 @@
     margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
+    position: relative;
     margin: 0 auto 0;
   }
   .hero-section .hero-section-avatar .avatar-max {
@@ -384,20 +390,23 @@
     height: auto;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
-    top: -275px;
-    right: -40px;
+    position: absolute;
+    top: 37%;
+    right: 83%;
     max-width: 60px;
     max-height: 60px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
-    top: -315px;
-    right: -338px;
+    position: absolute;
+    top: 25%;
+    right: 0;
     max-width: 60px;
     max-height: 60px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    top: -57px;
-    right: -100px;
+    position: absolute;
+    top: 84%;
+    right: 2%;
     width: 40%;
     height: auto;
   }
@@ -545,9 +554,10 @@
     margin: 0 auto 30px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-exception img {
-    width: 100px;
+    width: 92px;
     top: -32px;
-    left: 232px;
+    left: 170px;
+    height: 85px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-stick img {
     height: 36px;
@@ -754,6 +764,7 @@
     margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
+    position: relative;
     margin: 0 auto 0;
   }
   .hero-section .hero-section-avatar .avatar-max {
@@ -763,20 +774,23 @@
     width: 425px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
-    top: -245px;
-    right: -57px;
+    position: absolute;
+    top: 35%;
+    right: 77%;
     max-width: 50px;
     max-height: 50px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
-    top: -290px;
-    right: -306px;
+    position: absolute;
+    top: 24%;
+    right: 5%;
     max-width: 50px;
     max-height: 50px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    top: -57px;
-    right: -100px;
+    position: absolute;
+    top: 84%;
+    right: 2%;
     width: 40%;
     height: auto;
   }
@@ -861,6 +875,135 @@
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
     font-size: 25px;
+  }
+  .apps {
+    flex-wrap: wrap;
+  }
+  .apps .apps-info h3 {
+    margin: 0 auto 12px;
+    font-size: 25px;
+    width: 300px;
+  }
+  .apps .apps-info p {
+    font-size: 16px;
+    margin: 0 auto 40px;
+    width: 300px;
+  }
+  .apps .apps-info .apps-info-brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 300px;
+  }
+  .apps .apps-visual .apps-visual-card {
+    width: 280px;
+    margin-top: 0;
+    margin-left: 45px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-icon {
+    width: 100px;
+  }
+  .apps .apps-visual .apps-visual-ref {
+    top: 282px;
+    left: -19px;
+  }
+  .apps .apps-visual .apps-visual-avatar1 {
+    top: 64px;
+    left: -21px;
+  }
+  .apps .apps-visual .apps-visual-avatar2 {
+    top: 194px;
+    left: -5px;
+  }
+  .apps .apps-visual .apps-visual-avatar3 {
+    top: 209px;
+    left: 306px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+  }
+  .hero-section .hero-section-avatar {
+    position: relative;
+    margin: 0 auto 0;
+  }
+  .hero-section .hero-section-avatar .avatar-max {
+    display: none;
+  }
+  .hero-section .hero-section-avatar .avatar-mini {
+    width: 425px;
+  }
+  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
+    position: absolute;
+    top: 35%;
+    right: 77%;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
+    position: absolute;
+    top: 24%;
+    right: 5%;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
+    position: absolute;
+    top: 84%;
+    right: 2%;
+    width: 40%;
+    height: auto;
+  }
+  .hero-section .hero-section-description {
+    max-width: 506px;
+    margin: -60px auto;
+  }
+  .hero-section .hero-section-description .hero-section-description-info h1 {
+    width: 360px;
+    font-size: 28px;
+    margin: 0 auto 20px;
+  }
+  .hero-section .hero-section-description .hero-section-description-info p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .hero-section .hero-section-description .hero-section-description-info .search-container {
+    margin: -10px auto 30px;
+    width: 360px;
+  }
+  .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
+    width: 360px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
+    top: -42px;
+    right: 18px;
+  }
+  .hero-section .hero-section-description .hero-section-description-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hero-section .hero-section-description .hero-section-description-suggestions p {
+    display: none;
+    margin-right: 10px;
+  }
+  .hero-section .hero-section-description .hero-section-description-suggestions button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .hero-section .hero-section-description .hero-section-description-suggestions .hero-section-description-suggestions-block1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-section .hero-section-description .hero-section-description-suggestions .hero-section-description-suggestions-block2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
