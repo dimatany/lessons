@@ -378,20 +378,17 @@ body {
   padding-right: 48px;
   margin-bottom: 119px;
 }
-.webinar .webinar-block .webinar-block-video1 img {
-  width: 401px;
-  height: 270px;
+.webinar .webinar-block .webinar-block-video1 {
+  width: 34%;
 }
-.webinar .webinar-block .webinar-block-video2 img {
-  width: 622px;
-  height: 424px;
+.webinar .webinar-block .webinar-block-video2 {
   position: absolute;
   top: -34%;
   left: 26%;
+  width: 53%;
 }
-.webinar .webinar-block .webinar-block-video3 img {
-  width: 408px;
-  height: 270px;
+.webinar .webinar-block .webinar-block-video3 {
+  width: 34%;
 }
 .webinar .webinar-reference {
   display: flex;

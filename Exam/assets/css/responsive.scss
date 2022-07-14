@@ -175,25 +175,16 @@
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
       .webinar-block-video2 {
-        img {
-          width:calc(622px - 1%);
-          height: auto;
-          left: 25%;
-        }
+        position: absolute;
+        top: -34%;
+        left: 26%;
+        width: 50%;
       }
       .webinar-block-video3 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
     }
   }
@@ -417,7 +408,42 @@
     }
   }
 }
-@media screen and (max-width: 1080px) {
+
+@media screen and (max-width: 1220px) {
+  .webinar {
+    .webinar-header {
+      width: 300px;
+      margin-bottom: 150px;
+      h2 {
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .webinar-block {
+      flex-wrap: wrap;
+      .webinar-block-video1 {
+        width: 34%;
+      }
+      .webinar-block-video2 {
+        position: absolute;
+        top: -34%;
+        left: 27%;
+        width: 49%;
+      }
+      .webinar-block-video3 {
+        width: 34%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) {
   .hero-section {
     display: flex;
     flex-wrap: wrap;
@@ -526,26 +552,16 @@
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
       .webinar-block-video2 {
-        img {
-          width:calc(622px - 23%);
-          height: auto;
-          top: -16%;
-          left: 26%;
-        }
+        position: absolute;
+        top: -34%;
+        left: 26%;
+        width: 46%;
       }
       .webinar-block-video3 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
     }
   }
@@ -570,26 +586,16 @@
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
       .webinar-block-video2 {
-        img {
-          width:calc(622px - 30%);
-          height: auto;
-          top: -8%;
-          left: 29%;
-        }
+        position: absolute;
+        top: -34%;
+        left: 27%;
+        width: 46%;
       }
       .webinar-block-video3 {
-        img {
-          width: 300px;
-          height: 250px;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
     }
   }
@@ -836,24 +842,16 @@
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
-        img {
-          width: 200px;
-          height: auto;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
       .webinar-block-video2 {
-        img {
-          width:calc(622px - 40%);
-          height: auto;
-        }
+        position: absolute;
+        top: -34%;
+        left: 27%;
+        width: 45%;
       }
       .webinar-block-video3 {
-        img {
-          width: 200px;
-          height: auto;
-          border-radius: 20px;
-        }
+        width: 34%;
       }
     }
     .webinar-reference {
@@ -1122,23 +1120,16 @@
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
-        img {
-          width: 180px;
-          height: auto;
-        }
+        width: 34%;
       }
       .webinar-block-video2 {
-        img {
-          width: 190px;
-          top: -11px;
-          left: 155px;
-        }
+        position: absolute;
+        top: -34%;
+        left: 27%;
+        width: 45%;
       }
       .webinar-block-video3 {
-        img {
-          width: 180px;
-          height: auto;
-        }
+        width: 34%;
       }
     }
     .webinar-reference {

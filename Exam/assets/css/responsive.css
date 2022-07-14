@@ -129,20 +129,17 @@
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
-  .webinar .webinar-block .webinar-block-video1 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video1 {
+    width: 34%;
   }
-  .webinar .webinar-block .webinar-block-video2 img {
-    width: calc(622px - 1%);
-    height: auto;
-    left: 25%;
+  .webinar .webinar-block .webinar-block-video2 {
+    position: absolute;
+    top: -34%;
+    left: 26%;
+    width: 50%;
   }
-  .webinar .webinar-block .webinar-block-video3 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video3 {
+    width: 34%;
   }
   .pricing .pricing-header h2 {
     font-size: 25px;
@@ -253,7 +250,38 @@
     width: 169px;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1220px) {
+  .webinar .webinar-header {
+    width: 300px;
+    margin-bottom: 150px;
+  }
+  .webinar .webinar-header h2 {
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .webinar .webinar-header p {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .webinar .webinar-block {
+    flex-wrap: wrap;
+  }
+  .webinar .webinar-block .webinar-block-video1 {
+    width: 34%;
+  }
+  .webinar .webinar-block .webinar-block-video2 {
+    position: absolute;
+    top: -34%;
+    left: 27%;
+    width: 49%;
+  }
+  .webinar .webinar-block .webinar-block-video3 {
+    width: 34%;
+  }
+}
+@media screen and (max-width: 1090px) {
   .hero-section {
     display: flex;
     flex-wrap: wrap;
@@ -355,21 +383,17 @@
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
-  .webinar .webinar-block .webinar-block-video1 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video1 {
+    width: 34%;
   }
-  .webinar .webinar-block .webinar-block-video2 img {
-    width: calc(622px - 23%);
-    height: auto;
-    top: -16%;
+  .webinar .webinar-block .webinar-block-video2 {
+    position: absolute;
+    top: -34%;
     left: 26%;
+    width: 46%;
   }
-  .webinar .webinar-block .webinar-block-video3 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video3 {
+    width: 34%;
   }
 }
 @media screen and (max-width: 990px) {
@@ -390,21 +414,17 @@
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
-  .webinar .webinar-block .webinar-block-video1 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video1 {
+    width: 34%;
   }
-  .webinar .webinar-block .webinar-block-video2 img {
-    width: calc(622px - 30%);
-    height: auto;
-    top: -8%;
-    left: 29%;
+  .webinar .webinar-block .webinar-block-video2 {
+    position: absolute;
+    top: -34%;
+    left: 27%;
+    width: 46%;
   }
-  .webinar .webinar-block .webinar-block-video3 img {
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video3 {
+    width: 34%;
   }
   .footer {
     display: flex;
@@ -584,19 +604,17 @@
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
-  .webinar .webinar-block .webinar-block-video1 img {
-    width: 200px;
-    height: auto;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video1 {
+    width: 34%;
   }
-  .webinar .webinar-block .webinar-block-video2 img {
-    width: calc(622px - 40%);
-    height: auto;
+  .webinar .webinar-block .webinar-block-video2 {
+    position: absolute;
+    top: -34%;
+    left: 27%;
+    width: 45%;
   }
-  .webinar .webinar-block .webinar-block-video3 img {
-    width: 200px;
-    height: auto;
-    border-radius: 20px;
+  .webinar .webinar-block .webinar-block-video3 {
+    width: 34%;
   }
   .webinar .webinar-reference a {
     font-size: 11px;
@@ -764,18 +782,17 @@
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
-  .webinar .webinar-block .webinar-block-video1 img {
-    width: 180px;
-    height: auto;
+  .webinar .webinar-block .webinar-block-video1 {
+    width: 34%;
   }
-  .webinar .webinar-block .webinar-block-video2 img {
-    width: 190px;
-    top: -11px;
-    left: 155px;
+  .webinar .webinar-block .webinar-block-video2 {
+    position: absolute;
+    top: -34%;
+    left: 27%;
+    width: 45%;
   }
-  .webinar .webinar-block .webinar-block-video3 img {
-    width: 180px;
-    height: auto;
+  .webinar .webinar-block .webinar-block-video3 {
+    width: 34%;
   }
   .webinar .webinar-reference a {
     font-size: 11px;
