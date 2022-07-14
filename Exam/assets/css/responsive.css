@@ -1028,12 +1028,52 @@
     flex-direction: column;
     width: 100%;
   }
+  .classes .classes-header {
+    width: 260px;
+  }
+  .classes .classes-header h2 {
+    margin-left: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .classes .classes-header p {
+    font-size: 14px;
+    margin-bottom: 75px;
+    text-align: center;
+  }
+  .classes .classes-card {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .classes .classes-card .classes-card-item {
+    padding: 20px;
+    margin: 40px;
+  }
+  .classes .classes-card .classes-card-item img {
+    margin-left: -10px;
+  }
+  .classes .classes-card .classes-card-item .classes-card-item-count {
+    top: 139px;
+    left: 20px;
+  }
+  .classes .classes-button {
+    width: 160px;
+  }
+  .classes .classes-button button {
+    margin: 0 auto;
+    width: 160px;
+    font-size: 11px;
+    padding: 10px 10px;
+  }
   .pricing .pricing-header h2 {
     font-size: 25px;
     width: 200px;
+    text-align: center;
   }
   .pricing .pricing-header p {
     font-size: 16px;
+    text-align: center;
   }
   .pricing .pricing-block {
     flex-wrap: wrap;
@@ -1061,6 +1101,18 @@
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
     font-size: 25px;
+  }
+  .pricing .pricing-block .pricing-block-item .pricing-block-item-sub1 {
+    font-size: 11px;
+    padding: 10px 10px;
+  }
+  .pricing .pricing-block .pricing-block-item .pricing-block-item-sub2 {
+    font-size: 11px;
+    padding: 10px 10px;
+  }
+  .pricing .pricing-block .pricing-block-item .pricing-block-item-sub3 {
+    font-size: 11px;
+    padding: 10px 10px;
   }
   .apps .apps-info h3 {
     font-size: 25px;
