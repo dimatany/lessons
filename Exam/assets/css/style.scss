@@ -396,7 +396,7 @@ body {
 
 /////////////////////--webinar--//////////////////////////
 .webinar {
-  margin-bottom: 159px;
+  margin-bottom: 157px;
   .webinar-header {
     margin: 0 auto;
     width: 672px;
@@ -649,9 +649,11 @@ body {
       margin-top: -29px;
       margin-left: -10px;
       margin-bottom: -10px;
+      position: relative;
       .apps-visual-card-header {
         margin-bottom: 36px;
         display: flex;
+        position: relative;
         .apps-visual-card-header-avatar {
           margin-right: 10px;
           background-color: rgba(255, 255, 255, 0.5);
@@ -688,6 +690,17 @@ body {
             height: 23px;
           }
         }
+        .apps-visual-card-header-avatar1 {
+          background-color: $highlighting-elements6;
+          padding: 7px;
+          border-radius: 50%;
+          position: absolute;
+          top: 76%;
+          left: -41%;
+          img {
+            width: 45px;
+          }
+        }
       }
       .apps-visual-card-body {
         display: flex;
@@ -695,6 +708,7 @@ body {
         padding: 20px;
         border-radius: 17px;
         margin-bottom: 150px;
+        position: relative;
         .apps-visual-card-body-icon {
           width: 100px;
           img {
@@ -719,110 +733,100 @@ body {
             margin-bottom: 3px;
           }
         }
-      }
-    }
-    .apps-visual-ref {
-      position: absolute;
-      top: 243px;
-      left: -96px;
-      display: flex;
-      justify-content: space-between;
-      width: 350px;
-      .apps-visual-ref-course {
-        padding: 20px 14px 20px 14px;
-        background-color: $highlighting-elements6;
-        border-radius: 17px;
-        width: 159px;
-        height: 94px;
-        img {
+        .apps-visual-card-body-avatar2 {
+          background-color: $highlighting-elements6;
+          padding: 4px;
+          border-radius: 50%;
           position: absolute;
-          top: -30px;
-          left: 30px;
-          width: 100px;
-          height: 88px;
-        }
-        p {
-          margin-top: 40px;
-          color: $text-button;
-          font-weight: 600;
-          font-size: 12px;
-          i {
-            border: solid $text-button;
-            border-width: 0 2px 2px 0;
-            display: inline-block;
-            padding: 3px;
-          }
-          .right {
-            transform: rotate(-45deg);
+          top: 65%;
+          left: -29%;
+          img {
+            width: 38px;
+            height: 38px;
           }
         }
-      }
-      .apps-visual-ref-class {
-        padding: 20px;
-        background-color: $highlighting-elements6;
-        border-radius: 17px;
-        width: 159px;
-        height: 94px;
-        position: relative;
-        img {
+        .apps-visual-card-body-avatar3 {
+          background-color: $highlighting-elements6;
+          padding: 5px;
+          border-radius: 50%;
           position: absolute;
-          top: -36px;
-          left: 22px;
-          width: 104px;
-          height: 96px;
-        }
-        p {
-          margin-top: 40px;
-          color: $text-button;
-          font-weight: 600;
-          font-size: 12px;
-          i {
-            border: solid $text-button;
-            border-width: 0 2px 2px 0;
-            display: inline-block;
-            padding: 3px;
-          }
-          .right {
-            transform: rotate(-45deg);
+          top: 102%;
+          right: -21%;
+          img {
+            width: 43px;
+            height: 43px;
           }
         }
+        .apps-visual-card-body-ref {
+          position: absolute;
+          top: 153%;
+          left: -43%;
+          display: flex;
+          justify-content: space-between;
+          width: 350px;
+          .apps-visual-ref-course {
+            padding: 20px 14px 20px 14px;
+            background-color: $highlighting-elements6;
+            border-radius: 17px;
+            width: 159px;
+            height: 94px;
+            img {
+              position: absolute;
+              top: -30px;
+              left: 30px;
+              width: 100px;
+              height: 88px;
+            }
+            p {
+              margin-top: 40px;
+              color: $text-button;
+              font-weight: 600;
+              font-size: 12px;
+              i {
+                border: solid $text-button;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+              }
+              .right {
+                transform: rotate(-45deg);
+              }
+            }
+          }
+          .apps-visual-ref-class {
+            padding: 20px;
+            background-color: $highlighting-elements6;
+            border-radius: 17px;
+            width: 159px;
+            height: 94px;
+            position: relative;
+            img {
+              position: absolute;
+              top: -36px;
+              left: 22px;
+              width: 104px;
+              height: 96px;
+            }
+            p {
+              margin-top: 40px;
+              color: $text-button;
+              font-weight: 600;
+              font-size: 12px;
+              i {
+                border: solid $text-button;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+              }
+              .right {
+                transform: rotate(-45deg);
+              }
+            }
+          }
+        }
       }
     }
-    .apps-visual-avatar1 {
-      background-color: $highlighting-elements6;
-      padding: 7px;
-      border-radius: 50%;
-      position: absolute;
-      top: 27px;
-      left: -91px;
-      img {
-        width: 45px;
-      }
-    }
-    .apps-visual-avatar2 {
-      background-color: $highlighting-elements6;
-      padding: 4px;
-      border-radius: 50%;
-      position: absolute;
-      top: 145px;
-      left: -62px;
-      img {
-        width: 38px;
-        height: 38px;
-      }
-    }
-    .apps-visual-avatar3 {
-      background-color: $highlighting-elements6;
-      padding: 5px;
-      border-radius: 50%;
-      position: absolute;
-      top: 185px;
-      left: 255px;
-      img {
-        width: 43px;
-        height: 43px;
-      }
-    }
+
   }
 }
 

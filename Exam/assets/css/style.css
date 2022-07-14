@@ -352,7 +352,7 @@ body {
 }
 
 .webinar {
-  margin-bottom: 159px;
+  margin-bottom: 157px;
 }
 .webinar .webinar-header {
   margin: 0 auto;
@@ -597,10 +597,12 @@ body {
   margin-top: -29px;
   margin-left: -10px;
   margin-bottom: -10px;
+  position: relative;
 }
 .apps .apps-visual .apps-visual-card .apps-visual-card-header {
   margin-bottom: 36px;
   display: flex;
+  position: relative;
 }
 .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar {
   margin-right: 10px;
@@ -638,12 +640,24 @@ body {
 .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-res img {
   height: 23px;
 }
+.apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 76%;
+  left: -41%;
+}
+.apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 img {
+  width: 45px;
+}
 .apps .apps-visual .apps-visual-card .apps-visual-card-body {
   display: flex;
   background-color: #4c4567;
   padding: 20px;
   border-radius: 17px;
   margin-bottom: 150px;
+  position: relative;
 }
 .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-icon {
   width: 100px;
@@ -669,44 +683,68 @@ body {
   line-height: 12px;
   margin-bottom: 3px;
 }
-.apps .apps-visual .apps-visual-ref {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px;
+  border-radius: 50%;
   position: absolute;
-  top: 243px;
-  left: -96px;
+  top: 65%;
+  left: -29%;
+}
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar2 img {
+  width: 38px;
+  height: 38px;
+}
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar3 {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 102%;
+  right: -21%;
+}
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar3 img {
+  width: 43px;
+  height: 43px;
+}
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref {
+  position: absolute;
+  top: 153%;
+  left: -43%;
   display: flex;
   justify-content: space-between;
   width: 350px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-course {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course {
   padding: 20px 14px 20px 14px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 17px;
   width: 159px;
   height: 94px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-course img {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course img {
   position: absolute;
   top: -30px;
   left: 30px;
   width: 100px;
   height: 88px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-course p {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course p {
   margin-top: 40px;
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 12px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-course p i {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course p i {
   border: solid rgb(255, 255, 255);
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-course p .right {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course p .right {
   transform: rotate(-45deg);
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-class {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 17px;
@@ -714,62 +752,27 @@ body {
   height: 94px;
   position: relative;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-class img {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class img {
   position: absolute;
   top: -36px;
   left: 22px;
   width: 104px;
   height: 96px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-class p {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class p {
   margin-top: 40px;
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 12px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-class p i {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class p i {
   border: solid rgb(255, 255, 255);
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
 }
-.apps .apps-visual .apps-visual-ref .apps-visual-ref-class p .right {
+.apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class p .right {
   transform: rotate(-45deg);
-}
-.apps .apps-visual .apps-visual-avatar1 {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 7px;
-  border-radius: 50%;
-  position: absolute;
-  top: 27px;
-  left: -91px;
-}
-.apps .apps-visual .apps-visual-avatar1 img {
-  width: 45px;
-}
-.apps .apps-visual .apps-visual-avatar2 {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 4px;
-  border-radius: 50%;
-  position: absolute;
-  top: 145px;
-  left: -62px;
-}
-.apps .apps-visual .apps-visual-avatar2 img {
-  width: 38px;
-  height: 38px;
-}
-.apps .apps-visual .apps-visual-avatar3 {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 5px;
-  border-radius: 50%;
-  position: absolute;
-  top: 185px;
-  left: 255px;
-}
-.apps .apps-visual .apps-visual-avatar3 img {
-  width: 43px;
-  height: 43px;
 }
 
 .footer {
