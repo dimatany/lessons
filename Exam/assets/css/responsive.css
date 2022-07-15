@@ -47,7 +47,7 @@
     max-width: 506px;
   }
   .hero-section .hero-section-description .hero-section-description-info {
-    margin: 0 15px 0;
+    margin: 0 20px 0;
   }
   .hero-section .hero-section-description .hero-section-description-info h1 {
     font-size: 50px;
@@ -56,7 +56,6 @@
   .hero-section .hero-section-description .hero-section-description-info p {
     font-size: 18px;
     text-align: center;
-    padding: 0 15px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
     width: 445px;
@@ -95,7 +94,7 @@
     height: 210px;
   }
   .featured {
-    margin: 0 39px 169px 68px;
+    margin: 0 39px 120px 68px;
   }
   .featured .featured-block .featured-icon img {
     margin-right: 20px;
@@ -109,8 +108,11 @@
     font-size: 16px;
     line-height: 22px;
   }
+  .classes {
+    margin-bottom: 120px;
+  }
   .classes .classes-header {
-    margin: 0 15px 0;
+    margin: 0 20px 0;
   }
   .classes .classes-header h2 {
     margin-left: 0;
@@ -125,6 +127,7 @@
   .classes .classes-card {
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 0 50px 40px 50px;
   }
   .classes .classes-card .classes-card-item {
     padding: 20px;
@@ -144,7 +147,7 @@
     font-size: 16px;
   }
   .webinar .webinar-header {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
   }
   .webinar .webinar-header h2 {
     font-size: 30px;
@@ -170,6 +173,9 @@
   }
   .webinar .webinar-block .webinar-block-video3 {
     width: 34%;
+  }
+  .pricing {
+    margin-bottom: 120px;
   }
   .pricing .pricing-header h2 {
     width: 200px;
@@ -278,6 +284,10 @@
     left: -37%;
     width: 417px;
   }
+  .footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .footer a {
     font-size: 16px;
   }
@@ -301,11 +311,13 @@
   .footer .footer-links .footer-apps {
     width: 169px;
   }
+  .footer .footer-copyright {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 1220px) {
   .webinar .webinar-header {
     width: 300px;
-    margin-bottom: 150px;
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
@@ -405,10 +417,6 @@
     flex-direction: column;
     height: 210px;
   }
-  .webinar .webinar-header {
-    width: 300px;
-    margin-bottom: 150px;
-  }
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
@@ -434,10 +442,6 @@
   }
   h3 {
     font-size: 22px !important;
-  }
-  .webinar .webinar-header {
-    width: 300px;
-    margin-bottom: 150px;
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
@@ -501,7 +505,6 @@
   .footer {
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
   }
   .footer p, .footer button, .footer a {
     font-size: 14px !important;
@@ -652,9 +655,6 @@
     top: 139px;
     left: 20px;
   }
-  .webinar .webinar-header {
-    margin-bottom: 150px;
-  }
   .webinar .webinar-header p {
     text-align: center;
     width: 325px;
@@ -762,7 +762,6 @@
   .footer {
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
   }
   .footer .retreat {
     margin-bottom: 25px;
@@ -801,9 +800,6 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .webinar .webinar-header {
-    margin-bottom: 150px;
-  }
   .webinar .webinar-header h2 {
     width: 300px;
   }
@@ -856,7 +852,7 @@
   }
   .apps .apps-visual .apps-visual-card {
     width: 300px;
-    margin-left: 15%;
+    margin-left: 12%;
   }
   .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 {
     padding: 4px;
@@ -996,7 +992,7 @@
   .classes .classes-card .classes-card-item {
     padding: 20px;
     margin: 40px;
-    min-width: 300px;
+    min-width: 260px;
   }
   .classes .classes-card .classes-card-item img {
     margin-left: -10px;
@@ -1013,12 +1009,15 @@
     width: 160px;
     padding: 10px 10px;
   }
+  .pricing .pricing-header {
+    width: 300px;
+  }
   .pricing .pricing-block {
     padding-left: 20px;
     padding-right: 20px;
   }
   .pricing .pricing-block .pricing-block-item {
-    padding: 15px;
+    padding: 10px;
     margin: 0 auto 30px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-exception img {
@@ -1179,6 +1178,84 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .apps {
+    padding: 70px 137px 137px 70px;
+  }
+  .apps .apps-visual .apps-visual-card {
+    border-radius: 20px;
+    width: 270px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-description {
+    margin-right: 50px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 {
+    padding: 2px;
+    top: 129%;
+    left: -6%;
+    z-index: 100;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 img {
+    width: 40px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body {
+    padding: 30px;
+    margin-bottom: 325px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar2 {
+    padding: 2px;
+    top: 81%;
+    left: -5%;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar3 {
+    padding: 2px;
+    top: 73%;
+    right: -7%;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-avatar3 img {
+    width: 38px;
+    height: 38px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref {
+    display: flex;
+    flex-wrap: wrap;
+    top: 146%;
+    left: -6%;
+    width: 290px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course {
+    width: 150px;
+    height: 90px;
+    margin: 20px auto;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course img {
+    top: -18px;
+    left: 98px;
+    width: 92px;
+    height: 86px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course p {
+    font-size: 10px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course p i {
+    padding: 2px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class {
+    width: 150px;
+    height: 90px;
+    margin: 20px auto;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class img {
+    top: -17px;
+    left: 32px;
+    width: 92px;
+    height: 86px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class p {
+    font-size: 10px;
+  }
+  .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class p i {
+    padding: 2px;
   }
 }
 

@@ -48,7 +48,7 @@
       padding: 94px 0 0 0;
       max-width: 506px;
       .hero-section-description-info {
-        margin: 0 15px 0;
+        margin: 0 20px 0;
         h1 {
           font-size: 50px;
           margin-bottom: 24px;
@@ -56,7 +56,6 @@
         p {
           font-size: 18px;
           text-align: center;
-          padding: 0 15px;
         }
         .search-container {
           input#search-bar{
@@ -100,7 +99,7 @@
     }
   }
   .featured {
-    margin: 0 39px 169px 68px;
+    margin: 0 39px 120px 68px;
     .featured-block {
       .featured-icon {
         img {
@@ -121,8 +120,9 @@
     }
   }
   .classes {
+    margin-bottom: 120px;
     .classes-header {
-      margin: 0 15px 0;
+      margin: 0 20px 0;
       h2 {
         margin-left: 0;
         font-size: 36px;
@@ -137,6 +137,7 @@
     .classes-card {
       justify-content: space-evenly;
       flex-wrap: wrap;
+      margin: 0 50px 40px 50px;
       .classes-card-item {
         padding: 20px;
         margin: 40px;
@@ -181,7 +182,7 @@
   }
   .webinar {
     .webinar-header {
-      margin-bottom: 150px;
+      margin-bottom: 80px;
       h2 {
         font-size: 30px;
         margin: 0 auto;
@@ -210,6 +211,7 @@
     }
   }
   .pricing {
+    margin-bottom: 120px;
     .pricing-header {
       h2 {
         width: 200px;
@@ -359,6 +361,8 @@
     }
   }
   .footer {
+    margin-left: 0;
+    margin-right: 0;
     a {
       font-size: 16px;
     }
@@ -386,6 +390,9 @@
         width: 169px;
       }
     }
+    .footer-copyright {
+      max-width: 300px;
+    }
   }
 }
 
@@ -393,7 +400,6 @@
   .webinar {
     .webinar-header {
       width: 300px;
-      margin-bottom: 150px;
     }
     .webinar-block {
       flex-wrap: wrap;
@@ -503,10 +509,6 @@
     }
   }
   .webinar {
-    .webinar-header {
-      width: 300px;
-      margin-bottom: 150px;
-    }
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
@@ -537,10 +539,6 @@
   }
 
   .webinar {
-    .webinar-header {
-      width: 300px;
-      margin-bottom: 150px;
-    }
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
@@ -613,7 +611,6 @@
     }
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
     .retreat {
       margin-bottom: 25px;
     }
@@ -794,7 +791,6 @@
   }
   .webinar {
     .webinar-header {
-      margin-bottom: 150px;
       p {
         text-align: center;
         width: 325px;
@@ -925,7 +921,6 @@
   .footer {
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
     .retreat {
       margin-bottom: 25px;
     }
@@ -970,7 +965,6 @@
 @media screen and (max-width: 600px) {
   .webinar {
     .webinar-header {
-      margin-bottom: 150px;
       h2 {
         width: 300px;
       }
@@ -1029,7 +1023,7 @@
       width: 300px;
       .apps-visual-card {
         width: 300px;
-        margin-left: 15%;
+        margin-left: 12%;
         .apps-visual-card-header {
           .apps-visual-card-header-avatar1 {
             padding: 4px;
@@ -1178,7 +1172,7 @@
       .classes-card-item {
         padding: 20px;
         margin: 40px;
-        min-width: 300px;
+        min-width: 260px;
         img {
           margin-left: -10px;
         }
@@ -1199,12 +1193,13 @@
   }
   .pricing {
     .pricing-header {
+      width: 300px;
     }
     .pricing-block {
       padding-left: 20px;
       padding-right: 20px;
       .pricing-block-item {
-        padding: 15px;
+        padding: 10px;
         margin: 0 auto 30px;
         .pricing-block-item-header {
           .pricing-block-item-header-exception {
@@ -1386,6 +1381,88 @@
           display: flex;
           flex-direction: column;
           width: 100%;
+        }
+      }
+    }
+  }
+  .apps {
+    padding: 70px 137px 137px 70px;
+    .apps-visual {
+      .apps-visual-card {
+        border-radius: 20px;
+        width: 270px;
+        .apps-visual-card-header {
+          .apps-visual-card-header-description {
+            margin-right: 50px;
+          }
+          .apps-visual-card-header-avatar1 {
+            padding: 2px;
+            top: 129%;
+            left: -6%;
+            z-index: 100;
+            img {
+              width: 40px;
+            }
+          }
+        }
+        .apps-visual-card-body {
+          padding: 30px;
+          margin-bottom: 325px;
+          .apps-visual-card-body-avatar2 {
+            padding: 2px;
+            top: 81%;
+            left: -5%;
+          }
+          .apps-visual-card-body-avatar3 {
+            padding: 2px;
+            top: 73%;
+            right: -7%;
+            img {
+              width: 38px;
+              height: 38px;
+            }
+          }
+          .apps-visual-card-body-ref {
+            display: flex;
+            flex-wrap: wrap;
+            top: 146%;
+            left: -6%;
+            width: 290px;
+            .apps-visual-ref-course {
+              width: 150px;
+              height: 90px;
+              margin: 20px auto;
+              img {
+                top: -18px;
+                left: 98px;
+                width: 92px;
+                height: 86px;
+              }
+              p {
+                font-size: 10px;
+                i {
+                  padding: 2px;
+                }
+              }
+            }
+            .apps-visual-ref-class {
+              width: 150px;
+              height: 90px;
+              margin: 20px auto;
+              img {
+                top: -17px;
+                left: 32px;
+                width: 92px;
+                height: 86px;
+              }
+              p {
+                font-size: 10px;
+                i {
+                  padding: 2px;
+                }
+              }
+            }
+          }
         }
       }
     }
