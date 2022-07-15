@@ -878,11 +878,6 @@
     margin-left: 10px;
     margin-right: 10px;
     .apps-info {
-
-      h3 {
-      }
-      p {
-      }
       .apps-info-brands {
         width: 380px;
       }
@@ -1013,7 +1008,6 @@
   }
   .apps {
     .apps-info {
-
       .apps-info-brands {
         display: flex;
         flex-wrap: wrap;
@@ -1035,8 +1029,10 @@
       }
     }
     .apps-visual {
+      width: 300px;
       .apps-visual-card {
-        margin: 0 8%;
+        width: 300px;
+        margin-left: 15%;
         .apps-visual-card-header {
           .apps-visual-card-header-avatar1 {
             padding: 4px;
@@ -1246,7 +1242,77 @@
       }
     }
   }
-
+  .apps {
+    .apps-visual {
+      .apps-visual-card {
+        .apps-visual-card-header {
+          .apps-visual-card-header-avatar1 {
+            padding: 2px;
+            top: 129%;
+            left: -6%;
+            z-index: 100;
+            img {
+              width: 40px;
+            }
+          }
+        }
+        .apps-visual-card-body {
+          padding: 30px;
+          .apps-visual-card-body-avatar2 {
+            padding: 2px;
+            top: 81%;
+            left: -5%;
+          }
+          .apps-visual-card-body-avatar3 {
+            padding: 2px;
+            top: 73%;
+            right: -7%;
+            img {
+              width: 38px;
+              height: 38px;
+            }
+          }
+          .apps-visual-card-body-ref {
+            top: 146%;
+            left: -6%;
+            width: 290px;
+            .apps-visual-ref-course {
+              width: 130px;
+              height: 90px;
+              img {
+                top: -27px;
+                left: 16px;
+                width: 92px;
+                height: 86px;
+              }
+              p {
+                font-size: 10px;
+                i {
+                  padding: 2px;
+                }
+              }
+            }
+            .apps-visual-ref-class {
+              width: 130px;
+              height: 90px;
+              img {
+                top: -24px;
+                left: 21px;
+                width: 92px;
+                height: 86px;
+              }
+              p {
+                font-size: 10px;
+                i {
+                  padding: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
