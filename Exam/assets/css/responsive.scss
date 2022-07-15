@@ -307,16 +307,12 @@
     }
     .apps-visual {
       width: 100%;
-      margin-bottom: -70px;
+      margin-bottom: -60px;
       .apps-visual-card {
-        margin: 0 auto;
+        width: 300px;
+        margin-left: 40%;
+        margin-bottom: -10px;
         .apps-visual-card-header {
-          .apps-visual-card-header-avatar {
-          }
-          .apps-visual-card-header-description {
-          }
-          .apps-visual-card-header-res {
-          }
           .apps-visual-card-header-avatar1 {
             padding: 10px;
             top: 23%;
@@ -569,9 +565,9 @@
     }
     .apps-visual {
       width: 100%;
-      margin-bottom: -70px;
       .apps-visual-card {
-        margin: 0 auto;
+        width: 300px;
+        margin-left: 35%;
         .apps-visual-card-header {
           .apps-visual-card-header-avatar1 {
             padding: 7px;
@@ -690,9 +686,9 @@
         }
         img:nth-child(3){
           position: absolute;
-          top: 84%;
+          top: 86%;
           right: 2%;
-          width: 40%;
+          width: 61%;
           height: auto;
         }
       }
@@ -884,6 +880,8 @@
     }
     .apps-visual {
       .apps-visual-card {
+        width: 300px;
+        margin-left: 30%;
         .apps-visual-card-header {
           .apps-visual-card-header-avatar1 {
             padding: 6px;
@@ -1121,9 +1119,9 @@
         }
         img:nth-child(3){
           position: absolute;
-          top: 84%;
-          right: 2%;
-          width: 40%;
+          top: 88%;
+          right: 10%;
+          width: 55%;
           height: auto;
         }
       }
@@ -1204,9 +1202,8 @@
     .pricing-header {
     }
     .pricing-block {
-      flex-wrap: wrap;
-      padding-left: 68px;
-      padding-right: 68px;
+      padding-left: 20px;
+      padding-right: 20px;
       .pricing-block-item {
         padding: 15px;
         margin: 0 auto 30px;

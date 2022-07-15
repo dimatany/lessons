@@ -237,10 +237,12 @@
   }
   .apps .apps-visual {
     width: 100%;
-    margin-bottom: -70px;
+    margin-bottom: -60px;
   }
   .apps .apps-visual .apps-visual-card {
-    margin: 0 auto;
+    width: 300px;
+    margin-left: 40%;
+    margin-bottom: -10px;
   }
   .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 {
     padding: 10px;
@@ -457,10 +459,10 @@
   }
   .apps .apps-visual {
     width: 100%;
-    margin-bottom: -70px;
   }
   .apps .apps-visual .apps-visual-card {
-    margin: 0 auto;
+    width: 300px;
+    margin-left: 35%;
   }
   .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 {
     padding: 7px;
@@ -570,9 +572,9 @@
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
     position: absolute;
-    top: 84%;
+    top: 86%;
     right: 2%;
-    width: 40%;
+    width: 61%;
     height: auto;
   }
   .hero-section .hero-section-description {
@@ -718,6 +720,10 @@
   }
   .apps .apps-info .apps-info-brands {
     width: 380px;
+  }
+  .apps .apps-visual .apps-visual-card {
+    width: 300px;
+    margin-left: 30%;
   }
   .apps .apps-visual .apps-visual-card .apps-visual-card-header .apps-visual-card-header-avatar1 {
     padding: 6px;
@@ -938,9 +944,9 @@
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
     position: absolute;
-    top: 84%;
-    right: 2%;
-    width: 40%;
+    top: 88%;
+    right: 10%;
+    width: 55%;
     height: auto;
   }
   .hero-section .hero-section-description {
@@ -1011,9 +1017,8 @@
     padding: 10px 10px;
   }
   .pricing .pricing-block {
-    flex-wrap: wrap;
-    padding-left: 68px;
-    padding-right: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .pricing .pricing-block .pricing-block-item {
     padding: 15px;
