@@ -1,4 +1,19 @@
 @media screen and (max-width: 1360px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 40px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  p, button, a, span {
+    font-size: 16px !important;
+  }
   .hero-section {
     margin-bottom: 120px;
   }
@@ -277,16 +292,6 @@
     width: 300px;
     margin-bottom: 150px;
   }
-  .webinar .webinar-header h2 {
-    font-size: 30px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .webinar .webinar-header p {
-    font-size: 16px;
-    margin: 0 auto;
-    text-align: center;
-  }
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
@@ -304,6 +309,21 @@
   }
 }
 @media screen and (max-width: 1090px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  h2 {
+    font-size: 25px !important;
+  }
+  h3 {
+    font-size: 30px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  p, button, a, span {
+    font-size: 14px !important;
+  }
   .hero-section {
     display: flex;
     flex-wrap: wrap;
@@ -346,16 +366,6 @@
     max-width: 506px;
     margin: -60px auto;
   }
-  .hero-section .hero-section-description .hero-section-description-info h1 {
-    width: 450px;
-    font-size: 35px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 14px;
-    text-align: center;
-  }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
     width: 423px;
     height: 60px;
@@ -368,11 +378,6 @@
   .hero-section .hero-section-description .hero-section-description-suggestions {
     display: flex;
     justify-content: space-evenly;
-  }
-  .hero-section .hero-section-description .hero-section-description-suggestions p {
-    display: none;
-    margin-right: 10px;
-    font-size: 14px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions button {
     width: 200px;
@@ -393,16 +398,6 @@
     width: 300px;
     margin-bottom: 150px;
   }
-  .webinar .webinar-header h2 {
-    font-size: 25px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .webinar .webinar-header p {
-    font-size: 16px;
-    margin: 0 auto;
-    text-align: center;
-  }
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
@@ -420,19 +415,18 @@
   }
 }
 @media screen and (max-width: 990px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h2 {
+    font-size: 19px !important;
+  }
+  h3 {
+    font-size: 22px !important;
+  }
   .webinar .webinar-header {
     width: 300px;
     margin-bottom: 150px;
-  }
-  .webinar .webinar-header h2 {
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .webinar .webinar-header p {
-    font-size: 12px;
-    margin: 0 auto;
-    text-align: center;
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
@@ -448,41 +442,6 @@
   }
   .webinar .webinar-block .webinar-block-video3 {
     width: 34%;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 35px;
-  }
-  .footer a {
-    font-size: 12px;
-  }
-  .footer .retreat {
-    margin-bottom: 25px;
-  }
-  .footer .footer-links .footer-social .footer-social-question {
-    width: 200px;
-  }
-  .footer .footer-links .footer-social .footer-social-question p {
-    font-size: 12px;
-  }
-  .footer .footer-links .footer-menu {
-    width: 95px;
-  }
-  .footer .footer-links .footer-services {
-    width: 150px;
-  }
-  .footer .footer-links .footer-info {
-    width: 160px;
-  }
-  .footer .footer-links .footer-apps {
-    width: 140px;
-  }
-  .apps .apps-info h3 {
-    font-size: 35px;
-  }
-  .apps .apps-info p {
-    width: 300px;
   }
   .apps .apps-info .apps-info-brands {
     width: 380px;
@@ -528,8 +487,40 @@
     left: -37%;
     width: 366px;
   }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+  }
+  .footer .retreat {
+    margin-bottom: 25px;
+  }
+  .footer .footer-links .footer-social .footer-social-question {
+    width: 200px;
+  }
+  .footer .footer-links .footer-menu {
+    width: 95px;
+  }
+  .footer .footer-links .footer-services {
+    width: 150px;
+  }
+  .footer .footer-links .footer-info {
+    width: 160px;
+  }
+  .footer .footer-links .footer-apps {
+    width: 140px;
+  }
 }
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 25px !important;
+  }
   .wrap-container {
     width: 100%;
     margin: 0 auto;
@@ -576,16 +567,6 @@
     max-width: 506px;
     margin: -60px auto;
   }
-  .hero-section .hero-section-description .hero-section-description-info h1 {
-    width: 450px;
-    font-size: 25px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 12px;
-    text-align: center;
-  }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
     width: 423px;
     height: 60px;
@@ -602,13 +583,11 @@
   .hero-section .hero-section-description .hero-section-description-suggestions p {
     display: none;
     margin-right: 10px;
-    font-size: 12px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions button {
     width: 200px;
     height: 50px;
     margin-bottom: 20px;
-    font-size: 11px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions .hero-section-description-suggestions-block1 {
     display: flex;
@@ -633,24 +612,17 @@
     margin-right: 20px;
     margin-left: 80px;
   }
-  .featured .featured-block .featured-icon h4 {
-    font-size: 14px;
-  }
   .featured .featured-block .featured-text p {
     margin-left: -19px;
     max-width: 400px;
-    font-size: 12px;
-    line-height: 22px;
   }
   .classes .classes-header {
     width: 495px;
   }
   .classes .classes-header h2 {
-    font-size: 18px;
     text-align: center;
   }
   .classes .classes-header p {
-    font-size: 12px;
     margin-bottom: 75px;
     text-align: center;
   }
@@ -669,26 +641,10 @@
     top: 139px;
     left: 20px;
   }
-  .classes .classes-card .classes-card-item h4 {
-    font-size: 14px;
-  }
-  .classes .classes-card .classes-card-item p {
-    font-size: 12px;
-  }
-  .classes .classes-card .classes-card-item .classes-card-button button {
-    font-size: 11px;
-  }
-  .classes .classes-button button {
-    font-size: 11px;
-  }
   .webinar .webinar-header {
     margin-bottom: 150px;
   }
-  .webinar .webinar-header h2 {
-    font-size: 18px;
-  }
   .webinar .webinar-header p {
-    font-size: 12px;
     text-align: center;
     width: 325px;
     margin: 10px auto 60px;
@@ -708,20 +664,13 @@
   .webinar .webinar-block .webinar-block-video3 {
     width: 34%;
   }
-  .webinar .webinar-reference a {
-    font-size: 11px;
-  }
   .webinar .webinar-reference img {
     width: 22px;
     height: 27px;
     padding-top: 4px;
   }
   .pricing .pricing-header h2 {
-    font-size: 18px;
     width: 200px;
-  }
-  .pricing .pricing-header p {
-    font-size: 12px;
   }
   .pricing .pricing-block {
     flex-wrap: wrap;
@@ -747,12 +696,6 @@
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-name {
     font-size: 16px;
   }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-price .price {
-    font-size: 14px;
-  }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-info ul li {
-    font-size: 12px;
-  }
   .pricing .pricing-block .pricing-block-item .sub-btn {
     margin: 55px 20px 0 18px;
   }
@@ -765,14 +708,12 @@
     padding: 0;
   }
   .apps .apps-info h3 {
-    font-size: 20px;
     width: 200px;
     margin: 0 auto;
   }
   .apps .apps-info p {
     width: 200px;
     margin: 0 auto;
-    font-size: 12px;
   }
   .apps .apps-info .apps-info-brands {
     width: 380px;
@@ -816,9 +757,6 @@
     flex-direction: column;
     margin-left: 35px;
   }
-  .footer a {
-    font-size: 11px;
-  }
   .footer .retreat {
     margin-bottom: 25px;
   }
@@ -842,9 +780,6 @@
   }
   .footer .footer-links .footer-social .footer-social-question {
     width: 200px;
-  }
-  .footer .footer-links .footer-social .footer-social-question p {
-    font-size: 12px;
   }
   .footer .footer-links .footer-social .footer-social-links-ul {
     padding-left: 30px;
@@ -895,9 +830,6 @@
   }
   .webinar .webinar-block .webinar-block-video3 {
     width: 34%;
-  }
-  .webinar .webinar-reference a {
-    font-size: 11px;
   }
   .webinar .webinar-reference img {
     width: 22px;
@@ -1038,7 +970,6 @@
   .hero-section .hero-section-description .hero-section-description-suggestions p {
     display: none;
     margin-right: 10px;
-    font-size: 12px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions button {
     width: 200px;
@@ -1079,7 +1010,6 @@
   .classes .classes-button button {
     margin: 0 auto;
     width: 160px;
-    font-size: 11px;
     padding: 10px 10px;
   }
   .pricing .pricing-block {
@@ -1107,15 +1037,12 @@
     font-size: 16px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-sub1 {
-    font-size: 11px;
     padding: 10px 10px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-sub2 {
-    font-size: 11px;
     padding: 10px 10px;
   }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-sub3 {
-    font-size: 11px;
     padding: 10px 10px;
   }
 }
@@ -1162,11 +1089,9 @@
   }
   .hero-section .hero-section-description .hero-section-description-info h1 {
     width: 360px;
-    font-size: 28px;
     margin: 0 auto 20px;
   }
   .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 13px;
     text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container {
