@@ -777,14 +777,11 @@
     margin: 0 auto;
     width: 300px;
   }
-  .footer .footer-links .footer-social .footer-social-logo {
-    padding-left: 30px;
-  }
   .footer .footer-links .footer-social .footer-social-question {
     width: 200px;
   }
   .footer .footer-links .footer-social .footer-social-links-ul {
-    padding-left: 30px;
+    margin: 0 auto;
   }
   .footer .footer-links .footer-menu {
     margin: 0 auto 50px;
@@ -965,8 +962,8 @@
     font-size: 13px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container .search-icon {
-    top: 33%;
-    right: 20%;
+    top: 34%;
+    right: 8%;
     width: 20px;
   }
   .hero-section .hero-section-description .hero-section-description-suggestions {
