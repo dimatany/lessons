@@ -219,7 +219,7 @@ body {
 }
 .classes .classes-header {
   margin: 0 auto;
-  width: 495px;
+  text-align: center;
 }
 .classes .classes-header h2 {
   font-size: 36px;
@@ -362,8 +362,8 @@ body {
   font-size: 36px;
   line-height: 54px;
   color: rgba(255, 255, 255, 0.8);
-  width: 346px;
   margin: 0 auto 20px;
+  text-align: center;
 }
 .webinar .webinar-header p {
   font-size: 18px;

@@ -1,18 +1,19 @@
 @media screen and (max-width: 1360px) {
   h1 {
     font-size: 50px !important;
+    text-align: center;
+    margin: 0 auto;
   }
   h2 {
     font-size: 30px !important;
+    text-align: center;
+    margin: 0 auto;
   }
   h3 {
     font-size: 40px !important;
   }
   h4 {
     font-size: 18px !important;
-  }
-  p, button, a, span {
-    font-size: 16px !important;
   }
   .hero-section {
     margin-bottom: 120px;
@@ -38,20 +39,24 @@
     max-height: 70px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    top: 84%;
-    right: 2%;
+    top: 75%;
+    right: 7%;
   }
   .hero-section .hero-section-description {
     padding: 94px 0 0 0;
     max-width: 506px;
   }
+  .hero-section .hero-section-description .hero-section-description-info {
+    margin: 0 15px 0;
+  }
   .hero-section .hero-section-description .hero-section-description-info h1 {
-    width: 450px;
     font-size: 50px;
     margin-bottom: 24px;
   }
   .hero-section .hero-section-description .hero-section-description-info p {
     font-size: 18px;
+    text-align: center;
+    padding: 0 15px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
     width: 423px;
@@ -105,7 +110,7 @@
     line-height: 22px;
   }
   .classes .classes-header {
-    width: 495px;
+    margin: 0 15px 0;
   }
   .classes .classes-header h2 {
     margin-left: 0;
@@ -139,7 +144,6 @@
     font-size: 16px;
   }
   .webinar .webinar-header {
-    width: 300px;
     margin-bottom: 150px;
   }
   .webinar .webinar-header h2 {
@@ -308,7 +312,7 @@
     width: 34%;
   }
 }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1120px) {
   h1 {
     font-size: 35px !important;
   }
@@ -320,9 +324,6 @@
   }
   h4 {
     font-size: 16px !important;
-  }
-  p, button, a, span {
-    font-size: 14px !important;
   }
   .hero-section {
     display: flex;
@@ -363,7 +364,7 @@
     right: 2%;
   }
   .hero-section .hero-section-description {
-    max-width: 506px;
+    width: 720px;
     margin: -60px auto;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
@@ -492,6 +493,9 @@
     flex-direction: column;
     margin-left: 35px;
   }
+  .footer p, .footer button, .footer a {
+    font-size: 14px !important;
+  }
   .footer .retreat {
     margin-bottom: 25px;
   }
@@ -603,7 +607,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto 120px;
-    width: 400px;
+    padding-right: 20px;
+    max-width: 400px;
   }
   .featured .featured-block .featured-icon {
     margin: 60px auto -10px;
@@ -615,9 +620,6 @@
   .featured .featured-block .featured-text p {
     margin-left: -19px;
     max-width: 400px;
-  }
-  .classes .classes-header {
-    width: 495px;
   }
   .classes .classes-header h2 {
     text-align: center;
@@ -985,9 +987,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  .classes .classes-header {
-    width: 495px;
   }
   .classes .classes-card {
     justify-content: space-evenly;
