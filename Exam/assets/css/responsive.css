@@ -1033,9 +1033,6 @@
   .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs {
     flex-direction: column;
   }
-  .pricing .pricing-block .pricing-block-item .pricing-block-item-header .pricing-block-item-header-tariffs .pricing-block-item-header-tariffs-name {
-    font-size: 16px;
-  }
   .pricing .pricing-block .pricing-block-item .pricing-block-item-sub1 {
     padding: 10px 10px;
   }
