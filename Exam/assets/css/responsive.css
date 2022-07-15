@@ -321,6 +321,8 @@
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .webinar .webinar-block .webinar-block-video1 {
     width: 34%;
@@ -662,6 +664,8 @@
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .webinar .webinar-block .webinar-block-video1 {
     width: 34%;
@@ -669,7 +673,7 @@
   .webinar .webinar-block .webinar-block-video2 {
     position: absolute;
     top: -34%;
-    left: 27%;
+    left: 26%;
     width: 45%;
   }
   .webinar .webinar-block .webinar-block-video3 {
@@ -822,6 +826,9 @@
   }
   .webinar .webinar-block .webinar-block-video3 {
     width: 34%;
+  }
+  .webinar .webinar-reference {
+    padding-right: 8px;
   }
   .webinar .webinar-reference img {
     width: 22px;

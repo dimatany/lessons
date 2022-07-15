@@ -403,6 +403,8 @@
     }
     .webinar-block {
       flex-wrap: wrap;
+      padding-left: 20px;
+      padding-right: 20px;
       .webinar-block-video1 {
         width: 34%;
       }
@@ -799,13 +801,15 @@
     }
     .webinar-block {
       flex-wrap: wrap;
+      padding-left: 15px;
+      padding-right: 15px;
       .webinar-block-video1 {
         width: 34%;
       }
       .webinar-block-video2 {
         position: absolute;
         top: -34%;
-        left: 27%;
+        left: 26%;
         width: 45%;
       }
       .webinar-block-video3 {
@@ -990,6 +994,7 @@
       }
     }
     .webinar-reference {
+      padding-right: 8px;
       img {
         width: 22px;
         height: 27px;
