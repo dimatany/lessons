@@ -2,6 +2,9 @@ $pink1: rgba(143, 145, 208, 1);
 $pink2: #171836;
 $text-color: rgba(255, 255, 255, 1);
 
+$baseColor : #e74c3c;
+$fontColor : #fff;
+
 body, html {
   margin: 0;
   overflow: hidden;
@@ -75,4 +78,17 @@ body {
   .container p {
     font-size: 1em;
   }
+}
+////////////////////
+
+
+svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
+}
+
+.clock {
+  margin: 60px 30px;
 }
