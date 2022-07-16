@@ -17,6 +17,18 @@ $highlighting-elements6: rgba(255, 255, 255, 0.2);
 $icon-color: #ACABBF;
 $focus-color: #008ABF;
 $border-color: rgba(154, 156, 203, 0.6);
+///////////////////////////////////////////
+@mixin hideTapHighlightColor() {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+@mixin hardwareAccel() {
+  transform: translateZ(0);
+}
+@mixin improveAntiAlias() {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+
 
 ///////////////////////--styles for the whole project--///////
 @media (prefers-reduced-motion: no-preference) {
@@ -915,6 +927,30 @@ body {
 }
 
 
+////////////////--2d animation--//////////////////////////
+@keyframes pulse {
+  25% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(.9);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
 
 
 
