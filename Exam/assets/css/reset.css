@@ -13,9 +13,14 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin:0 auto
+}
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     vertical-align: top;
     object-fit: cover;

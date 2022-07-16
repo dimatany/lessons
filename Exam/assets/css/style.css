@@ -4,16 +4,8 @@
   }
 }
 body {
-  background-color: rgb(41, 43, 86);
-}
-
-.wrap-container {
-  max-width: 1440px;
-  width: 90%;
-  margin: 0 auto;
   background-color: #171836;
   color: rgba(255, 255, 255, 0.4);
-  font-family: Inter, sans-serif;
 }
 
 .header {
@@ -62,9 +54,6 @@ body {
 }
 .hero-section .hero-section-avatar {
   position: relative;
-}
-.hero-section .hero-section-avatar .avatar-mini {
-  display: none;
 }
 .hero-section .hero-section-avatar img {
   width: 702px;
@@ -385,7 +374,7 @@ body {
   position: absolute;
   top: -34%;
   left: 26%;
-  width: 53%;
+  width: 48%;
 }
 .webinar .webinar-block .webinar-block-video3 {
   width: 34%;

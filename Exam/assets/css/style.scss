@@ -37,16 +37,8 @@ $border-color: rgba(154, 156, 203, 0.6);
 }
 
 body {
-  background-color: $highlighting-elements2;
-}
-
-.wrap-container {
-  max-width: 1440px;
-  width: 90%;
-  margin: 0 auto;
   background-color: $background-color;
   color: $text-color;
-  font-family: Inter, sans-serif;
 }
 
 //////////////////////--header--/////////////////////////////
@@ -102,9 +94,6 @@ body {
   margin-bottom: 254px;
   .hero-section-avatar {
     position: relative;
-    .avatar-mini {
-      display: none;
-    }
     img {
       width: 702px;
       height: 775px;
@@ -438,7 +427,7 @@ body {
       position: absolute;
       top: -34%;
       left: 26%;
-      width: 53%;
+      width: 48%;
     }
     .webinar-block-video3 {
       width: 34%;

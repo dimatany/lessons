@@ -15,6 +15,15 @@
   h4 {
     font-size: 18px!important;
   }
+  .header-block {}
+  .hero-block {}
+  .featured-block {}
+  .classes-block {}
+  .webinar-block {}
+  .pricing-block {}
+  .apps-block {}
+  .footer-block {}
+  
 
   .hero-section {
     margin-bottom: 120px;
@@ -417,12 +426,6 @@
     .hero-section-avatar {
       position: relative;
       margin: 0 auto 0;
-      .avatar-max {
-        display: none;
-      }
-      .avatar-mini {
-        display: block;
-      }
       img {
         width: 525px;
         height: 590px;
@@ -641,11 +644,7 @@
     .hero-section-avatar {
       position: relative;
       margin: 0 auto 0;
-      .avatar-max {
-        display: none;
-      }
-      .avatar-mini {
-        display: block;
+      img {
         width: 460px;
         height: auto;
       }
@@ -1078,10 +1077,7 @@
     .hero-section-avatar {
       position: relative;
       margin: 0 auto 0;
-      .avatar-max {
-        display: none;
-      }
-      .avatar-mini {
+      img {
         width: 425px;
       }
       .hero-section-avatar-position {
@@ -1303,10 +1299,7 @@
     .hero-section-avatar {
       position: relative;
       margin: 0 auto 0;
-      .avatar-max {
-        display: none;
-      }
-      .avatar-mini {
+      img {
         width: 425px;
       }
       .hero-section-avatar-position {
