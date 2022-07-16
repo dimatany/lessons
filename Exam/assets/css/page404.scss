@@ -1,5 +1,6 @@
-$pink1: #EF73CB;
-$pink2: #DC5F89;
+$pink1: rgba(143, 145, 208, 1);
+$pink2: #171836;
+$text-color: rgba(255, 255, 255, 1);
 
 body, html {
   margin: 0;
@@ -10,10 +11,10 @@ body, html {
 body {
   align-items: center;
   background-image: linear-gradient(to bottom right, $pink1, $pink2);
-  color: #fff;
+  color: $text-color;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: Inter, sans-serif;
   justify-content: center;
   height: 100vh;
   text-align: center;
@@ -39,7 +40,7 @@ body {
 }
 
 .circle {
-  background-image: linear-gradient(to top right, var(--pink1), var(--pink2));
+  background-image: linear-gradient(to top right, $pink1, $pink2);
   border-radius: 50%;
   position: absolute;
   z-index: -1;
@@ -53,7 +54,7 @@ body {
 }
 
 .circle.medium {
-  background-image: linear-gradient(to bottom left, var(--pink1), var(--pink2));
+  background-image: linear-gradient(to bottom left, $pink1, $pink2);
   bottom: -70px;
   left: 0;
   width: 200px;
@@ -71,33 +72,7 @@ body {
   .container h1 {
     font-size: 8em;
   }
-
   .container p {
     font-size: 1em;
   }
-}
-
-footer {
-  background-color: #222;
-  color: #fff;
-  bottom: 0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-footer p {
-  font-size: 1em;
-  margin: 5px 0;
-}
-
-footer i {
-  color: red;
-}
-
-footer a {
-  color: #3C97BF;
-  text-decoration: none;
 }
