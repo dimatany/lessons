@@ -979,6 +979,9 @@
   .pricing .pricing-block .pricing-block-item .pricing-block-item-sub3 {
     padding: 10px 10px;
   }
+  .apps .apps-info {
+    transform: translateX(5%);
+  }
   .apps .apps-info p {
     width: 245px;
   }
@@ -1132,6 +1135,9 @@
     flex-direction: column;
     width: 100%;
   }
+  .apps .apps-info {
+    transform: translateX(5%);
+  }
   .apps .apps-visual .apps-visual-card {
     border-radius: 20px;
     width: 270px;
@@ -1170,7 +1176,7 @@
     display: flex;
     flex-wrap: wrap;
     top: 146%;
-    left: -6%;
+    left: -13%;
     width: 290px;
   }
   .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-course {

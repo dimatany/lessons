@@ -1188,6 +1188,7 @@
   }
   .apps {
     .apps-info {
+      transform: translateX(5%);
       p {
         width: 245px;
       }
@@ -1353,6 +1354,9 @@
     }
   }
   .apps {
+    .apps-info {
+      transform: translateX(5%);
+    }
     .apps-visual {
       .apps-visual-card {
         border-radius: 20px;
@@ -1392,7 +1396,7 @@
             display: flex;
             flex-wrap: wrap;
             top: 146%;
-            left: -6%;
+            left: -13%;
             width: 290px;
             .apps-visual-ref-course {
               width: 150px;
