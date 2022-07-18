@@ -164,17 +164,6 @@ main {
         padding: 13px;
         transform: rotate(12deg);
       }
-      img:nth-child(3){
-        position: absolute;
-        top: 86%;
-        right: 8%;
-        max-width: 365px;
-        height: auto;
-        z-index: 1;
-        border-radius: 20px;
-        background-color: #282B57;
-        padding: 10px;
-      }
     }
   }
   .hero-section-description {
@@ -328,7 +317,7 @@ main {
     .classes-card-item {
       width: 276px;
       padding: 10px;
-      border: 1px solid $headings-text2;
+      border: 3px solid #282B57;
       border-radius: 15px;
       background-color: $highlighting-elements4;
       position: relative;
@@ -599,9 +588,6 @@ main {
             font-size: 14px;
             line-height: 17px;
             transition: all .3s ease-in;
-            &:hover {
-              color: $highlighting-elements;
-            }
             &:before {
               content: '.';
               font-size: 70px;
@@ -896,8 +882,8 @@ main {
     margin-bottom: 18px;
   }
   svg:hover {
-    stroke: red;
     fill: red;
+    transition: .4s all ease-in;
   }
   .footer-links {
     display: flex;

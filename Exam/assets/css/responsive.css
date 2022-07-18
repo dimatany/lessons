@@ -353,11 +353,6 @@
     max-width: 90px;
     max-height: 90px;
   }
-  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    position: absolute;
-    top: 84%;
-    right: 2%;
-  }
   .hero-section .hero-section-description {
     width: 720px;
     margin: -60px auto;
@@ -544,13 +539,6 @@
     right: 0;
     max-width: 60px;
     max-height: 60px;
-  }
-  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    position: absolute;
-    top: 86%;
-    right: 2%;
-    width: 61%;
-    height: auto;
   }
   .hero-section .hero-section-description {
     max-width: 506px;
@@ -892,13 +880,6 @@
     max-width: 50px;
     max-height: 50px;
   }
-  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    position: absolute;
-    top: 88%;
-    right: 10%;
-    width: 55%;
-    height: auto;
-  }
   .hero-section .hero-section-description {
     margin: -60px auto;
   }
@@ -1105,13 +1086,6 @@
     right: 5%;
     max-width: 50px;
     max-height: 50px;
-  }
-  .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-    position: absolute;
-    top: 84%;
-    right: 2%;
-    width: 40%;
-    height: auto;
   }
   .hero-section .hero-section-description {
     margin: -60px auto;

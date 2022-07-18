@@ -120,17 +120,6 @@ main {
   padding: 13px;
   transform: rotate(12deg);
 }
-.hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(3) {
-  position: absolute;
-  top: 86%;
-  right: 8%;
-  max-width: 365px;
-  height: auto;
-  z-index: 1;
-  border-radius: 20px;
-  background-color: #282B57;
-  padding: 10px;
-}
 .hero-section .hero-section-description {
   padding: 93px 0 0 0;
   max-width: 506px;
@@ -276,7 +265,7 @@ main {
 .classes .classes-card .classes-card-item {
   width: 276px;
   padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 3px solid #282B57;
   border-radius: 15px;
   background-color: #212145;
   position: relative;
@@ -544,9 +533,6 @@ main {
   font-size: 14px;
   line-height: 17px;
   transition: all 0.3s ease-in;
-}
-.pricing .pricing-block .pricing-block-item .pricing-block-item-info ul li:hover {
-  color: rgb(245, 68, 59);
 }
 .pricing .pricing-block .pricing-block-item .pricing-block-item-info ul li:before {
   content: ".";
@@ -828,8 +814,8 @@ main {
   margin-bottom: 18px;
 }
 .footer svg:hover {
-  stroke: red;
   fill: red;
+  transition: 0.4s all ease-in;
 }
 .footer .footer-links {
   display: flex;
