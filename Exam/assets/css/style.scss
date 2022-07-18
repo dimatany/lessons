@@ -101,7 +101,7 @@ body {
         justify-content: space-between;
         li a {
           &:hover {
-            text-shadow:4px 4px 5px $highlighting-elements;
+            color: $text-button;
           }
         }
       }
@@ -483,11 +483,11 @@ main {
     display: flex;
     justify-content: end;
     a {
-      color: $text-color3;
+      color: $text-color2;
       font-size: 14px;
       margin-right: 20px;
       &:hover {
-        text-shadow: 4px 4px 5px $highlighting-elements;
+        color: $text-button;
       }
     }
     img {
@@ -955,28 +955,6 @@ main {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

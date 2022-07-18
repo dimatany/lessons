@@ -65,7 +65,7 @@ body {
   justify-content: space-between;
 }
 .header .header-block-left .header-block-left-navigation .header-block-left-navigation-item li a:hover {
-  text-shadow: 4px 4px 5px rgb(245, 68, 59);
+  color: rgb(255, 255, 255);
 }
 .header .header-block-right .header-block-right-button {
   width: 102px;
@@ -427,12 +427,12 @@ main {
   justify-content: end;
 }
 .webinar .webinar-reference a {
-  color: rgb(209, 209, 215);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   margin-right: 20px;
 }
 .webinar .webinar-reference a:hover {
-  text-shadow: 4px 4px 5px rgb(245, 68, 59);
+  color: rgb(255, 255, 255);
 }
 .webinar .webinar-reference img {
   width: 24px;
