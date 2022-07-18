@@ -15,15 +15,6 @@
   h4 {
     font-size: 18px!important;
   }
-  .header-block {}
-  .hero-block {}
-  .featured-block {}
-  .classes-block {}
-  .webinar-block {}
-  .pricing-block {}
-  .apps-block {}
-  .footer-block {}
-
 
   .hero-section {
     margin-bottom: 120px;
@@ -199,23 +190,23 @@
       }
       p {
         font-size: 16px;
-        margin: 0 auto;
+        margin: 0 auto 130px;
         text-align: center;
       }
     }
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
-        width: 34%;
+        width: 40%;
       }
       .webinar-block-video2 {
         position: absolute;
-        top: -34%;
+        top: -15%;
         left: 26%;
         width: 50%;
       }
       .webinar-block-video3 {
-        width: 34%;
+        width: 40%;
       }
     }
   }
@@ -489,19 +480,15 @@
     }
     .webinar-block {
       flex-wrap: wrap;
-      padding-left: 20px;
-      padding-right: 20px;
       .webinar-block-video1 {
-        width: 34%;
       }
       .webinar-block-video2 {
         position: absolute;
-        top: -34%;
+        top: -15%;
         left: 27%;
         width: 49%;
       }
       .webinar-block-video3 {
-        width: 34%;
       }
     }
   }
@@ -523,16 +510,14 @@
       flex-wrap: wrap;
       margin-bottom: 60px;
       .webinar-block-video1 {
-        width: 34%;
       }
       .webinar-block-video2 {
         position: absolute;
-        top: -34%;
+        top: -15%;
         left: 27%;
         width: 46%;
       }
       .webinar-block-video3 {
-        width: 34%;
       }
     }
   }
@@ -776,19 +761,15 @@
     }
     .webinar-block {
       flex-wrap: wrap;
-      padding-left: 15px;
-      padding-right: 15px;
       .webinar-block-video1 {
-        width: 34%;
       }
       .webinar-block-video2 {
         position: absolute;
-        top: -34%;
+        top: -15%;
         left: 26%;
         width: 45%;
       }
       .webinar-block-video3 {
-        width: 34%;
       }
     }
     .webinar-reference {
@@ -952,16 +933,14 @@
     .webinar-block {
       flex-wrap: wrap;
       .webinar-block-video1 {
-        width: 34%;
       }
       .webinar-block-video2 {
         position: absolute;
-        top: -34%;
+        top: -15%;
         left: 27%;
         width: 45%;
       }
       .webinar-block-video3 {
-        width: 34%;
       }
     }
     .webinar-reference {
@@ -1100,9 +1079,9 @@
       .hero-section-description-info {
         .search-container {
           margin: -10px auto 30px;
-          max-width: 300px;
+          max-width: 260px;
           input#search-bar{
-            width: 300px;
+            width: 260px;
             height: 60px;
             margin: 0 auto;
             &::placeholder {
@@ -1288,6 +1267,7 @@
 }
 
 @media screen and (max-width: 320px) {
+
   .featured-block-all {
     padding-bottom: 10px;
   }

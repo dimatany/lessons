@@ -156,23 +156,23 @@
   }
   .webinar .webinar-header p {
     font-size: 16px;
-    margin: 0 auto;
+    margin: 0 auto 130px;
     text-align: center;
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
   .webinar .webinar-block .webinar-block-video1 {
-    width: 34%;
+    width: 40%;
   }
   .webinar .webinar-block .webinar-block-video2 {
     position: absolute;
-    top: -34%;
+    top: -15%;
     left: 26%;
     width: 50%;
   }
   .webinar .webinar-block .webinar-block-video3 {
-    width: 34%;
+    width: 40%;
   }
   .pricing {
     margin-bottom: 120px;
@@ -391,20 +391,12 @@
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .webinar .webinar-block .webinar-block-video1 {
-    width: 34%;
   }
   .webinar .webinar-block .webinar-block-video2 {
     position: absolute;
-    top: -34%;
+    top: -15%;
     left: 27%;
     width: 49%;
-  }
-  .webinar .webinar-block .webinar-block-video3 {
-    width: 34%;
   }
 }
 @media screen and (max-width: 990px) {
@@ -421,17 +413,11 @@
     flex-wrap: wrap;
     margin-bottom: 60px;
   }
-  .webinar .webinar-block .webinar-block-video1 {
-    width: 34%;
-  }
   .webinar .webinar-block .webinar-block-video2 {
     position: absolute;
-    top: -34%;
+    top: -15%;
     left: 27%;
     width: 46%;
-  }
-  .webinar .webinar-block .webinar-block-video3 {
-    width: 34%;
   }
   .apps .apps-info .apps-info-brands {
     width: 380px;
@@ -633,20 +619,12 @@
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .webinar .webinar-block .webinar-block-video1 {
-    width: 34%;
   }
   .webinar .webinar-block .webinar-block-video2 {
     position: absolute;
-    top: -34%;
+    top: -15%;
     left: 26%;
     width: 45%;
-  }
-  .webinar .webinar-block .webinar-block-video3 {
-    width: 34%;
   }
   .webinar .webinar-reference img {
     width: 22px;
@@ -778,17 +756,11 @@
   .webinar .webinar-block {
     flex-wrap: wrap;
   }
-  .webinar .webinar-block .webinar-block-video1 {
-    width: 34%;
-  }
   .webinar .webinar-block .webinar-block-video2 {
     position: absolute;
-    top: -34%;
+    top: -15%;
     left: 27%;
     width: 45%;
-  }
-  .webinar .webinar-block .webinar-block-video3 {
-    width: 34%;
   }
   .webinar .webinar-reference {
     padding-right: 8px;
@@ -917,10 +889,10 @@
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container {
     margin: -10px auto 30px;
-    max-width: 300px;
+    max-width: 260px;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
-    width: 300px;
+    width: 260px;
     height: 60px;
     margin: 0 auto;
   }
