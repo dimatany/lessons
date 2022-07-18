@@ -156,7 +156,7 @@
   }
   .webinar .webinar-header p {
     font-size: 16px;
-    margin: 0 auto 130px;
+    margin: 0 auto;
     text-align: center;
   }
   .webinar .webinar-block {
@@ -861,7 +861,7 @@
     margin: 0 auto 0;
   }
   .hero-section .hero-section-avatar img {
-    width: 425px;
+    width: 320px;
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(1) {
     position: absolute;
