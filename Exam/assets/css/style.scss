@@ -76,6 +76,8 @@ body {
   z-index: 100;
   &.fixed {
     background-color: rgba($background-color, 0.8);
+    border-bottom: 1px solid $background-color;
+    box-shadow: 0 20px 20px -20px $background-color-element;
   }
 }
 .header {
