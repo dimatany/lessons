@@ -1,22 +1,63 @@
 @media screen and (max-width: 1360px) {
-  h1 {
-    font-size: 50px !important;
+  .hero-section .hero-section-description .hero-section-description-info h1 {
+    font-size: 50px;
+    line-height: 67px;
     text-align: center;
-    margin: 0 auto;
   }
-  h2 {
-    font-size: 30px !important;
+  .hero-section .hero-section-description .hero-section-description-info p {
+    font-size: 16px;
     text-align: center;
-    margin: 0 auto;
   }
-  h3 {
-    font-size: 40px !important;
+  .featured .featured-block .featured-icon h4 {
+    font-size: 20px;
+    text-align: center;
   }
-  h4 {
-    font-size: 18px !important;
+  .featured .featured-block .featured-text p {
+    line-height: 20px;
+    text-align: center;
+  }
+  .classes .classes-header h2 {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+  }
+  .classes .classes-header p {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .webinar .webinar-header h2 {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+  }
+  .webinar .webinar-header p {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .pricing .pricing-header h2 {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+  }
+  .pricing .pricing-header p {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .apps .apps-info h3 {
+    font-size: 47px;
+    line-height: 75px;
+    text-align: center;
+  }
+  .apps .apps-info p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
   }
   .hero-section {
-    margin-bottom: 120px;
+    padding-bottom: 0;
   }
   .hero-section .hero-section-avatar {
     position: relative;
@@ -48,14 +89,6 @@
   }
   .hero-section .hero-section-description .hero-section-description-info {
     margin: 0 20px 0;
-  }
-  .hero-section .hero-section-description .hero-section-description-info h1 {
-    font-size: 50px;
-    margin-bottom: 24px;
-  }
-  .hero-section .hero-section-description .hero-section-description-info p {
-    font-size: 18px;
-    text-align: center;
   }
   .hero-section .hero-section-description .hero-section-description-info .search-container input#search-bar {
     width: 445px;
@@ -93,36 +126,21 @@
     flex-direction: column;
     height: 210px;
   }
-  .featured {
-    margin: 0 39px 120px 68px;
-  }
   .featured .featured-block .featured-icon img {
     margin-right: 20px;
-  }
-  .featured .featured-block .featured-icon h4 {
-    font-size: 20px;
   }
   .featured .featured-block .featured-text p {
     margin-left: -19px;
     max-width: 211px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .classes {
-    margin-bottom: 120px;
   }
   .classes .classes-header {
     margin: 0 20px 0;
   }
   .classes .classes-header h2 {
     margin-left: 0;
-    font-size: 36px;
-    text-align: center;
   }
   .classes .classes-header p {
-    font-size: 16px;
     margin-bottom: 75px;
-    text-align: center;
   }
   .classes .classes-card {
     justify-content: space-evenly;
@@ -146,18 +164,11 @@
   .classes .classes-card .classes-card-item p {
     font-size: 16px;
   }
-  .webinar .webinar-header {
-    margin-bottom: 80px;
-  }
   .webinar .webinar-header h2 {
-    font-size: 30px;
     margin: 0 auto;
-    text-align: center;
   }
   .webinar .webinar-header p {
-    font-size: 16px;
     margin: 0 auto;
-    text-align: center;
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
@@ -174,14 +185,10 @@
   .webinar .webinar-block .webinar-block-video3 {
     width: 40%;
   }
-  .pricing {
-    margin-bottom: 120px;
-  }
   .pricing .pricing-header h2 {
     width: 200px;
   }
   .pricing .pricing-header p {
-    text-align: center;
     margin: -7px 15px 40px;
   }
   .pricing .pricing-block {
@@ -221,15 +228,11 @@
     margin-bottom: 100px;
   }
   .apps .apps-info h3 {
-    font-size: 40px;
     margin: 0 auto 25px;
-    text-align: center;
   }
   .apps .apps-info p {
     width: 300px;
-    font-size: 16px;
     margin: 0 auto 65px;
-    text-align: center;
   }
   .apps .apps-info .apps-info-brands {
     width: 400px;
@@ -284,7 +287,7 @@
     margin-right: 0;
   }
   .footer a {
-    font-size: 16px;
+    font-size: 15px;
   }
   .footer .retreat {
     margin-bottom: 25px;
@@ -311,25 +314,12 @@
   }
 }
 @media screen and (max-width: 1120px) {
-  h1 {
-    font-size: 35px !important;
-  }
-  h2 {
-    font-size: 25px !important;
-  }
-  h3 {
-    font-size: 30px !important;
-  }
-  h4 {
-    font-size: 16px !important;
-  }
   .header .header-block-left {
     width: 68%;
   }
   .hero-section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
     position: relative;
@@ -398,26 +388,32 @@
   }
 }
 @media screen and (max-width: 990px) {
+  .hero-block-all {
+    padding-top: 82px;
+    padding-bottom: 45px;
+  }
   .featured-block-all {
-    padding-bottom: 24px;
+    padding-top: 44px;
+    padding-bottom: 59px;
   }
   .classes-block-all {
-    padding-top: 24px;
+    padding-top: 59px;
+    padding-bottom: 59px;
   }
   .webinar-block-all {
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 55px;
   }
   .pricing-block-all {
-    padding-top: 40px;
+    padding-top: 55px;
+    padding-bottom: 60px;
   }
-  h1 {
-    font-size: 27px !important;
+  .apps-block-all {
+    padding-top: 60px;
+    padding-bottom: 54px;
   }
-  h2 {
-    font-size: 19px !important;
-  }
-  h3 {
-    font-size: 22px !important;
+  .footer-block-all {
+    padding-top: 54px;
   }
   .webinar .webinar-block {
     flex-wrap: wrap;
@@ -478,7 +474,7 @@
     flex-direction: column;
   }
   .footer p, .footer button, .footer a {
-    font-size: 14px !important;
+    font-size: 14px;
   }
   .footer .retreat {
     margin-bottom: 25px;
@@ -500,14 +496,52 @@
   }
 }
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 30px !important;
+  .hero-section .hero-section-description .hero-section-description-info h1 {
+    font-size: 25px;
+    line-height: 50px;
   }
-  h2 {
-    font-size: 20px !important;
+  .hero-section .hero-section-description .hero-section-description-info p {
+    font-size: 14px;
   }
-  h3 {
-    font-size: 25px !important;
+  .featured .featured-block .featured-icon h4 {
+    font-size: 16px;
+  }
+  .featured .featured-block .featured-text p {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .classes .classes-header h2 {
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .classes .classes-header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .webinar .webinar-header h2 {
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .webinar .webinar-header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pricing .pricing-header h2 {
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .pricing .pricing-header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .apps .apps-info h3 {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  .apps .apps-info p {
+    font-size: 16px;
+    line-height: 24px;
   }
   .wrap-container {
     width: 100%;
@@ -516,7 +550,6 @@
   .hero-section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
     position: relative;
@@ -578,7 +611,7 @@
   .featured {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto 120px;
+    margin: 0 auto 0;
     padding-right: 20px;
     max-width: 400px;
   }
@@ -857,7 +890,6 @@
   .hero-section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
   }
   .hero-section .hero-section-avatar {
     position: relative;
@@ -875,8 +907,8 @@
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
     position: absolute;
-    top: 24%;
-    right: 5%;
+    top: 17%;
+    right: -1%;
     max-width: 50px;
     max-height: 50px;
   }
@@ -1053,10 +1085,10 @@
 }
 @media screen and (max-width: 320px) {
   .featured-block-all {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
   .classes-block-all {
-    padding-top: 10px;
+    padding-top: 40px;
   }
   .webinar-block-all {
     padding-bottom: 40px;
@@ -1064,7 +1096,6 @@
   .hero-section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
   }
   .hero-section .hero-section-avatar {
     position: relative;
@@ -1082,8 +1113,8 @@
   }
   .hero-section .hero-section-avatar .hero-section-avatar-position img:nth-child(2) {
     position: absolute;
-    top: 24%;
-    right: 5%;
+    top: 15%;
+    right: -1%;
     max-width: 50px;
     max-height: 50px;
   }

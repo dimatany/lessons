@@ -82,14 +82,15 @@ body {
   background: linear-gradient(rgb(208, 2, 27), rgb(208, 2, 27));
 }
 
-main {
+.hero-block-all {
   padding-top: 120px;
+  padding-bottom: 64px;
 }
 
 .hero-section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 254px;
+  padding-bottom: 127px;
 }
 .hero-section .hero-section-avatar {
   position: relative;
@@ -201,6 +202,7 @@ main {
 }
 
 .featured-block-all {
+  padding-top: 63px;
   padding-bottom: 84px;
 }
 
@@ -235,11 +237,9 @@ main {
 
 .classes-block-all {
   padding-top: 84px;
+  padding-bottom: 86px;
 }
 
-.classes {
-  margin-bottom: 173px;
-}
 .classes .classes-header {
   margin: 0 auto;
   text-align: center;
@@ -375,6 +375,7 @@ main {
 }
 
 .webinar-block-all {
+  padding-top: 87px;
   padding-bottom: 80px;
 }
 
@@ -432,11 +433,9 @@ main {
 
 .pricing-block-all {
   padding-top: 80px;
+  padding-bottom: 87px;
 }
 
-.pricing {
-  margin-bottom: 174px;
-}
 .pricing .pricing-header {
   margin: 0 auto;
   width: 330px;
@@ -562,8 +561,12 @@ main {
   margin-top: 29px;
 }
 
+.apps-block-all {
+  padding-top: 87px;
+  padding-bottom: 78px;
+}
+
 .apps {
-  margin-bottom: 157px;
   display: flex;
   justify-content: space-between;
   padding: 70px 137px 70px 70px;
@@ -790,6 +793,10 @@ main {
 }
 .apps .apps-visual .apps-visual-card .apps-visual-card-body .apps-visual-card-body-ref .apps-visual-ref-class p .right {
   transform: rotate(-45deg);
+}
+
+.footer-block-all {
+  padding-top: 79px;
 }
 
 .footer {
