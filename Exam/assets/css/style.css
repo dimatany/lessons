@@ -451,6 +451,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 84px;
+  text-align: center;
 }
 .pricing .pricing-block {
   display: flex;
